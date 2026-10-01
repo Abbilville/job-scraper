@@ -219,16 +219,15 @@ def extract_seniority_rule_based(title: str, text: str) -> tuple[str, str]:
     if any(k in title_lower for k in ["mid", "intermediate"]):
         return "Mid-Level", "mid_senior"
 
-    # Fallback to description keywords
-    if "senior" in full_str:
-        return "Senior", "senior"
+    # Fallback to description keywords (prioritize entry/junior to avoid false exclusion)
+    if any(k in full_str for k in ["intern", "magang", "internship"]):
+        return "Internship", "internship"
+    if any(k in full_str for k in ["fresh graduate", "fresh grad", "lulusan baru", "entry level", "entry-level", "tanpa pengalaman"]):
+        return "Fresh Graduate / Entry", "entry_level"
     if any(k in full_str for k in ["junior", "associate"]):
         return "Junior / Associate", "associate"
-    if any(k in full_str for k in ["fresh graduate", "entry level"]):
-        return "Fresh Graduate / Entry", "entry_level"
-    if any(k in full_str for k in ["intern", "magang"]):
-        return "Internship", "internship"
-
+    if re.search(r"\b(?:senior\s+(?:level|position|role|developer|engineer|analyst)|minimum\s+[5-9]\s*tahun|\b[5-9]\+\s*(?:years?|tahun))\b", full_str):
+        return "Senior", "senior"
     return "Mid-Level / General", "mid_senior"
 
 

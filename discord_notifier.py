@@ -1,6 +1,7 @@
 """Discord Webhook Notifier with Modern Minimalist 3-Column Card and batch-level role mentions."""
 
 import logging
+import re
 import time
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, Set
@@ -91,11 +92,11 @@ def _resolve_thumbnail_url(job: Dict[str, Any]) -> str:
         return logo
 
     # 2. Known company logo via Google Favicon PNG
-    company_name = str(job.get("company") or "").lower()
+    company_name = str(job.get("company") or "")
     for keyword, domain in TOP_COMPANY_DOMAINS.items():
-        if keyword in company_name:
+        pattern = rf"\b{re.escape(keyword)}\b"
+        if re.search(pattern, company_name, re.IGNORECASE):
             return f"https://www.google.com/s2/favicons?domain={domain}&sz=128"
-
     # 3. Fallback to Job Portal Official PNG Logo
     site_key = str(job.get("site") or "linkedin").lower()
     return PORTAL_LOGOS.get(site_key, PORTAL_LOGOS["linkedin"])
@@ -199,8 +200,8 @@ def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
 
     # 1. 3-Column Modern Grid (Tipe Kerja, Pengalaman, Level)
     formatted_type = str(job_type).replace("_", " ").title() if job_type else "Full-time"
-    formatted_yoe = insights.yoe if (insights and insights.yoe) else "1 - 3 Tahun"
-    formatted_level = insights.seniority if (insights and insights.seniority and insights.seniority != "Not Specified") else "Associate"
+    formatted_yoe = insights.yoe if (insights and insights.yoe) else "Tidak Disebutkan"
+    formatted_level = insights.seniority if (insights and insights.seniority and insights.seniority != "Not Specified") else "Semua Level"
 
     fields.append({"name": "💼 Tipe Kerja", "value": formatted_type, "inline": True})
     fields.append({"name": "⏳ Pengalaman", "value": formatted_yoe, "inline": True})
@@ -234,7 +235,7 @@ def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
     # 5. Clean external link CTA
     if url:
         fields.append({
-            "name": "",
+            "name": "\u200b",
             "value": f"👉 **[Lamar Sekarang di {site} ↗]({url})**",
             "inline": False,
         })

@@ -4,7 +4,7 @@ import datetime
 import logging
 from typing import Any, Dict, List, Optional
 import pandas as pd
-from jobspy import scrape_jobs
+
 
 from config import Config
 
@@ -55,6 +55,12 @@ def scrape_site_safely(
     )
 
     try:
+        try:
+            from jobspy import scrape_jobs
+        except ImportError:
+            logger.error("Library 'python-jobspy' belum terpasang. Jalankan: pip install python-jobspy")
+            return []
+
         df = scrape_jobs(
             site_name=[site],
             search_term=search_term,

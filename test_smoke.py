@@ -25,7 +25,7 @@ from extractor import (
     extract_with_ai,
     extract_yoe_rule_based,
 )
-from main import classify_stream, is_title_excluded
+from main import classify_stream, is_location_allowed, is_title_excluded
 
 
 class TestConfigAndCompanyMatcher(unittest.TestCase):
@@ -69,6 +69,13 @@ class TestConfigAndCompanyMatcher(unittest.TestCase):
 
         m_kalbe = matcher.match("PT Kalbe Farma Tbk")
         self.assertIsNotNone(m_kalbe)
+
+    def test_sea_and_traveloka_company_match(self):
+        cfg = load_config("config.json")
+        matcher = CompanyMatcher(top_companies_dict=cfg.top_companies)
+        m_sea = matcher.match("Sea")
+        self.assertIsNotNone(m_sea)
+        self.assertEqual(m_sea.canonical_name, "Shopee / Sea Group")
 
 
 class TestExclusionAndStreamRouting(unittest.TestCase):
@@ -144,6 +151,24 @@ class TestExclusionAndStreamRouting(unittest.TestCase):
             "tech_engineering",
         )
 
+    def test_location_filtering(self):
+        allowed_locations = ["Indonesia", "Jakarta"]
+
+        # Allowed locations
+        self.assertTrue(is_location_allowed({"location": "Jakarta, Indonesia"}, allowed_locations))
+        self.assertTrue(is_location_allowed({"location": "Bandung, Jawa Barat"}, allowed_locations))
+        self.assertTrue(is_location_allowed({"location": "Batam, Kepulauan Riau"}, allowed_locations))
+        self.assertTrue(is_location_allowed({"location": "Remote Friendly", "is_remote": True}, allowed_locations))
+        self.assertTrue(is_location_allowed({"location": "Worldwide", "is_remote": True}, allowed_locations))
+        self.assertTrue(is_location_allowed({"location": ""}, allowed_locations))
+
+        # Rejected foreign locations
+        self.assertFalse(is_location_allowed({"location": "Paris, France"}, allowed_locations))
+        self.assertFalse(is_location_allowed({"location": "London, United Kingdom"}, allowed_locations))
+        self.assertFalse(is_location_allowed({"location": "Munich, Germany"}, allowed_locations))
+        self.assertFalse(is_location_allowed({"location": "Houston, TX"}, allowed_locations))
+        self.assertFalse(is_location_allowed({"location": "São Paulo, Brazil"}, allowed_locations))
+
 
 class TestExtractorSIAndTech(unittest.TestCase):
     def test_si_and_product_skills_extraction(self):
@@ -171,6 +196,18 @@ class TestExtractorSIAndTech(unittest.TestCase):
 
         _, lvl_senior = extract_seniority_rule_based("Senior BI Developer", "")
         self.assertEqual(lvl_senior, "senior")
+
+    def test_seniority_fallback_not_false_positive_senior(self):
+        # Mentions senior manager in description but role is Junior / General
+        desc_with_senior_mgr = "Responsibilities: Report to Senior Engineering Manager. Work on frontend."
+        _, lvl = extract_seniority_rule_based("Software Developer", desc_with_senior_mgr)
+        self.assertNotEqual(lvl, "senior")
+        self.assertEqual(lvl, "mid_senior")
+
+        # Fresh graduate mentioning senior mentor
+        desc_fresh_with_senior = "Open for fresh graduates. You will be mentored by senior engineers."
+        _, lvl_fresh = extract_seniority_rule_based("Software Engineer", desc_fresh_with_senior)
+        self.assertEqual(lvl_fresh, "entry_level")
 
 
 class TestDiscordNotifierStreamRouting(unittest.TestCase):
@@ -230,6 +267,33 @@ class TestDiscordNotifierStreamRouting(unittest.TestCase):
         # Product job (not set) falls back to default webhook
         prod_job = {"stream_key": "product_and_analysis"}
         self.assertEqual(notifier.get_webhook_for_job(prod_job), "https://discord.com/api/webhooks/default/123")
+
+    def test_embed_cta_and_clean_fallbacks(self):
+        from discord_notifier import _resolve_thumbnail_url
+
+        # Test CTA button name is non-empty (\u200b)
+        job_with_url = {
+            "title": "Backend Developer",
+            "company": "Tech Corp",
+            "job_url": "https://linkedin.com/jobs/view/12345",
+            "site": "LinkedIn",
+        }
+        embed = build_job_embed(job_with_url)
+        cta_field = [f for f in embed["fields"] if "Lamar Sekarang" in f.get("value", "")][0]
+        self.assertEqual(cta_field["name"], "\u200b")
+
+        # Test clean fallbacks
+        yoe_field = [f for f in embed["fields"] if "Pengalaman" in f.get("name", "")][0]
+        level_field = [f for f in embed["fields"] if "Level" in f.get("name", "")][0]
+        self.assertEqual(yoe_field["value"], "Tidak Disebutkan")
+        self.assertEqual(level_field["value"], "Semua Level")
+
+        # Test word-boundary domain matching (super.money should NOT match ey.com)
+        logo_supermoney = _resolve_thumbnail_url({"company": "super.money"})
+        self.assertNotIn("ey.com", logo_supermoney)
+
+        logo_ey = _resolve_thumbnail_url({"company": "EY Indonesia"})
+        self.assertIn("ey.com", logo_ey)
 
 
 if __name__ == "__main__":
