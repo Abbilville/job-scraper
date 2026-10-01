@@ -59,15 +59,23 @@ class Config:
 
     # 2. Company & Filtering Settings
     filter_mode: str = "highlight"
+    exclude_title_keywords: List[str] = field(default_factory=list)
+    allowed_experience_levels: List[str] = field(default_factory=list)
     top_companies: Dict[str, List[Dict[str, Any]]] = field(default_factory=dict)
     custom_companies: List[str] = field(default_factory=list)
 
-    # 3. Discord Webhook & AI Service (Loaded via Env for Security)
+    # 3. Discord Routing & Webhooks
+    discord_routing: Dict[str, Any] = field(default_factory=dict)
     discord_webhook_url: str = ""
+    discord_webhook_tech: str = ""
+    discord_webhook_data: str = ""
+    discord_webhook_product: str = ""
+
+    # 4. AI Service (Optional)
     ai_api_url: str = ""
     ai_api_key: str = ""
 
-    # 4. Storage & Operational Settings
+    # 5. Storage & Operational Settings
     seen_jobs_file: str = "seen_jobs.json"
     max_seen_history: int = 1000
     delay_between_alerts: float = 1.0
@@ -89,6 +97,30 @@ class Config:
         elif self.location and self.location not in self.locations:
             self.locations.insert(0, self.location)
 
+    def get_webhook_for_stream(self, stream_key: Optional[str]) -> str:
+        """Resolve webhook URL for a specific stream with fallback to default webhook."""
+        if not stream_key:
+            return self.discord_webhook_url
+
+        streams = self.discord_routing.get("streams", {})
+        stream_info = streams.get(stream_key, {})
+        env_var_name = stream_info.get("channel_webhook_env")
+
+        if env_var_name:
+            val = os.getenv(env_var_name, "").strip()
+            if val:
+                return val
+
+        # Direct attribute fallbacks
+        if stream_key == "tech_engineering" and self.discord_webhook_tech:
+            return self.discord_webhook_tech
+        if stream_key == "data_and_ai" and self.discord_webhook_data:
+            return self.discord_webhook_data
+        if stream_key == "product_and_analysis" and self.discord_webhook_product:
+            return self.discord_webhook_product
+
+        return self.discord_webhook_url
+
 
 def load_config(json_path: str = CONFIG_JSON_PATH) -> Config:
     """Load configuration from config.json and overlay environment variable overrides."""
@@ -97,6 +129,7 @@ def load_config(json_path: str = CONFIG_JSON_PATH) -> Config:
     search_cfg = data.get("search_settings", {})
     filter_cfg = data.get("filtering", {})
     top_co = data.get("top_companies", {})
+    routing_cfg = data.get("discord_routing", {})
 
     # Priority: Env override if set, else config.json, else default
     env_terms = os.getenv("SEARCH_TERMS", os.getenv("SEARCH_TERM"))
@@ -117,9 +150,15 @@ def load_config(json_path: str = CONFIG_JSON_PATH) -> Config:
     )
 
     filter_mode = os.getenv("FILTER_MODE", filter_cfg.get("filter_mode", "highlight")).strip().lower()
+    exclude_title = _parse_list(os.getenv("EXCLUDE_TITLE_KEYWORDS"), filter_cfg.get("exclude_title_keywords", []))
+    allowed_exp = _parse_list(os.getenv("ALLOWED_EXPERIENCE_LEVELS"), filter_cfg.get("allowed_experience_levels", []))
     custom_co = _parse_list(os.getenv("CUSTOM_TOP_COMPANIES", ""), top_co.get("Custom Companies", []))
 
     discord_webhook_url = os.getenv("DISCORD_WEBHOOK_URL", "").strip()
+    discord_webhook_tech = os.getenv("DISCORD_WEBHOOK_TECH", "").strip()
+    discord_webhook_data = os.getenv("DISCORD_WEBHOOK_DATA", "").strip()
+    discord_webhook_product = os.getenv("DISCORD_WEBHOOK_PRODUCT", "").strip()
+
     ai_api_url = os.getenv("AI_API_URL", "").strip()
     ai_api_key = os.getenv("AI_API_KEY", "").strip()
 
@@ -138,9 +177,15 @@ def load_config(json_path: str = CONFIG_JSON_PATH) -> Config:
         country_indeed=country_indeed,
         enable_indeed_fallback=enable_indeed_fallback,
         filter_mode=filter_mode,
+        exclude_title_keywords=exclude_title,
+        allowed_experience_levels=allowed_exp,
         top_companies=top_co,
         custom_companies=custom_co,
+        discord_routing=routing_cfg,
         discord_webhook_url=discord_webhook_url,
+        discord_webhook_tech=discord_webhook_tech,
+        discord_webhook_data=discord_webhook_data,
+        discord_webhook_product=discord_webhook_product,
         ai_api_url=ai_api_url,
         ai_api_key=ai_api_key,
         seen_jobs_file=seen_jobs_file,

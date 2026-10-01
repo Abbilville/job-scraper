@@ -2,173 +2,145 @@
 
 Repository: [https://github.com/Abbilville/job-scraper](https://github.com/Abbilville/job-scraper)
 
-Bot otomatis untuk mencari lowongan pekerjaan terbaru dari **LinkedIn** (dengan fallback **Indeed**) menggunakan library [`python-jobspy`](https://github.com/cullenwatson/JobSpy) dan mengirimkannya langsung ke channel **Discord** dalam format Discord Embed yang rapi, informatif, dan mewah.
+Bot otomatis untuk mencari lowongan pekerjaan terbaru dari **LinkedIn** (dengan fallback **Indeed**) menggunakan library [`python-jobspy`](https://github.com/cullenwatson/JobSpy) dan mengirimkannya langsung ke channel **Discord** dengan **multi-channel stream routing** yang rapi dan elegan.
 
-Didesain khusus untuk mahasiswa, fresh graduate, dan alumni (seperti anak-anak UI, ITB, UGM, dsb.) dengan fitur kurasi **Perusahaan Top Tier (Big 4, Top Tech Unicorns, Banking, & FMCG)** serta **Ekstraksi Keterampilan (Skills), Pengalaman (YoE), dan Level Jabatan** berbasis Regex + AI!
+Didesain khusus untuk mahasiswa, fresh graduate, dan alumni **Teknologi Informasi, Ilmu Komputer, dan Sistem Informasi (UI, ITB, UGM, dsb.)** yang mengincar karir di bidang:
+- **Software Engineering & DevOps**
+- **Data Science, AI & Business Intelligence (BI)**
+- **Product Management & Business Analysis (SI / APM)**
 
 Dijalankan secara otomatis dan terjadwal melalui **GitHub Actions** tanpa perlu sewa VPS/server!
 
 ---
 
-## ✨ Fitur Utama
+## ✨ Fitur Baru & Optimalisasi
 
-- ⚙️ **Konfigurasi Terpusat di `config.json`**:
-  - Semua pengaturan kata kunci, lokasi, situs loker, filter mode, dan katalog perusahaan top tier diatur dalam satu file `config.json`. Anda tidak perlu mengubah kode program.
-- 🚀 **Role Kekinian untuk Mahasiswa & Lulusan CompSci**:
-  - Termasuk posisi yang sedang happening: **Forward Deployed Engineer (FDE)**, **AI Engineer**, **Machine Learning Engineer**, **Data Scientist**, **Data Engineer**, **DevOps / Cloud Engineer**, **Fullstack**, **Backend**, **Frontend**, dan **Mobile Developer**.
-- 🧠 **Smart Extraction (Skills, YoE, Level)**:
-  - **Keahlian (Tech Stack)**: Otomatis mendeteksi bahasa pemrograman, framework, dan tools (React, Next.js, Node.js, FastAPI, PyTorch, Docker, Kubernetes, AWS, SQL, dsb.).
-  - **Pengalaman (YoE)**: Otomatis mengekstrak tahun pengalaman yang dibutuhkan (cth: `2-4 tahun`, `Min. 1 tahun`, `Fresh Graduate (0-1 tahun)`, `Internship`).
-  - **Level Jabatan**: Mengklasifikasikan lowongan menjadi `Junior / Associate`, `Internship`, `Mid-Level`, atau `Senior / Lead`.
-- 🤖 **Integrasi AI Microservice (Opsional / Siap Deploy ke VPS)**:
-  - Jika `AI_API_URL` dan `AI_API_KEY` diisi di environment variable / secret, bot akan memanggil endpoint AI VPS Anda untuk ekstraksi dan ringkasan mendalam.
-  - Jika kosong, bot otomatis fallback ke **Rule-Based Regex Extractor** lokal tanpa error.
-- 🏆 **Kurasi & Deteksi Perusahaan Top Tier**:
-  - **Big 4 & Strategy Consulting**: PwC, Deloitte, EY, KPMG, McKinsey, BCG, Bain, Accenture.
-  - **Top Tech Giants & Unicorns**: GoTo (Gojek & Tokopedia), Traveloka, Shopee / Sea, Grab, Blibli, Bukalapak, DANA, Xendit, Kredivo, eFishery, Ruangguru, Google, Microsoft, AWS, ByteDance / TikTok, Meta.
-  - **Top Tier Banking & FinTech**: BCA, Bank Mandiri, BRI, BNI, Bank Indonesia (BI), DBS Bank, CIMB Niaga, OCBC, Bibit, Ajaib.
-  - **Top Conglomerates, Telco & FMCG**: Telkomsel, Astra International, Unilever, Nestlé, P&G, Danone, Indofood, Paragon (Wardah), Pertamina.
-- 🎯 **3 Mode Filter Perusahaan (`filter_mode`)**:
-  - `highlight` *(Default)*: Mengirim semua lowongan, namun loker dari Top Tier otomatis diberi **Badge Emas Khusus** dan diposisikan di urutan paling atas.
-  - `only_top`: Eksklusif **HANYA** mengirim lowongan jika perusahaannya berasal dari daftar Top Tier.
-  - `all`: Kirim semua lowongan apa adanya.
-- 🚫 **Anti Duplikasi**: Menyimpan riwayat lowongan di `seen_jobs.json` yang di-commit otomatis kembali ke repository oleh GitHub Actions.
+### 1. 📢 Multi-Channel Stream Routing (Anti-Berisik)
+Alih-alih menumpuk 20+ jenis lowongan dalam satu channel Discord, bot otomatis membagi alert ke channel yang sesuai dengan tema karir:
+
+| Stream | Channel Rekomendasi | Environment Secret | Warna Embed | Cakupan Posisi |
+| :--- | :--- | :--- | :--- | :--- |
+| **Tech & Engineering** | `#tech-dev` | `DISCORD_WEBHOOK_TECH` | 🔵 **Biru** (`#3498DB`) | Software Engineer, Backend, Frontend, Fullstack, FDE, Mobile, DevOps |
+| **Data & AI** | `#data-ai` | `DISCORD_WEBHOOK_DATA` | 🟣 **Ungu** (`#9B59B6`) | Data Scientist, Data Engineer, Data Analyst, Machine Learning, AI, BI |
+| **Product & Analysis** | `#product-biz` | `DISCORD_WEBHOOK_PRODUCT` | 🟠 **Oranye** (`#E67E22`) | Product Manager, APM, Product Owner, Business Analyst, System Analyst |
+| **Top Tier / Big 4** | *(Semua Stream)* | *(Otomatis)* | 🟡 **Emas** (`#F1C40F`) | Perusahaan Top Tier di stream mana pun mendapat badge & warna emas |
+
+> **Catatan Fallback:** Jika Anda hanya mengisi `DISCORD_WEBHOOK_URL` (1 channel saja), semua lowongan otomatis dikirim ke channel tersebut.
 
 ---
 
-## 🛠️ Format Payload AI (Jika Deploy ke VPS)
-
-Jika Anda mendeploy microservice AI (misal FastAPI + LLM seperti Ollama / OpenAI / vLLM) ke VPS:
-
-**Request POST ke `AI_API_URL`**:
-```json
-{
-  "title": "Junior Frontend Engineer",
-  "company": "PwC Indonesia",
-  "description": "Full job description text..."
-}
-```
-
-**Expected JSON Response dari AI VPS**:
-```json
-{
-  "skills": ["React", "TypeScript", "Tailwind CSS", "Docker"],
-  "yoe": "1-2 tahun",
-  "seniority": "Junior / Associate",
-  "summary": "Membangun sistem antarmuka web modern dengan React dan TypeScript."
-}
-```
-
-*Catatan: Jika service VPS Anda down atau tidak disetel, bot tetap berjalan normal menggunakan rule-based extractor bawaan.*
+### 2. 🚫 Filter Kata Kunci Negatif (`exclude_title_keywords`)
+Mencegah salah tangkap lowongan non-IT untuk posisi Product & Business Analysis (seperti Sales, Medis, Dapur, atau level Senior/Lead jika fokus ke entry-level):
+- **Level Tinggi yang Dieliminasi**: `Senior`, `Lead`, `Principal`, `Head of`, `Director`, `VP`.
+- **Posisi Non-IT yang Dieliminasi**: `Product Marketing`, `Medical Representative`, `Sales Representative`, `Product Specialist`, `Chef`, `Cook`, `Barista`, `Nurse`, `Doctor`.
 
 ---
 
-## 🚀 Panduan Setup di GitHub Repository
-
-### 1. Dapatkan Webhook URL dari Discord
-1. Buka aplikasi Discord dan masuk ke server Discord Anda.
-2. Buka **Server Settings** (atau klik ikon gerigi pada channel tujuan alert).
-3. Pilih menu **Integrations** > **Webhooks** > **New Webhook**.
-4. Beri nama bot (misal: `Job Alerts`) dan pilih channel tujuan.
-5. Klik **Copy Webhook URL**.
+### 3. 🎓 Level & Seniority Filtering (`allowed_experience_levels`)
+Secara default menyaring lowongan agar sesuai untuk mahasiswa, fresh graduate, dan junior:
+- `internship` (Magang / Mahasiswa)
+- `entry_level` (Fresh Graduate / 0-1 tahun)
+- `associate` (Junior / Associate / 1-3 tahun)
+- `mid_senior` (Mid-Level)
 
 ---
 
-### 2. Pasang Secret di GitHub Repository
-1. Buka repository GitHub: `https://github.com/Abbilville/job-scraper`
-2. Masuk ke tab **Settings** > **Secrets and variables** > **Actions**.
-3. Klik tombol hijau **New repository secret**.
-4. Tambahkan secret berikut:
-   - `DISCORD_WEBHOOK_URL` *(Wajib)*: Masukkan URL Webhook Discord Anda.
-   - `AI_API_URL` *(Opsional)*: URL endpoint AI di VPS Anda (cth: `https://ai.domainanda.com/extract`).
-   - `AI_API_KEY` *(Opsional)*: Bearer token autentikasi jika endpoint AI dilindungi.
+### 4. 🏢 Perusahaan Top Tier Tambahan
+Katalog perusahaan di `config.json` mencakup:
+- **Big 4 & Strategy Consulting**: PwC, Deloitte, EY, KPMG, McKinsey, BCG, Bain, Accenture.
+- **Top Tech, Unicorns & Enablers**: GoTo, Traveloka, Shopee / Sea, Grab, **tiket.com**, Blibli, Bukalapak, DANA, Xendit, Kredivo, eFishery, Ajaib, Bibit / Stockbit, **DKATALIS (Bank Jago)**, **Sirclo**, **Komerce**, Ruangguru, Google, Microsoft, AWS, ByteDance, Meta.
+- **Top Tier Banking & FinTech**: BCA, Bank Mandiri, BRI, BNI, Bank Indonesia (BI), DBS, CIMB Niaga, OCBC, BTPN / Jenius.
+- **Conglomerates, Healthcare & FMCG**: Telkom/Telkomsel, Astra International, Unilever, Nestlé, P&G, Danone, Paragon (Wardah), Indofood, **Mayora**, **Wings Group**, **Kalbe Farma**, Pertamina.
 
 ---
 
-### 3. Aktifkan Izin Read & Write Workflow (Penting!)
-Agar GitHub Actions diizinkan untuk meng-commit kembali file `seen_jobs.json`:
-
-1. Di repository GitHub Anda, buka tab **Settings**.
-2. Di sidebar kiri, pilih **Actions** > **General**.
-3. Gulir ke bawah hingga bagian **Workflow permissions**.
-4. Pilih opsi **Read and write permissions**.
-5. Klik **Save**.
+### 5. 🛠️ Smart Tech Stack & SI Skills Extraction
+Mendeteksi keterampilan khusus dari deskripsi loker:
+- **Product & SI**: `Jira`, `Confluence`, `Figma`, `Wireframing`, `PRD`, `User Stories`, `BPMN`, `UML`, `BRD`, `FSD`, `A/B Testing`, `Mixpanel`, `Product Roadmap`, `Agile/Scrum`.
+- **BI & Data**: `Power BI`, `Tableau`, `Looker`, `Metabase`, `DAX`, `Excel`, `SQL`, `Data Warehouse`, `ETL`, `dbt`, `Snowflake`, `BigQuery`.
+- **Engineering & AI**: `Python`, `TypeScript`, `React`, `Next.js`, `FastAPI`, `Docker`, `Kubernetes`, `AWS`, `PyTorch`, `LLM`, `RAG`, dsb.
 
 ---
 
-### 4. Menjalankan Manual (Testing via GitHub Actions)
-1. Buka tab **Actions** di repository GitHub Anda.
-2. Pilih workflow **Job Alert Bot** di sebelah kiri.
-3. Klik tombol dropdown **Run workflow**.
-4. Anda dapat langsung klik tombol hijau **Run workflow** untuk menjalankan dengan pengaturan `config.json`.
+## 🚀 Panduan Setup GitHub Repository
+
+### 1. Pasang Webhook Discord
+Buat webhook di Discord (bisa 1 channel umum atau 3 channel terpisah sesuai stream):
+- **Opsi A (Satu Channel untuk Semua)**: Buat 1 webhook lalu simpan sebagai `DISCORD_WEBHOOK_URL`.
+- **Opsi B (Rekomendasi - Multi-Channel)**:
+  1. Channel `#tech-dev` -> Webhook URL -> Simpan sebagai secret `DISCORD_WEBHOOK_TECH`
+  2. Channel `#data-ai` -> Webhook URL -> Simpan sebagai secret `DISCORD_WEBHOOK_DATA`
+  3. Channel `#product-biz` -> Webhook URL -> Simpan sebagai secret `DISCORD_WEBHOOK_PRODUCT`
+
+### 2. Pasang Secret di GitHub
+1. Buka repo: [https://github.com/Abbilville/job-scraper](https://github.com/Abbilville/job-scraper)
+2. Masuk ke **Settings** > **Secrets and variables** > **Actions**.
+3. Klik **New repository secret**:
+   - `DISCORD_WEBHOOK_URL` *(Fallback default)*
+   - `DISCORD_WEBHOOK_TECH` *(Opsional)*
+   - `DISCORD_WEBHOOK_DATA` *(Opsional)*
+   - `DISCORD_WEBHOOK_PRODUCT` *(Opsional)*
+   - `AI_API_URL` *(Opsional - jika deploy AI ke VPS)*
+   - `AI_API_KEY` *(Opsional)*
+
+### 3. Izin Read & Write Workflow (Sekali Saja)
+1. Buka tab **Settings** > **Actions** > **General**.
+2. Gulir ke bawah ke bagian **Workflow permissions**.
+3. Pilih **Read and write permissions** lalu klik **Save**.
+
+### 4. Jalankan Workflow
+1. Buka tab **Actions** di GitHub.
+2. Pilih workflow **Job Alert Bot** > klik **Run workflow**.
 
 ---
 
-## 💻 Penggunaan Lokal (Local Development)
+## 💻 Menjalankan Secara Lokal (Local Development)
 
-### 1. Setup Virtual Environment
 ```bash
-# Clone repository
+# Clone & masuk folder
 git clone https://github.com/Abbilville/job-scraper.git
 cd job-scraper
 
-# Buat virtual environment
+# Setup venv
 python -m venv .venv
-
-# Aktifkan virtual environment
-# Windows:
-.venv\Scripts\activate
-# Linux/macOS:
-source .venv/bin/activate
+.venv\Scripts\activate   # Windows
+# source .venv/bin/activate # Linux/Mac
 
 # Install dependensi
 pip install -r requirements.txt
-```
 
-### 2. Atur Environment Variable
-Salin template `.env.example`:
-```bash
-cp .env.example .env
-```
-Buka `.env` dan masukkan `DISCORD_WEBHOOK_URL` Anda.
+# Menjalankan unit tests
+python -m unittest test_smoke.py
 
-### 3. Eksekusi Script
-```bash
-# Menjalankan dalam mode Dry Run (hanya preview di terminal, tanpa kirim ke Discord)
+# Menjalankan Dry Run (preview di terminal tanpa mengirim ke Discord)
 python main.py --dry-run
-
-# Menjalankan hanya untuk lowongan Top Tier (Big 4 / Top Tech)
-python main.py --dry-run --filter-mode only_top
-
-# Menjalankan normal (mengirim ke Discord dan update seen_jobs.json)
-python main.py
 ```
 
 ---
 
-## 📁 Struktur Direktori
+## 📁 Struktur Direktori Proyek
 
 ```text
 job-scraper/
 ├── .github/
 │   └── workflows/
-│       └── job_alert.yml       # Konfigurasi cron & manual trigger GitHub Actions
-├── .env.example                # Template variabel lingkungan
-├── .gitignore                  # Berkas yang diabaikan Git
-├── config.json                 # PUSAT PENGATURAN (search terms, lokasi, sites, top companies)
-├── config.py                   # Loader config.json & env override
+│       └── job_alert.yml       # Workflow GitHub Actions (cron & dispatch)
+├── .env.example                # Template konfigurasi environment variables
+├── .gitignore                  # Berkas yang diabaikan Git (.venv, __pycache__, .env)
+├── config.json                 # PUSAT KONTROL (search terms, exclude keywords, streams, companies)
+├── config.py                   # Loader konfigurasi & resolver multi-webhook
 ├── company_filter.py           # Classifier Top Companies (Big 4, Tech, Bank, FMCG)
-├── extractor.py                # Ekstraktor Skills, YoE, Seniority (Regex + AI HTTP Client)
-├── dedup.py                    # Deduplikasi riwayat loker (seen_jobs.json)
-├── discord_notifier.py         # Formatter Discord Embed & Webhook sender
-├── main.py                     # Entry point bot
+├── extractor.py                # Regex + AI extractor (Skills, YoE, Level)
+├── dedup.py                    # Deduplikasi riwayat alert (seen_jobs.json)
+├── discord_notifier.py         # Multi-stream router & embed builder
+├── main.py                     # Pipeline utama orchestrator bot
 ├── requirements.txt            # Dependensi Python
-├── seen_jobs.json              # Database riwayat lowongan tersimpan
-├── test_smoke.py               # Test suite unit & smoke test
+├── seen_jobs.json              # Basis data riwayat alert terkirim
+├── test_smoke.py               # Unit test suite
 └── README.md                   # Dokumentasi proyek
 ```
 
 ---
 
 ## 📄 Lisensi
-MIT License. Bebas digunakan dan dimodifikasi untuk kebutuhan komunitas atau pribadi.
+MIT License. Bebas digunakan dan dikembangkan untuk komunitas kampus maupun pribadi.

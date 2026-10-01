@@ -14,11 +14,12 @@ class JobInsights:
     skills: List[str] = field(default_factory=list)
     yoe: Optional[str] = None
     seniority: str = "Not Specified"
+    level_code: str = "mid_senior"  # 'internship', 'entry_level', 'associate', 'mid_senior', 'senior', 'lead'
     summary: Optional[str] = None
     source: str = "rule-based"  # 'rule-based' or 'ai'
 
 
-# Curated CS & Tech Skills dictionary mapped to canonical display names
+# Curated CS, SI, Tech & Product Skills dictionary mapped to canonical display names
 SKILLS_DICTIONARY: Dict[str, str] = {
     # Programming Languages
     r"\bpython\b": "Python",
@@ -34,6 +35,7 @@ SKILLS_DICTIONARY: Dict[str, str] = {
     r"\bphp\b": "PHP",
     r"\bruby\b": "Ruby",
     r"\bsql\b": "SQL",
+    r"\br\s+programming\b|\br\s+lang\b": "R",
 
     # Frontend Technologies
     r"\breact\b|\breact\.js\b|\breactjs\b": "React",
@@ -64,6 +66,43 @@ SKILLS_DICTIONARY: Dict[str, str] = {
     r"\breact\s*native\b": "React Native",
     r"\bandroid\b": "Android",
     r"\bios\b": "iOS",
+
+    # Product Management & Agile / Scrum
+    r"\bjira\b": "Jira",
+    r"\bconfluence\b": "Confluence",
+    r"\bfigma\b": "Figma",
+    r"\bwireframing\b|\bwireframe\b": "Wireframing",
+    r"\bprd\b|\bproduct\s*requirements?\s*doc(?:ument)?\b": "PRD",
+    r"\bproduct\s*roadmap\b": "Product Roadmap",
+    r"\buser\s*stories\b": "User Stories",
+    r"\ba/b\s*test(?:ing)?\b": "A/B Testing",
+    r"\bmixpanel\b": "Mixpanel",
+    r"\bamplitude\b": "Amplitude",
+    r"\bproduct\s*lifecycle\b": "Product Lifecycle",
+    r"\bagile\b|\bscrum\b": "Agile/Scrum",
+
+    # Business Analysis & Systems (SI)
+    r"\bbpmn\b": "BPMN",
+    r"\buml\b": "UML",
+    r"\bflowchart\b|\bdata\s*flow\s*diagram\b|\bdfd\b": "Flowchart/DFD",
+    r"\bbrd\b|\bbusiness\s*requirements?\b": "BRD",
+    r"\bfsd\b|\bfunctional\s*specifications?\b": "FSD",
+    r"\bgap\s*analysis\b": "Gap Analysis",
+    r"\bstakeholder\s*management\b": "Stakeholder Management",
+    r"\bdata\s*modeling\b": "Data Modeling",
+
+    # Business Intelligence & Analytics
+    r"\bpower\s*bi\b": "Power BI",
+    r"\btableau\b": "Tableau",
+    r"\blooker\b|\blooker\s*studio\b": "Looker",
+    r"\bmetabase\b": "Metabase",
+    r"\bdax\b": "DAX",
+    r"\bexcel\b|\badvanced\s*excel\b": "Excel",
+    r"\bdata\s*warehouse\b|\bdwh\b": "Data Warehouse",
+    r"\betl\b|\belt\b": "ETL",
+    r"\bdbt\b": "dbt",
+    r"\bsnowflake\b": "Snowflake",
+    r"\bbigquery\b": "BigQuery",
 
     # Databases & Caching
     r"\bpostgresql\b|\bpostgres\b": "PostgreSQL",
@@ -98,13 +137,10 @@ SKILLS_DICTIONARY: Dict[str, str] = {
     r"\brag\b|\bretrieval[- ]augmented\b": "RAG",
     r"\bnlp\b|\bnatural\s+language\b": "NLP",
     r"\bcomputer\s*vision\b|\bopencv\b": "Computer Vision",
-    r"\btableau\b": "Tableau",
-    r"\bpower\s*bi\b": "Power BI",
 
     # Architecture & Practices
     r"\bmicroservices\b": "Microservices",
     r"\bsystem\s*design\b": "System Design",
-    r"\bagile\b|\bscrum\b": "Agile/Scrum",
     r"\bclean\s*architecture\b": "Clean Architecture",
     r"\bunit\s*test(?:ing)?\b|\btdd\b": "Testing / TDD",
 }
@@ -115,7 +151,7 @@ COMPILED_SKILLS = [
 ]
 
 
-def extract_skills_rule_based(text: str, max_skills: int = 8) -> List[str]:
+def extract_skills_rule_based(text: str, max_skills: int = 12) -> List[str]:
     """Grep and extract matched technical skills from text using regex patterns."""
     if not text:
         return []
@@ -164,32 +200,36 @@ def extract_yoe_rule_based(text: str) -> Optional[str]:
     return None
 
 
-def extract_seniority_rule_based(title: str, text: str) -> str:
-    """Determine seniority level prioritizing job title followed by description."""
+def extract_seniority_rule_based(title: str, text: str) -> tuple[str, str]:
+    """Determine seniority level and normalized level_code prioritizing job title followed by description.
+    Returns: (display_name, level_code)
+    """
     full_str = f"{title} {text}".lower()
     title_lower = (title or "").lower()
 
     # Title check (most accurate)
     if any(k in title_lower for k in ["intern", "internship", "magang"]):
-        return "Internship"
+        return "Internship", "internship"
     if any(k in title_lower for k in ["lead", "principal", "staff engineer", "head", "architect", "tech lead"]):
-        return "Lead / Principal"
+        return "Lead / Principal", "lead"
     if any(k in title_lower for k in ["senior", "sr.", "sr "]):
-        return "Senior"
+        return "Senior", "senior"
     if any(k in title_lower for k in ["junior", "jr.", "jr ", "entry", "associate", "fresh grad"]):
-        return "Junior / Associate"
+        return "Junior / Associate", "associate"
     if any(k in title_lower for k in ["mid", "intermediate"]):
-        return "Mid-Level"
+        return "Mid-Level", "mid_senior"
 
     # Fallback to description keywords
     if "senior" in full_str:
-        return "Senior"
-    if any(k in full_str for k in ["junior", "associate", "fresh graduate"]):
-        return "Junior / Associate"
+        return "Senior", "senior"
+    if any(k in full_str for k in ["junior", "associate"]):
+        return "Junior / Associate", "associate"
+    if any(k in full_str for k in ["fresh graduate", "entry level"]):
+        return "Fresh Graduate / Entry", "entry_level"
     if any(k in full_str for k in ["intern", "magang"]):
-        return "Internship"
+        return "Internship", "internship"
 
-    return "Mid-Level / General"
+    return "Mid-Level / General", "mid_senior"
 
 
 def extract_with_ai(
@@ -222,10 +262,27 @@ def extract_with_ai(
             if isinstance(skills, str):
                 skills = [s.strip() for s in skills.split(",") if s.strip()]
 
+            seniority_display = data.get("seniority", "Not Specified")
+            # Map seniority to level_code
+            sen_lower = str(seniority_display).lower()
+            if "intern" in sen_lower:
+                lvl_code = "internship"
+            elif "entry" in sen_lower or "fresh" in sen_lower:
+                lvl_code = "entry_level"
+            elif "junior" in sen_lower or "associate" in sen_lower:
+                lvl_code = "associate"
+            elif "senior" in sen_lower:
+                lvl_code = "senior"
+            elif "lead" in sen_lower or "principal" in sen_lower:
+                lvl_code = "lead"
+            else:
+                lvl_code = "mid_senior"
+
             return JobInsights(
                 skills=skills[:8] if isinstance(skills, list) else [],
                 yoe=data.get("yoe"),
-                seniority=data.get("seniority", "Not Specified"),
+                seniority=seniority_display,
+                level_code=lvl_code,
                 summary=data.get("summary"),
                 source="ai",
             )
@@ -266,12 +323,13 @@ def extract_job_insights(
     # Local Rule-Based Extraction
     skills = extract_skills_rule_based(combined_text)
     yoe = extract_yoe_rule_based(combined_text)
-    seniority = extract_seniority_rule_based(title, combined_text)
+    seniority, level_code = extract_seniority_rule_based(title, combined_text)
 
     return JobInsights(
         skills=skills,
         yoe=yoe,
         seniority=seniority,
+        level_code=level_code,
         summary=None,
         source="rule-based",
     )

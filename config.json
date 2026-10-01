@@ -1,17 +1,27 @@
 {
   "search_settings": {
     "search_terms": [
-      "Frontend Developer",
       "Software Engineer",
       "Backend Developer",
+      "Frontend Developer",
       "Fullstack Developer",
       "Forward Deployed Engineer",
+      "Mobile Developer",
+      "DevOps Engineer",
       "AI Engineer",
       "Machine Learning Engineer",
       "Data Scientist",
       "Data Engineer",
-      "DevOps Engineer",
-      "Mobile Developer"
+      "Data Analyst",
+      "Business Intelligence",
+      "BI Analyst",
+      "BI Developer",
+      "Product Manager",
+      "Associate Product Manager",
+      "Product Owner",
+      "Business Analyst",
+      "IT Business Analyst",
+      "System Analyst"
     ],
     "locations": [
       "Indonesia",
@@ -29,8 +39,81 @@
     "enable_indeed_fallback": true
   },
   "filtering": {
-    "filter_mode": "highlight",
-    "notes": "Pilihan: 'highlight' (kirim semua, tandai & prioritaskan Top Tier), 'only_top' (hanya kirim Top Tier), 'all' (semua tanpa pembedaan)"
+    "exclude_title_keywords": [
+      "Senior",
+      "Lead",
+      "Principal",
+      "Head of",
+      "Director",
+      "VP",
+      "Product Marketing",
+      "Medical Representative",
+      "Sales Representative",
+      "Product Specialist",
+      "Chef",
+      "Cook",
+      "Barista",
+      "Nurse",
+      "Doctor"
+    ],
+    "allowed_experience_levels": [
+      "internship",
+      "entry_level",
+      "associate",
+      "mid_senior"
+    ]
+  },
+  "discord_routing": {
+    "enable_stream_routing": true,
+    "default_webhook_env": "DISCORD_WEBHOOK_URL",
+    "streams": {
+      "tech_engineering": {
+        "name": "Tech & Engineering",
+        "channel_webhook_env": "DISCORD_WEBHOOK_TECH",
+        "keywords": [
+          "Software",
+          "Backend",
+          "Frontend",
+          "Fullstack",
+          "Forward Deployed",
+          "DevOps",
+          "Mobile",
+          "Engineer",
+          "Developer"
+        ],
+        "color": 3447003
+      },
+      "data_and_ai": {
+        "name": "Data & AI",
+        "channel_webhook_env": "DISCORD_WEBHOOK_DATA",
+        "keywords": [
+          "Data Scientist",
+          "Data Engineer",
+          "Data Analyst",
+          "Machine Learning",
+          "AI Engineer",
+          "Business Intelligence",
+          "BI Analyst",
+          "BI Developer",
+          "BI"
+        ],
+        "color": 10181046
+      },
+      "product_and_analysis": {
+        "name": "Product & Business Analysis",
+        "channel_webhook_env": "DISCORD_WEBHOOK_PRODUCT",
+        "keywords": [
+          "Product Manager",
+          "APM",
+          "Associate Product",
+          "Product Owner",
+          "Business Analyst",
+          "System Analyst",
+          "IT Business Analyst"
+        ],
+        "color": 15105570
+      }
+    }
   },
   "top_companies": {
     "Big 4 & Strategy Consulting": [
@@ -97,9 +180,14 @@
         "aliases": ["grab", "grab indonesia", "ovo"]
       },
       {
+        "name": "tiket.com",
+        "badge": "🚀 Top Tech Unicorn",
+        "aliases": ["tiket.com", "pt global tiket network", "tiket"]
+      },
+      {
         "name": "Blibli / GDP Venture",
         "badge": "🚀 Top Tech Unicorn",
-        "aliases": ["blibli", "pt global digital niaga", "gdp venture", "tiket.com"]
+        "aliases": ["blibli", "pt global digital niaga", "gdp venture"]
       },
       {
         "name": "Bukalapak",
@@ -135,6 +223,21 @@
         "name": "Bibit / Stockbit",
         "badge": "🚀 Top FinTech",
         "aliases": ["bibit", "stockbit"]
+      },
+      {
+        "name": "DKATALIS",
+        "badge": "🚀 Digital Banking & Tech Lab",
+        "aliases": ["dkatalis", "katalis", "bank jago"]
+      },
+      {
+        "name": "Sirclo",
+        "badge": "🚀 Top E-Commerce Enabler",
+        "aliases": ["sirclo", "pt sirclo teknologi indonesia"]
+      },
+      {
+        "name": "Komerce",
+        "badge": "🚀 Top E-Commerce Enabler",
+        "aliases": ["komerce", "pt komerce"]
       },
       {
         "name": "Ruangguru",
@@ -214,7 +317,7 @@
         "aliases": ["btpn", "jenius", "bank btpn"]
       }
     ],
-    "Top Conglomerates, Telco & FMCG": [
+    "Top Conglomerates, Healthcare & FMCG": [
       {
         "name": "Telkom / Telkomsel",
         "badge": "📡 Top Telco & Digital",
@@ -254,6 +357,21 @@
         "name": "Indofood",
         "badge": "🌟 Top FMCG",
         "aliases": ["indofood", "indofood cbp", "pt indofood"]
+      },
+      {
+        "name": "Mayora",
+        "badge": "🌟 Top FMCG",
+        "aliases": ["mayora", "pt mayora indah", "mayora group"]
+      },
+      {
+        "name": "Wings Group",
+        "badge": "🌟 Top FMCG",
+        "aliases": ["wings", "wings group", "pt sayap mas utama"]
+      },
+      {
+        "name": "Kalbe Farma",
+        "badge": "💊 Top Healthcare & Pharma",
+        "aliases": ["kalbe", "kalbe farma", "pt kalbe farma"]
       },
       {
         "name": "Pertamina",

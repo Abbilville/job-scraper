@@ -1,4 +1,4 @@
-"""Discord Webhook Notifier with rich embed formatting, top employer highlights, and AI insights."""
+"""Discord Webhook Notifier with stream routing and color coding."""
 
 import logging
 import time
@@ -11,10 +11,13 @@ from config import Config
 logger = logging.getLogger("job_alerts.discord")
 
 # Color constants (decimal representation for Discord API)
-COLOR_TOP_TIER = 0xF1C40F   # Gold / Featured Employer
-COLOR_LINKEDIN = 0x0A66C2   # LinkedIn Blue
-COLOR_INDEED = 0x2164F3     # Indeed Blue
-COLOR_DEFAULT = 0x5865F2    # Discord Blurple
+COLOR_TOP_TIER = 0xF1C40F       # Gold / Featured Employer
+COLOR_STREAM_TECH = 0x3498DB     # Blue: Tech & Engineering
+COLOR_STREAM_DATA = 0x9B59B6     # Purple: Data & AI
+COLOR_STREAM_PRODUCT = 0xE67E22  # Orange: Product & Business Analysis
+COLOR_LINKEDIN = 0x0A66C2       # LinkedIn Blue
+COLOR_INDEED = 0x2164F3         # Indeed Blue
+COLOR_DEFAULT = 0x5865F2        # Discord Blurple
 
 
 def _format_salary(job: Dict[str, Any]) -> Optional[str]:
@@ -47,23 +50,41 @@ def _format_salary(job: Dict[str, Any]) -> Optional[str]:
     return None
 
 
-def _get_embed_color(site: Optional[str], is_top_tier: bool = False) -> int:
-    """Select appropriate brand color based on top tier status and job board."""
+def _get_embed_color(job: Dict[str, Any], is_top_tier: bool = False) -> int:
+    """Select appropriate brand color:
+    1. Gold for Top Tier / Big 4.
+    2. Stream-specific color (Blue for Tech, Purple for Data/AI, Orange for Product).
+    3. Fallback to site color.
+    """
     if is_top_tier:
         return COLOR_TOP_TIER
 
-    if not site:
-        return COLOR_DEFAULT
-    site_lower = str(site).lower()
-    if "linkedin" in site_lower:
+    stream_color = job.get("stream_color")
+    if stream_color:
+        try:
+            return int(stream_color)
+        except (ValueError, TypeError):
+            pass
+
+    stream_key = job.get("stream_key")
+    if stream_key == "tech_engineering":
+        return COLOR_STREAM_TECH
+    elif stream_key == "data_and_ai":
+        return COLOR_STREAM_DATA
+    elif stream_key == "product_and_analysis":
+        return COLOR_STREAM_PRODUCT
+
+    site = str(job.get("site") or "").lower()
+    if "linkedin" in site:
         return COLOR_LINKEDIN
-    if "indeed" in site_lower:
+    if "indeed" in site:
         return COLOR_INDEED
+
     return COLOR_DEFAULT
 
 
 def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
-    """Build a Discord Embed dictionary from a job record with optional top employer highlight and insights."""
+    """Build a Discord Embed dictionary from a job record with stream routing, top employer highlight, and insights."""
     raw_title = str(job.get("title") or "Lowongan Pekerjaan Baru")
     company = str(job.get("company") or "Perusahaan Tidak Disebutkan")
     raw_location = str(job.get("location") or "Lokasi Tidak Tersedia")
@@ -81,6 +102,7 @@ def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
 
     # Check extracted insights (Skills, YoE, Seniority)
     insights = job.get("insights")
+    stream_name = job.get("stream_name", "General Tech")
 
     fields = []
 
@@ -92,10 +114,14 @@ def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
             "inline": False,
         })
 
-    # 2. Main company & location fields
+    # 2. Main metadata fields
     fields.extend([
+        {"name": "📁 Stream", "value": f"**{stream_name}**", "inline": True},
         {"name": "🏢 Perusahaan", "value": company[:1000], "inline": True},
         {"name": "📍 Lokasi", "value": location[:1000], "inline": True},
+    ])
+
+    fields.extend([
         {"name": "🌐 Sumber", "value": site[:1000], "inline": True},
         {"name": "📅 Diposting", "value": str(date_posted)[:1000], "inline": True},
     ])
@@ -116,9 +142,8 @@ def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
     if salary:
         fields.append({"name": "💰 Estimasi Gaji", "value": salary[:1000], "inline": True})
 
-    # 6. Insights: Technical Skills (Badges)
+    # 6. Insights: Technical & SI Skills (Badges)
     if insights and insights.skills:
-        # Format skills as markdown inline code badges
         skills_formatted = " ".join([f"`{s}`" for s in insights.skills[:10]])
         fields.append({
             "name": "🛠️ Keahlian / Tech Stack",
@@ -137,7 +162,7 @@ def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
     # 8. Query context
     matched_query = job.get("matched_query")
     if matched_query:
-        fields.append({"name": "🎯 Pencarian", "value": str(matched_query)[:1000], "inline": True})
+        fields.append({"name": "🎯 Pencarian Asal", "value": str(matched_query)[:1000], "inline": True})
 
     # 9. Link to apply
     if url:
@@ -145,14 +170,13 @@ def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
 
     # Footer source indicator
     ai_tag = "🤖 AI Analyzed" if (insights and insights.source == "ai") else "⚡ Rule-Based"
+    footer_text = f"Job Alert Bot • {stream_name} • {ai_tag}"
     if is_top_tier:
-        footer_text = f"Job Alert Bot • {company_match.category} • {ai_tag}"
-    else:
-        footer_text = f"Job Alert Bot • Powered by JobSpy • {ai_tag}"
+        footer_text = f"Job Alert Bot • {company_match.category} • {stream_name} • {ai_tag}"
 
     embed: Dict[str, Any] = {
         "title": raw_title[:250],
-        "color": _get_embed_color(job.get("site"), is_top_tier=is_top_tier),
+        "color": _get_embed_color(job, is_top_tier=is_top_tier),
         "fields": fields,
         "footer": {
             "text": footer_text,
@@ -172,43 +196,83 @@ def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
 
 
 class DiscordNotifier:
-    """Handles dispatching job alert embeds to Discord Webhooks."""
+    """Handles dispatching job alert embeds to Discord Webhooks with multi-stream channel routing."""
 
-    def __init__(self, webhook_url: str, delay: float = 1.0):
-        self.webhook_url = webhook_url.strip()
+    def __init__(
+        self,
+        default_webhook_url: str = "",
+        config: Optional[Config] = None,
+        delay: float = 1.0,
+    ):
+        self.default_webhook_url = default_webhook_url.strip()
+        self.config = config
         self.delay = max(0.2, delay)
 
-    def is_configured(self) -> bool:
-        return bool(self.webhook_url and self.webhook_url.startswith("https://discord.com/api/webhooks/"))
+    def has_any_webhook(self) -> bool:
+        """Check if at least one webhook URL is configured."""
+        if self.default_webhook_url and self.default_webhook_url.startswith("https://discord.com/api/webhooks/"):
+            return True
+
+        if self.config:
+            for stream_key in ["tech_engineering", "data_and_ai", "product_and_analysis"]:
+                url = self.config.get_webhook_for_stream(stream_key)
+                if url and url.startswith("https://discord.com/api/webhooks/"):
+                    return True
+
+        return False
+
+    def get_webhook_for_job(self, job: Dict[str, Any]) -> str:
+        """Resolve specific target webhook URL for the job's stream, falling back to default webhook."""
+        if self.config:
+            stream_key = job.get("stream_key")
+            url = self.config.get_webhook_for_stream(stream_key)
+            if url and url.startswith("https://discord.com/api/webhooks/"):
+                return url
+
+        return self.default_webhook_url
 
     def send_single_job(self, job: Dict[str, Any], max_retries: int = 3) -> bool:
-        """Send one job alert embed to Discord webhook with retry logic."""
-        if not self.is_configured():
-            logger.warning("DISCORD_WEBHOOK_URL tidak dikonfigurasi atau tidak valid. Melewati pengiriman.")
+        """Send one job alert embed to the appropriate stream webhook with retry logic."""
+        target_webhook = self.get_webhook_for_job(job)
+        if not target_webhook or not target_webhook.startswith("https://discord.com/api/webhooks/"):
+            logger.warning(
+                "Tidak ada webhook URL yang valid untuk stream '%s' (job: '%s'). Melewati pengiriman.",
+                job.get("stream_key"),
+                job.get("title"),
+            )
             return False
 
         embed = build_job_embed(job)
         payload = {
-            "username": "Job Alert Bot",
+            "username": f"Job Alert Bot [{job.get('stream_name', 'Jobs')}]",
             "embeds": [embed],
         }
 
         for attempt in range(1, max_retries + 1):
             try:
-                response = requests.post(self.webhook_url, json=payload, timeout=15)
+                response = requests.post(target_webhook, json=payload, timeout=15)
 
                 if response.status_code in (200, 204):
-                    logger.info("Berhasil mengirim alert: '%s' (%s)", job.get("title"), job.get("company"))
+                    logger.info(
+                        "Berhasil mengirim alert [%s]: '%s' (%s)",
+                        job.get("stream_name"),
+                        job.get("title"),
+                        job.get("company"),
+                    )
                     return True
 
                 if response.status_code == 429:
-                    # Rate limited: wait specified time in response
                     retry_after = 2.0
                     try:
                         retry_after = float(response.json().get("retry_after", 2.0))
                     except Exception:
                         pass
-                    logger.warning("Discord Rate Limit tercapai. Menunggu %.2f detik (attempt %d/%d)...", retry_after, attempt, max_retries)
+                    logger.warning(
+                        "Discord Rate Limit tercapai. Menunggu %.2f detik (attempt %d/%d)...",
+                        retry_after,
+                        attempt,
+                        max_retries,
+                    )
                     time.sleep(retry_after)
                     continue
 
@@ -221,17 +285,17 @@ class DiscordNotifier:
         return False
 
     def notify_jobs(self, jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """Send alerts for a list of jobs. Returns the list of successfully sent jobs."""
+        """Send alerts for a list of jobs routed to their respective channel streams."""
         if not jobs:
             logger.info("Tidak ada lowongan baru untuk dikirim ke Discord.")
             return []
 
-        if not self.is_configured():
-            logger.warning("DISCORD_WEBHOOK_URL kosong. Mode dry-run/preview aktif (tidak ada pesan dikirim ke Discord).")
+        if not self.has_any_webhook():
+            logger.warning("Tidak ada webhook Discord yang dikonfigurasi. Mode dry-run/preview aktif.")
             return []
 
         successful: List[Dict[str, Any]] = []
-        logger.info("Mengirim %d lowongan baru ke Discord...", len(jobs))
+        logger.info("Mengirim %d lowongan baru ke Discord multi-channel streams...", len(jobs))
 
         for idx, job in enumerate(jobs, 1):
             ok = self.send_single_job(job)

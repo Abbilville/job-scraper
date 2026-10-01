@@ -61,9 +61,17 @@ jobs:
 
       - name: Run Job Alert Script
         env:
+          # Multi-channel webhooks (Stream routing)
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_WEBHOOK_TECH: ${{ secrets.DISCORD_WEBHOOK_TECH }}
+          DISCORD_WEBHOOK_DATA: ${{ secrets.DISCORD_WEBHOOK_DATA }}
+          DISCORD_WEBHOOK_PRODUCT: ${{ secrets.DISCORD_WEBHOOK_PRODUCT }}
+
+          # AI Extractor (Opsional VPS)
           AI_API_URL: ${{ secrets.AI_API_URL }}
           AI_API_KEY: ${{ secrets.AI_API_KEY }}
+
+          # Optional runtime overrides (bisa dikosongkan untuk memakai nilai config.json)
           SEARCH_TERMS: ${{ inputs.search_terms || vars.SEARCH_TERMS || '' }}
           LOCATIONS: ${{ inputs.locations || vars.LOCATIONS || '' }}
           FILTER_MODE: ${{ inputs.filter_mode || vars.FILTER_MODE || '' }}

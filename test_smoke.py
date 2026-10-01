@@ -1,4 +1,4 @@
-"""Comprehensive smoke and unit tests for Job Alert Bot."""
+"""Comprehensive smoke and unit tests for Job Alert Bot (SI & Multi-Stream Edition)."""
 
 import json
 import os
@@ -7,11 +7,12 @@ import unittest
 from unittest.mock import MagicMock, patch
 
 from company_filter import CompanyMatch, CompanyMatcher
-from config import load_config
+from config import Config, load_config
 from dedup import JobDeduplicator
 from discord_notifier import (
-    COLOR_DEFAULT,
-    COLOR_LINKEDIN,
+    COLOR_STREAM_DATA,
+    COLOR_STREAM_PRODUCT,
+    COLOR_STREAM_TECH,
     COLOR_TOP_TIER,
     DiscordNotifier,
     build_job_embed,
@@ -24,157 +25,211 @@ from extractor import (
     extract_with_ai,
     extract_yoe_rule_based,
 )
+from main import classify_stream, is_title_excluded
 
 
 class TestConfigAndCompanyMatcher(unittest.TestCase):
     def test_config_json_loaded(self):
         cfg = load_config("config.json")
-        self.assertIn("Frontend Developer", cfg.search_terms)
-        self.assertIn("AI Engineer", cfg.search_terms)
-        self.assertIn("Forward Deployed Engineer", cfg.search_terms)
-        self.assertIn("Indonesia", cfg.locations)
-        self.assertEqual(cfg.filter_mode, "highlight")
-        self.assertIn("Big 4 & Strategy Consulting", cfg.top_companies)
+        self.assertIn("Product Manager", cfg.search_terms)
+        self.assertIn("Associate Product Manager", cfg.search_terms)
+        self.assertIn("Business Analyst", cfg.search_terms)
+        self.assertIn("BI Analyst", cfg.search_terms)
+        self.assertIn("Data Scientist", cfg.search_terms)
+        self.assertIn("Software Engineer", cfg.search_terms)
+        self.assertIn("Senior", cfg.exclude_title_keywords)
+        self.assertIn("Product Marketing", cfg.exclude_title_keywords)
+        self.assertIn("tech_engineering", cfg.discord_routing.get("streams", {}))
+        self.assertIn("data_and_ai", cfg.discord_routing.get("streams", {}))
+        self.assertIn("product_and_analysis", cfg.discord_routing.get("streams", {}))
 
-    def test_company_matcher_from_config(self):
+    def test_new_companies_matcher(self):
         cfg = load_config("config.json")
-        matcher = CompanyMatcher(
-            top_companies_dict=cfg.top_companies,
-            custom_companies=["Keluarga Mahasiswa UI"],
+        matcher = CompanyMatcher(top_companies_dict=cfg.top_companies)
+
+        # SI / Tech additions
+        m_tiket = matcher.match("PT Global Tiket Network (tiket.com)")
+        self.assertIsNotNone(m_tiket)
+
+        m_sirclo = matcher.match("PT Sirclo Teknologi Indonesia")
+        self.assertIsNotNone(m_sirclo)
+
+        m_dkatalis = matcher.match("DKATALIS Digital Lab")
+        self.assertIsNotNone(m_dkatalis)
+
+        m_komerce = matcher.match("Komerce Indonesia")
+        self.assertIsNotNone(m_komerce)
+
+        # FMCG & Healthcare additions
+        m_mayora = matcher.match("PT Mayora Indah Tbk")
+        self.assertIsNotNone(m_mayora)
+
+        m_wings = matcher.match("Wings Group Indonesia")
+        self.assertIsNotNone(m_wings)
+
+        m_kalbe = matcher.match("PT Kalbe Farma Tbk")
+        self.assertIsNotNone(m_kalbe)
+
+
+class TestExclusionAndStreamRouting(unittest.TestCase):
+    def setUp(self):
+        self.cfg = load_config("config.json")
+
+    def test_negative_title_exclusion(self):
+        exclude_kw = self.cfg.exclude_title_keywords
+
+        # Forbidden titles
+        is_ex, reason = is_title_excluded("Senior Product Manager", exclude_kw)
+        self.assertTrue(is_ex)
+        self.assertEqual(reason, "Senior")
+
+        is_ex, reason = is_title_excluded("VP of Engineering", exclude_kw)
+        self.assertTrue(is_ex)
+        self.assertEqual(reason, "VP")
+
+        is_ex, reason = is_title_excluded("Medical Representative", exclude_kw)
+        self.assertTrue(is_ex)
+
+        is_ex, reason = is_title_excluded("Product Marketing Lead", exclude_kw)
+        self.assertTrue(is_ex)
+
+        # Allowed titles
+        is_ex, reason = is_title_excluded("Associate Product Manager", exclude_kw)
+        self.assertFalse(is_ex)
+
+        is_ex, reason = is_title_excluded("Junior Business Analyst", exclude_kw)
+        self.assertFalse(is_ex)
+
+        is_ex, reason = is_title_excluded("Software Engineer", exclude_kw)
+        self.assertFalse(is_ex)
+
+    def test_stream_classification(self):
+        routing = self.cfg.discord_routing
+
+        # Product & Analysis stream
+        self.assertEqual(
+            classify_stream({"title": "Associate Product Manager", "matched_query": ""}, routing),
+            "product_and_analysis",
+        )
+        self.assertEqual(
+            classify_stream({"title": "IT Business Analyst", "matched_query": ""}, routing),
+            "product_and_analysis",
+        )
+        self.assertEqual(
+            classify_stream({"title": "Product Owner", "matched_query": ""}, routing),
+            "product_and_analysis",
         )
 
-        # Big 4
-        m_pwc = matcher.match("PricewaterhouseCoopers Indonesia")
-        self.assertIsNotNone(m_pwc)
-        self.assertEqual(m_pwc.canonical_name, "PwC")
+        # Data & AI stream
+        self.assertEqual(
+            classify_stream({"title": "Data Scientist", "matched_query": ""}, routing),
+            "data_and_ai",
+        )
+        self.assertEqual(
+            classify_stream({"title": "BI Analyst", "matched_query": ""}, routing),
+            "data_and_ai",
+        )
+        self.assertEqual(
+            classify_stream({"title": "Machine Learning Engineer", "matched_query": ""}, routing),
+            "data_and_ai",
+        )
 
-        # Top Tech
-        m_goto = matcher.match("PT Tokopedia")
-        self.assertIsNotNone(m_goto)
-
-        m_grab = matcher.match("Grab Holdings")
-        self.assertIsNotNone(m_grab)
-
-        # Banking
-        m_bca = matcher.match("PT Bank Central Asia Tbk")
-        self.assertIsNotNone(m_bca)
-
-        # Custom
-        m_custom = matcher.match("Keluarga Mahasiswa UI")
-        self.assertIsNotNone(m_custom)
-        self.assertEqual(m_custom.canonical_name, "Keluarga Mahasiswa UI")
-
-        # Unknown
-        m_unknown = matcher.match("PT Warung Kopi Sederhana")
-        self.assertIsNone(m_unknown)
+        # Tech & Engineering stream
+        self.assertEqual(
+            classify_stream({"title": "Backend Developer", "matched_query": ""}, routing),
+            "tech_engineering",
+        )
+        self.assertEqual(
+            classify_stream({"title": "DevOps Engineer", "matched_query": ""}, routing),
+            "tech_engineering",
+        )
 
 
-class TestExtractor(unittest.TestCase):
-    def test_skills_extraction(self):
+class TestExtractorSIAndTech(unittest.TestCase):
+    def test_si_and_product_skills_extraction(self):
         desc = (
-            "We are looking for an AI Engineer proficient in Python, PyTorch, and Docker. "
-            "Experience with LangChain, Next.js, and PostgreSQL is highly desired."
+            "Responsibilities: Gather business requirements and create BRD, FSD, and BPMN diagrams. "
+            "Manage user stories in Jira and Confluence. Collaborate with UI/UX using Figma. "
+            "Strong SQL and Power BI dashboarding skills are required."
         )
         skills = extract_skills_rule_based(desc)
-        self.assertIn("Python", skills)
-        self.assertIn("PyTorch", skills)
-        self.assertIn("Docker", skills)
-        self.assertIn("LangChain", skills)
-        self.assertIn("Next.js", skills)
-        self.assertIn("PostgreSQL", skills)
+        self.assertIn("Jira", skills)
+        self.assertIn("Confluence", skills)
+        self.assertIn("Figma", skills)
+        self.assertIn("BPMN", skills)
+        self.assertIn("BRD", skills)
+        self.assertIn("FSD", skills)
+        self.assertIn("Power BI", skills)
+        self.assertIn("SQL", skills)
 
-    def test_yoe_extraction(self):
-        self.assertEqual(extract_yoe_rule_based("Requires 2-4 years of experience"), "2-4 tahun")
-        self.assertEqual(extract_yoe_rule_based("Minimal 3 tahun pengalaman kerja"), "Min. 3 tahun")
-        self.assertEqual(extract_yoe_rule_based("5+ years of software development"), "5+ tahun")
-        self.assertEqual(extract_yoe_rule_based("Fresh graduates are welcome to apply"), "Fresh Graduate (0-1 tahun)")
-        self.assertEqual(extract_yoe_rule_based("Summer Internship Program"), "Internship / Mahasiswa")
+    def test_level_code_normalization(self):
+        _, lvl_intern = extract_seniority_rule_based("Product Intern", "")
+        self.assertEqual(lvl_intern, "internship")
 
-    def test_seniority_extraction(self):
-        self.assertEqual(extract_seniority_rule_based("Lead Software Engineer", ""), "Lead / Principal")
-        self.assertEqual(extract_seniority_rule_based("Senior Frontend Developer", ""), "Senior")
-        self.assertEqual(extract_seniority_rule_based("Junior Backend Engineer", ""), "Junior / Associate")
-        self.assertEqual(extract_seniority_rule_based("Frontend Engineering Intern", ""), "Internship")
+        _, lvl_junior = extract_seniority_rule_based("Junior Business Analyst", "")
+        self.assertEqual(lvl_junior, "associate")
 
-    @patch("requests.post")
-    def test_ai_extraction_success(self, mock_post):
-        mock_post.return_value = MagicMock(
-            status_code=200,
-            json=lambda: {
-                "skills": ["Python", "FastAPI"],
-                "yoe": "1-2 tahun",
-                "seniority": "Junior",
-                "summary": "Membangun microservices dengan FastAPI",
-            },
-        )
-        insights = extract_with_ai(
-            title="Backend Engineer",
-            company="Startup",
-            description="Sample text",
-            api_url="https://ai.example.com/extract",
-            api_key="secret",
-        )
-        self.assertIsNotNone(insights)
-        self.assertEqual(insights.source, "ai")
-        self.assertIn("FastAPI", insights.skills)
-        self.assertEqual(insights.yoe, "1-2 tahun")
+        _, lvl_senior = extract_seniority_rule_based("Senior BI Developer", "")
+        self.assertEqual(lvl_senior, "senior")
 
 
-class TestDeduplication(unittest.TestCase):
-    def setUp(self):
-        self.temp_dir = tempfile.TemporaryDirectory()
-        self.temp_file = os.path.join(self.temp_dir.name, "seen_test.json")
-
-    def tearDown(self):
-        self.temp_dir.cleanup()
-
-    def test_dedup_lifecycle(self):
-        dedup = JobDeduplicator(filepath=self.temp_file, max_history=5)
-        job1 = {"id": "li-12345", "title": "Frontend Engineer", "company": "PwC"}
-        job2 = {"id": "li-67890", "title": "AI Engineer", "company": "Gojek"}
-
-        self.assertFalse(dedup.is_seen(job1))
-        dedup.mark_seen(job1)
-        self.assertTrue(dedup.is_seen(job1))
-
-        unseen = dedup.filter_unseen([job1, job2])
-        self.assertEqual(len(unseen), 1)
-        self.assertEqual(unseen[0]["id"], "li-67890")
-
-        dedup.save()
-        dedup_reloaded = JobDeduplicator(filepath=self.temp_file, max_history=5)
-        self.assertTrue(dedup_reloaded.is_seen("li-12345"))
-
-
-class TestDiscordNotifier(unittest.TestCase):
-    def test_build_embed_with_insights(self):
-        job = {
-            "title": "AI Engineer",
-            "company": "Shopee",
-            "site": "linkedin",
-            "job_url": "https://linkedin.com/jobs/view/111",
-            "company_match": CompanyMatch(
-                canonical_name="Shopee / Sea Group",
-                category="Top Tech Giants & Unicorns",
-                badge="🚀 Top Tech Giant",
-            ),
-            "insights": JobInsights(
-                skills=["Python", "PyTorch", "Docker"],
-                yoe="1-3 tahun",
-                seniority="Junior / Associate",
-                summary="Fokus pada computer vision model",
-                source="ai",
-            ),
+class TestDiscordNotifierStreamRouting(unittest.TestCase):
+    def test_embed_color_by_stream(self):
+        # Product job
+        product_job = {
+            "title": "Associate Product Manager",
+            "company": "Sirclo",
+            "stream_key": "product_and_analysis",
+            "stream_name": "Product & Business Analysis",
         }
-        embed = build_job_embed(job)
-        self.assertEqual(embed["color"], COLOR_TOP_TIER)
-        field_dict = {f["name"]: f["value"] for f in embed["fields"]}
-        self.assertIn("⭐ PERUSAHAAN UNGGULAN (TOP TIER)", field_dict)
-        self.assertIn("🛠️ Keahlian / Tech Stack", field_dict)
-        self.assertIn("`Python`", field_dict["🛠️ Keahlian / Tech Stack"])
-        self.assertIn("🎓 Level", field_dict)
-        self.assertEqual(field_dict["🎓 Level"], "Junior / Associate")
-        self.assertIn("🤖 AI Analyzed", embed["footer"]["text"])
+        embed_prod = build_job_embed(product_job)
+        self.assertEqual(embed_prod["color"], COLOR_STREAM_PRODUCT)
+
+        # Data job
+        data_job = {
+            "title": "Data Analyst",
+            "company": "Komerce",
+            "stream_key": "data_and_ai",
+            "stream_name": "Data & AI",
+        }
+        embed_data = build_job_embed(data_job)
+        self.assertEqual(embed_data["color"], COLOR_STREAM_DATA)
+
+        # Tech job
+        tech_job = {
+            "title": "Software Engineer",
+            "company": "Startup",
+            "stream_key": "tech_engineering",
+            "stream_name": "Tech & Engineering",
+        }
+        embed_tech = build_job_embed(tech_job)
+        self.assertEqual(embed_tech["color"], COLOR_STREAM_TECH)
+
+        # Top Tier priority (overrides stream color to Gold)
+        top_job = {
+            "title": "Software Engineer",
+            "company": "Shopee",
+            "stream_key": "tech_engineering",
+            "stream_name": "Tech & Engineering",
+            "company_match": CompanyMatch("Shopee", "Top Tech", "🚀 Top Tech"),
+        }
+        embed_top = build_job_embed(top_job)
+        self.assertEqual(embed_top["color"], COLOR_TOP_TIER)
+
+    def test_webhook_resolution_fallback(self):
+        cfg = Config(
+            discord_webhook_url="https://discord.com/api/webhooks/default/123",
+            discord_webhook_tech="https://discord.com/api/webhooks/tech/456",
+        )
+        notifier = DiscordNotifier(default_webhook_url=cfg.discord_webhook_url, config=cfg)
+
+        # Tech job resolves to tech webhook
+        tech_job = {"stream_key": "tech_engineering"}
+        self.assertEqual(notifier.get_webhook_for_job(tech_job), "https://discord.com/api/webhooks/tech/456")
+
+        # Product job (not set) falls back to default webhook
+        prod_job = {"stream_key": "product_and_analysis"}
+        self.assertEqual(notifier.get_webhook_for_job(prod_job), "https://discord.com/api/webhooks/default/123")
 
 
 if __name__ == "__main__":

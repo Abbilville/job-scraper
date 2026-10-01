@@ -1,9 +1,10 @@
-"""Main entry point for Job Alert Bot with multi-search, company intelligence, and AI-assisted extraction."""
+"""Main entry point for Job Alert Bot with multi-stream routing and negative keyword filtering."""
 
 import argparse
 import logging
+import re
 import sys
-from typing import List
+from typing import Any, Dict, List, Optional, Tuple
 
 from company_filter import CompanyMatcher
 from config import Config, load_config
@@ -21,6 +22,52 @@ def setup_logging(verbose: bool = False) -> None:
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
     )
+
+
+def is_title_excluded(title: str, exclude_keywords: List[str]) -> Tuple[bool, Optional[str]]:
+    """Check if job title contains any forbidden exclusion keyword."""
+    title_clean = title.strip()
+    for kw in exclude_keywords:
+        clean_kw = kw.strip()
+        if not clean_kw:
+            continue
+        # Use word boundary search
+        pattern = rf"\b{re.escape(clean_kw)}\b"
+        if re.search(pattern, title_clean, re.IGNORECASE):
+            return True, clean_kw
+    return False, None
+
+
+def classify_stream(job: Dict[str, Any], routing_cfg: Dict[str, Any]) -> str:
+    """Classify job into stream: product_and_analysis, data_and_ai, or tech_engineering."""
+    title = str(job.get("title") or "")
+    matched_query = str(job.get("matched_query") or "")
+    combined = f"{title} {matched_query}".lower()
+
+    streams = routing_cfg.get("streams", {})
+
+    # Priority 1: Product & Analysis
+    product_keywords = streams.get("product_and_analysis", {}).get("keywords", [])
+    for kw in product_keywords:
+        pattern = rf"\b{re.escape(kw.lower().strip())}\b"
+        if re.search(pattern, combined):
+            return "product_and_analysis"
+
+    # Priority 2: Data & AI
+    data_keywords = streams.get("data_and_ai", {}).get("keywords", [])
+    for kw in data_keywords:
+        pattern = rf"\b{re.escape(kw.lower().strip())}\b"
+        if re.search(pattern, combined):
+            return "data_and_ai"
+
+    # Priority 3: Tech & Engineering
+    tech_keywords = streams.get("tech_engineering", {}).get("keywords", [])
+    for kw in tech_keywords:
+        pattern = rf"\b{re.escape(kw.lower().strip())}\b"
+        if re.search(pattern, combined):
+            return "tech_engineering"
+
+    return "tech_engineering"
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -79,19 +126,20 @@ def build_config_from_args(args: argparse.Namespace) -> Config:
 
 
 def run_job_alerts(cfg: Config) -> int:
-    """Execute the job alert pipeline."""
+    """Execute the job alert pipeline with exclusion filtering and stream routing."""
     logger = logging.getLogger("job_alerts.main")
 
     logger.info("=" * 65)
-    logger.info("🚀 Menjalankan Job Alert Bot")
-    logger.info("  • Kata Kunci      : %s", ", ".join(cfg.search_terms))
+    logger.info("🚀 Menjalankan Job Alert Bot (SI & Tech Edition)")
+    logger.info("  • Kata Kunci      : %d role (%s...)", len(cfg.search_terms), ", ".join(cfg.search_terms[:4]))
     logger.info("  • Lokasi          : %s (Remote: %s)", ", ".join(cfg.locations), cfg.is_remote)
     logger.info("  • Rentang Waktu   : %d jam terakhir", cfg.hours_old)
     logger.info("  • Target Hasil    : %d per query/situs", cfg.results_wanted)
-    logger.info("  • Situs           : %s (Fallback Indeed: %s)", ", ".join(cfg.site_names), cfg.enable_indeed_fallback)
     logger.info("  • Mode Filter     : %s (only_top / highlight / all)", cfg.filter_mode)
+    if cfg.exclude_title_keywords:
+        logger.info("  • Negative Exclude: %d kata kunci (%s...)", len(cfg.exclude_title_keywords), ", ".join(cfg.exclude_title_keywords[:5]))
+    logger.info("  • Stream Routing  : %s", "Aktif (Multi-Channel)" if cfg.discord_routing.get("enable_stream_routing") else "Single Channel")
     logger.info("  • AI Extractor    : %s", "Aktif (URL terpasang)" if cfg.ai_api_url else "Offline (Rule-based Regex)")
-    logger.info("  • Discord Webhook : %s", "Tersedia" if cfg.discord_webhook_url else "KOSONG (Dry Run)")
     logger.info("  • Mode Dry Run    : %s", cfg.dry_run)
     logger.info("=" * 65)
 
@@ -108,25 +156,69 @@ def run_job_alerts(cfg: Config) -> int:
         logger.info("Tidak ada lowongan ditemukan pada pencarian kali ini.")
         return 0
 
-    # 3. Classify and match companies
+    # 3. Apply Negative Title Exclusion Filter
+    filtered_by_title = []
+    excluded_count = 0
     for job in scraped_jobs:
-        job["company_match"] = matcher.match(job.get("company"))
+        is_ex, reason = is_title_excluded(job.get("title", ""), cfg.exclude_title_keywords)
+        if is_ex:
+            excluded_count += 1
+            logger.debug("Exclude lowongan '%s' karena mengandung '%s'", job.get("title"), reason)
+        else:
+            filtered_by_title.append(job)
 
-    # 4. Apply Company Filter Mode
+    if excluded_count > 0:
+        logger.info("Filter kata kunci negatif: Mengabaikan %d lowongan tidak relevan (tersisa %d).", excluded_count, len(filtered_by_title))
+
+    if not filtered_by_title:
+        logger.info("Semua lowongan hasil scraping tereliminasi oleh filter kata kunci negatif.")
+        return 0
+
+    # 4. Extract Insights (Skills, YoE, Seniority, Level Code)
+    logger.info("Mengekstrak keterampilan (skills), pengalaman (YoE), dan level jabatan...")
+    for job in filtered_by_title:
+        job["company_match"] = matcher.match(job.get("company"))
+        job["insights"] = extract_job_insights(
+            job=job,
+            ai_api_url=cfg.ai_api_url,
+            ai_api_key=cfg.ai_api_key,
+        )
+
+    # 5. Apply Seniority Level Filtering (if configured)
+    filtered_by_level = []
+    if cfg.allowed_experience_levels:
+        allowed_set = {lvl.lower().strip() for lvl in cfg.allowed_experience_levels if lvl.strip()}
+        level_excluded = 0
+        for job in filtered_by_title:
+            lvl_code = getattr(job["insights"], "level_code", "mid_senior")
+            if lvl_code in allowed_set:
+                filtered_by_level.append(job)
+            else:
+                level_excluded += 1
+                logger.debug("Exclude lowongan '%s' karena level '%s' tidak diizinkan", job.get("title"), lvl_code)
+
+        if level_excluded > 0:
+            logger.info("Filter level pengalaman: Mengabaikan %d lowongan level senior/lead (tersisa %d).", level_excluded, len(filtered_by_level))
+    else:
+        filtered_by_level = filtered_by_title
+
+    if not filtered_by_level:
+        logger.info("Tidak ada lowongan yang sesuai dengan level pengalaman yang diizinkan.")
+        return 0
+
+    # 6. Apply Company Filter Mode
     eligible_jobs = []
     if cfg.filter_mode == "only_top":
-        for job in scraped_jobs:
+        for job in filtered_by_level:
             if job.get("company_match"):
                 eligible_jobs.append(job)
         logger.info(
             "Filter 'only_top': Menyaring %d lowongan dari perusahaan Top Tier (dari total %d).",
             len(eligible_jobs),
-            len(scraped_jobs),
+            len(filtered_by_level),
         )
     else:
-        # For 'highlight' or 'all', keep all scraped jobs
-        eligible_jobs = scraped_jobs
-
+        eligible_jobs = filtered_by_level
         # In 'highlight' mode, prioritize Top Tier companies first
         if cfg.filter_mode == "highlight":
             eligible_jobs.sort(key=lambda j: 0 if j.get("company_match") else 1)
@@ -135,7 +227,16 @@ def run_job_alerts(cfg: Config) -> int:
         logger.info("Tidak ada lowongan yang memenuhi kriteria filter perusahaan.")
         return 0
 
-    # 5. Filter Duplicates against seen_jobs.json
+    # 7. Classify stream for each job
+    routing_cfg = cfg.discord_routing
+    for job in eligible_jobs:
+        stream_key = classify_stream(job, routing_cfg)
+        job["stream_key"] = stream_key
+        stream_meta = routing_cfg.get("streams", {}).get(stream_key, {})
+        job["stream_name"] = stream_meta.get("name", stream_key)
+        job["stream_color"] = stream_meta.get("color")
+
+    # 8. Filter Duplicates against seen_jobs.json
     new_jobs = dedup.filter_unseen(eligible_jobs)
     if not new_jobs:
         logger.info("Semua lowongan (%d) sudah ada di riwayat seen_jobs. Tidak ada alert baru.", len(eligible_jobs))
@@ -144,27 +245,20 @@ def run_job_alerts(cfg: Config) -> int:
     top_count = sum(1 for j in new_jobs if j.get("company_match"))
     logger.info("Ditemukan %d lowongan baru (%d dari Top Tier/Big 4/Tech Giants)!", len(new_jobs), top_count)
 
-    # 6. Extract Skills, YoE & Seniority Insights
-    logger.info("Mengekstrak keterampilan (skills), pengalaman (YoE), dan level jabatan...")
-    for job in new_jobs:
-        job["insights"] = extract_job_insights(
-            job=job,
-            ai_api_url=cfg.ai_api_url,
-            ai_api_key=cfg.ai_api_key,
-        )
-
-    # 7. Preview / Dry-run check
+    # 9. Preview / Dry-run check
     if cfg.dry_run:
-        logger.info("--- [MODE DRY RUN AKTIF - PREVIEW LOWONGAN & INSIGHTS] ---")
+        logger.info("--- [MODE DRY RUN AKTIF - PREVIEW LOWONGAN & ROUTING STREAM] ---")
         for i, job in enumerate(new_jobs, 1):
             badge = f"[{job['company_match'].badge}] " if job.get("company_match") else ""
+            stream_tag = f"[{job.get('stream_name')}] "
             ins = job.get("insights")
             skills_str = f" | Skills: {', '.join(ins.skills[:5])}" if ins and ins.skills else ""
             yoe_str = f" | YoE: {ins.yoe}" if ins and ins.yoe else ""
             lvl_str = f" | Level: {ins.seniority}" if ins and ins.seniority else ""
             logger.info(
-                "[%d] %s%s | %s%s%s%s | %s",
+                "[%d] %s%s%s | %s%s%s%s | %s",
                 i,
+                stream_tag,
                 badge,
                 job.get("title"),
                 job.get("company"),
@@ -176,40 +270,42 @@ def run_job_alerts(cfg: Config) -> int:
         logger.info("Dry run selesai. Tidak ada pesan dikirim dan seen_jobs.json tidak diubah.")
         return 0
 
-    # 8. Send alerts to Discord
-    notifier = DiscordNotifier(webhook_url=cfg.discord_webhook_url, delay=cfg.delay_between_alerts)
+    # 10. Send alerts to Discord with stream-based routing
+    notifier = DiscordNotifier(
+        default_webhook_url=cfg.discord_webhook_url,
+        config=cfg,
+        delay=cfg.delay_between_alerts,
+    )
 
-    if not notifier.is_configured():
+    if not notifier.has_any_webhook():
         logger.warning(
             "DISCORD_WEBHOOK_URL belum disetel! Menampilkan preview %d lowongan baru di konsol:",
             len(new_jobs),
         )
         for i, job in enumerate(new_jobs, 1):
             badge = f"[{job['company_match'].badge}] " if job.get("company_match") else ""
+            stream_tag = f"[{job.get('stream_name')}] "
             ins = job.get("insights")
             skills_str = f" | Skills: {', '.join(ins.skills[:5])}" if ins and ins.skills else ""
-            yoe_str = f" | YoE: {ins.yoe}" if ins and ins.yoe else ""
             logger.info(
-                "[%d] %s%s | %s%s%s | %s",
+                "[%d] %s%s%s | %s%s | %s",
                 i,
+                stream_tag,
                 badge,
                 job.get("title"),
                 job.get("company"),
-                yoe_str,
                 skills_str,
                 job.get("job_url"),
             )
-        logger.info(
-            "Tips: Setel environment variable DISCORD_WEBHOOK_URL untuk mengirim otomatis ke Discord."
-        )
+        logger.info("Tips: Setel DISCORD_WEBHOOK_URL atau webhook per stream untuk mengirim otomatis ke Discord.")
         return 0
 
-    # 9. Dispatch and mark seen
+    # 11. Dispatch and mark seen
     sent_jobs = notifier.notify_jobs(new_jobs)
     for job in sent_jobs:
         dedup.mark_seen(job)
 
-    # 10. Persist seen jobs
+    # 12. Persist seen jobs
     if sent_jobs:
         dedup.save()
         logger.info("Berhasil menyimpan %d lowongan baru ke '%s'.", len(sent_jobs), cfg.seen_jobs_file)
