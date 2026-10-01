@@ -1,4 +1,4 @@
-"""Discord Webhook Notifier with rich embed formatting."""
+"""Discord Webhook Notifier with rich embed formatting and top employer highlights."""
 
 import logging
 import time
@@ -11,6 +11,7 @@ from config import Config
 logger = logging.getLogger("job_alerts.discord")
 
 # Color constants (decimal representation for Discord API)
+COLOR_TOP_TIER = 0xF1C40F   # Gold / Featured Employer
 COLOR_LINKEDIN = 0x0A66C2   # LinkedIn Blue
 COLOR_INDEED = 0x2164F3     # Indeed Blue
 COLOR_DEFAULT = 0x5865F2    # Discord Blurple
@@ -46,8 +47,11 @@ def _format_salary(job: Dict[str, Any]) -> Optional[str]:
     return None
 
 
-def _get_embed_color(site: Optional[str]) -> int:
-    """Select appropriate brand color based on the job board site."""
+def _get_embed_color(site: Optional[str], is_top_tier: bool = False) -> int:
+    """Select appropriate brand color based on top tier status and job board."""
+    if is_top_tier:
+        return COLOR_TOP_TIER
+
     if not site:
         return COLOR_DEFAULT
     site_lower = str(site).lower()
@@ -59,8 +63,8 @@ def _get_embed_color(site: Optional[str]) -> int:
 
 
 def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
-    """Build a Discord Embed dictionary from a job record."""
-    title = str(job.get("title") or "Lowongan Pekerjaan Baru")[:250]
+    """Build a Discord Embed dictionary from a job record with optional top employer highlight."""
+    raw_title = str(job.get("title") or "Lowongan Pekerjaan Baru")
     company = str(job.get("company") or "Perusahaan Tidak Disebutkan")
     raw_location = str(job.get("location") or "Lokasi Tidak Tersedia")
     is_remote = job.get("is_remote")
@@ -71,15 +75,33 @@ def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
     date_posted = job.get("date_posted") or "Baru saja"
     job_type = job.get("job_type")
 
-    fields = [
+    # Check top company classification
+    company_match = job.get("company_match")
+    is_top_tier = company_match is not None
+
+    fields = []
+
+    # If top tier, prepend a prominent highlight banner field
+    if is_top_tier:
+        fields.append({
+            "name": "⭐ PERUSAHAAN UNGGULAN (TOP TIER)",
+            "value": f"**{company_match.badge}** • {company_match.canonical_name}",
+            "inline": False,
+        })
+
+    fields.extend([
         {"name": "🏢 Perusahaan", "value": company[:1000], "inline": True},
         {"name": "📍 Lokasi", "value": location[:1000], "inline": True},
         {"name": "🌐 Sumber", "value": site[:1000], "inline": True},
         {"name": "📅 Diposting", "value": str(date_posted)[:1000], "inline": True},
-    ]
+    ])
 
     if job_type:
         fields.append({"name": "💼 Tipe", "value": str(job_type).replace("_", " ").title()[:1000], "inline": True})
+
+    matched_query = job.get("matched_query")
+    if matched_query:
+        fields.append({"name": "🎯 Pencarian", "value": str(matched_query)[:1000], "inline": True})
 
     salary = _format_salary(job)
     if salary:
@@ -87,14 +109,16 @@ def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
 
     # Add quick link call to action
     if url:
-        fields.append({"name": "🔗 Link Lamaran", "value": f"[Klik di sini untuk melihat lowongan]({url})", "inline": False})
+        fields.append({"name": "🔗 Link Lamaran", "value": f"[Klik di sini untuk melamar]({url})", "inline": False})
+
+    footer_text = f"Job Alert Bot • {company_match.category}" if is_top_tier else "Job Alert Bot • Powered by JobSpy"
 
     embed: Dict[str, Any] = {
-        "title": title,
-        "color": _get_embed_color(job.get("site")),
+        "title": raw_title[:250],
+        "color": _get_embed_color(job.get("site"), is_top_tier=is_top_tier),
         "fields": fields,
         "footer": {
-            "text": "Job Alert Bot • Powered by JobSpy",
+            "text": footer_text,
         },
         "timestamp": datetime.now(timezone.utc).isoformat(),
     }

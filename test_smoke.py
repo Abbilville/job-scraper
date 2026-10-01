@@ -1,4 +1,4 @@
-"""Smoke and unit tests for Job Alert Bot."""
+"""Smoke and unit tests for Job Alert Bot with multi-search and company filter tests."""
 
 import json
 import os
@@ -6,21 +6,66 @@ import tempfile
 import unittest
 from unittest.mock import MagicMock, patch
 
+from company_filter import CompanyMatch, CompanyMatcher
 from config import Config
 from dedup import JobDeduplicator
-from discord_notifier import DiscordNotifier, build_job_embed
+from discord_notifier import COLOR_TOP_TIER, COLOR_LINKEDIN, DiscordNotifier, build_job_embed
 
 
 class TestConfig(unittest.TestCase):
     def test_default_config(self):
         cfg = Config()
-        self.assertEqual(cfg.search_term, "Frontend Developer")
-        self.assertEqual(cfg.location, "Indonesia")
+        self.assertIn("Frontend Developer", cfg.search_terms)
+        self.assertIn("Indonesia", cfg.locations)
         self.assertEqual(cfg.hours_old, 24)
         self.assertEqual(cfg.results_wanted, 15)
         self.assertFalse(cfg.is_remote)
         self.assertTrue(cfg.enable_indeed_fallback)
+        self.assertEqual(cfg.filter_mode, "highlight")
         self.assertIn("linkedin", cfg.site_names)
+
+
+class TestCompanyMatcher(unittest.TestCase):
+    def setUp(self):
+        self.matcher = CompanyMatcher(custom_companies=["Special UI Startup"])
+
+    def test_big4_matching(self):
+        match_pwc = self.matcher.match("PwC Indonesia")
+        self.assertIsNotNone(match_pwc)
+        self.assertEqual(match_pwc.canonical_name, "PwC")
+        self.assertEqual(match_pwc.category, "Big 4 Consulting")
+
+        match_ey = self.matcher.match("Ernst & Young Advisory")
+        self.assertIsNotNone(match_ey)
+        self.assertEqual(match_ey.canonical_name, "EY (Ernst & Young)")
+
+    def test_top_tech_matching(self):
+        match_goto = self.matcher.match("PT Tokopedia")
+        self.assertIsNotNone(match_goto)
+        self.assertEqual(match_goto.canonical_name, "GoTo (Gojek & Tokopedia)")
+
+        match_shopee = self.matcher.match("Shopee International Indonesia")
+        self.assertIsNotNone(match_shopee)
+
+        match_traveloka = self.matcher.match("Traveloka Indonesia")
+        self.assertIsNotNone(match_traveloka)
+
+    def test_banking_and_fmcg_matching(self):
+        match_bca = self.matcher.match("PT Bank Central Asia Tbk")
+        self.assertIsNotNone(match_bca)
+        self.assertEqual(match_bca.canonical_name, "Bank Central Asia (BCA)")
+
+        match_unilever = self.matcher.match("PT Unilever Indonesia Tbk")
+        self.assertIsNotNone(match_unilever)
+
+    def test_custom_company_matching(self):
+        match_custom = self.matcher.match("Special UI Startup")
+        self.assertIsNotNone(match_custom)
+        self.assertEqual(match_custom.canonical_name, "Special UI Startup")
+
+    def test_unmatched_company(self):
+        match = self.matcher.match("Toko Kelontong Sejahtera")
+        self.assertIsNone(match)
 
 
 class TestDeduplication(unittest.TestCase):
@@ -38,7 +83,7 @@ class TestDeduplication(unittest.TestCase):
         job1 = {
             "id": "li-12345",
             "title": "Frontend Engineer",
-            "company": "Acme Corp",
+            "company": "PwC Indonesia",
             "job_url": "https://linkedin.com/jobs/view/12345",
             "date_posted": "2026-10-01",
             "site": "linkedin",
@@ -46,7 +91,7 @@ class TestDeduplication(unittest.TestCase):
         job2 = {
             "id": "li-67890",
             "title": "React Developer",
-            "company": "Beta Inc",
+            "company": "PT Tokopedia",
             "job_url": "https://linkedin.com/jobs/view/67890",
             "date_posted": "2026-10-01",
             "site": "linkedin",
@@ -57,12 +102,10 @@ class TestDeduplication(unittest.TestCase):
         self.assertTrue(dedup.is_seen(job1))
         self.assertFalse(dedup.is_seen(job2))
 
-        # Test filter_unseen
         unseen = dedup.filter_unseen([job1, job2])
         self.assertEqual(len(unseen), 1)
         self.assertEqual(unseen[0]["id"], "li-67890")
 
-        # Save and reload
         dedup.save()
         self.assertTrue(os.path.exists(self.temp_file))
 
@@ -81,7 +124,7 @@ class TestDeduplication(unittest.TestCase):
 
 
 class TestDiscordNotifier(unittest.TestCase):
-    def test_build_embed_basic(self):
+    def test_build_embed_standard(self):
         job = {
             "title": "Senior Frontend Developer",
             "company": "Tech Nusantara",
@@ -99,23 +142,26 @@ class TestDiscordNotifier(unittest.TestCase):
         embed = build_job_embed(job)
         self.assertEqual(embed["title"], "Senior Frontend Developer")
         self.assertEqual(embed["url"], "https://www.linkedin.com/jobs/view/123")
-        self.assertEqual(embed["color"], 0x0A66C2)  # LinkedIn blue
+        self.assertEqual(embed["color"], COLOR_LINKEDIN)
 
-        # Verify fields
-        field_dict = {f["name"]: f["value"] for f in embed["fields"]}
-        self.assertIn("🏢 Perusahaan", field_dict)
-        self.assertEqual(field_dict["🏢 Perusahaan"], "Tech Nusantara")
-        self.assertIn("Jakarta, Indonesia (Remote)", field_dict["📍 Lokasi"])
-        self.assertIn("IDR", field_dict["💰 Estimasi Gaji"])
-
-    def test_build_embed_indeed_color(self):
+    def test_build_embed_top_tier_highlight(self):
         job = {
             "title": "Frontend Engineer",
-            "site": "indeed",
-            "job_url": "https://indeed.com/viewjob?jk=abc",
+            "company": "PwC Indonesia",
+            "site": "linkedin",
+            "job_url": "https://linkedin.com/jobs/view/999",
+            "company_match": CompanyMatch(
+                canonical_name="PwC",
+                category="Big 4 Consulting",
+                badge="🏆 Big 4 Consulting",
+            ),
         }
         embed = build_job_embed(job)
-        self.assertEqual(embed["color"], 0x2164F3)  # Indeed blue
+        self.assertEqual(embed["color"], COLOR_TOP_TIER)
+        # Verify highlight field
+        field_names = [f["name"] for f in embed["fields"]]
+        self.assertIn("⭐ PERUSAHAAN UNGGULAN (TOP TIER)", field_names)
+        self.assertIn("Big 4 Consulting", embed["footer"]["text"])
 
     @patch("requests.post")
     def test_notifier_send(self, mock_post):

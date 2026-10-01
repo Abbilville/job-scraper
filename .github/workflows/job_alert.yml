@@ -6,23 +6,32 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
     inputs:
-      search_term:
-        description: 'Search Term (e.g. Frontend Developer)'
+      search_terms:
+        description: 'Kata Kunci / Posisi (pisahkan koma, cth: Frontend Developer, Software Engineer)'
         required: false
         default: 'Frontend Developer'
         type: string
-      location:
-        description: 'Location (e.g. Indonesia / Remote)'
+      locations:
+        description: 'Lokasi (pisahkan koma, cth: Indonesia, Jakarta, Remote)'
         required: false
         default: 'Indonesia'
         type: string
+      filter_mode:
+        description: 'Mode Filter Perusahaan (highlight = tandai Big 4/Top Tech, only_top = khusus Top Tier saja, all = semua)'
+        required: false
+        default: 'highlight'
+        type: choice
+        options:
+          - highlight
+          - only_top
+          - all
       hours_old:
-        description: 'Hours Old (e.g. 24)'
+        description: 'Usia Lowongan dalam Jam (cth: 24)'
         required: false
         default: '24'
         type: string
       results_wanted:
-        description: 'Results Wanted per site'
+        description: 'Target Hasil per Query/Situs'
         required: false
         default: '15'
         type: string
@@ -44,6 +53,7 @@ jobs:
         with:
           python-version: '3.11'
           cache: 'pip'
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -56,11 +66,13 @@ jobs:
       - name: Run Job Alert Script
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          SEARCH_TERM: ${{ inputs.search_term || vars.SEARCH_TERM || 'Frontend Developer' }}
-          LOCATION: ${{ inputs.location || vars.LOCATION || 'Indonesia' }}
+          SEARCH_TERMS: ${{ inputs.search_terms || vars.SEARCH_TERMS || 'Frontend Developer' }}
+          LOCATIONS: ${{ inputs.locations || vars.LOCATIONS || 'Indonesia' }}
+          FILTER_MODE: ${{ inputs.filter_mode || vars.FILTER_MODE || 'highlight' }}
           HOURS_OLD: ${{ inputs.hours_old || vars.HOURS_OLD || '24' }}
           RESULTS_WANTED: ${{ inputs.results_wanted || vars.RESULTS_WANTED || '15' }}
           SITE_NAMES: ${{ vars.SITE_NAMES || 'linkedin,indeed' }}
+          CUSTOM_TOP_COMPANIES: ${{ vars.CUSTOM_TOP_COMPANIES || '' }}
           ENABLE_INDEED_FALLBACK: 'true'
         run: |
           python main.py
