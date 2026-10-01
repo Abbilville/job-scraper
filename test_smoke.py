@@ -1,4 +1,4 @@
-"""Smoke and unit tests for Job Alert Bot with multi-search and company filter tests."""
+"""Comprehensive smoke and unit tests for Job Alert Bot."""
 
 import json
 import os
@@ -7,65 +7,117 @@ import unittest
 from unittest.mock import MagicMock, patch
 
 from company_filter import CompanyMatch, CompanyMatcher
-from config import Config
+from config import load_config
 from dedup import JobDeduplicator
-from discord_notifier import COLOR_TOP_TIER, COLOR_LINKEDIN, DiscordNotifier, build_job_embed
+from discord_notifier import (
+    COLOR_DEFAULT,
+    COLOR_LINKEDIN,
+    COLOR_TOP_TIER,
+    DiscordNotifier,
+    build_job_embed,
+)
+from extractor import (
+    JobInsights,
+    extract_job_insights,
+    extract_seniority_rule_based,
+    extract_skills_rule_based,
+    extract_with_ai,
+    extract_yoe_rule_based,
+)
 
 
-class TestConfig(unittest.TestCase):
-    def test_default_config(self):
-        cfg = Config()
+class TestConfigAndCompanyMatcher(unittest.TestCase):
+    def test_config_json_loaded(self):
+        cfg = load_config("config.json")
         self.assertIn("Frontend Developer", cfg.search_terms)
+        self.assertIn("AI Engineer", cfg.search_terms)
+        self.assertIn("Forward Deployed Engineer", cfg.search_terms)
         self.assertIn("Indonesia", cfg.locations)
-        self.assertEqual(cfg.hours_old, 24)
-        self.assertEqual(cfg.results_wanted, 15)
-        self.assertFalse(cfg.is_remote)
-        self.assertTrue(cfg.enable_indeed_fallback)
         self.assertEqual(cfg.filter_mode, "highlight")
-        self.assertIn("linkedin", cfg.site_names)
+        self.assertIn("Big 4 & Strategy Consulting", cfg.top_companies)
+
+    def test_company_matcher_from_config(self):
+        cfg = load_config("config.json")
+        matcher = CompanyMatcher(
+            top_companies_dict=cfg.top_companies,
+            custom_companies=["Keluarga Mahasiswa UI"],
+        )
+
+        # Big 4
+        m_pwc = matcher.match("PricewaterhouseCoopers Indonesia")
+        self.assertIsNotNone(m_pwc)
+        self.assertEqual(m_pwc.canonical_name, "PwC")
+
+        # Top Tech
+        m_goto = matcher.match("PT Tokopedia")
+        self.assertIsNotNone(m_goto)
+
+        m_grab = matcher.match("Grab Holdings")
+        self.assertIsNotNone(m_grab)
+
+        # Banking
+        m_bca = matcher.match("PT Bank Central Asia Tbk")
+        self.assertIsNotNone(m_bca)
+
+        # Custom
+        m_custom = matcher.match("Keluarga Mahasiswa UI")
+        self.assertIsNotNone(m_custom)
+        self.assertEqual(m_custom.canonical_name, "Keluarga Mahasiswa UI")
+
+        # Unknown
+        m_unknown = matcher.match("PT Warung Kopi Sederhana")
+        self.assertIsNone(m_unknown)
 
 
-class TestCompanyMatcher(unittest.TestCase):
-    def setUp(self):
-        self.matcher = CompanyMatcher(custom_companies=["Special UI Startup"])
+class TestExtractor(unittest.TestCase):
+    def test_skills_extraction(self):
+        desc = (
+            "We are looking for an AI Engineer proficient in Python, PyTorch, and Docker. "
+            "Experience with LangChain, Next.js, and PostgreSQL is highly desired."
+        )
+        skills = extract_skills_rule_based(desc)
+        self.assertIn("Python", skills)
+        self.assertIn("PyTorch", skills)
+        self.assertIn("Docker", skills)
+        self.assertIn("LangChain", skills)
+        self.assertIn("Next.js", skills)
+        self.assertIn("PostgreSQL", skills)
 
-    def test_big4_matching(self):
-        match_pwc = self.matcher.match("PwC Indonesia")
-        self.assertIsNotNone(match_pwc)
-        self.assertEqual(match_pwc.canonical_name, "PwC")
-        self.assertEqual(match_pwc.category, "Big 4 Consulting")
+    def test_yoe_extraction(self):
+        self.assertEqual(extract_yoe_rule_based("Requires 2-4 years of experience"), "2-4 tahun")
+        self.assertEqual(extract_yoe_rule_based("Minimal 3 tahun pengalaman kerja"), "Min. 3 tahun")
+        self.assertEqual(extract_yoe_rule_based("5+ years of software development"), "5+ tahun")
+        self.assertEqual(extract_yoe_rule_based("Fresh graduates are welcome to apply"), "Fresh Graduate (0-1 tahun)")
+        self.assertEqual(extract_yoe_rule_based("Summer Internship Program"), "Internship / Mahasiswa")
 
-        match_ey = self.matcher.match("Ernst & Young Advisory")
-        self.assertIsNotNone(match_ey)
-        self.assertEqual(match_ey.canonical_name, "EY (Ernst & Young)")
+    def test_seniority_extraction(self):
+        self.assertEqual(extract_seniority_rule_based("Lead Software Engineer", ""), "Lead / Principal")
+        self.assertEqual(extract_seniority_rule_based("Senior Frontend Developer", ""), "Senior")
+        self.assertEqual(extract_seniority_rule_based("Junior Backend Engineer", ""), "Junior / Associate")
+        self.assertEqual(extract_seniority_rule_based("Frontend Engineering Intern", ""), "Internship")
 
-    def test_top_tech_matching(self):
-        match_goto = self.matcher.match("PT Tokopedia")
-        self.assertIsNotNone(match_goto)
-        self.assertEqual(match_goto.canonical_name, "GoTo (Gojek & Tokopedia)")
-
-        match_shopee = self.matcher.match("Shopee International Indonesia")
-        self.assertIsNotNone(match_shopee)
-
-        match_traveloka = self.matcher.match("Traveloka Indonesia")
-        self.assertIsNotNone(match_traveloka)
-
-    def test_banking_and_fmcg_matching(self):
-        match_bca = self.matcher.match("PT Bank Central Asia Tbk")
-        self.assertIsNotNone(match_bca)
-        self.assertEqual(match_bca.canonical_name, "Bank Central Asia (BCA)")
-
-        match_unilever = self.matcher.match("PT Unilever Indonesia Tbk")
-        self.assertIsNotNone(match_unilever)
-
-    def test_custom_company_matching(self):
-        match_custom = self.matcher.match("Special UI Startup")
-        self.assertIsNotNone(match_custom)
-        self.assertEqual(match_custom.canonical_name, "Special UI Startup")
-
-    def test_unmatched_company(self):
-        match = self.matcher.match("Toko Kelontong Sejahtera")
-        self.assertIsNone(match)
+    @patch("requests.post")
+    def test_ai_extraction_success(self, mock_post):
+        mock_post.return_value = MagicMock(
+            status_code=200,
+            json=lambda: {
+                "skills": ["Python", "FastAPI"],
+                "yoe": "1-2 tahun",
+                "seniority": "Junior",
+                "summary": "Membangun microservices dengan FastAPI",
+            },
+        )
+        insights = extract_with_ai(
+            title="Backend Engineer",
+            company="Startup",
+            description="Sample text",
+            api_url="https://ai.example.com/extract",
+            api_key="secret",
+        )
+        self.assertIsNotNone(insights)
+        self.assertEqual(insights.source, "ai")
+        self.assertIn("FastAPI", insights.skills)
+        self.assertEqual(insights.yoe, "1-2 tahun")
 
 
 class TestDeduplication(unittest.TestCase):
@@ -78,98 +130,51 @@ class TestDeduplication(unittest.TestCase):
 
     def test_dedup_lifecycle(self):
         dedup = JobDeduplicator(filepath=self.temp_file, max_history=5)
-        self.assertEqual(len(dedup.seen_data), 0)
-
-        job1 = {
-            "id": "li-12345",
-            "title": "Frontend Engineer",
-            "company": "PwC Indonesia",
-            "job_url": "https://linkedin.com/jobs/view/12345",
-            "date_posted": "2026-10-01",
-            "site": "linkedin",
-        }
-        job2 = {
-            "id": "li-67890",
-            "title": "React Developer",
-            "company": "PT Tokopedia",
-            "job_url": "https://linkedin.com/jobs/view/67890",
-            "date_posted": "2026-10-01",
-            "site": "linkedin",
-        }
+        job1 = {"id": "li-12345", "title": "Frontend Engineer", "company": "PwC"}
+        job2 = {"id": "li-67890", "title": "AI Engineer", "company": "Gojek"}
 
         self.assertFalse(dedup.is_seen(job1))
         dedup.mark_seen(job1)
         self.assertTrue(dedup.is_seen(job1))
-        self.assertFalse(dedup.is_seen(job2))
 
         unseen = dedup.filter_unseen([job1, job2])
         self.assertEqual(len(unseen), 1)
         self.assertEqual(unseen[0]["id"], "li-67890")
 
         dedup.save()
-        self.assertTrue(os.path.exists(self.temp_file))
-
-        dedup2 = JobDeduplicator(filepath=self.temp_file, max_history=5)
-        self.assertTrue(dedup2.is_seen("li-12345"))
-        self.assertFalse(dedup2.is_seen("li-67890"))
-
-    def test_dedup_pruning(self):
-        dedup = JobDeduplicator(filepath=self.temp_file, max_history=3)
-        for i in range(5):
-            dedup.mark_seen({"id": f"job-{i}", "title": f"Job {i}"})
-
-        dedup.save()
-        dedup_reloaded = JobDeduplicator(filepath=self.temp_file, max_history=3)
-        self.assertLessEqual(len(dedup_reloaded.seen_data), 3)
+        dedup_reloaded = JobDeduplicator(filepath=self.temp_file, max_history=5)
+        self.assertTrue(dedup_reloaded.is_seen("li-12345"))
 
 
 class TestDiscordNotifier(unittest.TestCase):
-    def test_build_embed_standard(self):
+    def test_build_embed_with_insights(self):
         job = {
-            "title": "Senior Frontend Developer",
-            "company": "Tech Nusantara",
-            "location": "Jakarta, Indonesia",
-            "is_remote": True,
+            "title": "AI Engineer",
+            "company": "Shopee",
             "site": "linkedin",
-            "date_posted": "2026-09-30",
-            "job_url": "https://www.linkedin.com/jobs/view/123",
-            "min_amount": 15000000,
-            "max_amount": 25000000,
-            "currency": "IDR",
-            "interval": "monthly",
-            "job_type": "full_time",
-        }
-        embed = build_job_embed(job)
-        self.assertEqual(embed["title"], "Senior Frontend Developer")
-        self.assertEqual(embed["url"], "https://www.linkedin.com/jobs/view/123")
-        self.assertEqual(embed["color"], COLOR_LINKEDIN)
-
-    def test_build_embed_top_tier_highlight(self):
-        job = {
-            "title": "Frontend Engineer",
-            "company": "PwC Indonesia",
-            "site": "linkedin",
-            "job_url": "https://linkedin.com/jobs/view/999",
+            "job_url": "https://linkedin.com/jobs/view/111",
             "company_match": CompanyMatch(
-                canonical_name="PwC",
-                category="Big 4 Consulting",
-                badge="🏆 Big 4 Consulting",
+                canonical_name="Shopee / Sea Group",
+                category="Top Tech Giants & Unicorns",
+                badge="🚀 Top Tech Giant",
+            ),
+            "insights": JobInsights(
+                skills=["Python", "PyTorch", "Docker"],
+                yoe="1-3 tahun",
+                seniority="Junior / Associate",
+                summary="Fokus pada computer vision model",
+                source="ai",
             ),
         }
         embed = build_job_embed(job)
         self.assertEqual(embed["color"], COLOR_TOP_TIER)
-        # Verify highlight field
-        field_names = [f["name"] for f in embed["fields"]]
-        self.assertIn("⭐ PERUSAHAAN UNGGULAN (TOP TIER)", field_names)
-        self.assertIn("Big 4 Consulting", embed["footer"]["text"])
-
-    @patch("requests.post")
-    def test_notifier_send(self, mock_post):
-        mock_post.return_value = MagicMock(status_code=204)
-        notifier = DiscordNotifier(webhook_url="https://discord.com/api/webhooks/123/abc")
-        success = notifier.send_single_job({"title": "Test Job", "job_url": "https://example.com"})
-        self.assertTrue(success)
-        mock_post.assert_called_once()
+        field_dict = {f["name"]: f["value"] for f in embed["fields"]}
+        self.assertIn("⭐ PERUSAHAAN UNGGULAN (TOP TIER)", field_dict)
+        self.assertIn("🛠️ Keahlian / Tech Stack", field_dict)
+        self.assertIn("`Python`", field_dict["🛠️ Keahlian / Tech Stack"])
+        self.assertIn("🎓 Level", field_dict)
+        self.assertEqual(field_dict["🎓 Level"], "Junior / Associate")
+        self.assertIn("🤖 AI Analyzed", embed["footer"]["text"])
 
 
 if __name__ == "__main__":

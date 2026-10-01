@@ -1,8 +1,10 @@
-# 🔔 Job Alert Bot ke Discord (GitHub Actions + JobSpy)
+# 🔔 Job Alert Bot ke Discord (GitHub Actions + JobSpy + AI Extraction)
 
-Bot otomatis untuk mencari lowongan pekerjaan terbaru dari **LinkedIn** (dengan fallback **Indeed**) menggunakan library [`python-jobspy`](https://github.com/cullenwatson/JobSpy) dan mengirimkannya langsung ke channel **Discord** dalam format Discord Embed yang rapi dan informatif.
+Repository: [https://github.com/Abbilville/job-scraper](https://github.com/Abbilville/job-scraper)
 
-Didesain khusus untuk pencari kerja dan mahasiswa/alumni (seperti anak-anak UI, ITB, fresh grads, dsb.) dengan fitur kurasi **Perusahaan Top Tier (Big 4, Top Tech Unicorns, Banking, & FMCG)**!
+Bot otomatis untuk mencari lowongan pekerjaan terbaru dari **LinkedIn** (dengan fallback **Indeed**) menggunakan library [`python-jobspy`](https://github.com/cullenwatson/JobSpy) dan mengirimkannya langsung ke channel **Discord** dalam format Discord Embed yang rapi, informatif, dan mewah.
+
+Didesain khusus untuk mahasiswa, fresh graduate, dan alumni (seperti anak-anak UI, ITB, UGM, dsb.) dengan fitur kurasi **Perusahaan Top Tier (Big 4, Top Tech Unicorns, Banking, & FMCG)** serta **Ekstraksi Keterampilan (Skills), Pengalaman (YoE), dan Level Jabatan** berbasis Regex + AI!
 
 Dijalankan secara otomatis dan terjadwal melalui **GitHub Actions** tanpa perlu sewa VPS/server!
 
@@ -10,22 +12,54 @@ Dijalankan secara otomatis dan terjadwal melalui **GitHub Actions** tanpa perlu 
 
 ## ✨ Fitur Utama
 
-- 🔍 **Multi-Search & Multi-Location**:
-  - Mendukung banyak kata kunci sekaligus (misal: `Frontend Developer, Software Engineer, Web Developer`).
-  - Mendukung banyak lokasi sekaligus (misal: `Indonesia, Jakarta, Remote`).
+- ⚙️ **Konfigurasi Terpusat di `config.json`**:
+  - Semua pengaturan kata kunci, lokasi, situs loker, filter mode, dan katalog perusahaan top tier diatur dalam satu file `config.json`. Anda tidak perlu mengubah kode program.
+- 🚀 **Role Kekinian untuk Mahasiswa & Lulusan CompSci**:
+  - Termasuk posisi yang sedang happening: **Forward Deployed Engineer (FDE)**, **AI Engineer**, **Machine Learning Engineer**, **Data Scientist**, **Data Engineer**, **DevOps / Cloud Engineer**, **Fullstack**, **Backend**, **Frontend**, dan **Mobile Developer**.
+- 🧠 **Smart Extraction (Skills, YoE, Level)**:
+  - **Keahlian (Tech Stack)**: Otomatis mendeteksi bahasa pemrograman, framework, dan tools (React, Next.js, Node.js, FastAPI, PyTorch, Docker, Kubernetes, AWS, SQL, dsb.).
+  - **Pengalaman (YoE)**: Otomatis mengekstrak tahun pengalaman yang dibutuhkan (cth: `2-4 tahun`, `Min. 1 tahun`, `Fresh Graduate (0-1 tahun)`, `Internship`).
+  - **Level Jabatan**: Mengklasifikasikan lowongan menjadi `Junior / Associate`, `Internship`, `Mid-Level`, atau `Senior / Lead`.
+- 🤖 **Integrasi AI Microservice (Opsional / Siap Deploy ke VPS)**:
+  - Jika `AI_API_URL` dan `AI_API_KEY` diisi di environment variable / secret, bot akan memanggil endpoint AI VPS Anda untuk ekstraksi dan ringkasan mendalam.
+  - Jika kosong, bot otomatis fallback ke **Rule-Based Regex Extractor** lokal tanpa error.
 - 🏆 **Kurasi & Deteksi Perusahaan Top Tier**:
   - **Big 4 & Strategy Consulting**: PwC, Deloitte, EY, KPMG, McKinsey, BCG, Bain, Accenture.
-  - **Top Tech Giants & Unicorns**: GoTo (Gojek & Tokopedia), Traveloka, Shopee / Sea, Grab, Blibli, Bukalapak, DANA, Xendit, Kredivo, eFishery, Ruangguru, Google, Microsoft, AWS, ByteDance, Meta.
-  - **Top Banking & FinTech**: Bank Central Asia (BCA), Bank Mandiri, BRI, BNI, Bank Indonesia, DBS, CIMB Niaga, OCBC, Bibit, Ajaib.
-  - **Top Conglomerates, Telco & FMCG**: Telkom / Telkomsel, Astra International, Unilever, Nestlé, P&G, Danone, Indofood, Paragon (Wardah), Pertamina.
-- 🎯 **3 Mode Filter Perusahaan (`FILTER_MODE`)**:
-  - `highlight` *(Default - Sangat Direkomendasikan)*: Mengirim semua lowongan yang cocok, namun loker dari perusahaan Top Tier / Big 4 / Tech Giants otomatis diberi **badge emas khusus** dan diprioritaskan di urutan teratas.
+  - **Top Tech Giants & Unicorns**: GoTo (Gojek & Tokopedia), Traveloka, Shopee / Sea, Grab, Blibli, Bukalapak, DANA, Xendit, Kredivo, eFishery, Ruangguru, Google, Microsoft, AWS, ByteDance / TikTok, Meta.
+  - **Top Tier Banking & FinTech**: BCA, Bank Mandiri, BRI, BNI, Bank Indonesia (BI), DBS Bank, CIMB Niaga, OCBC, Bibit, Ajaib.
+  - **Top Conglomerates, Telco & FMCG**: Telkomsel, Astra International, Unilever, Nestlé, P&G, Danone, Indofood, Paragon (Wardah), Pertamina.
+- 🎯 **3 Mode Filter Perusahaan (`filter_mode`)**:
+  - `highlight` *(Default)*: Mengirim semua lowongan, namun loker dari Top Tier otomatis diberi **Badge Emas Khusus** dan diposisikan di urutan paling atas.
   - `only_top`: Eksklusif **HANYA** mengirim lowongan jika perusahaannya berasal dari daftar Top Tier.
-  - `all`: Mengirim semua lowongan tanpa klasifikasi khusus.
-- 🛡️ **Fallback Otomatis**: Jika LinkedIn mengalami rate-limit atau tidak menemukan hasil, bot otomatis fallback mencari ke Indeed.
-- 🚫 **Anti Duplikasi**: Menggunakan `seen_jobs.json` yang dicatat dan di-commit otomatis kembali ke repository oleh GitHub Actions (`stefanzweifel/git-auto-commit-action`), sehingga alert yang sama tidak akan dikirim ulang.
-- 🎨 **Discord Embed Cantik**: Dilengkapi judul lowongan yang bisa diklik, nama perusahaan, tag perusahaan unggulan, lokasi, tanggal posting, estimasi gaji (jika ada), tipe pekerjaan, dan warna brand embed yang disesuaikan.
-- ⏱️ **Otomatis & Terjadwal**: Berjalan otomatis setiap 6 jam sekali via cron GitHub Actions dan mendukung trigger manual (`workflow_dispatch`).
+  - `all`: Kirim semua lowongan apa adanya.
+- 🚫 **Anti Duplikasi**: Menyimpan riwayat lowongan di `seen_jobs.json` yang di-commit otomatis kembali ke repository oleh GitHub Actions.
+
+---
+
+## 🛠️ Format Payload AI (Jika Deploy ke VPS)
+
+Jika Anda mendeploy microservice AI (misal FastAPI + LLM seperti Ollama / OpenAI / vLLM) ke VPS:
+
+**Request POST ke `AI_API_URL`**:
+```json
+{
+  "title": "Junior Frontend Engineer",
+  "company": "PwC Indonesia",
+  "description": "Full job description text..."
+}
+```
+
+**Expected JSON Response dari AI VPS**:
+```json
+{
+  "skills": ["React", "TypeScript", "Tailwind CSS", "Docker"],
+  "yoe": "1-2 tahun",
+  "seniority": "Junior / Associate",
+  "summary": "Membangun sistem antarmuka web modern dengan React dan TypeScript."
+}
+```
+
+*Catatan: Jika service VPS Anda down atau tidak disetel, bot tetap berjalan normal menggunakan rule-based extractor bawaan.*
 
 ---
 
@@ -40,17 +74,14 @@ Dijalankan secara otomatis dan terjadwal melalui **GitHub Actions** tanpa perlu 
 
 ---
 
-### 2. Pasang Secret `DISCORD_WEBHOOK_URL` di GitHub
-Agar GitHub Actions dapat mengirim pesan ke Discord tanpa membocorkan URL webhook di kode publik:
-
-1. Buka repository GitHub Anda di browser.
-2. Masuk ke tab **Settings**.
-3. Di sidebar kiri, klik **Secrets and variables** > pilih **Actions**.
-4. Pada tab **Secrets**, klik tombol hijau **New repository secret**.
-5. Isi formulir:
-   - **Name**: `DISCORD_WEBHOOK_URL`
-   - **Secret**: Tempelkan (*paste*) URL Webhook Discord yang sudah disalin tadi.
-6. Klik **Add secret**.
+### 2. Pasang Secret di GitHub Repository
+1. Buka repository GitHub: `https://github.com/Abbilville/job-scraper`
+2. Masuk ke tab **Settings** > **Secrets and variables** > **Actions**.
+3. Klik tombol hijau **New repository secret**.
+4. Tambahkan secret berikut:
+   - `DISCORD_WEBHOOK_URL` *(Wajib)*: Masukkan URL Webhook Discord Anda.
+   - `AI_API_URL` *(Opsional)*: URL endpoint AI di VPS Anda (cth: `https://ai.domainanda.com/extract`).
+   - `AI_API_KEY` *(Opsional)*: Bearer token autentikasi jika endpoint AI dilindungi.
 
 ---
 
@@ -69,52 +100,17 @@ Agar GitHub Actions diizinkan untuk meng-commit kembali file `seen_jobs.json`:
 1. Buka tab **Actions** di repository GitHub Anda.
 2. Pilih workflow **Job Alert Bot** di sebelah kiri.
 3. Klik tombol dropdown **Run workflow**.
-4. Anda dapat mengatur:
-   - **Kata Kunci / Posisi**: Pisahkan dengan koma (cth: `Frontend Developer, Software Engineer`).
-   - **Lokasi**: Pisahkan dengan koma (cth: `Indonesia, Jakarta, Remote`).
-   - **Mode Filter Perusahaan**: Pilih `highlight`, `only_top`, atau `all`.
-   - **Hours Old** & **Results Wanted**.
-5. Klik tombol hijau **Run workflow** untuk memulai pencarian.
-
----
-
-## ⚙️ Kustomisasi Parameter Pencarian
-
-Anda dapat mengubah konfigurasi default tanpa mengubah kode program melalui dua cara:
-
-### Cara A: Melalui GitHub Actions Variables
-1. Buka **Settings** > **Secrets and variables** > **Actions** > tab **Variables**.
-2. Tambahkan variable repository baru (opsional):
-   - `SEARCH_TERMS`: `Frontend Developer, Software Engineer, Fullstack Developer`
-   - `LOCATIONS`: `Indonesia, Jakarta, Remote`
-   - `FILTER_MODE`: `highlight` (atau `only_top` untuk loker top tier saja)
-   - `HOURS_OLD`: `24`
-   - `RESULTS_WANTED`: `15`
-   - `SITE_NAMES`: `linkedin,indeed`
-   - `CUSTOM_TOP_COMPANIES`: `Nama Perusahaan Impian 1, Startup X`
-
-### Cara B: Ubah Default di `.github/workflows/job_alert.yml`
-Ubah bagian `env:` pada step `Run Job Alert Script`:
-```yaml
-env:
-  DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-  SEARCH_TERMS: 'Frontend Developer, Software Engineer'
-  LOCATIONS: 'Indonesia, Jakarta, Remote'
-  FILTER_MODE: 'highlight' # atau 'only_top'
-  HOURS_OLD: '24'
-  RESULTS_WANTED: '15'
-```
+4. Anda dapat langsung klik tombol hijau **Run workflow** untuk menjalankan dengan pengaturan `config.json`.
 
 ---
 
 ## 💻 Penggunaan Lokal (Local Development)
 
-Jika ingin menjalankan atau menguji bot di komputer lokal:
-
-### 1. Clone & Setup Virtual Environment
+### 1. Setup Virtual Environment
 ```bash
-# Masuk ke folder project
-cd job-alerts
+# Clone repository
+git clone https://github.com/Abbilville/job-scraper.git
+cd job-scraper
 
 # Buat virtual environment
 python -m venv .venv
@@ -129,34 +125,23 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2. Buat File Konfigurasi `.env`
+### 2. Atur Environment Variable
 Salin template `.env.example`:
 ```bash
 cp .env.example .env
 ```
-Buka `.env` dan sesuaikan parameter:
-```env
-DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/...
-SEARCH_TERMS=Frontend Developer, Software Engineer
-LOCATIONS=Indonesia, Jakarta, Remote
-FILTER_MODE=highlight
-HOURS_OLD=24
-RESULTS_WANTED=15
-```
+Buka `.env` dan masukkan `DISCORD_WEBHOOK_URL` Anda.
 
 ### 3. Eksekusi Script
 ```bash
 # Menjalankan dalam mode Dry Run (hanya preview di terminal, tanpa kirim ke Discord)
 python main.py --dry-run
 
-# Menjalankan hanya untuk perusahaan Top Tier (Big 4 / Top Tech)
+# Menjalankan hanya untuk lowongan Top Tier (Big 4 / Top Tech)
 python main.py --dry-run --filter-mode only_top
 
 # Menjalankan normal (mengirim ke Discord dan update seen_jobs.json)
 python main.py
-
-# Menjalankan dengan argumen khusus
-python main.py --search-terms "Frontend Developer, UI Designer" --locations "Indonesia, Remote" --results-wanted 10
 ```
 
 ---
@@ -164,20 +149,22 @@ python main.py --search-terms "Frontend Developer, UI Designer" --locations "Ind
 ## 📁 Struktur Direktori
 
 ```text
-job-alerts/
+job-scraper/
 ├── .github/
 │   └── workflows/
 │       └── job_alert.yml       # Konfigurasi cron & manual trigger GitHub Actions
 ├── .env.example                # Template variabel lingkungan
 ├── .gitignore                  # Berkas yang diabaikan Git
-├── company_filter.py           # Database & classifier Big 4, Top Tech, Bank, FMCG
-├── config.py                   # Modul konfigurasi dan env loader
-├── dedup.py                    # Modul deduplikasi riwayat lowongan
-├── discord_notifier.py         # Formatter embed & pengirim Discord Webhook
-├── main.py                     # Entry point orchestrator bot
+├── config.json                 # PUSAT PENGATURAN (search terms, lokasi, sites, top companies)
+├── config.py                   # Loader config.json & env override
+├── company_filter.py           # Classifier Top Companies (Big 4, Tech, Bank, FMCG)
+├── extractor.py                # Ekstraktor Skills, YoE, Seniority (Regex + AI HTTP Client)
+├── dedup.py                    # Deduplikasi riwayat loker (seen_jobs.json)
+├── discord_notifier.py         # Formatter Discord Embed & Webhook sender
+├── main.py                     # Entry point bot
 ├── requirements.txt            # Dependensi Python
 ├── seen_jobs.json              # Database riwayat lowongan tersimpan
-├── test_smoke.py               # Unit & smoke test
+├── test_smoke.py               # Test suite unit & smoke test
 └── README.md                   # Dokumentasi proyek
 ```
 

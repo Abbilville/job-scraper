@@ -1,0 +1,269 @@
+{
+  "search_settings": {
+    "search_terms": [
+      "Frontend Developer",
+      "Software Engineer",
+      "Backend Developer",
+      "Fullstack Developer",
+      "Forward Deployed Engineer",
+      "AI Engineer",
+      "Machine Learning Engineer",
+      "Data Scientist",
+      "Data Engineer",
+      "DevOps Engineer",
+      "Mobile Developer"
+    ],
+    "locations": [
+      "Indonesia",
+      "Jakarta",
+      "Remote"
+    ],
+    "sites": [
+      "linkedin",
+      "indeed"
+    ],
+    "hours_old": 24,
+    "results_wanted": 15,
+    "is_remote": false,
+    "country_indeed": "indonesia",
+    "enable_indeed_fallback": true
+  },
+  "filtering": {
+    "filter_mode": "highlight",
+    "notes": "Pilihan: 'highlight' (kirim semua, tandai & prioritaskan Top Tier), 'only_top' (hanya kirim Top Tier), 'all' (semua tanpa pembedaan)"
+  },
+  "top_companies": {
+    "Big 4 & Strategy Consulting": [
+      {
+        "name": "PwC",
+        "badge": "🏆 Big 4 Consulting",
+        "aliases": ["pwc", "pricewaterhousecoopers", "price waterhouse cooper"]
+      },
+      {
+        "name": "Deloitte",
+        "badge": "🏆 Big 4 Consulting",
+        "aliases": ["deloitte", "deloitte consulting", "deloitte indonesia"]
+      },
+      {
+        "name": "EY (Ernst & Young)",
+        "badge": "🏆 Big 4 Consulting",
+        "aliases": ["ey", "ernst & young", "ernst and young", "ernst young"]
+      },
+      {
+        "name": "KPMG",
+        "badge": "🏆 Big 4 Consulting",
+        "aliases": ["kpmg", "kpmg indonesia", "siddharta widjaja"]
+      },
+      {
+        "name": "McKinsey & Company",
+        "badge": "💎 Top Strategy Consulting",
+        "aliases": ["mckinsey", "mckinsey & company"]
+      },
+      {
+        "name": "Boston Consulting Group (BCG)",
+        "badge": "💎 Top Strategy Consulting",
+        "aliases": ["bcg", "boston consulting group"]
+      },
+      {
+        "name": "Bain & Company",
+        "badge": "💎 Top Strategy Consulting",
+        "aliases": ["bain", "bain & company"]
+      },
+      {
+        "name": "Accenture",
+        "badge": "🏆 Top Consulting",
+        "aliases": ["accenture"]
+      }
+    ],
+    "Top Tech Giants & Unicorns": [
+      {
+        "name": "GoTo (Gojek & Tokopedia)",
+        "badge": "🚀 Top Tech Giant",
+        "aliases": ["goto", "gojek", "tokopedia", "goto financial", "midtrans", "moka"]
+      },
+      {
+        "name": "Traveloka",
+        "badge": "🚀 Top Tech Unicorn",
+        "aliases": ["traveloka"]
+      },
+      {
+        "name": "Shopee / Sea Group",
+        "badge": "🚀 Top Tech Giant",
+        "aliases": ["shopee", "sea group", "garena", "seabank", "shopeepay"]
+      },
+      {
+        "name": "Grab",
+        "badge": "🚀 Top Tech Giant",
+        "aliases": ["grab", "grab indonesia", "ovo"]
+      },
+      {
+        "name": "Blibli / GDP Venture",
+        "badge": "🚀 Top Tech Unicorn",
+        "aliases": ["blibli", "pt global digital niaga", "gdp venture", "tiket.com"]
+      },
+      {
+        "name": "Bukalapak",
+        "badge": "🚀 Top Tech Unicorn",
+        "aliases": ["bukalapak"]
+      },
+      {
+        "name": "DANA Indonesia",
+        "badge": "🚀 Top FinTech Unicorn",
+        "aliases": ["dana", "dana indonesia", "pt espay debit indonesia koe"]
+      },
+      {
+        "name": "Xendit",
+        "badge": "🚀 Top FinTech Unicorn",
+        "aliases": ["xendit"]
+      },
+      {
+        "name": "Kredivo",
+        "badge": "🚀 Top FinTech Unicorn",
+        "aliases": ["kredivo", "finaccel"]
+      },
+      {
+        "name": "eFishery",
+        "badge": "🚀 Top Tech Unicorn",
+        "aliases": ["efishery"]
+      },
+      {
+        "name": "Ajaib",
+        "badge": "🚀 Top FinTech Unicorn",
+        "aliases": ["ajaib", "ajaib sekuritas"]
+      },
+      {
+        "name": "Bibit / Stockbit",
+        "badge": "🚀 Top FinTech",
+        "aliases": ["bibit", "stockbit"]
+      },
+      {
+        "name": "Ruangguru",
+        "badge": "🚀 Top EdTech",
+        "aliases": ["ruangguru"]
+      },
+      {
+        "name": "Google",
+        "badge": "🌐 Global Tech Giant",
+        "aliases": ["google", "google indonesia", "alphabet"]
+      },
+      {
+        "name": "Microsoft",
+        "badge": "🌐 Global Tech Giant",
+        "aliases": ["microsoft", "microsoft indonesia"]
+      },
+      {
+        "name": "Amazon / AWS",
+        "badge": "🌐 Global Tech Giant",
+        "aliases": ["amazon", "aws", "amazon web services"]
+      },
+      {
+        "name": "ByteDance / TikTok",
+        "badge": "🌐 Global Tech Giant",
+        "aliases": ["bytedance", "tiktok"]
+      },
+      {
+        "name": "Meta",
+        "badge": "🌐 Global Tech Giant",
+        "aliases": ["meta", "facebook"]
+      }
+    ],
+    "Top Tier Banking & FinTech": [
+      {
+        "name": "Bank Central Asia (BCA)",
+        "badge": "🏛️ Top Tier Banking",
+        "aliases": ["bca", "bank central asia", "pt bank central asia"]
+      },
+      {
+        "name": "Bank Mandiri",
+        "badge": "🏛️ Top Tier Banking",
+        "aliases": ["bank mandiri", "mandiri", "pt bank mandiri"]
+      },
+      {
+        "name": "Bank Rakyat Indonesia (BRI)",
+        "badge": "🏛️ Top Tier Banking",
+        "aliases": ["bri", "bank rakyat indonesia", "pt bank rakyat indonesia"]
+      },
+      {
+        "name": "Bank Negara Indonesia (BNI)",
+        "badge": "🏛️ Top Tier Banking",
+        "aliases": ["bni", "bank negara indonesia", "pt bank negara indonesia"]
+      },
+      {
+        "name": "Bank Indonesia (BI)",
+        "badge": "🏛️ Central Bank",
+        "aliases": ["bank indonesia"]
+      },
+      {
+        "name": "DBS Bank",
+        "badge": "🏛️ Top Tier Banking",
+        "aliases": ["dbs", "bank dbs", "dbs indonesia"]
+      },
+      {
+        "name": "CIMB Niaga",
+        "badge": "🏛️ Top Tier Banking",
+        "aliases": ["cimb", "cimb niaga", "bank cimb niaga"]
+      },
+      {
+        "name": "OCBC",
+        "badge": "🏛️ Top Tier Banking",
+        "aliases": ["ocbc", "ocbc nisp", "bank ocbc"]
+      },
+      {
+        "name": "Bank BTPN / Jenius",
+        "badge": "🏛️ Top Tier Banking",
+        "aliases": ["btpn", "jenius", "bank btpn"]
+      }
+    ],
+    "Top Conglomerates, Telco & FMCG": [
+      {
+        "name": "Telkom / Telkomsel",
+        "badge": "📡 Top Telco & Digital",
+        "aliases": ["telkom", "telkomsel", "pt telkom indonesia", "pt telekomunikasi indonesia"]
+      },
+      {
+        "name": "Astra International",
+        "badge": "🏢 Top Conglomerate",
+        "aliases": ["astra", "astra international", "pt astra international"]
+      },
+      {
+        "name": "Unilever",
+        "badge": "🌟 Top FMCG",
+        "aliases": ["unilever", "unilever indonesia", "pt unilever"]
+      },
+      {
+        "name": "Nestlé",
+        "badge": "🌟 Top FMCG",
+        "aliases": ["nestle", "nestlé", "pt nestle indonesia"]
+      },
+      {
+        "name": "Procter & Gamble (P&G)",
+        "badge": "🌟 Top FMCG",
+        "aliases": ["p&g", "procter & gamble", "procter and gamble"]
+      },
+      {
+        "name": "Danone",
+        "badge": "🌟 Top FMCG",
+        "aliases": ["danone", "danone aqua", "sarihusada"]
+      },
+      {
+        "name": "Paragon Technology (Wardah)",
+        "badge": "🌟 Top FMCG",
+        "aliases": ["paragon", "paragon technology and innovation", "wardah", "make over", "kahf"]
+      },
+      {
+        "name": "Indofood",
+        "badge": "🌟 Top FMCG",
+        "aliases": ["indofood", "indofood cbp", "pt indofood"]
+      },
+      {
+        "name": "Pertamina",
+        "badge": "⚡ National Energy Giant",
+        "aliases": ["pertamina", "pt pertamina"]
+      }
+    ],
+    "Custom Companies": []
+  },
+  "ai_extractor": {
+    "description": "Jika AI_API_URL dan AI_API_KEY disetel di env, bot memanggil endpoint AI VPS. Jika kosong, fallback otomatis ke rule-based regex extractor."
+  }
+}

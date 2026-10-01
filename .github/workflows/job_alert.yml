@@ -7,33 +7,29 @@ on:
   workflow_dispatch:
     inputs:
       search_terms:
-        description: 'Kata Kunci / Posisi (pisahkan koma, cth: Frontend Developer, Software Engineer)'
+        description: 'Kata Kunci / Posisi (opsional, override config.json jika diisi)'
         required: false
-        default: 'Frontend Developer'
         type: string
       locations:
-        description: 'Lokasi (pisahkan koma, cth: Indonesia, Jakarta, Remote)'
+        description: 'Lokasi (opsional, override config.json jika diisi)'
         required: false
-        default: 'Indonesia'
         type: string
       filter_mode:
-        description: 'Mode Filter Perusahaan (highlight = tandai Big 4/Top Tech, only_top = khusus Top Tier saja, all = semua)'
+        description: 'Mode Filter Perusahaan (opsional, override config.json)'
         required: false
-        default: 'highlight'
         type: choice
         options:
+          - ''
           - highlight
           - only_top
           - all
       hours_old:
-        description: 'Usia Lowongan dalam Jam (cth: 24)'
+        description: 'Usia Lowongan dalam Jam (opsional)'
         required: false
-        default: '24'
         type: string
       results_wanted:
-        description: 'Target Hasil per Query/Situs'
+        description: 'Target Hasil per Query/Situs (opsional)'
         required: false
-        default: '15'
         type: string
 
 # Permission contents: write dibutuhkan agar GitHub Actions bisa commit & push file seen_jobs.json
@@ -66,14 +62,13 @@ jobs:
       - name: Run Job Alert Script
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          SEARCH_TERMS: ${{ inputs.search_terms || vars.SEARCH_TERMS || 'Frontend Developer' }}
-          LOCATIONS: ${{ inputs.locations || vars.LOCATIONS || 'Indonesia' }}
-          FILTER_MODE: ${{ inputs.filter_mode || vars.FILTER_MODE || 'highlight' }}
-          HOURS_OLD: ${{ inputs.hours_old || vars.HOURS_OLD || '24' }}
-          RESULTS_WANTED: ${{ inputs.results_wanted || vars.RESULTS_WANTED || '15' }}
-          SITE_NAMES: ${{ vars.SITE_NAMES || 'linkedin,indeed' }}
-          CUSTOM_TOP_COMPANIES: ${{ vars.CUSTOM_TOP_COMPANIES || '' }}
-          ENABLE_INDEED_FALLBACK: 'true'
+          AI_API_URL: ${{ secrets.AI_API_URL }}
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          SEARCH_TERMS: ${{ inputs.search_terms || vars.SEARCH_TERMS || '' }}
+          LOCATIONS: ${{ inputs.locations || vars.LOCATIONS || '' }}
+          FILTER_MODE: ${{ inputs.filter_mode || vars.FILTER_MODE || '' }}
+          HOURS_OLD: ${{ inputs.hours_old || vars.HOURS_OLD || '' }}
+          RESULTS_WANTED: ${{ inputs.results_wanted || vars.RESULTS_WANTED || '' }}
         run: |
           python main.py
 

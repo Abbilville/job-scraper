@@ -1,4 +1,4 @@
-"""Main entry point for Job Alert Bot with multi-search and top employer intelligence."""
+"""Main entry point for Job Alert Bot with multi-search, company intelligence, and AI-assisted extraction."""
 
 import argparse
 import logging
@@ -6,9 +6,10 @@ import sys
 from typing import List
 
 from company_filter import CompanyMatcher
-from config import Config, config as default_config
+from config import Config, load_config
 from dedup import JobDeduplicator
 from discord_notifier import DiscordNotifier
+from extractor import extract_job_insights
 from scraper import fetch_jobs
 
 
@@ -25,15 +26,14 @@ def setup_logging(verbose: bool = False) -> None:
 def parse_arguments() -> argparse.Namespace:
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(description="Job Alert Bot - Scrapes jobs and sends alerts to Discord.")
-    parser.add_argument("--search-term", type=str, default=None, help="Single job title / keyword")
+    parser.add_argument("--config-file", type=str, default=None, help="Path to custom config.json")
     parser.add_argument("--search-terms", type=str, default=None, help="Comma-separated search terms")
-    parser.add_argument("--location", type=str, default=None, help="Single job location")
     parser.add_argument("--locations", type=str, default=None, help="Comma-separated job locations")
     parser.add_argument("--hours-old", type=int, default=None, help="Max age of job postings in hours")
     parser.add_argument("--results-wanted", type=int, default=None, help="Number of results desired per site/query")
     parser.add_argument("--sites", type=str, default=None, help="Comma-separated sites (e.g. linkedin,indeed)")
     parser.add_argument("--filter-mode", type=str, choices=["highlight", "only_top", "all"], default=None,
-                        help="Company filter mode: highlight (default), only_top (Big 4 / Tech / etc.), all")
+                        help="Company filter mode: highlight (default), only_top, all")
     parser.add_argument("--custom-companies", type=str, default=None,
                         help="Comma-separated additional top companies to recognize")
     parser.add_argument("--remote", action="store_true", default=None, help="Filter for remote jobs only")
@@ -43,32 +43,27 @@ def parse_arguments() -> argparse.Namespace:
 
 
 def build_config_from_args(args: argparse.Namespace) -> Config:
-    """Merge CLI arguments with default configuration."""
-    cfg = Config(
-        search_term=args.search_term if args.search_term is not None else default_config.search_term,
-        location=args.location if args.location is not None else default_config.location,
-        hours_old=args.hours_old if args.hours_old is not None else default_config.hours_old,
-        results_wanted=args.results_wanted if args.results_wanted is not None else default_config.results_wanted,
-        is_remote=args.remote if args.remote is not None else default_config.is_remote,
-        country_indeed=default_config.country_indeed,
-        enable_indeed_fallback=default_config.enable_indeed_fallback,
-        filter_mode=args.filter_mode if args.filter_mode is not None else default_config.filter_mode,
-        discord_webhook_url=default_config.discord_webhook_url,
-        seen_jobs_file=default_config.seen_jobs_file,
-        max_seen_history=default_config.max_seen_history,
-        delay_between_alerts=default_config.delay_between_alerts,
-        dry_run=args.dry_run if args.dry_run is not None else default_config.dry_run,
-    )
+    """Load config.json and merge with CLI arguments."""
+    json_path = args.config_file or "config.json"
+    cfg = load_config(json_path)
 
     if args.search_terms is not None:
         cfg.search_terms = [s.strip() for s in args.search_terms.split(",") if s.strip()]
-    elif args.search_term is not None:
-        cfg.search_terms = [args.search_term.strip()]
 
     if args.locations is not None:
         cfg.locations = [s.strip() for s in args.locations.split(",") if s.strip()]
-    elif args.location is not None:
-        cfg.locations = [args.location.strip()]
+
+    if args.hours_old is not None:
+        cfg.hours_old = args.hours_old
+
+    if args.results_wanted is not None:
+        cfg.results_wanted = args.results_wanted
+
+    if args.remote is not None:
+        cfg.is_remote = args.remote
+
+    if args.filter_mode is not None:
+        cfg.filter_mode = args.filter_mode
 
     if args.sites is not None:
         cfg.site_names = [s.strip().lower() for s in args.sites.split(",") if s.strip()]
@@ -76,6 +71,9 @@ def build_config_from_args(args: argparse.Namespace) -> Config:
     if args.custom_companies is not None:
         extra = [c.strip() for c in args.custom_companies.split(",") if c.strip()]
         cfg.custom_companies.extend(extra)
+
+    if args.dry_run is not None:
+        cfg.dry_run = args.dry_run
 
     return cfg
 
@@ -92,15 +90,17 @@ def run_job_alerts(cfg: Config) -> int:
     logger.info("  • Target Hasil    : %d per query/situs", cfg.results_wanted)
     logger.info("  • Situs           : %s (Fallback Indeed: %s)", ", ".join(cfg.site_names), cfg.enable_indeed_fallback)
     logger.info("  • Mode Filter     : %s (only_top / highlight / all)", cfg.filter_mode)
-    if cfg.custom_companies:
-        logger.info("  • Custom Top Co.  : %s", ", ".join(cfg.custom_companies))
+    logger.info("  • AI Extractor    : %s", "Aktif (URL terpasang)" if cfg.ai_api_url else "Offline (Rule-based Regex)")
     logger.info("  • Discord Webhook : %s", "Tersedia" if cfg.discord_webhook_url else "KOSONG (Dry Run)")
     logger.info("  • Mode Dry Run    : %s", cfg.dry_run)
     logger.info("=" * 65)
 
     # 1. Initialize Deduplicator & Company Matcher
     dedup = JobDeduplicator(filepath=cfg.seen_jobs_file, max_history=cfg.max_seen_history)
-    matcher = CompanyMatcher(custom_companies=cfg.custom_companies)
+    matcher = CompanyMatcher(
+        top_companies_dict=cfg.top_companies,
+        custom_companies=cfg.custom_companies,
+    )
 
     # 2. Scrape Jobs across terms & locations
     scraped_jobs = fetch_jobs(cfg)
@@ -144,24 +144,39 @@ def run_job_alerts(cfg: Config) -> int:
     top_count = sum(1 for j in new_jobs if j.get("company_match"))
     logger.info("Ditemukan %d lowongan baru (%d dari Top Tier/Big 4/Tech Giants)!", len(new_jobs), top_count)
 
-    # 6. Preview / Dry-run check
+    # 6. Extract Skills, YoE & Seniority Insights
+    logger.info("Mengekstrak keterampilan (skills), pengalaman (YoE), dan level jabatan...")
+    for job in new_jobs:
+        job["insights"] = extract_job_insights(
+            job=job,
+            ai_api_url=cfg.ai_api_url,
+            ai_api_key=cfg.ai_api_key,
+        )
+
+    # 7. Preview / Dry-run check
     if cfg.dry_run:
-        logger.info("--- [MODE DRY RUN AKTIF - PREVIEW LOWONGAN] ---")
+        logger.info("--- [MODE DRY RUN AKTIF - PREVIEW LOWONGAN & INSIGHTS] ---")
         for i, job in enumerate(new_jobs, 1):
             badge = f"[{job['company_match'].badge}] " if job.get("company_match") else ""
+            ins = job.get("insights")
+            skills_str = f" | Skills: {', '.join(ins.skills[:5])}" if ins and ins.skills else ""
+            yoe_str = f" | YoE: {ins.yoe}" if ins and ins.yoe else ""
+            lvl_str = f" | Level: {ins.seniority}" if ins and ins.seniority else ""
             logger.info(
-                "[%d] %s%s | %s | %s | %s",
+                "[%d] %s%s | %s%s%s%s | %s",
                 i,
                 badge,
                 job.get("title"),
                 job.get("company"),
-                job.get("location"),
+                lvl_str,
+                yoe_str,
+                skills_str,
                 job.get("job_url"),
             )
         logger.info("Dry run selesai. Tidak ada pesan dikirim dan seen_jobs.json tidak diubah.")
         return 0
 
-    # 7. Send alerts to Discord
+    # 8. Send alerts to Discord
     notifier = DiscordNotifier(webhook_url=cfg.discord_webhook_url, delay=cfg.delay_between_alerts)
 
     if not notifier.is_configured():
@@ -171,13 +186,17 @@ def run_job_alerts(cfg: Config) -> int:
         )
         for i, job in enumerate(new_jobs, 1):
             badge = f"[{job['company_match'].badge}] " if job.get("company_match") else ""
+            ins = job.get("insights")
+            skills_str = f" | Skills: {', '.join(ins.skills[:5])}" if ins and ins.skills else ""
+            yoe_str = f" | YoE: {ins.yoe}" if ins and ins.yoe else ""
             logger.info(
-                "[%d] %s%s | %s | %s | %s",
+                "[%d] %s%s | %s%s%s | %s",
                 i,
                 badge,
                 job.get("title"),
                 job.get("company"),
-                job.get("location"),
+                yoe_str,
+                skills_str,
                 job.get("job_url"),
             )
         logger.info(
@@ -185,12 +204,12 @@ def run_job_alerts(cfg: Config) -> int:
         )
         return 0
 
-    # 8. Dispatch and mark seen
+    # 9. Dispatch and mark seen
     sent_jobs = notifier.notify_jobs(new_jobs)
     for job in sent_jobs:
         dedup.mark_seen(job)
 
-    # 9. Persist seen jobs
+    # 10. Persist seen jobs
     if sent_jobs:
         dedup.save()
         logger.info("Berhasil menyimpan %d lowongan baru ke '%s'.", len(sent_jobs), cfg.seen_jobs_file)

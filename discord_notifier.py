@@ -1,4 +1,4 @@
-"""Discord Webhook Notifier with rich embed formatting and top employer highlights."""
+"""Discord Webhook Notifier with rich embed formatting, top employer highlights, and AI insights."""
 
 import logging
 import time
@@ -63,7 +63,7 @@ def _get_embed_color(site: Optional[str], is_top_tier: bool = False) -> int:
 
 
 def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
-    """Build a Discord Embed dictionary from a job record with optional top employer highlight."""
+    """Build a Discord Embed dictionary from a job record with optional top employer highlight and insights."""
     raw_title = str(job.get("title") or "Lowongan Pekerjaan Baru")
     company = str(job.get("company") or "Perusahaan Tidak Disebutkan")
     raw_location = str(job.get("location") or "Lokasi Tidak Tersedia")
@@ -79,9 +79,12 @@ def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
     company_match = job.get("company_match")
     is_top_tier = company_match is not None
 
+    # Check extracted insights (Skills, YoE, Seniority)
+    insights = job.get("insights")
+
     fields = []
 
-    # If top tier, prepend a prominent highlight banner field
+    # 1. If top tier, prepend a prominent highlight banner field
     if is_top_tier:
         fields.append({
             "name": "⭐ PERUSAHAAN UNGGULAN (TOP TIER)",
@@ -89,6 +92,7 @@ def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
             "inline": False,
         })
 
+    # 2. Main company & location fields
     fields.extend([
         {"name": "🏢 Perusahaan", "value": company[:1000], "inline": True},
         {"name": "📍 Lokasi", "value": location[:1000], "inline": True},
@@ -96,22 +100,55 @@ def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
         {"name": "📅 Diposting", "value": str(date_posted)[:1000], "inline": True},
     ])
 
+    # 3. Insights: Level & YoE
+    if insights:
+        if insights.seniority and insights.seniority != "Not Specified":
+            fields.append({"name": "🎓 Level", "value": insights.seniority[:1000], "inline": True})
+        if insights.yoe:
+            fields.append({"name": "⏳ Pengalaman (YoE)", "value": insights.yoe[:1000], "inline": True})
+
+    # 4. Job type
     if job_type:
         fields.append({"name": "💼 Tipe", "value": str(job_type).replace("_", " ").title()[:1000], "inline": True})
 
-    matched_query = job.get("matched_query")
-    if matched_query:
-        fields.append({"name": "🎯 Pencarian", "value": str(matched_query)[:1000], "inline": True})
-
+    # 5. Salary if available
     salary = _format_salary(job)
     if salary:
         fields.append({"name": "💰 Estimasi Gaji", "value": salary[:1000], "inline": True})
 
-    # Add quick link call to action
+    # 6. Insights: Technical Skills (Badges)
+    if insights and insights.skills:
+        # Format skills as markdown inline code badges
+        skills_formatted = " ".join([f"`{s}`" for s in insights.skills[:10]])
+        fields.append({
+            "name": "🛠️ Keahlian / Tech Stack",
+            "value": skills_formatted[:1000],
+            "inline": False,
+        })
+
+    # 7. AI summary if available
+    if insights and insights.summary:
+        fields.append({
+            "name": "💡 Ringkasan Posisi",
+            "value": str(insights.summary)[:1000],
+            "inline": False,
+        })
+
+    # 8. Query context
+    matched_query = job.get("matched_query")
+    if matched_query:
+        fields.append({"name": "🎯 Pencarian", "value": str(matched_query)[:1000], "inline": True})
+
+    # 9. Link to apply
     if url:
         fields.append({"name": "🔗 Link Lamaran", "value": f"[Klik di sini untuk melamar]({url})", "inline": False})
 
-    footer_text = f"Job Alert Bot • {company_match.category}" if is_top_tier else "Job Alert Bot • Powered by JobSpy"
+    # Footer source indicator
+    ai_tag = "🤖 AI Analyzed" if (insights and insights.source == "ai") else "⚡ Rule-Based"
+    if is_top_tier:
+        footer_text = f"Job Alert Bot • {company_match.category} • {ai_tag}"
+    else:
+        footer_text = f"Job Alert Bot • Powered by JobSpy • {ai_tag}"
 
     embed: Dict[str, Any] = {
         "title": raw_title[:250],
