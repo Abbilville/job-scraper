@@ -1,0 +1,75 @@
+name: Job Alert Bot
+
+on:
+  schedule:
+    # Berjalan setiap 6 jam sekali (00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      search_term:
+        description: 'Search Term (e.g. Frontend Developer)'
+        required: false
+        default: 'Frontend Developer'
+        type: string
+      location:
+        description: 'Location (e.g. Indonesia / Remote)'
+        required: false
+        default: 'Indonesia'
+        type: string
+      hours_old:
+        description: 'Hours Old (e.g. 24)'
+        required: false
+        default: '24'
+        type: string
+      results_wanted:
+        description: 'Results Wanted per site'
+        required: false
+        default: '15'
+        type: string
+
+# Permission contents: write dibutuhkan agar GitHub Actions bisa commit & push file seen_jobs.json
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-alert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: |
+          python -m unittest test_smoke.py
+
+      - name: Run Job Alert Script
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SEARCH_TERM: ${{ inputs.search_term || vars.SEARCH_TERM || 'Frontend Developer' }}
+          LOCATION: ${{ inputs.location || vars.LOCATION || 'Indonesia' }}
+          HOURS_OLD: ${{ inputs.hours_old || vars.HOURS_OLD || '24' }}
+          RESULTS_WANTED: ${{ inputs.results_wanted || vars.RESULTS_WANTED || '15' }}
+          SITE_NAMES: ${{ vars.SITE_NAMES || 'linkedin,indeed' }}
+          ENABLE_INDEED_FALLBACK: 'true'
+        run: |
+          python main.py
+
+      - name: Commit & push seen_jobs.json
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore(bot): update seen_jobs.json [skip ci]'
+          file_pattern: 'seen_jobs.json'
+          commit_user_name: 'github-actions[bot]'
+          commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
+          commit_author: 'github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>'
