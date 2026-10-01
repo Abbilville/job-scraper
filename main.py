@@ -235,7 +235,7 @@ def run_job_alerts(cfg: Config) -> int:
         stream_meta = routing_cfg.get("streams", {}).get(stream_key, {})
         job["stream_name"] = stream_meta.get("name", stream_key)
         job["stream_color"] = stream_meta.get("color")
-
+        job["role_id"] = stream_meta.get("role_id")
     # 8. Filter Duplicates against seen_jobs.json
     new_jobs = dedup.filter_unseen(eligible_jobs)
     if not new_jobs:

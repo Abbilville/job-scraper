@@ -1,31 +1,116 @@
-"""Discord Webhook Notifier with stream routing and color coding."""
+"""Discord Webhook Notifier with Modern Minimalist 3-Column Card and batch-level role mentions."""
 
 import logging
 import time
 from datetime import datetime, timezone
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Set
 import requests
 
 from config import Config
 
 logger = logging.getLogger("job_alerts.discord")
 
-# Color constants (decimal representation for Discord API)
-COLOR_TOP_TIER = 0xF1C40F       # Gold / Featured Employer
-COLOR_STREAM_TECH = 0x3498DB     # Blue: Tech & Engineering
-COLOR_STREAM_DATA = 0x9B59B6     # Purple: Data & AI
-COLOR_STREAM_PRODUCT = 0xE67E22  # Orange: Product & Business Analysis
-COLOR_LINKEDIN = 0x0A66C2       # LinkedIn Blue
-COLOR_INDEED = 0x2164F3         # Indeed Blue
-COLOR_DEFAULT = 0x5865F2        # Discord Blurple
+# Aesthetics & Brand Colors (Modern Palette)
+COLOR_TOP_TIER = 0xE5B842        # Champagne Gold: Top Tier / Big 4
+COLOR_STREAM_TECH = 0x3B82F6      # Modern Blue: Tech & Engineering
+COLOR_STREAM_DATA = 0x8B5CF6      # Indigo/Purple: Data & AI
+COLOR_STREAM_PRODUCT = 0xF59E0B   # Warm Amber: Product & Business Analysis
+COLOR_LINKEDIN = 0x0A66C2        # LinkedIn Blue
+COLOR_INDEED = 0x2164F3          # Indeed Blue
+COLOR_DEFAULT = 0x64748B         # Slate Gray (Neutral)
+
+PORTAL_LOGOS = {
+    "linkedin": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/linkedin.png",
+    "indeed": "https://www.google.com/s2/favicons?domain=indeed.com&sz=128",
+}
+
+# Known Top Company Domain Mapping for Instant High-Res PNG Logos
+TOP_COMPANY_DOMAINS = {
+    "goto": "gojek.com",
+    "gojek": "gojek.com",
+    "tokopedia": "tokopedia.com",
+    "traveloka": "traveloka.com",
+    "shopee": "shopee.co.id",
+    "grab": "grab.com",
+    "tiket": "tiket.com",
+    "blibli": "blibli.com",
+    "bukalapak": "bukalapak.com",
+    "dana": "dana.id",
+    "xendit": "xendit.co",
+    "kredivo": "kredivo.id",
+    "efishery": "efishery.com",
+    "ajaib": "ajaib.co.id",
+    "bibit": "bibit.id",
+    "stockbit": "stockbit.com",
+    "dkatalis": "dkatalis.com",
+    "sirclo": "sirclo.com",
+    "komerce": "komerce.id",
+    "ruangguru": "ruangguru.com",
+    "google": "google.com",
+    "microsoft": "microsoft.com",
+    "amazon": "amazon.com",
+    "aws": "aws.amazon.com",
+    "bytedance": "bytedance.com",
+    "tiktok": "tiktok.com",
+    "meta": "meta.com",
+    "pwc": "pwc.com",
+    "deloitte": "deloitte.com",
+    "ey": "ey.com",
+    "kpmg": "kpmg.com",
+    "mckinsey": "mckinsey.com",
+    "bcg": "bcg.com",
+    "bain": "bain.com",
+    "accenture": "accenture.com",
+    "bca": "bca.co.id",
+    "mandiri": "bankmandiri.co.id",
+    "bri": "bri.co.id",
+    "bni": "bni.co.id",
+    "dbs": "dbs.com",
+    "cimb": "cimbniaga.co.id",
+    "ocbc": "ocbc.id",
+    "jenius": "jenius.com",
+    "telkom": "telkom.co.id",
+    "telkomsel": "telkomsel.com",
+    "astra": "astra.co.id",
+    "unilever": "unilever.co.id",
+    "nestle": "nestle.co.id",
+    "kalbe": "kalbe.co.id",
+    "mayora": "mayoraindah.co.id",
+    "wings": "wingscorp.com",
+    "pertamina": "pertamina.com",
+}
+
+
+def _resolve_thumbnail_url(job: Dict[str, Any]) -> str:
+    """Resolve a guaranteed raster PNG/JPEG thumbnail for Discord embed.
+    Discord does NOT support SVG format for embed thumbnails.
+    """
+    # 1. Scraped logo (if valid raster image, not SVG)
+    logo = job.get("company_logo")
+    if logo and isinstance(logo, str) and logo.startswith("http") and not logo.lower().endswith(".svg"):
+        return logo
+
+    # 2. Known company logo via Google Favicon PNG
+    company_name = str(job.get("company") or "").lower()
+    for keyword, domain in TOP_COMPANY_DOMAINS.items():
+        if keyword in company_name:
+            return f"https://www.google.com/s2/favicons?domain={domain}&sz=128"
+
+    # 3. Fallback to Job Portal Official PNG Logo
+    site_key = str(job.get("site") or "linkedin").lower()
+    return PORTAL_LOGOS.get(site_key, PORTAL_LOGOS["linkedin"])
 
 
 def _format_salary(job: Dict[str, Any]) -> Optional[str]:
-    """Format salary information if available."""
+    """Format salary information cleanly if available."""
     min_amt = job.get("min_amount")
     max_amt = job.get("max_amount")
-    currency = job.get("currency") or ""
-    interval = job.get("interval") or ""
+    currency = job.get("currency") or "IDR"
+    interval = job.get("interval") or "bln"
+    if interval.lower() in ("monthly", "month"):
+        interval = "bulan"
+    elif interval.lower() in ("yearly", "year", "annually", "annual"):
+        interval = "tahun"
 
     if min_amt is not None and max_amt is not None:
         try:
@@ -34,14 +119,14 @@ def _format_salary(job: Dict[str, Any]) -> Optional[str]:
             return f"{currency} {min_amt} - {max_amt} / {interval}".strip()
     elif min_amt is not None:
         try:
-            return f"{currency} >= {float(min_amt):,.0f} / {interval}".strip()
+            return f"{currency} ≥ {float(min_amt):,.0f} / {interval}".strip()
         except (ValueError, TypeError):
-            return f"{currency} >= {min_amt} / {interval}".strip()
+            return f"{currency} ≥ {min_amt} / {interval}".strip()
     elif max_amt is not None:
         try:
-            return f"{currency} <= {float(max_amt):,.0f} / {interval}".strip()
+            return f"{currency} ≤ {float(max_amt):,.0f} / {interval}".strip()
         except (ValueError, TypeError):
-            return f"{currency} <= {max_amt} / {interval}".strip()
+            return f"{currency} ≤ {max_amt} / {interval}".strip()
 
     compensation = job.get("compensation")
     if compensation and isinstance(compensation, str) and compensation.strip():
@@ -52,19 +137,12 @@ def _format_salary(job: Dict[str, Any]) -> Optional[str]:
 
 def _get_embed_color(job: Dict[str, Any], is_top_tier: bool = False) -> int:
     """Select appropriate brand color:
-    1. Gold for Top Tier / Big 4.
-    2. Stream-specific color (Blue for Tech, Purple for Data/AI, Orange for Product).
-    3. Fallback to site color.
+    1. Champagne Gold for Top Tier / Big 4.
+    2. Stream-specific color (Blue for Tech, Purple for Data, Amber for Product).
+    3. Fallback to site/default color.
     """
     if is_top_tier:
         return COLOR_TOP_TIER
-
-    stream_color = job.get("stream_color")
-    if stream_color:
-        try:
-            return int(stream_color)
-        except (ValueError, TypeError):
-            pass
 
     stream_key = job.get("stream_key")
     if stream_key == "tech_engineering":
@@ -84,98 +162,89 @@ def _get_embed_color(job: Dict[str, Any], is_top_tier: bool = False) -> int:
 
 
 def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
-    """Build a Discord Embed dictionary from a job record with stream routing, top employer highlight, and insights."""
-    raw_title = str(job.get("title") or "Lowongan Pekerjaan Baru")
-    company = str(job.get("company") or "Perusahaan Tidak Disebutkan")
-    raw_location = str(job.get("location") or "Lokasi Tidak Tersedia")
+    """Build a clean Modern Minimalist Discord Embed with 3-column glanceable grid."""
+    title = str(job.get("title") or "Lowongan Pekerjaan").strip()[:250]
+    company = str(job.get("company") or "Perusahaan").strip()
+    raw_location = str(job.get("location") or "").strip()
     is_remote = job.get("is_remote")
-    location = f"{raw_location} (Remote)" if is_remote else raw_location
+
+    # Format location with remote tag
+    if is_remote and raw_location:
+        location = f"{raw_location} (Remote)"
+    elif is_remote:
+        location = "Remote Friendly"
+    else:
+        location = raw_location or "Indonesia"
 
     url = job.get("job_url") or job.get("job_url_direct") or ""
-    site = str(job.get("site") or "Web").capitalize()
+    site = str(job.get("site") or "LinkedIn").capitalize()
     date_posted = job.get("date_posted") or "Baru saja"
     job_type = job.get("job_type")
 
-    # Check top company classification
+    # Top company classification
     company_match = job.get("company_match")
     is_top_tier = company_match is not None
 
-    # Check extracted insights (Skills, YoE, Seniority)
+    # Extracted insights
     insights = job.get("insights")
-    stream_name = job.get("stream_name", "General Tech")
+    salary = _format_salary(job)
 
+    # Sub-header description: Company • Location • Optional Top Tier badge + full-width divider
+    header_parts = [f"**{company}**", location]
+    if is_top_tier and company_match:
+        header_parts.append(company_match.badge)
+    divider = "─" * 58
+    description_text = " • ".join(header_parts) + f"\n{divider}"
     fields = []
 
-    # 1. If top tier, prepend a prominent highlight banner field
-    if is_top_tier:
+    # 1. 3-Column Modern Grid (Tipe Kerja, Pengalaman, Level)
+    formatted_type = str(job_type).replace("_", " ").title() if job_type else "Full-time"
+    formatted_yoe = insights.yoe if (insights and insights.yoe) else "1 - 3 Tahun"
+    formatted_level = insights.seniority if (insights and insights.seniority and insights.seniority != "Not Specified") else "Associate"
+
+    fields.append({"name": "💼 Tipe Kerja", "value": formatted_type, "inline": True})
+    fields.append({"name": "⏳ Pengalaman", "value": formatted_yoe, "inline": True})
+    fields.append({"name": "🎓 Level", "value": formatted_level, "inline": True})
+
+    # 2. Salary Callout (if available)
+    if salary:
         fields.append({
-            "name": "⭐ PERUSAHAAN UNGGULAN (TOP TIER)",
-            "value": f"**{company_match.badge}** • {company_match.canonical_name}",
+            "name": "💰 Estimasi Kompensasi",
+            "value": f"**{salary}**",
             "inline": False,
         })
 
-    # 2. Main metadata fields
-    fields.extend([
-        {"name": "📁 Stream", "value": f"**{stream_name}**", "inline": True},
-        {"name": "🏢 Perusahaan", "value": company[:1000], "inline": True},
-        {"name": "📍 Lokasi", "value": location[:1000], "inline": True},
-    ])
-
-    fields.extend([
-        {"name": "🌐 Sumber", "value": site[:1000], "inline": True},
-        {"name": "📅 Diposting", "value": str(date_posted)[:1000], "inline": True},
-    ])
-
-    # 3. Insights: Level & YoE
-    if insights:
-        if insights.seniority and insights.seniority != "Not Specified":
-            fields.append({"name": "🎓 Level", "value": insights.seniority[:1000], "inline": True})
-        if insights.yoe:
-            fields.append({"name": "⏳ Pengalaman (YoE)", "value": insights.yoe[:1000], "inline": True})
-
-    # 4. Job type
-    if job_type:
-        fields.append({"name": "💼 Tipe", "value": str(job_type).replace("_", " ").title()[:1000], "inline": True})
-
-    # 5. Salary if available
-    salary = _format_salary(job)
-    if salary:
-        fields.append({"name": "💰 Estimasi Gaji", "value": salary[:1000], "inline": True})
-
-    # 6. Insights: Technical & SI Skills (Badges)
+    # 3. Key Tech Stack & Tools (clean code pills)
     if insights and insights.skills:
-        skills_formatted = " ".join([f"`{s}`" for s in insights.skills[:10]])
+        skills_formatted = "  ".join([f"`{s}`" for s in insights.skills[:8]])
         fields.append({
-            "name": "🛠️ Keahlian / Tech Stack",
+            "name": "🛠️ Tech Stack & Tools",
             "value": skills_formatted[:1000],
             "inline": False,
         })
 
-    # 7. AI summary if available
+    # 4. Optional brief summary/notes
     if insights and insights.summary:
         fields.append({
-            "name": "💡 Ringkasan Posisi",
+            "name": "📌 Catatan Posisi",
             "value": str(insights.summary)[:1000],
             "inline": False,
         })
 
-    # 8. Query context
-    matched_query = job.get("matched_query")
-    if matched_query:
-        fields.append({"name": "🎯 Pencarian Asal", "value": str(matched_query)[:1000], "inline": True})
-
-    # 9. Link to apply
+    # 5. Clean external link CTA
     if url:
-        fields.append({"name": "🔗 Link Lamaran", "value": f"[Klik di sini untuk melamar]({url})", "inline": False})
+        fields.append({
+            "name": "",
+            "value": f"👉 **[Lamar Sekarang di {site} ↗]({url})**",
+            "inline": False,
+        })
 
-    # Footer source indicator
-    ai_tag = "🤖 AI Analyzed" if (insights and insights.source == "ai") else "⚡ Rule-Based"
-    footer_text = f"Job Alert Bot • {stream_name} • {ai_tag}"
-    if is_top_tier:
-        footer_text = f"Job Alert Bot • {company_match.category} • {stream_name} • {ai_tag}"
+    # Clean, human footer with timestamp
+    footer_text = f"{site} • Diposting {date_posted}"
 
     embed: Dict[str, Any] = {
-        "title": raw_title[:250],
+        "title": title,
+        "description": description_text,
         "color": _get_embed_color(job, is_top_tier=is_top_tier),
         "fields": fields,
         "footer": {
@@ -187,16 +256,15 @@ def build_job_embed(job: Dict[str, Any]) -> Dict[str, Any]:
     if url:
         embed["url"] = url
 
-    # Optional company logo as thumbnail
-    logo_url = job.get("company_logo")
-    if logo_url and isinstance(logo_url, str) and logo_url.startswith("http"):
-        embed["thumbnail"] = {"url": logo_url}
-
+    # Thumbnail: Guaranteed raster PNG (Company Logo or Portal Fallback)
+    thumbnail_url = _resolve_thumbnail_url(job)
+    if thumbnail_url:
+        embed["thumbnail"] = {"url": thumbnail_url}
     return embed
 
 
 class DiscordNotifier:
-    """Handles dispatching job alert embeds to Discord Webhooks with multi-stream channel routing."""
+    """Handles dispatching job alert embeds to Discord Webhooks with stream routing and batch-level mentions."""
 
     def __init__(
         self,
@@ -207,6 +275,8 @@ class DiscordNotifier:
         self.default_webhook_url = default_webhook_url.strip()
         self.config = config
         self.delay = max(0.2, delay)
+        # Track streams that have already pinged in this execution batch
+        self.pinged_streams: Set[str] = set()
 
     def has_any_webhook(self) -> bool:
         """Check if at least one webhook URL is configured."""
@@ -231,8 +301,13 @@ class DiscordNotifier:
 
         return self.default_webhook_url
 
-    def send_single_job(self, job: Dict[str, Any], max_retries: int = 3) -> bool:
-        """Send one job alert embed to the appropriate stream webhook with retry logic."""
+    def send_single_job(
+        self,
+        job: Dict[str, Any],
+        mention_role: bool = False,
+        max_retries: int = 3,
+    ) -> bool:
+        """Send one job alert embed to the appropriate stream webhook with optional role mention."""
         target_webhook = self.get_webhook_for_job(job)
         if not target_webhook or not target_webhook.startswith("https://discord.com/api/webhooks/"):
             logger.warning(
@@ -243,10 +318,25 @@ class DiscordNotifier:
             return False
 
         embed = build_job_embed(job)
-        payload = {
-            "username": f"Job Alert Bot [{job.get('stream_name', 'Jobs')}]",
+        stream_key = job.get("stream_key", "")
+        stream_name = job.get("stream_name", "")
+        bot_username = f"Career Radar • {stream_name}" if stream_name else "Career Radar"
+
+        payload: Dict[str, Any] = {
+            "username": bot_username,
             "embeds": [embed],
         }
+
+        # Role mention / member tag ONLY on batch trigger
+        if mention_role:
+            role_id = job.get("role_id")
+            if not role_id and self.config:
+                streams = self.config.discord_routing.get("streams", {})
+                role_id = streams.get(stream_key, {}).get("role_id")
+
+            if role_id:
+                payload["content"] = f"<@&{role_id}>"
+                payload["allowed_mentions"] = {"roles": [str(role_id)]}
 
         for attempt in range(1, max_retries + 1):
             try:
@@ -254,10 +344,11 @@ class DiscordNotifier:
 
                 if response.status_code in (200, 204):
                     logger.info(
-                        "Berhasil mengirim alert [%s]: '%s' (%s)",
-                        job.get("stream_name"),
+                        "Berhasil mengirim alert [%s]: '%s' (%s) (Mention: %s)",
+                        job.get("stream_name", "General"),
                         job.get("title"),
                         job.get("company"),
+                        mention_role,
                     )
                     return True
 
@@ -285,7 +376,9 @@ class DiscordNotifier:
         return False
 
     def notify_jobs(self, jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """Send alerts for a list of jobs routed to their respective channel streams."""
+        """Send alerts for a list of jobs routed to their respective channel streams.
+        Mentions the stream role ONLY ONCE per batch/run.
+        """
         if not jobs:
             logger.info("Tidak ada lowongan baru untuk dikirim ke Discord.")
             return []
@@ -298,9 +391,14 @@ class DiscordNotifier:
         logger.info("Mengirim %d lowongan baru ke Discord multi-channel streams...", len(jobs))
 
         for idx, job in enumerate(jobs, 1):
-            ok = self.send_single_job(job)
+            stream_key = job.get("stream_key", "default")
+            # Mention role ONLY for the first job of each stream in this batch
+            mention_role = stream_key not in self.pinged_streams
+
+            ok = self.send_single_job(job, mention_role=mention_role)
             if ok:
                 successful.append(job)
+                self.pinged_streams.add(stream_key)
 
             if idx < len(jobs):
                 time.sleep(self.delay)

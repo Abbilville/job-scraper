@@ -25,12 +25,10 @@
     ],
     "locations": [
       "Indonesia",
-      "Jakarta",
-      "Remote"
+      "Jakarta"
     ],
     "sites": [
-      "linkedin",
-      "indeed"
+      "linkedin"
     ],
     "hours_old": 24,
     "results_wanted": 15,
@@ -70,6 +68,7 @@
       "tech_engineering": {
         "name": "Tech & Engineering",
         "channel_webhook_env": "DISCORD_WEBHOOK_TECH",
+        "role_id": "1555093143299432550",
         "keywords": [
           "Software",
           "Backend",
@@ -86,6 +85,7 @@
       "data_and_ai": {
         "name": "Data & AI",
         "channel_webhook_env": "DISCORD_WEBHOOK_DATA",
+        "role_id": "1555092804307521546",
         "keywords": [
           "Data Scientist",
           "Data Engineer",
@@ -102,6 +102,7 @@
       "product_and_analysis": {
         "name": "Product & Business Analysis",
         "channel_webhook_env": "DISCORD_WEBHOOK_PRODUCT",
+        "role_id": "1555093143597088848",
         "keywords": [
           "Product Manager",
           "APM",
@@ -120,263 +121,450 @@
       {
         "name": "PwC",
         "badge": "🏆 Big 4 Consulting",
-        "aliases": ["pwc", "pricewaterhousecoopers", "price waterhouse cooper"]
+        "aliases": [
+          "pwc",
+          "pricewaterhousecoopers",
+          "price waterhouse cooper"
+        ]
       },
       {
         "name": "Deloitte",
         "badge": "🏆 Big 4 Consulting",
-        "aliases": ["deloitte", "deloitte consulting", "deloitte indonesia"]
+        "aliases": [
+          "deloitte",
+          "deloitte consulting",
+          "deloitte indonesia"
+        ]
       },
       {
         "name": "EY (Ernst & Young)",
         "badge": "🏆 Big 4 Consulting",
-        "aliases": ["ey", "ernst & young", "ernst and young", "ernst young"]
+        "aliases": [
+          "ey",
+          "ernst & young",
+          "ernst and young",
+          "ernst young"
+        ]
       },
       {
         "name": "KPMG",
         "badge": "🏆 Big 4 Consulting",
-        "aliases": ["kpmg", "kpmg indonesia", "siddharta widjaja"]
+        "aliases": [
+          "kpmg",
+          "kpmg indonesia",
+          "siddharta widjaja"
+        ]
       },
       {
         "name": "McKinsey & Company",
         "badge": "💎 Top Strategy Consulting",
-        "aliases": ["mckinsey", "mckinsey & company"]
+        "aliases": [
+          "mckinsey",
+          "mckinsey & company"
+        ]
       },
       {
         "name": "Boston Consulting Group (BCG)",
         "badge": "💎 Top Strategy Consulting",
-        "aliases": ["bcg", "boston consulting group"]
+        "aliases": [
+          "bcg",
+          "boston consulting group"
+        ]
       },
       {
         "name": "Bain & Company",
         "badge": "💎 Top Strategy Consulting",
-        "aliases": ["bain", "bain & company"]
+        "aliases": [
+          "bain",
+          "bain & company"
+        ]
       },
       {
         "name": "Accenture",
         "badge": "🏆 Top Consulting",
-        "aliases": ["accenture"]
+        "aliases": [
+          "accenture"
+        ]
       }
     ],
     "Top Tech Giants & Unicorns": [
       {
         "name": "GoTo (Gojek & Tokopedia)",
         "badge": "🚀 Top Tech Giant",
-        "aliases": ["goto", "gojek", "tokopedia", "goto financial", "midtrans", "moka"]
+        "aliases": [
+          "goto",
+          "gojek",
+          "tokopedia",
+          "goto financial",
+          "midtrans",
+          "moka"
+        ]
       },
       {
         "name": "Traveloka",
         "badge": "🚀 Top Tech Unicorn",
-        "aliases": ["traveloka"]
+        "aliases": [
+          "traveloka"
+        ]
       },
       {
         "name": "Shopee / Sea Group",
         "badge": "🚀 Top Tech Giant",
-        "aliases": ["shopee", "sea group", "garena", "seabank", "shopeepay"]
+        "aliases": [
+          "shopee",
+          "sea group",
+          "garena",
+          "seabank",
+          "shopeepay"
+        ]
       },
       {
         "name": "Grab",
         "badge": "🚀 Top Tech Giant",
-        "aliases": ["grab", "grab indonesia", "ovo"]
+        "aliases": [
+          "grab",
+          "grab indonesia",
+          "ovo"
+        ]
       },
       {
         "name": "tiket.com",
         "badge": "🚀 Top Tech Unicorn",
-        "aliases": ["tiket.com", "pt global tiket network", "tiket"]
+        "aliases": [
+          "tiket.com",
+          "pt global tiket network",
+          "tiket"
+        ]
       },
       {
         "name": "Blibli / GDP Venture",
         "badge": "🚀 Top Tech Unicorn",
-        "aliases": ["blibli", "pt global digital niaga", "gdp venture"]
+        "aliases": [
+          "blibli",
+          "pt global digital niaga",
+          "gdp venture"
+        ]
       },
       {
         "name": "Bukalapak",
         "badge": "🚀 Top Tech Unicorn",
-        "aliases": ["bukalapak"]
+        "aliases": [
+          "bukalapak"
+        ]
       },
       {
         "name": "DANA Indonesia",
         "badge": "🚀 Top FinTech Unicorn",
-        "aliases": ["dana", "dana indonesia", "pt espay debit indonesia koe"]
+        "aliases": [
+          "dana",
+          "dana indonesia",
+          "pt espay debit indonesia koe"
+        ]
       },
       {
         "name": "Xendit",
         "badge": "🚀 Top FinTech Unicorn",
-        "aliases": ["xendit"]
+        "aliases": [
+          "xendit"
+        ]
       },
       {
         "name": "Kredivo",
         "badge": "🚀 Top FinTech Unicorn",
-        "aliases": ["kredivo", "finaccel"]
+        "aliases": [
+          "kredivo",
+          "finaccel"
+        ]
       },
       {
         "name": "eFishery",
         "badge": "🚀 Top Tech Unicorn",
-        "aliases": ["efishery"]
+        "aliases": [
+          "efishery"
+        ]
       },
       {
         "name": "Ajaib",
         "badge": "🚀 Top FinTech Unicorn",
-        "aliases": ["ajaib", "ajaib sekuritas"]
+        "aliases": [
+          "ajaib",
+          "ajaib sekuritas"
+        ]
       },
       {
         "name": "Bibit / Stockbit",
         "badge": "🚀 Top FinTech",
-        "aliases": ["bibit", "stockbit"]
+        "aliases": [
+          "bibit",
+          "stockbit"
+        ]
       },
       {
         "name": "DKATALIS",
         "badge": "🚀 Digital Banking & Tech Lab",
-        "aliases": ["dkatalis", "katalis", "bank jago"]
+        "aliases": [
+          "dkatalis",
+          "katalis",
+          "bank jago"
+        ]
       },
       {
         "name": "Sirclo",
         "badge": "🚀 Top E-Commerce Enabler",
-        "aliases": ["sirclo", "pt sirclo teknologi indonesia"]
+        "aliases": [
+          "sirclo",
+          "pt sirclo teknologi indonesia"
+        ]
       },
       {
         "name": "Komerce",
         "badge": "🚀 Top E-Commerce Enabler",
-        "aliases": ["komerce", "pt komerce"]
+        "aliases": [
+          "komerce",
+          "pt komerce"
+        ]
       },
       {
         "name": "Ruangguru",
         "badge": "🚀 Top EdTech",
-        "aliases": ["ruangguru"]
+        "aliases": [
+          "ruangguru"
+        ]
       },
       {
         "name": "Google",
         "badge": "🌐 Global Tech Giant",
-        "aliases": ["google", "google indonesia", "alphabet"]
+        "aliases": [
+          "google",
+          "google indonesia",
+          "alphabet"
+        ]
       },
       {
         "name": "Microsoft",
         "badge": "🌐 Global Tech Giant",
-        "aliases": ["microsoft", "microsoft indonesia"]
+        "aliases": [
+          "microsoft",
+          "microsoft indonesia"
+        ]
       },
       {
         "name": "Amazon / AWS",
         "badge": "🌐 Global Tech Giant",
-        "aliases": ["amazon", "aws", "amazon web services"]
+        "aliases": [
+          "amazon",
+          "aws",
+          "amazon web services"
+        ]
       },
       {
         "name": "ByteDance / TikTok",
         "badge": "🌐 Global Tech Giant",
-        "aliases": ["bytedance", "tiktok"]
+        "aliases": [
+          "bytedance",
+          "tiktok"
+        ]
       },
       {
         "name": "Meta",
         "badge": "🌐 Global Tech Giant",
-        "aliases": ["meta", "facebook"]
+        "aliases": [
+          "meta",
+          "facebook"
+        ]
       }
     ],
     "Top Tier Banking & FinTech": [
       {
         "name": "Bank Central Asia (BCA)",
         "badge": "🏛️ Top Tier Banking",
-        "aliases": ["bca", "bank central asia", "pt bank central asia"]
+        "aliases": [
+          "bca",
+          "bank central asia",
+          "pt bank central asia"
+        ]
       },
       {
         "name": "Bank Mandiri",
         "badge": "🏛️ Top Tier Banking",
-        "aliases": ["bank mandiri", "mandiri", "pt bank mandiri"]
+        "aliases": [
+          "bank mandiri",
+          "mandiri",
+          "pt bank mandiri"
+        ]
       },
       {
         "name": "Bank Rakyat Indonesia (BRI)",
         "badge": "🏛️ Top Tier Banking",
-        "aliases": ["bri", "bank rakyat indonesia", "pt bank rakyat indonesia"]
+        "aliases": [
+          "bri",
+          "bank rakyat indonesia",
+          "pt bank rakyat indonesia"
+        ]
       },
       {
         "name": "Bank Negara Indonesia (BNI)",
         "badge": "🏛️ Top Tier Banking",
-        "aliases": ["bni", "bank negara indonesia", "pt bank negara indonesia"]
+        "aliases": [
+          "bni",
+          "bank negara indonesia",
+          "pt bank negara indonesia"
+        ]
       },
       {
         "name": "Bank Indonesia (BI)",
         "badge": "🏛️ Central Bank",
-        "aliases": ["bank indonesia"]
+        "aliases": [
+          "bank indonesia"
+        ]
       },
       {
         "name": "DBS Bank",
         "badge": "🏛️ Top Tier Banking",
-        "aliases": ["dbs", "bank dbs", "dbs indonesia"]
+        "aliases": [
+          "dbs",
+          "bank dbs",
+          "dbs indonesia"
+        ]
       },
       {
         "name": "CIMB Niaga",
         "badge": "🏛️ Top Tier Banking",
-        "aliases": ["cimb", "cimb niaga", "bank cimb niaga"]
+        "aliases": [
+          "cimb",
+          "cimb niaga",
+          "bank cimb niaga"
+        ]
       },
       {
         "name": "OCBC",
         "badge": "🏛️ Top Tier Banking",
-        "aliases": ["ocbc", "ocbc nisp", "bank ocbc"]
+        "aliases": [
+          "ocbc",
+          "ocbc nisp",
+          "bank ocbc"
+        ]
       },
       {
         "name": "Bank BTPN / Jenius",
         "badge": "🏛️ Top Tier Banking",
-        "aliases": ["btpn", "jenius", "bank btpn"]
+        "aliases": [
+          "btpn",
+          "jenius",
+          "bank btpn"
+        ]
       }
     ],
     "Top Conglomerates, Healthcare & FMCG": [
       {
         "name": "Telkom / Telkomsel",
         "badge": "📡 Top Telco & Digital",
-        "aliases": ["telkom", "telkomsel", "pt telkom indonesia", "pt telekomunikasi indonesia"]
+        "aliases": [
+          "telkom",
+          "telkomsel",
+          "pt telkom indonesia",
+          "pt telekomunikasi indonesia"
+        ]
       },
       {
         "name": "Astra International",
         "badge": "🏢 Top Conglomerate",
-        "aliases": ["astra", "astra international", "pt astra international"]
+        "aliases": [
+          "astra",
+          "astra international",
+          "pt astra international"
+        ]
       },
       {
         "name": "Unilever",
         "badge": "🌟 Top FMCG",
-        "aliases": ["unilever", "unilever indonesia", "pt unilever"]
+        "aliases": [
+          "unilever",
+          "unilever indonesia",
+          "pt unilever"
+        ]
       },
       {
         "name": "Nestlé",
         "badge": "🌟 Top FMCG",
-        "aliases": ["nestle", "nestlé", "pt nestle indonesia"]
+        "aliases": [
+          "nestle",
+          "nestlé",
+          "pt nestle indonesia"
+        ]
       },
       {
         "name": "Procter & Gamble (P&G)",
         "badge": "🌟 Top FMCG",
-        "aliases": ["p&g", "procter & gamble", "procter and gamble"]
+        "aliases": [
+          "p&g",
+          "procter & gamble",
+          "procter and gamble"
+        ]
       },
       {
         "name": "Danone",
         "badge": "🌟 Top FMCG",
-        "aliases": ["danone", "danone aqua", "sarihusada"]
+        "aliases": [
+          "danone",
+          "danone aqua",
+          "sarihusada"
+        ]
       },
       {
         "name": "Paragon Technology (Wardah)",
         "badge": "🌟 Top FMCG",
-        "aliases": ["paragon", "paragon technology and innovation", "wardah", "make over", "kahf"]
+        "aliases": [
+          "paragon",
+          "paragon technology and innovation",
+          "wardah",
+          "make over",
+          "kahf"
+        ]
       },
       {
         "name": "Indofood",
         "badge": "🌟 Top FMCG",
-        "aliases": ["indofood", "indofood cbp", "pt indofood"]
+        "aliases": [
+          "indofood",
+          "indofood cbp",
+          "pt indofood"
+        ]
       },
       {
         "name": "Mayora",
         "badge": "🌟 Top FMCG",
-        "aliases": ["mayora", "pt mayora indah", "mayora group"]
+        "aliases": [
+          "mayora",
+          "pt mayora indah",
+          "mayora group"
+        ]
       },
       {
         "name": "Wings Group",
         "badge": "🌟 Top FMCG",
-        "aliases": ["wings", "wings group", "pt sayap mas utama"]
+        "aliases": [
+          "wings",
+          "wings group",
+          "pt sayap mas utama"
+        ]
       },
       {
         "name": "Kalbe Farma",
         "badge": "💊 Top Healthcare & Pharma",
-        "aliases": ["kalbe", "kalbe farma", "pt kalbe farma"]
+        "aliases": [
+          "kalbe",
+          "kalbe farma",
+          "pt kalbe farma"
+        ]
       },
       {
         "name": "Pertamina",
         "badge": "⚡ National Energy Giant",
-        "aliases": ["pertamina", "pt pertamina"]
+        "aliases": [
+          "pertamina",
+          "pt pertamina"
+        ]
       }
     ],
     "Custom Companies": []
