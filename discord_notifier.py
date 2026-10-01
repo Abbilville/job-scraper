@@ -321,7 +321,7 @@ class DiscordNotifier:
         embed = build_job_embed(job)
         stream_key = job.get("stream_key", "")
         stream_name = job.get("stream_name", "")
-        bot_username = f"Career Radar • {stream_name}" if stream_name else "Career Radar"
+        bot_username = f"Jobville • {stream_name}" if stream_name else "Jobville"
 
         payload: Dict[str, Any] = {
             "username": bot_username,
