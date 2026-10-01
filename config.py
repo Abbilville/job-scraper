@@ -1,4 +1,4 @@
-"""Configuration loader prioritizing config.json with environment variable overrides."""
+"""Configuration loader prioritizing config.json with robust environment variable overrides."""
 
 import json
 import logging
@@ -16,7 +16,41 @@ CONFIG_JSON_PATH = os.getenv("CONFIG_JSON_PATH", "config.json")
 def _str_to_bool(val: Any, default: bool = False) -> bool:
     if val is None:
         return default
-    return str(val).strip().lower() in ("true", "1", "yes", "y", "on")
+    s = str(val).strip().lower()
+    if not s:
+        return default
+    return s in ("true", "1", "yes", "y", "on")
+
+
+def _parse_int(val: Any, fallback: int) -> int:
+    if val is None:
+        return fallback
+    s = str(val).strip()
+    if not s:
+        return fallback
+    try:
+        return int(s)
+    except (ValueError, TypeError):
+        return fallback
+
+
+def _parse_float(val: Any, fallback: float) -> float:
+    if val is None:
+        return fallback
+    s = str(val).strip()
+    if not s:
+        return fallback
+    try:
+        return float(s)
+    except (ValueError, TypeError):
+        return fallback
+
+
+def _parse_str(val: Any, fallback: str) -> str:
+    if val is None:
+        return fallback
+    s = str(val).strip()
+    return s if s else fallback
 
 
 def _load_json_file(filepath: str) -> Dict[str, Any]:
@@ -123,7 +157,7 @@ class Config:
 
 
 def load_config(json_path: str = CONFIG_JSON_PATH) -> Config:
-    """Load configuration from config.json and overlay environment variable overrides."""
+    """Load configuration from config.json and overlay environment variable overrides safely."""
     data = _load_json_file(json_path)
 
     search_cfg = data.get("search_settings", {})
@@ -141,15 +175,18 @@ def load_config(json_path: str = CONFIG_JSON_PATH) -> Config:
     env_sites = os.getenv("SITE_NAMES")
     site_names = _parse_list(env_sites, search_cfg.get("sites", ["linkedin", "indeed"]))
 
-    hours_old = int(os.getenv("HOURS_OLD", str(search_cfg.get("hours_old", 24))))
-    results_wanted = int(os.getenv("RESULTS_WANTED", str(search_cfg.get("results_wanted", 15))))
-    is_remote = _str_to_bool(os.getenv("IS_REMOTE", search_cfg.get("is_remote", False)))
-    country_indeed = os.getenv("COUNTRY_INDEED", search_cfg.get("country_indeed", "indonesia"))
-    enable_indeed_fallback = _str_to_bool(
-        os.getenv("ENABLE_INDEED_FALLBACK", search_cfg.get("enable_indeed_fallback", True))
-    )
+    hours_old = _parse_int(os.getenv("HOURS_OLD"), int(search_cfg.get("hours_old", 24)))
+    results_wanted = _parse_int(os.getenv("RESULTS_WANTED"), int(search_cfg.get("results_wanted", 15)))
 
-    filter_mode = os.getenv("FILTER_MODE", filter_cfg.get("filter_mode", "highlight")).strip().lower()
+    env_remote = os.getenv("IS_REMOTE")
+    is_remote = _str_to_bool(env_remote, bool(search_cfg.get("is_remote", False))) if env_remote and env_remote.strip() else bool(search_cfg.get("is_remote", False))
+
+    country_indeed = _parse_str(os.getenv("COUNTRY_INDEED"), str(search_cfg.get("country_indeed", "indonesia")))
+
+    env_fallback = os.getenv("ENABLE_INDEED_FALLBACK")
+    enable_indeed_fallback = _str_to_bool(env_fallback, bool(search_cfg.get("enable_indeed_fallback", True))) if env_fallback and env_fallback.strip() else bool(search_cfg.get("enable_indeed_fallback", True))
+
+    filter_mode = _parse_str(os.getenv("FILTER_MODE"), str(filter_cfg.get("filter_mode", "highlight"))).lower()
     exclude_title = _parse_list(os.getenv("EXCLUDE_TITLE_KEYWORDS"), filter_cfg.get("exclude_title_keywords", []))
     allowed_exp = _parse_list(os.getenv("ALLOWED_EXPERIENCE_LEVELS"), filter_cfg.get("allowed_experience_levels", []))
     custom_co = _parse_list(os.getenv("CUSTOM_TOP_COMPANIES", ""), top_co.get("Custom Companies", []))
@@ -162,9 +199,9 @@ def load_config(json_path: str = CONFIG_JSON_PATH) -> Config:
     ai_api_url = os.getenv("AI_API_URL", "").strip()
     ai_api_key = os.getenv("AI_API_KEY", "").strip()
 
-    seen_jobs_file = os.getenv("SEEN_JOBS_FILE", "seen_jobs.json")
-    max_seen_history = int(os.getenv("MAX_SEEN_HISTORY", "1000"))
-    delay_between_alerts = float(os.getenv("DELAY_BETWEEN_ALERTS", "1.0"))
+    seen_jobs_file = _parse_str(os.getenv("SEEN_JOBS_FILE"), "seen_jobs.json")
+    max_seen_history = _parse_int(os.getenv("MAX_SEEN_HISTORY"), 1000)
+    delay_between_alerts = _parse_float(os.getenv("DELAY_BETWEEN_ALERTS"), 1.0)
     dry_run = _str_to_bool(os.getenv("DRY_RUN", "false"))
 
     cfg = Config(
