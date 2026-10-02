@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-02T11:44:40.798335+00:00",
-  "total_seen": 182,
+  "last_updated": "2026-10-02T17:14:36.665135+00:00",
+  "total_seen": 202,
   "jobs": {
     "li-4472321019": {
       "title": ".Net Developer",
@@ -1457,6 +1457,166 @@
       "job_url": "https://www.linkedin.com/jobs/view/4472870288",
       "date_posted": "2026-10-02",
       "first_seen": "2026-10-02T11:44:40.798330+00:00"
+    },
+    "li-4446968739": {
+      "title": "Mobile Engineer - Client User & Transaction",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4446968739",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665007+00:00"
+    },
+    "li-4465823544": {
+      "title": "Technical Account Manager, ES – APJC - ASEAN (Indonesia)",
+      "company": "Amazon Web Services (AWS)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4465823544",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665030+00:00"
+    },
+    "li-4464862010": {
+      "title": "T&T Consultant - Technology Strategy & Transformation - ID",
+      "company": "Deloitte",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4464862010",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665037+00:00"
+    },
+    "li-4298780969": {
+      "title": "Game Mode Developer Freelance (Onsite)",
+      "company": "Garena",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4298780969",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665043+00:00"
+    },
+    "li-4464844915": {
+      "title": "T&T Consultant - Technology Strategy & Transformation - ID",
+      "company": "Deloitte",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4464844915",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665049+00:00"
+    },
+    "li-4446710062": {
+      "title": "Process Improvement Executive - Ops",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4446710062",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665056+00:00"
+    },
+    "li-4473340219": {
+      "title": "Golang Engineer",
+      "company": "Nextalent",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473340219",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665062+00:00"
+    },
+    "li-4473362387": {
+      "title": "IT Application Intern",
+      "company": "Siemens",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473362387",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665069+00:00"
+    },
+    "li-4456384690": {
+      "title": "Solutions Engineer",
+      "company": "Cisco",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4456384690",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665073+00:00"
+    },
+    "li-4456332062": {
+      "title": "AVP-AI/ML Solution",
+      "company": "PT. Indosat Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4456332062",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665082+00:00"
+    },
+    "li-4472857533": {
+      "title": "Apprenticeship - Group Business Solution and Support",
+      "company": "Prudential Indonesia (PT Prudential Life Assurance)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4472857533",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665088+00:00"
+    },
+    "li-4366112460": {
+      "title": "Data Scientist (Risk Modeling) Executive Monee Credit",
+      "company": "Monee",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4366112460",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665094+00:00"
+    },
+    "li-4473346403": {
+      "title": "Data Engineer",
+      "company": "MSBU Konsultan",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473346403",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665101+00:00"
+    },
+    "li-4473355557": {
+      "title": "Data Analyst",
+      "company": "AUTOPEDIA",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473355557",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665107+00:00"
+    },
+    "li-4457078867": {
+      "title": "AVP-Market Research & Intelligence",
+      "company": "PT. Indosat Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4457078867",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665113+00:00"
+    },
+    "li-4437159527": {
+      "title": "FORECASTING",
+      "company": "Brink’s Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4437159527",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665116+00:00"
+    },
+    "li-4466059572": {
+      "title": "Associate Data Analyst (New Graduate, Thai Speaking) (Marketing Analytics, Bangkok Based)",
+      "company": "Agoda",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4466059572",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665119+00:00"
+    },
+    "li-4457093673": {
+      "title": "AVP-Telco Banking Product",
+      "company": "PT. Indosat Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4457093673",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665122+00:00"
+    },
+    "li-4473334588": {
+      "title": "Product Development",
+      "company": "Sun Life",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473334588",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665126+00:00"
+    },
+    "li-4429064068": {
+      "title": "SAP SuccessFactors/HCM Consultant",
+      "company": "ABeam Consulting Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4429064068",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T17:14:36.665129+00:00"
     }
   }
 }
