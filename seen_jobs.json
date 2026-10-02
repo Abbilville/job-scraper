@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-02T17:14:36.665135+00:00",
-  "total_seen": 202,
+  "last_updated": "2026-10-02T21:42:53.985766+00:00",
+  "total_seen": 210,
   "jobs": {
     "li-4472321019": {
       "title": ".Net Developer",
@@ -1617,6 +1617,70 @@
       "job_url": "https://www.linkedin.com/jobs/view/4429064068",
       "date_posted": "2026-10-02",
       "first_seen": "2026-10-02T17:14:36.665129+00:00"
+    },
+    "li-4475001666": {
+      "title": "IT Non Developer - AOP",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475001666",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T21:42:53.985715+00:00"
+    },
+    "li-4460343446": {
+      "title": "Forward Deployed Engineer",
+      "company": "Avanade",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4460343446",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T21:42:53.985734+00:00"
+    },
+    "li-4463224857": {
+      "title": "Advisor - Business Improvement and Integration",
+      "company": "Immersive Technologies",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4463224857",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T21:42:53.985739+00:00"
+    },
+    "li-4148205524": {
+      "title": "IT Infrastructure Engineer",
+      "company": "PT. Intikom Berlian Mustika",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4148205524",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T21:42:53.985743+00:00"
+    },
+    "li-4474727789": {
+      "title": "Reporting Analyst 2",
+      "company": "Coca-Cola Europacific Partners",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474727789",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T21:42:53.985747+00:00"
+    },
+    "li-4473388049": {
+      "title": "Product Manager",
+      "company": "Mega Lifesciences Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473388049",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T21:42:53.985751+00:00"
+    },
+    "li-4474736105": {
+      "title": "Associate Sales & Operational Excellence Manager",
+      "company": "FIT HUB",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474736105",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T21:42:53.985754+00:00"
+    },
+    "li-4474741328": {
+      "title": "Delivery Owner Manager",
+      "company": "Coca-Cola Europacific Partners",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474741328",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-02T21:42:53.985759+00:00"
     }
   }
 }
