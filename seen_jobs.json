@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-01T22:15:21.827001+00:00",
-  "total_seen": 132,
+  "last_updated": "2026-10-02T03:31:31.880016+00:00",
+  "total_seen": 142,
   "jobs": {
     "li-4472321019": {
       "title": ".Net Developer",
@@ -1057,6 +1057,86 @@
       "job_url": "https://www.linkedin.com/jobs/view/4437035227",
       "date_posted": null,
       "first_seen": "2026-10-01T22:15:21.826997+00:00"
+    },
+    "li-4472391428": {
+      "title": "Operation Engineer",
+      "company": "Asiatek Solusi Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4472391428",
+      "date_posted": null,
+      "first_seen": "2026-10-02T03:31:31.879945+00:00"
+    },
+    "li-4472847031": {
+      "title": "Backend Developer (Java Springboot)",
+      "company": "Diksha Technologies",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4472847031",
+      "date_posted": null,
+      "first_seen": "2026-10-02T03:31:31.879962+00:00"
+    },
+    "li-4472863065": {
+      "title": "Back End Dev",
+      "company": "PT IDstar Cipta Teknologi (IDstar)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4472863065",
+      "date_posted": null,
+      "first_seen": "2026-10-02T03:31:31.879967+00:00"
+    },
+    "li-4472851782": {
+      "title": "Solutions Engineer",
+      "company": "Ruang Partners",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4472851782",
+      "date_posted": null,
+      "first_seen": "2026-10-02T03:31:31.879970+00:00"
+    },
+    "li-4472854712": {
+      "title": "System Engineer L1",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4472854712",
+      "date_posted": null,
+      "first_seen": "2026-10-02T03:31:31.879973+00:00"
+    },
+    "li-4472870027": {
+      "title": "IT Engineer",
+      "company": "Glotra Technology",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4472870027",
+      "date_posted": null,
+      "first_seen": "2026-10-02T03:31:31.879976+00:00"
+    },
+    "li-4473213395": {
+      "title": "Big Data Insight & AI LLM Specialist",
+      "company": "PT XLSMART Telecom Sejahtera Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473213395",
+      "date_posted": null,
+      "first_seen": "2026-10-02T03:31:31.879985+00:00"
+    },
+    "li-4474573045": {
+      "title": "Software Engineer (AI Training)",
+      "company": "Alignerr",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474573045",
+      "date_posted": null,
+      "first_seen": "2026-10-02T03:31:31.879993+00:00"
+    },
+    "li-4472855749": {
+      "title": "Product Manager (Mobile Apps)",
+      "company": "Lion Parcel",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4472855749",
+      "date_posted": null,
+      "first_seen": "2026-10-02T03:31:31.880000+00:00"
+    },
+    "li-4472860549": {
+      "title": "Product Manager",
+      "company": "INA Digital Edu",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4472860549",
+      "date_posted": null,
+      "first_seen": "2026-10-02T03:31:31.880007+00:00"
     }
   }
 }
