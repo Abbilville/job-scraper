@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-02T21:42:53.985766+00:00",
-  "total_seen": 210,
+  "last_updated": "2026-10-03T03:15:23.769039+00:00",
+  "total_seen": 216,
   "jobs": {
     "li-4472321019": {
       "title": ".Net Developer",
@@ -1681,6 +1681,54 @@
       "job_url": "https://www.linkedin.com/jobs/view/4474741328",
       "date_posted": "2026-10-02",
       "first_seen": "2026-10-02T21:42:53.985759+00:00"
+    },
+    "li-4446706083": {
+      "title": "Quality Assurance",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4446706083",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-03T03:15:23.768988+00:00"
+    },
+    "li-4473337389": {
+      "title": "Golang Backend Developer",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473337389",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-03T03:15:23.769013+00:00"
+    },
+    "li-4466075081": {
+      "title": "Technical Service Representative",
+      "company": "Sherwin-Williams",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4466075081",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-03T03:15:23.769019+00:00"
+    },
+    "li-4473819770": {
+      "title": "Information Technology Operations Manager",
+      "company": "Portcities",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473819770",
+      "date_posted": "2026-10-03",
+      "first_seen": "2026-10-03T03:15:23.769023+00:00"
+    },
+    "li-4472879912": {
+      "title": "Project Manager",
+      "company": "Glints",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4472879912",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-03T03:15:23.769028+00:00"
+    },
+    "li-4472895195": {
+      "title": "Assistant Project Manager - ID26007",
+      "company": "Acclime",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4472895195",
+      "date_posted": "2026-10-02",
+      "first_seen": "2026-10-03T03:15:23.769033+00:00"
     }
   }
 }
