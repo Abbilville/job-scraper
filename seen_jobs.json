@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-04T16:18:09.209821+00:00",
-  "total_seen": 319,
+  "last_updated": "2026-10-04T20:47:12.570067+00:00",
+  "total_seen": 324,
   "jobs": {
     "li-4472321019": {
       "title": ".Net Developer",
@@ -2553,6 +2553,46 @@
       "job_url": "https://www.linkedin.com/jobs/view/4457522786",
       "date_posted": "2026-10-04",
       "first_seen": "2026-10-04T16:18:09.209814+00:00"
+    },
+    "li-4419018909": {
+      "title": "QA Engineer (SDE 2) - Merchant",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4419018909",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T20:47:12.570017+00:00"
+    },
+    "li-4474228083": {
+      "title": "SMB BPO Management Manager - TikTok Local Services",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474228083",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T20:47:12.570035+00:00"
+    },
+    "li-4419442544": {
+      "title": "Customer Experience Customer Success Specialist - Security",
+      "company": "Cisco",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4419442544",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T20:47:12.570040+00:00"
+    },
+    "li-4474206792": {
+      "title": "Project Manager Specialist (IT)",
+      "company": "PT IDstar Cipta Teknologi (IDstar)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474206792",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T20:47:12.570047+00:00"
+    },
+    "li-4409272935": {
+      "title": "Client Delivery Manager",
+      "company": "NTT DATA, Inc.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4409272935",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T20:47:12.570057+00:00"
     }
   }
 }
