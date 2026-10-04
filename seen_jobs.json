@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-04T11:39:45.208308+00:00",
-  "total_seen": 303,
+  "last_updated": "2026-10-04T16:18:09.209821+00:00",
+  "total_seen": 319,
   "jobs": {
     "li-4472321019": {
       "title": ".Net Developer",
@@ -2425,6 +2425,134 @@
       "job_url": "https://www.linkedin.com/jobs/view/4475385010",
       "date_posted": "2026-10-04",
       "first_seen": "2026-10-04T11:39:45.208302+00:00"
+    },
+    "li-4421788701": {
+      "title": "Financial Technology Junior Consultant (FSO)",
+      "company": "EY",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4421788701",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209730+00:00"
+    },
+    "li-4455034847": {
+      "title": "Enterprise Technical Sales Specialist, Indonesia",
+      "company": "Meta",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4455034847",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209751+00:00"
+    },
+    "li-4420496015": {
+      "title": "Revenue Associate",
+      "company": "Garena",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4420496015",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209757+00:00"
+    },
+    "li-4401433136": {
+      "title": "Product Manager - User",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4401433136",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209762+00:00"
+    },
+    "li-4421785794": {
+      "title": "Risk Transformation (FSO) - Junior Consultant",
+      "company": "EY",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4421785794",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209766+00:00"
+    },
+    "li-4409293060": {
+      "title": "Backend Developer",
+      "company": "NTT DATA, Inc.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4409293060",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209771+00:00"
+    },
+    "li-4474220091": {
+      "title": "Data Engineer",
+      "company": "MSBU Konsultan",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474220091",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209775+00:00"
+    },
+    "li-4409292066": {
+      "title": "AI & Data Management Consultant",
+      "company": "NTT DATA Asia Pacific",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4409292066",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209781+00:00"
+    },
+    "li-4409286269": {
+      "title": "Frontend Developer",
+      "company": "NTT DATA, Inc.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4409286269",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209786+00:00"
+    },
+    "li-4409282457": {
+      "title": "Database Administrator",
+      "company": "NTT DATA, Inc.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4409282457",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209790+00:00"
+    },
+    "li-4409293066": {
+      "title": "Database Administrator",
+      "company": "NTT DATA, Inc.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4409293066",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209795+00:00"
+    },
+    "li-4474226021": {
+      "title": "Office of The Board - Executive Support Analyst",
+      "company": "IDSURVEY",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474226021",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209798+00:00"
+    },
+    "li-4447186821": {
+      "title": "Trade Payables Finance Product Manager - AVP",
+      "company": "Citi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4447186821",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209802+00:00"
+    },
+    "li-4457808927": {
+      "title": "AVP-Fixed Voice Product & Service",
+      "company": "PT. Indosat Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4457808927",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209807+00:00"
+    },
+    "li-4475387938": {
+      "title": "Specifier ADP",
+      "company": "LIXIL",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475387938",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209810+00:00"
+    },
+    "li-4457522786": {
+      "title": "Monitoring",
+      "company": "Brink’s Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4457522786",
+      "date_posted": "2026-10-04",
+      "first_seen": "2026-10-04T16:18:09.209814+00:00"
     }
   }
 }
