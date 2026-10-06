@@ -90,7 +90,7 @@ class Config:
     is_remote: bool = False
     country_indeed: str = "indonesia"
     enable_indeed_fallback: bool = True
-
+    linkedin_fetch_description: bool = True
     # 2. Company & Filtering Settings
     filter_mode: str = "highlight"
     exclude_title_keywords: List[str] = field(default_factory=list)
@@ -186,6 +186,8 @@ def load_config(json_path: str = CONFIG_JSON_PATH) -> Config:
     env_fallback = os.getenv("ENABLE_INDEED_FALLBACK")
     enable_indeed_fallback = _str_to_bool(env_fallback, bool(search_cfg.get("enable_indeed_fallback", True))) if env_fallback and env_fallback.strip() else bool(search_cfg.get("enable_indeed_fallback", True))
 
+    env_li_desc = os.getenv("LINKEDIN_FETCH_DESCRIPTION")
+    linkedin_fetch_description = _str_to_bool(env_li_desc, bool(search_cfg.get("linkedin_fetch_description", True))) if env_li_desc and env_li_desc.strip() else bool(search_cfg.get("linkedin_fetch_description", True))
     filter_mode = _parse_str(os.getenv("FILTER_MODE"), str(filter_cfg.get("filter_mode", "highlight"))).lower()
     exclude_title = _parse_list(os.getenv("EXCLUDE_TITLE_KEYWORDS"), filter_cfg.get("exclude_title_keywords", []))
     allowed_exp = _parse_list(os.getenv("ALLOWED_EXPERIENCE_LEVELS"), filter_cfg.get("allowed_experience_levels", []))
@@ -213,7 +215,7 @@ def load_config(json_path: str = CONFIG_JSON_PATH) -> Config:
         is_remote=is_remote,
         country_indeed=country_indeed,
         enable_indeed_fallback=enable_indeed_fallback,
-        filter_mode=filter_mode,
+        linkedin_fetch_description=linkedin_fetch_description,
         exclude_title_keywords=exclude_title,
         allowed_experience_levels=allowed_exp,
         top_companies=top_co,

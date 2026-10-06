@@ -33,7 +33,8 @@
     "results_wanted": 15,
     "is_remote": false,
     "country_indeed": "indonesia",
-    "enable_indeed_fallback": true
+    "enable_indeed_fallback": true,
+    "linkedin_fetch_description": true
   },
   "filtering": {
     "exclude_title_keywords": [

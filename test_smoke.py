@@ -209,6 +209,97 @@ class TestExtractorSIAndTech(unittest.TestCase):
         _, lvl_fresh = extract_seniority_rule_based("Software Engineer", desc_fresh_with_senior)
         self.assertEqual(lvl_fresh, "entry_level")
 
+    def test_markdown_unescaping_and_yoe_extraction(self):
+        # Test escaped hyphens and pluses from jobspy markdown descriptions
+        self.assertEqual(extract_yoe_rule_based("Qualifications: 3\\-5 years of working experience in software"), "3-5 tahun")
+        self.assertEqual(extract_yoe_rule_based("* 5\\+ years of DevOps experience"), "5+ tahun")
+        self.assertEqual(extract_yoe_rule_based("* 0\\-2 years of relevant work experience"), "0-2 tahun")
+        self.assertEqual(extract_yoe_rule_based("with at least 10 years of professional experience"), "Min. 10 tahun")
+        self.assertEqual(extract_yoe_rule_based("3\\+ years in software development (SQL, Power BI, Azure)"), "3+ tahun")
+        self.assertEqual(extract_yoe_rule_based("You should have 15 years experiences."), "Min. 15 tahun")
+        self.assertEqual(extract_yoe_rule_based("Pengalaman minimal 3 tahun di bidang backend"), "Min. 3 tahun")
+        self.assertEqual(extract_yoe_rule_based("Minimal 2 tahun pengalaman kerja"), "Min. 2 tahun")
+        self.assertEqual(extract_yoe_rule_based("Memiliki pengalaman 3 tahun dengan Python"), "Min. 3 tahun")
+        self.assertEqual(extract_yoe_rule_based("Pengalaman kerja 2 - 4 tahun"), "2-4 tahun")
+
+    def test_schema_experience_range_and_job_insights(self):
+        # Test Naukri / JobPost schema experience_range field
+        self.assertEqual(extract_yoe_rule_based("", experience_range="2-4 Yrs"), "2-4 tahun")
+        self.assertEqual(extract_yoe_rule_based("", experience_range="3+ years"), "Min. 3 tahun")
+
+        # Test extract_job_insights using schema fields
+        job_post = {
+            "title": "Data Analyst",
+            "company": "Tech Corp",
+            "description": "SQL and Tableau reporting.",
+            "job_level": "entry level",
+            "experience_range": "1-3 Yrs",
+            "skills": ["SQL", "Tableau", "Python"],
+        }
+        insights = extract_job_insights(job_post)
+        self.assertEqual(insights.yoe, "1-3 tahun")
+        self.assertEqual(insights.seniority, "Entry Level")
+        self.assertEqual(insights.level_code, "entry_level")
+        self.assertIn("Python", insights.skills)
+        self.assertIn("Tableau", insights.skills)
+
+    def test_linkedin_job_level_seniority(self):
+        # When title has no seniority, LinkedIn job_level takes precedence
+        sen_entry, code_entry = extract_seniority_rule_based("Software Engineer", "", job_level="entry level")
+        self.assertEqual(code_entry, "entry_level")
+        self.assertEqual(sen_entry, "Entry Level")
+
+        sen_assoc, code_assoc = extract_seniority_rule_based("Software Engineer", "", job_level="associate")
+        self.assertEqual(code_assoc, "associate")
+        self.assertEqual(sen_assoc, "Junior / Associate")
+
+        sen_mid, code_mid = extract_seniority_rule_based("Software Engineer", "", job_level="mid-senior level")
+        self.assertEqual(code_mid, "mid_senior")
+        self.assertEqual(sen_mid, "Mid-Senior Level")
+
+        sen_dir, code_dir = extract_seniority_rule_based("Software Engineer", "", job_level="director")
+        self.assertEqual(code_dir, "lead")
+        self.assertEqual(sen_dir, "Director / Lead")
+
+        # When title explicitly has Senior, title overrides inaccurate LinkedIn job_level
+        sen_sr, code_sr = extract_seniority_rule_based("Senior Software Engineer", "", job_level="associate")
+        self.assertEqual(code_sr, "senior")
+        self.assertEqual(sen_sr, "Senior")
+
+    def test_inferred_seniority_from_yoe(self):
+        _, code_sr = extract_seniority_rule_based("DevOps Engineer", "", yoe="Min. 5 tahun")
+        self.assertEqual(code_sr, "senior")
+
+        _, code_lead = extract_seniority_rule_based("Cloud Engineer", "", yoe="Min. 10 tahun")
+        self.assertEqual(code_lead, "lead")
+
+        _, code_jr = extract_seniority_rule_based("Backend Engineer", "", yoe="0-2 tahun")
+        self.assertEqual(code_jr, "associate")
+
+    def test_qualitative_experience_and_special_skills(self):
+        desc_qual = (
+            "**Required Experience:**\n"
+            "* Prior experience in configuring network and security infrastructures.\n"
+            "* Experience with C\\+\\+, C#, and .NET frameworks."
+        )
+        self.assertEqual(extract_yoe_rule_based(desc_qual), "Berpengalaman")
+        skills = extract_skills_rule_based(desc_qual)
+        self.assertIn("C++", skills)
+        self.assertIn("C#", skills)
+        self.assertIn(".NET", skills)
+
+    def test_clean_job_record_with_list_fields(self):
+        from scraper import clean_job_record
+        raw_record = {
+            "id": "12345",
+            "title": "DevOps Engineer",
+            "skills": ["Docker", "Kubernetes"],
+            "description": "Great job",
+        }
+        cleaned = clean_job_record(raw_record, default_site="linkedin")
+        self.assertEqual(cleaned["skills"], ["Docker", "Kubernetes"])
+        self.assertEqual(cleaned["site"], "linkedin")
+
 
 class TestDiscordNotifierStreamRouting(unittest.TestCase):
     def test_embed_color_by_stream(self):

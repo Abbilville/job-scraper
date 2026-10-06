@@ -15,7 +15,9 @@ def clean_job_record(record: Dict[str, Any], default_site: str = "") -> Dict[str
     """Clean pandas record by replacing NaN with None and converting dates to string."""
     cleaned: Dict[str, Any] = {}
     for k, v in record.items():
-        if pd.isna(v):
+        if isinstance(v, (list, tuple, dict, set)):
+            cleaned[k] = v
+        elif pd.isna(v):
             cleaned[k] = None
         elif isinstance(v, (datetime.date, datetime.datetime)):
             cleaned[k] = v.isoformat()
@@ -61,16 +63,20 @@ def scrape_site_safely(
             logger.error("Library 'python-jobspy' belum terpasang. Jalankan: pip install python-jobspy")
             return []
 
-        df = scrape_jobs(
-            site_name=[site],
-            search_term=search_term,
-            location=location,
-            results_wanted=target_results,
-            hours_old=cfg.hours_old,
-            is_remote=cfg.is_remote,
-            country_indeed=cfg.country_indeed,
-            verbose=0,
-        )
+        scrape_kwargs: Dict[str, Any] = {
+            "site_name": [site],
+            "search_term": search_term,
+            "location": location,
+            "results_wanted": target_results,
+            "hours_old": cfg.hours_old,
+            "is_remote": cfg.is_remote,
+            "country_indeed": cfg.country_indeed,
+            "verbose": 0,
+        }
+        if site == "linkedin":
+            scrape_kwargs["linkedin_fetch_description"] = getattr(cfg, "linkedin_fetch_description", True)
+
+        df = scrape_jobs(**scrape_kwargs)
 
         if df is None or df.empty:
             logger.info("Scraping '%s' untuk '%s' di '%s': 0 lowongan.", site, search_term, location)
