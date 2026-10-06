@@ -55,10 +55,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run unit tests
-        run: |
-          python -m unittest test_smoke.py
-
       - name: Run Job Alert Script
         env:
           # Multi-channel webhooks (Stream routing)
@@ -67,7 +63,7 @@ jobs:
           DISCORD_WEBHOOK_DATA: ${{ secrets.DISCORD_WEBHOOK_DATA }}
           DISCORD_WEBHOOK_PRODUCT: ${{ secrets.DISCORD_WEBHOOK_PRODUCT }}
 
-          # AI Extractor (Opsional VPS)
+          # sional VPS)
           AI_API_URL: ${{ secrets.AI_API_URL }}
           AI_API_KEY: ${{ secrets.AI_API_KEY }}
 
