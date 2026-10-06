@@ -3,7 +3,7 @@ name: Job Alert Bot
 on:
   schedule:
     # Berjalan setiap 6 jam sekali (00:00, 06:00, 12:00, 18:00 UTC)
-    - cron: '0 */6 * * *'
+    - cron: '0 */3 * * *'
   workflow_dispatch:
     inputs:
       search_terms:
