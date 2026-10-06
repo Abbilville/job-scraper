@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-05T23:35:41.750457+00:00",
-  "total_seen": 430,
+  "last_updated": "2026-10-06T02:31:56.358736+00:00",
+  "total_seen": 437,
   "jobs": {
     "li-4472321019": {
       "title": ".Net Developer",
@@ -3441,6 +3441,62 @@
       "job_url": "https://www.linkedin.com/jobs/view/4474622469",
       "date_posted": "2026-10-05",
       "first_seen": "2026-10-05T23:35:41.750451+00:00"
+    },
+    "li-4475851367": {
+      "title": "ADMO - SDET - Contract-based",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475851367",
+      "date_posted": "2026-10-05",
+      "first_seen": "2026-10-06T02:31:56.358696+00:00"
+    },
+    "li-4474655677": {
+      "title": "Prog. Full Stack Dev / .NET Dev",
+      "company": "PT Amber Solusi Internasional",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474655677",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-06T02:31:56.358713+00:00"
+    },
+    "li-4474230484": {
+      "title": "Full Stack Dev / .NET",
+      "company": "PT Amber Solusi Internasional",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474230484",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-06T02:31:56.358718+00:00"
+    },
+    "li-4474643431": {
+      "title": "System Integration (SI) Engineer",
+      "company": "PT. IIJ Global Solutions Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474643431",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-06T02:31:56.358722+00:00"
+    },
+    "li-4474644680": {
+      "title": "ETL Developer / Data Engineer",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474644680",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-06T02:31:56.358725+00:00"
+    },
+    "li-4476116604": {
+      "title": "SAP Consultant (FICO/S4HANA) (Contract-Based 1 Year)",
+      "company": "PT SMART Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476116604",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-06T02:31:56.358728+00:00"
+    },
+    "li-4475831683": {
+      "title": "MSME Business Analyst Intern",
+      "company": "Amar Bank",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475831683",
+      "date_posted": "2026-10-05",
+      "first_seen": "2026-10-06T02:31:56.358731+00:00"
     }
   }
 }
