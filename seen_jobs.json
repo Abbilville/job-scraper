@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-06T14:04:14.105158+00:00",
-  "total_seen": 486,
+  "last_updated": "2026-10-06T19:57:03.195432+00:00",
+  "total_seen": 496,
   "jobs": {
     "li-4472321019": {
       "title": ".Net Developer",
@@ -3889,6 +3889,86 @@
       "job_url": "https://www.linkedin.com/jobs/view/4474647906",
       "date_posted": "2026-10-06",
       "first_seen": "2026-10-06T14:04:14.105148+00:00"
+    },
+    "li-4379639599": {
+      "title": "Backend Engineer - Python (SDE 2)",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4379639599",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-06T19:57:03.195366+00:00"
+    },
+    "li-4299325817": {
+      "title": "T&T Consultant - Artificial Intelligence & Data (Data Engineer) - ID",
+      "company": "Deloitte",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4299325817",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-06T19:57:03.195379+00:00"
+    },
+    "li-4466178432": {
+      "title": "Strategy and Planning GrabBike, Assistant Manager",
+      "company": "Grab",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4466178432",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-06T19:57:03.195383+00:00"
+    },
+    "in-a1e2a6be5e67349b": {
+      "title": "Fullstack Developer (Golang)",
+      "company": "PT Lawencon Internasional",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=a1e2a6be5e67349b",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-06T19:57:03.195387+00:00"
+    },
+    "li-4474989366": {
+      "title": "DevOps Engineer",
+      "company": "AVOWS CONSULTING LIMITED",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474989366",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-06T19:57:03.195391+00:00"
+    },
+    "in-4353bd830e2747fe": {
+      "title": "Field Sales Engineer - Capital Equipment",
+      "company": "Atlas Copco Group",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=4353bd830e2747fe",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-06T19:57:03.195395+00:00"
+    },
+    "li-4474905446": {
+      "title": "Product Manager",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474905446",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-06T19:57:03.195398+00:00"
+    },
+    "li-4475108502": {
+      "title": "Product Executive (Hematology & Rare Disease)",
+      "company": "AstraZeneca",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475108502",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-06T19:57:03.195410+00:00"
+    },
+    "li-4476125728": {
+      "title": "System Operation (Mandarin Speaker)",
+      "company": "Tec-Do",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476125728",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-06T19:57:03.195417+00:00"
+    },
+    "li-4474028039": {
+      "title": "SAP ABAP",
+      "company": "Atreus Global",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474028039",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-06T19:57:03.195423+00:00"
     }
   }
 }
