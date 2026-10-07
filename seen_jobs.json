@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-06T19:57:03.195432+00:00",
-  "total_seen": 496,
+  "last_updated": "2026-10-07T00:17:27.212619+00:00",
+  "total_seen": 504,
   "jobs": {
     "li-4472321019": {
       "title": ".Net Developer",
@@ -3969,6 +3969,70 @@
       "job_url": "https://www.linkedin.com/jobs/view/4474028039",
       "date_posted": "2026-10-06",
       "first_seen": "2026-10-06T19:57:03.195423+00:00"
+    },
+    "li-4475112325": {
+      "title": "IT Business Analyst",
+      "company": "PT. Mandiri International Technology",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475112325",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-07T00:17:27.212546+00:00"
+    },
+    "li-4474678433": {
+      "title": ".net developer",
+      "company": "Accord Innovations",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474678433",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-07T00:17:27.212569+00:00"
+    },
+    "li-4475103765": {
+      "title": "Field Activation Engineer",
+      "company": "PT Solusi Sinergi Digital Tbk (SURGE)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475103765",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-07T00:17:27.212576+00:00"
+    },
+    "li-4476393319": {
+      "title": "Data Scientist",
+      "company": "PT. Metrodata Electronics Tbk.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476393319",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-07T00:17:27.212583+00:00"
+    },
+    "li-4474979167": {
+      "title": "Commercial Management Trainee (eCommerce)",
+      "company": "Colgate-Palmolive",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474979167",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-07T00:17:27.212590+00:00"
+    },
+    "li-4476383714": {
+      "title": "Implementation Consultant",
+      "company": "PT Adicipta Inovasi Teknologi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476383714",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-07T00:17:27.212598+00:00"
+    },
+    "li-4476395124": {
+      "title": "Functional Consultant ERP",
+      "company": "PT. Metrodata Electronics Tbk.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476395124",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-07T00:17:27.212603+00:00"
+    },
+    "li-4476380784": {
+      "title": "Technical Consultant HCM Module",
+      "company": "PT. Metrodata Electronics Tbk.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476380784",
+      "date_posted": "2026-10-06",
+      "first_seen": "2026-10-07T00:17:27.212608+00:00"
     }
   }
 }
