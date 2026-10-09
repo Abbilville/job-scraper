@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-08T18:10:47.905237+00:00",
-  "total_seen": 654,
+  "last_updated": "2026-10-09T00:50:11.572955+00:00",
+  "total_seen": 660,
   "jobs": {
     "li-4472321019": {
       "title": ".Net Developer",
@@ -5233,6 +5233,54 @@
       "job_url": "https://www.linkedin.com/jobs/view/4477107602",
       "date_posted": "2026-10-08",
       "first_seen": "2026-10-08T18:10:47.905229+00:00"
+    },
+    "li-4476209198": {
+      "title": "Product Owner (AI Project)",
+      "company": "PT Bank Digital BCA (BCA Digital)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476209198",
+      "date_posted": "2026-10-08",
+      "first_seen": "2026-10-09T00:50:11.572913+00:00"
+    },
+    "li-4474800373": {
+      "title": "IT Application Development Assistant Manager",
+      "company": "Panin Dai-ichi Life",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474800373",
+      "date_posted": "2026-10-08",
+      "first_seen": "2026-10-09T00:50:11.572931+00:00"
+    },
+    "li-4477482118": {
+      "title": "Frontend  React JS Developer",
+      "company": "CODE.ID",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4477482118",
+      "date_posted": "2026-10-08",
+      "first_seen": "2026-10-09T00:50:11.572936+00:00"
+    },
+    "li-4476238460": {
+      "title": "Solution Business Partner SME",
+      "company": "Hypernet Technologies",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476238460",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-09T00:50:11.572940+00:00"
+    },
+    "li-4458373007": {
+      "title": "Support Engineer, DevOps",
+      "company": "iZeno",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4458373007",
+      "date_posted": "2026-10-08",
+      "first_seen": "2026-10-09T00:50:11.572944+00:00"
+    },
+    "li-4473070998": {
+      "title": "Business Partner",
+      "company": "veroza.co",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473070998",
+      "date_posted": "2026-10-08",
+      "first_seen": "2026-10-09T00:50:11.572948+00:00"
     }
   }
 }
