@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-09T17:43:38.400310+00:00",
-  "total_seen": 722,
+  "last_updated": "2026-10-09T22:01:49.749070+00:00",
+  "total_seen": 728,
   "jobs": {
     "li-4472321019": {
       "title": ".Net Developer",
@@ -5777,6 +5777,54 @@
       "job_url": "https://www.linkedin.com/jobs/view/4469147300",
       "date_posted": "2026-10-09",
       "first_seen": "2026-10-09T17:43:38.400303+00:00"
+    },
+    "li-4466673257": {
+      "title": "Digital Product Manager",
+      "company": "Procter & Gamble",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4466673257",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-09T22:01:49.749023+00:00"
+    },
+    "li-4476862010": {
+      "title": "Mid-Level DevOps Engineer",
+      "company": "PT GDC Multi Sarana",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476862010",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-09T22:01:49.749040+00:00"
+    },
+    "li-4475248868": {
+      "title": "Strategic Audit Development, Data Analytic & QA - South Jakarta",
+      "company": "PT Chandra Sakti Utama Leasing",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475248868",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-09T22:01:49.749045+00:00"
+    },
+    "li-4476850358": {
+      "title": "E-Commerce Data Analyst",
+      "company": "Facetology",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476850358",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-09T22:01:49.749049+00:00"
+    },
+    "li-4476847472": {
+      "title": "Operation Transformation (Roll Out) Intern",
+      "company": "PT SMART Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476847472",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-09T22:01:49.749052+00:00"
+    },
+    "li-4476852265": {
+      "title": "Finance Data Analyst",
+      "company": "Finture",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476852265",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-09T22:01:49.749057+00:00"
     }
   }
 }
