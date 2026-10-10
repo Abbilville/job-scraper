@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-09T22:01:49.749070+00:00",
-  "total_seen": 728,
+  "last_updated": "2026-10-10T03:10:26.740254+00:00",
+  "total_seen": 732,
   "jobs": {
     "li-4472321019": {
       "title": ".Net Developer",
@@ -5825,6 +5825,38 @@
       "job_url": "https://www.linkedin.com/jobs/view/4476852265",
       "date_posted": "2026-10-09",
       "first_seen": "2026-10-09T22:01:49.749057+00:00"
+    },
+    "li-4477877494": {
+      "title": "Software Engineer",
+      "company": "PT Prima Vista Solusi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4477877494",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-10T03:10:26.740224+00:00"
+    },
+    "li-4477874550": {
+      "title": "LMS INFRASTRUCTURE & SYSTEM ADMINISTRATOR",
+      "company": "PASIFIK SATELIT NUSANTARA",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4477874550",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-10T03:10:26.740240+00:00"
+    },
+    "li-4477869743": {
+      "title": "Technical Analyst (SCAN)",
+      "company": "PT Surya Artha Nusantara Finance",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4477869743",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-10T03:10:26.740245+00:00"
+    },
+    "li-4475263639": {
+      "title": "Associate Manager,Category & Trade Solutions",
+      "company": "SC Johnson",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475263639",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-10T03:10:26.740249+00:00"
     }
   }
 }
