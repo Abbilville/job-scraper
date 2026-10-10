@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-10T03:10:26.740254+00:00",
-  "total_seen": 732,
+  "last_updated": "2026-10-10T11:34:41.073504+00:00",
+  "total_seen": 743,
   "jobs": {
     "li-4472321019": {
       "title": ".Net Developer",
@@ -5857,6 +5857,94 @@
       "job_url": "https://www.linkedin.com/jobs/view/4475263639",
       "date_posted": "2026-10-09",
       "first_seen": "2026-10-10T03:10:26.740249+00:00"
+    },
+    "li-4467851459": {
+      "title": "Associate to Consultant, Technology & Digital Advantage Practice",
+      "company": "Boston Consulting Group (BCG)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4467851459",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-10T11:34:41.073452+00:00"
+    },
+    "li-4477217134": {
+      "title": "FE Reactjs Nextjs Dev (Talent IT)",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4477217134",
+      "date_posted": "2026-10-10",
+      "first_seen": "2026-10-10T11:34:41.073465+00:00"
+    },
+    "li-4419295464": {
+      "title": "DevOps",
+      "company": "NTT DATA, Inc.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4419295464",
+      "date_posted": "2026-10-10",
+      "first_seen": "2026-10-10T11:34:41.073469+00:00"
+    },
+    "li-4476882721": {
+      "title": "Golang Backend Dev",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476882721",
+      "date_posted": "2026-10-10",
+      "first_seen": "2026-10-10T11:34:41.073473+00:00"
+    },
+    "li-4476898780": {
+      "title": "BE Golang Dev (Tech IT)",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476898780",
+      "date_posted": "2026-10-10",
+      "first_seen": "2026-10-10T11:34:41.073477+00:00"
+    },
+    "li-4476802387": {
+      "title": "Field Sales Engineer - Capital Equipment",
+      "company": "Atlas Copco",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476802387",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-10T11:34:41.073481+00:00"
+    },
+    "li-4476805336": {
+      "title": "Data Center Engineer (L2)",
+      "company": "Lintasarta",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476805336",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-10T11:34:41.073484+00:00"
+    },
+    "li-4476299524": {
+      "title": "Data Center Engineer (L1)",
+      "company": "Lintasarta",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476299524",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-10T11:34:41.073489+00:00"
+    },
+    "li-4455137337": {
+      "title": "Technical Product Manager, Travel Integrations (all genders)",
+      "company": "Distribusion Technologies",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4455137337",
+      "date_posted": "2026-10-10",
+      "first_seen": "2026-10-10T11:34:41.073493+00:00"
+    },
+    "li-4475239102": {
+      "title": "Project Manager",
+      "company": "Mekari",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475239102",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-10T11:34:41.073496+00:00"
+    },
+    "li-4476805661": {
+      "title": "IT Consultant",
+      "company": "KED Consulting",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476805661",
+      "date_posted": "2026-10-09",
+      "first_seen": "2026-10-10T11:34:41.073499+00:00"
     }
   }
 }
