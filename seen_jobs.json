@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-11T16:57:43.537350+00:00",
-  "total_seen": 805,
+  "last_updated": "2026-10-11T21:12:13.898365+00:00",
+  "total_seen": 808,
   "jobs": {
     "li-4472321019": {
       "title": ".Net Developer",
@@ -6441,6 +6441,30 @@
       "job_url": "https://www.linkedin.com/jobs/view/4477272102",
       "date_posted": "2026-10-11",
       "first_seen": "2026-10-11T16:57:43.537344+00:00"
+    },
+    "li-4477281009": {
+      "title": "Dealer Relationship Management Analyst (Marketing Analyst)",
+      "company": "PT TOYOTA ASTRA FINANCIAL SERVICES",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4477281009",
+      "date_posted": "2026-10-11",
+      "first_seen": "2026-10-11T21:12:13.898333+00:00"
+    },
+    "li-4478353073": {
+      "title": "Specifier ADP",
+      "company": "LIXIL",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478353073",
+      "date_posted": "2026-10-11",
+      "first_seen": "2026-10-11T21:12:13.898352+00:00"
+    },
+    "li-4478340497": {
+      "title": "Sales ADP Manager",
+      "company": "LIXIL",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478340497",
+      "date_posted": "2026-10-11",
+      "first_seen": "2026-10-11T21:12:13.898357+00:00"
     }
   }
 }
