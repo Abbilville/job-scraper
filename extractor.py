@@ -36,10 +36,12 @@ SKILLS_DICTIONARY: Dict[str, str] = {
     r"\bpython\b": "Python",
     r"\btypescript\b": "TypeScript",
     r"\bjavascript\b": "JavaScript",
-    r"\bgolang\b|\bgo\s*(?:language|programming|lang)?\b": "Go",
-    r"\bjava\b": "Java",
+    # Ambiguous English words ("go", "react", "swift", "express", "excel", "spark") need tech context or exact
+    # capitalization via scoped (?-i:...), otherwise ordinary prose produces fake skills.
+    r"\bgolang\b|\bgo\s*(?:lang(?:uage)?|programming)\b|(?<=[,/(])\s*(?-i:Go)\b|(?-i:\bGo\b)(?=\s*[,/])": "Go",
+    r"(?<!west )(?<!east )(?<!central )(?<!north )\bjava\b": "Java",
     r"\bkotlin\b": "Kotlin",
-    r"\bswift\b": "Swift",
+    r"(?-i:\bSwift(?:UI)?\b)": "Swift",
     r"\brust\b": "Rust",
     r"\bc\+\+(?!\w)": "C++",
     r"\bc#(?!\w)": "C#",
@@ -50,7 +52,7 @@ SKILLS_DICTIONARY: Dict[str, str] = {
     r"\br\s+programming\b|\br\s+lang\b": "R",
 
     # Frontend Technologies
-    r"\breact\b|\breact\.js\b|\breactjs\b": "React",
+    r"\breact\.?js\b|(?-i:\bReact\b)": "React",
     r"\bnext\.?js\b": "Next.js",
     r"\bvue\b|\bvue\.js\b|\bvuejs\b": "Vue.js",
     r"\bnuxt\.?js\b": "Nuxt.js",
@@ -62,7 +64,7 @@ SKILLS_DICTIONARY: Dict[str, str] = {
 
     # Backend & API Frameworks
     r"\bnode\.?js\b|\bnodejs\b": "Node.js",
-    r"\bexpress\.?js\b|\bexpress\b": "Express.js",
+    r"\bexpress\.?js\b|\bnode(?:\.?js)?\s*(?:/|&|\+|and)\s*express\b": "Express.js",
     r"\bnest\.?js\b|\bnestjs\b": "NestJS",
     r"\bfastapi\b": "FastAPI",
     r"\bdjango\b": "Django",
@@ -109,7 +111,7 @@ SKILLS_DICTIONARY: Dict[str, str] = {
     r"\blooker\b|\blooker\s*studio\b": "Looker",
     r"\bmetabase\b": "Metabase",
     r"\bdax\b": "DAX",
-    r"\bexcel\b|\badvanced\s*excel\b": "Excel",
+    r"\b(?:ms|microsoft|advanced)\s*excel\b|(?-i:\bExcel\b)": "Excel",
     r"\bdata\s*warehouse\b|\bdwh\b": "Data Warehouse",
     r"\betl\b|\belt\b": "ETL",
     r"\bdbt\b": "dbt",
@@ -142,7 +144,7 @@ SKILLS_DICTIONARY: Dict[str, str] = {
     r"\bscikit[/-]learn\b": "Scikit-Learn",
     r"\bpandas\b": "Pandas",
     r"\bnumpy\b": "NumPy",
-    r"\bspark\b|\bpyspark\b": "Apache Spark",
+    r"\bapache\s+spark\b|\bpyspark\b|\bspark\s+(?:sql|streaming)\b|(?-i:\bSpark\b)": "Apache Spark",
     r"\bairflow\b": "Apache Airflow",
     r"\bllm\b|\blarge\s+language\s+models?\b": "LLM",
     r"\blangchain\b": "LangChain",
@@ -261,9 +263,8 @@ def extract_yoe_rule_based(text: str, experience_range: Optional[str] = None) ->
     ):
         return "Fresh Graduate (0-1 tahun)"
 
-    # Pattern 6: Internship indicator
-    if re.search(r"\b(?:internship|magang|intern|praktik\s*kerja\s*lapangan|pkl)\b", cleaned, re.IGNORECASE):
-        return "Internship / Mahasiswa"
+    # Internship is decided from title / job_level / job_type in extract_job_insights: a description
+    # that merely mentions an "internship program" says nothing about this role.
 
     # Pattern 7: Qualitative experience indicator in requirements (no specific years stated)
     if re.search(
@@ -280,30 +281,70 @@ def extract_yoe_rule_based(text: str, experience_range: Optional[str] = None) ->
     return None
 
 
+INTERN_TITLE_RE = re.compile(r"\b(?:intern|internship|magang|praktik\s*kerja\s*lapangan|pkl)\b", re.IGNORECASE)
+_JUNIOR_TITLE_RE = re.compile(r"\b(?:junior|jr|entry[\s-]level|fresh\s*grad(?:uate)?s?)\b", re.IGNORECASE)
+_LEAD_TITLE_RE = re.compile(
+    r"\b(?:lead|principal|staff\s+(?:software\s+)?engineer|head|architect|director|vp|vice\s+president)\b",
+    re.IGNORECASE,
+)
+_SENIOR_TITLE_RE = re.compile(r"\b(?:senior|sr|expert)\b", re.IGNORECASE)
+_ASSOCIATE_TITLE_RE = re.compile(r"\bassociate\b", re.IGNORECASE)
+_MID_TITLE_RE = re.compile(r"\b(?:mid|mid-level|intermediate)\b", re.IGNORECASE)
+
+
+def _seniority_from_yoe(yoe: str) -> Optional[tuple[str, str]]:
+    """Map a normalized YoE string (e.g. 'Min. 5 tahun', '0-2 tahun', '3+ tahun') to a seniority level."""
+    yoe_lower = yoe.lower()
+    if "fresh graduate" in yoe_lower or "intern" in yoe_lower:
+        return "Fresh Graduate / Entry", "entry_level"
+
+    nums = [int(n) for n in re.findall(r"\d+", yoe_lower)]
+    if not nums:
+        return None
+
+    if len(nums) >= 2:
+        low, high = nums[0], nums[1]
+        if low == 0 and high <= 1:
+            return "Fresh Graduate / Entry", "entry_level"
+        if low <= 1 and high <= 3:
+            return "Junior / Associate", "associate"
+        return None
+
+    if "+" in yoe_lower or "min." in yoe_lower:
+        if nums[0] >= 8:
+            return "Lead / Principal", "lead"
+        if nums[0] >= 5:
+            return "Senior", "senior"
+    return None
+
+
 def extract_seniority_rule_based(
     title: str,
     text: str = "",
     job_level: Optional[str] = None,
     yoe: Optional[str] = None,
+    job_type: Optional[str] = None,
 ) -> tuple[str, str]:
     """Determine seniority level and normalized level_code prioritizing job title, followed by LinkedIn job_level,
-    description keywords, and inferred YoE.
+    job_type, description keywords, and inferred YoE. All keyword checks are whole-word.
     Returns: (display_name, level_code)
     """
-    title_lower = (title or "").lower()
+    title = title or ""
     full_str = clean_job_text(f"{title} {text}").lower()
     norm_job_level = (job_level or "").strip().lower()
 
-    # 1. Title check (most explicit & authoritative)
-    if any(k in title_lower for k in ["intern", "internship", "magang"]):
+    # 1. Title check (most explicit & authoritative). Explicit junior markers beat role nouns like "Architect".
+    if INTERN_TITLE_RE.search(title):
         return "Internship", "internship"
-    if any(k in title_lower for k in ["lead", "principal", "staff engineer", "head", "architect", "tech lead", "director", "vp "]):
-        return "Lead / Principal", "lead"
-    if any(k in title_lower for k in ["senior", "sr.", "sr ", "expert", "specialist"]):
-        return "Senior", "senior"
-    if any(k in title_lower for k in ["junior", "jr.", "jr ", "entry", "associate", "fresh grad"]):
+    if _JUNIOR_TITLE_RE.search(title):
         return "Junior / Associate", "associate"
-    if any(k in title_lower for k in ["mid", "intermediate"]):
+    if _LEAD_TITLE_RE.search(title):
+        return "Lead / Principal", "lead"
+    if _SENIOR_TITLE_RE.search(title):
+        return "Senior", "senior"
+    if _ASSOCIATE_TITLE_RE.search(title):
+        return "Junior / Associate", "associate"
+    if _MID_TITLE_RE.search(title):
         return "Mid-Level", "mid_senior"
 
     # 2. LinkedIn job_level metadata (if provided and valid)
@@ -319,29 +360,26 @@ def extract_seniority_rule_based(
         if "director" in norm_job_level or "executive" in norm_job_level:
             return "Director / Lead", "lead"
 
-    # 3. Description keywords (prioritize entry/junior to avoid false exclusion)
-    if any(k in full_str for k in ["internship", "magang"]):
+    # 3. Structured job_type (e.g. jobspy 'internship')
+    if "intern" in (job_type or "").lower():
         return "Internship", "internship"
-    if any(k in full_str for k in ["fresh graduate", "fresh grad", "lulusan baru", "entry level", "entry-level", "tanpa pengalaman"]):
+
+    # 4. Description keywords (prioritize entry/junior to avoid false exclusion)
+    if re.search(r"\b(?:fresh\s+grad(?:uate)?s?|lulusan\s+baru|entry[\s-]level|tanpa\s+pengalaman)\b", full_str):
         return "Fresh Graduate / Entry", "entry_level"
-    if any(k in full_str for k in ["junior developer", "junior engineer", "junior analyst", "junior position", "junior role"]):
+    if re.search(r"\bjunior\s+(?:developer|engineer|analyst|position|role)\b", full_str):
         return "Junior / Associate", "associate"
-    if re.search(r"\b(?:senior\s+(?:level|position|role|developer|engineer|analyst)|minimum\s+[5-9]\s*tahun|\b[5-9]\+\s*(?:years?|tahun))\b", full_str):
+    if re.search(r"\b(?:senior\s+(?:level|position|role|developer|engineer|analyst)|minimum\s+[5-9]\s*tahun|[5-9]\+\s*(?:years?|tahun))\b", full_str):
         return "Senior", "senior"
 
-    # 4. Inference from YoE if available
+    # 5. Inference from YoE if available
     if yoe:
-        yoe_lower = yoe.lower()
-        if "fresh graduate" in yoe_lower or "0-1" in yoe_lower or "intern" in yoe_lower:
-            return "Fresh Graduate / Entry", "entry_level"
-        if any(f"{y}+" in yoe_lower or f"min. {y}" in yoe_lower for y in range(8, 21)):
-            return "Lead / Principal", "lead"
-        if any(f"{y}+" in yoe_lower or f"min. {y}" in yoe_lower for y in range(5, 21)):
-            return "Senior", "senior"
-        if any(k in yoe_lower for k in ["0-2", "1-2", "1-3"]):
-            return "Junior / Associate", "associate"
+        inferred = _seniority_from_yoe(yoe)
+        if inferred:
+            return inferred
 
     return "Mid-Level / General", "mid_senior"
+
 
 def extract_with_ai(
     title: str,
@@ -441,6 +479,7 @@ def extract_job_insights(
                     text=combined_text,
                     job_level=job_level,
                     yoe=ai_insights.yoe,
+                    job_type=job_type,
                 )
             return ai_insights
 
@@ -459,11 +498,11 @@ def extract_job_insights(
                 skills.append(s)
 
     yoe = extract_yoe_rule_based(combined_text, experience_range=experience_range)
-    # If still None, check job_type or job_level for internship/entry indicators
+    # If still None, check title, job_type or job_level for internship/entry indicators
     if not yoe:
         norm_lvl = str(job_level or "").lower().strip()
         norm_type = str(job_type or "").lower().strip()
-        if "intern" in norm_lvl or "intern" in norm_type:
+        if INTERN_TITLE_RE.search(title) or "intern" in norm_lvl or "intern" in norm_type:
             yoe = "Internship / Mahasiswa"
         elif "entry" in norm_lvl:
             yoe = "Entry Level (0-1 tahun)"
@@ -473,6 +512,7 @@ def extract_job_insights(
         text=combined_text,
         job_level=job_level,
         yoe=yoe,
+        job_type=job_type,
     )
 
     return JobInsights(

@@ -115,25 +115,11 @@ class Config:
     delay_between_alerts: float = 1.0
     dry_run: bool = False
 
-    # Backwards-compatible singular fields
-    search_term: str = ""
-    location: str = ""
-
-    def __post_init__(self):
-        # Sync singular and plural fields
-        if not self.search_term and self.search_terms:
-            self.search_term = self.search_terms[0]
-        elif self.search_term and self.search_term not in self.search_terms:
-            self.search_terms.insert(0, self.search_term)
-
-        if not self.location and self.locations:
-            self.location = self.locations[0]
-        elif self.location and self.location not in self.locations:
-            self.locations.insert(0, self.location)
-
     def get_webhook_for_stream(self, stream_key: Optional[str]) -> str:
-        """Resolve webhook URL for a specific stream with fallback to default webhook."""
-        if not stream_key:
+        """Resolve webhook URL for a specific stream with fallback to default webhook.
+        With `discord_routing.enable_stream_routing: false`, every stream posts to the default webhook.
+        """
+        if not stream_key or not self.discord_routing.get("enable_stream_routing", True):
             return self.discord_webhook_url
 
         streams = self.discord_routing.get("streams", {})
@@ -166,10 +152,10 @@ def load_config(json_path: str = CONFIG_JSON_PATH) -> Config:
     routing_cfg = data.get("discord_routing", {})
 
     # Priority: Env override if set, else config.json, else default
-    env_terms = os.getenv("SEARCH_TERMS", os.getenv("SEARCH_TERM"))
+    env_terms = os.getenv("SEARCH_TERMS")
     search_terms = _parse_list(env_terms, search_cfg.get("search_terms", ["Frontend Developer"]))
 
-    env_locs = os.getenv("LOCATIONS", os.getenv("LOCATION"))
+    env_locs = os.getenv("LOCATIONS")
     locations = _parse_list(env_locs, search_cfg.get("locations", ["Indonesia"]))
 
     env_sites = os.getenv("SITE_NAMES")
@@ -233,6 +219,3 @@ def load_config(json_path: str = CONFIG_JSON_PATH) -> Config:
         dry_run=dry_run,
     )
     return cfg
-
-
-config = load_config()

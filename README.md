@@ -124,7 +124,9 @@ python main.py --dry-run
 job-scraper/
 ├── .github/
 │   └── workflows/
-│       └── job_alert.yml       # Workflow GitHub Actions (cron & dispatch)
+│       ├── job_alert.yml       # Workflow GitHub Actions (cron 3 jam & dispatch)
+│       ├── test_alert.yml      # Workflow manual untuk tes webhook per stream
+│       └── tests.yml           # Workflow unit tests saat push / PR
 ├── .env.example                # Template konfigurasi environment variables
 ├── .gitignore                  # Berkas yang diabaikan Git (.venv, __pycache__, .env)
 ├── config.json                 # PUSAT KONTROL (search terms, exclude keywords, streams, companies)

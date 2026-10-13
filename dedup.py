@@ -16,6 +16,7 @@ class JobDeduplicator:
         self.filepath = filepath
         self.max_history = max_history
         self.seen_data: Dict[str, Dict[str, Any]] = {}
+        self.dirty = False
         self.load()
 
     def _normalize_key(self, job_or_id: Any) -> str:
@@ -75,8 +76,12 @@ class JobDeduplicator:
 
         return False
 
-    def mark_seen(self, job: Dict[str, Any]) -> None:
-        """Mark a single job as seen with metadata."""
+    def mark_seen(self, job: Dict[str, Any], status: str = "sent") -> None:
+        """Mark a single job as seen with metadata.
+
+        status: "sent" for delivered alerts, "rejected" for jobs dropped after insight extraction
+        (level / company filters) so later runs skip re-extracting them.
+        """
         key = self._normalize_key(job)
         if not key:
             return
@@ -89,7 +94,9 @@ class JobDeduplicator:
             "job_url": job.get("job_url") or job.get("job_url_direct"),
             "date_posted": job.get("date_posted"),
             "first_seen": now_iso,
+            "status": status,
         }
+        self.dirty = True
 
     def filter_unseen(self, jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Filter out already seen jobs from a list."""
@@ -127,6 +134,7 @@ class JobDeduplicator:
             with open(temp_filepath, "w", encoding="utf-8") as f:
                 json.dump(payload, f, indent=2, ensure_ascii=False)
             os.replace(temp_filepath, self.filepath)
+            self.dirty = False
             logger.info("Riwayat lowongan berhasil disimpan ke '%s' (total: %d).", self.filepath, len(self.seen_data))
         except Exception as exc:
             if os.path.exists(temp_filepath):

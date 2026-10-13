@@ -13,6 +13,8 @@ from discord_notifier import DiscordNotifier
 from extractor import extract_job_insights
 from scraper import fetch_jobs
 
+logger = logging.getLogger("job_alerts.main")
+
 
 def setup_logging(verbose: bool = False) -> None:
     """Configure console logging with clean formatting."""
@@ -28,7 +30,7 @@ INDONESIAN_REGION_KEYWORDS = (
     "indonesia", "jakarta", "bandung", "surabaya", "yogyakarta", "jogja",
     "semarang", "medan", "tangerang", "depok", "bogor", "bekasi", "batam",
     "bali", "denpasar", "malang", "solo", "surakarta", "banten", "jawa",
-    "sumatera", "kalimantan", "sulawesi", "id"
+    "sumatera", "kalimantan", "sulawesi",
 )
 
 
@@ -58,8 +60,7 @@ def is_location_allowed(job: Dict[str, Any], allowed_locations: List[str]) -> bo
     # If "indonesia" is in allowed locations, also accept major Indonesian cities/provinces
     if "indonesia" in allowed_set:
         for keyword in INDONESIAN_REGION_KEYWORDS:
-            pattern = rf"\b{re.escape(keyword)}\b"
-            if re.search(pattern, loc):
+            if re.search(rf"\b{re.escape(keyword)}\b", loc):
                 return True
 
     return False
@@ -72,43 +73,181 @@ def is_title_excluded(title: str, exclude_keywords: List[str]) -> Tuple[bool, Op
         clean_kw = kw.strip()
         if not clean_kw:
             continue
-        # Use word boundary search
-        pattern = rf"\b{re.escape(clean_kw)}\b"
-        if re.search(pattern, title_clean, re.IGNORECASE):
+        if re.search(rf"\b{re.escape(clean_kw)}\b", title_clean, re.IGNORECASE):
             return True, clean_kw
     return False, None
 
 
+def _match_stream_keywords(text: str, streams: Dict[str, Any]) -> Optional[str]:
+    """Return the first stream in `streams` whose keyword matches `text` as a whole word/phrase."""
+    if not text:
+        return None
+    for stream_key, meta in streams.items():
+        if not isinstance(meta, dict):
+            continue
+        for kw in meta.get("keywords", []):
+            clean = str(kw).strip()
+            if clean and re.search(rf"\b{re.escape(clean)}\b", text, re.IGNORECASE):
+                return stream_key
+    return None
+
+
 def classify_stream(job: Dict[str, Any], routing_cfg: Dict[str, Any]) -> str:
-    """Classify job into stream: product_and_analysis, data_and_ai, or tech_engineering."""
-    title = str(job.get("title") or "")
-    matched_query = str(job.get("matched_query") or "")
-    combined = f"{title} {matched_query}".lower()
+    """Classify job into a configured stream.
 
+    Matches the job title first across `routing_cfg['streams']` in config order, and only falls back to
+    `matched_query` when the title matches nothing—so a "Backend Developer" returned by a "Business Analyst"
+    search still goes to the engineering channel.
+    """
+    streams = routing_cfg.get("streams") or {}
+    fallback = routing_cfg.get("fallback_stream")
+    if not fallback:
+        fallback = next(reversed(streams), "tech_engineering")
+
+    title = str(job.get("title") or "").strip()
+    matched_query = str(job.get("matched_query") or "").strip()
+    return (
+        _match_stream_keywords(title, streams)
+        or _match_stream_keywords(matched_query, streams)
+        or fallback
+    )
+
+
+def filter_by_location(jobs: List[Dict[str, Any]], allowed_locations: List[str]) -> List[Dict[str, Any]]:
+    """Drop jobs whose location falls outside `allowed_locations`."""
+    kept: List[Dict[str, Any]] = []
+    for job in jobs:
+        if is_location_allowed(job, allowed_locations):
+            kept.append(job)
+        else:
+            logger.debug("Exclude lowongan '%s' karena lokasi '%s' di luar target", job.get("title"), job.get("location"))
+
+    dropped = len(jobs) - len(kept)
+    if dropped > 0:
+        logger.info("Filter lokasi: Mengabaikan %d lowongan di luar target wilayah (tersisa %d).", dropped, len(kept))
+    return kept
+
+
+def filter_by_title(jobs: List[Dict[str, Any]], exclude_keywords: List[str]) -> List[Dict[str, Any]]:
+    """Drop jobs whose title matches any negative exclusion keyword."""
+    kept: List[Dict[str, Any]] = []
+    for job in jobs:
+        is_ex, reason = is_title_excluded(job.get("title", ""), exclude_keywords)
+        if is_ex:
+            logger.debug("Exclude lowongan '%s' karena mengandung '%s'", job.get("title"), reason)
+        else:
+            kept.append(job)
+
+    dropped = len(jobs) - len(kept)
+    if dropped > 0:
+        logger.info("Filter kata kunci negatif: Mengabaikan %d lowongan tidak relevan (tersisa %d).", dropped, len(kept))
+    return kept
+
+
+def enrich_jobs(jobs: List[Dict[str, Any]], matcher: CompanyMatcher, cfg: Config) -> None:
+    """Attach `company_match` and `insights` in place, tripping a circuit breaker if the AI endpoint fails once."""
+    logger.info(
+        "Mengekstrak keterampilan (skills), pengalaman (YoE), dan level jabatan untuk %d lowongan baru...",
+        len(jobs),
+    )
+    active_ai_url: Optional[str] = cfg.ai_api_url or None
+    for job in jobs:
+        job["company_match"] = matcher.match(job.get("company"))
+        insights = extract_job_insights(
+            job=job,
+            ai_api_url=active_ai_url,
+            ai_api_key=cfg.ai_api_key,
+        )
+        if active_ai_url and insights.source != "ai":
+            logger.warning(
+                "AI endpoint gagal merespon; menonaktifkan AI untuk sisa %d lowongan di run ini.",
+                len(jobs),
+            )
+            active_ai_url = None
+        job["insights"] = insights
+
+
+def split_by_level(
+    jobs: List[Dict[str, Any]],
+    allowed_levels: List[str],
+) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
+    """Partition jobs into (kept, rejected) by `allowed_experience_levels`."""
+    if not allowed_levels:
+        return list(jobs), []
+
+    allowed_set = {lvl.lower().strip() for lvl in allowed_levels if lvl.strip()}
+    kept: List[Dict[str, Any]] = []
+    rejected: List[Dict[str, Any]] = []
+    for job in jobs:
+        lvl_code = getattr(job.get("insights"), "level_code", "mid_senior")
+        if lvl_code in allowed_set:
+            kept.append(job)
+        else:
+            rejected.append(job)
+            logger.debug("Exclude lowongan '%s' karena level '%s' tidak diizinkan", job.get("title"), lvl_code)
+
+    if rejected:
+        logger.info(
+            "Filter level pengalaman: Mengabaikan %d lowongan level senior/lead (tersisa %d).",
+            len(rejected),
+            len(kept),
+        )
+    return kept, rejected
+
+
+def split_by_company_mode(
+    jobs: List[Dict[str, Any]],
+    filter_mode: str,
+) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
+    """Partition jobs into (eligible, rejected) according to `filter_mode` ('only_top' / 'highlight' / 'all')."""
+    if filter_mode == "only_top":
+        eligible = [j for j in jobs if j.get("company_match")]
+        rejected = [j for j in jobs if not j.get("company_match")]
+        logger.info(
+            "Filter 'only_top': Menyaring %d lowongan dari perusahaan Top Tier (dari total %d).",
+            len(eligible),
+            len(jobs),
+        )
+        return eligible, rejected
+
+    eligible = list(jobs)
+    if filter_mode == "highlight":
+        eligible.sort(key=lambda j: 0 if j.get("company_match") else 1)
+    return eligible, []
+
+
+def assign_streams(jobs: List[Dict[str, Any]], routing_cfg: Dict[str, Any]) -> None:
+    """Populate `stream_key`, `stream_name`, and `role_id` on each job."""
     streams = routing_cfg.get("streams", {})
+    for job in jobs:
+        stream_key = classify_stream(job, routing_cfg)
+        stream_meta = streams.get(stream_key, {})
+        job["stream_key"] = stream_key
+        job["stream_name"] = stream_meta.get("name", stream_key)
+        job["role_id"] = stream_meta.get("role_id")
 
-    # Priority 1: Product & Analysis
-    product_keywords = streams.get("product_and_analysis", {}).get("keywords", [])
-    for kw in product_keywords:
-        pattern = rf"\b{re.escape(kw.lower().strip())}\b"
-        if re.search(pattern, combined):
-            return "product_and_analysis"
 
-    # Priority 2: Data & AI
-    data_keywords = streams.get("data_and_ai", {}).get("keywords", [])
-    for kw in data_keywords:
-        pattern = rf"\b{re.escape(kw.lower().strip())}\b"
-        if re.search(pattern, combined):
-            return "data_and_ai"
-
-    # Priority 3: Tech & Engineering
-    tech_keywords = streams.get("tech_engineering", {}).get("keywords", [])
-    for kw in tech_keywords:
-        pattern = rf"\b{re.escape(kw.lower().strip())}\b"
-        if re.search(pattern, combined):
-            return "tech_engineering"
-
-    return "tech_engineering"
+def log_job_preview(jobs: List[Dict[str, Any]]) -> None:
+    """Log a one-line preview per job (used by both --dry-run and the no-webhook fallback)."""
+    for i, job in enumerate(jobs, 1):
+        badge = f"[{job['company_match'].badge}] " if job.get("company_match") else ""
+        stream_tag = f"[{job.get('stream_name')}] "
+        ins = job.get("insights")
+        skills_str = f" | Skills: {', '.join(ins.skills[:5])}" if ins and ins.skills else ""
+        yoe_str = f" | YoE: {ins.yoe}" if ins and ins.yoe else ""
+        lvl_str = f" | Level: {ins.seniority}" if ins and ins.seniority else ""
+        logger.info(
+            "[%d] %s%s%s | %s%s%s%s | %s",
+            i,
+            stream_tag,
+            badge,
+            job.get("title"),
+            job.get("company"),
+            lvl_str,
+            yoe_str,
+            skills_str,
+            job.get("job_url"),
+        )
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -132,8 +271,7 @@ def parse_arguments() -> argparse.Namespace:
 
 def build_config_from_args(args: argparse.Namespace) -> Config:
     """Load config.json and merge with CLI arguments."""
-    json_path = args.config_file or "config.json"
-    cfg = load_config(json_path)
+    cfg = load_config(args.config_file) if args.config_file else load_config()
 
     if args.search_terms is not None:
         cfg.search_terms = [s.strip() for s in args.search_terms.split(",") if s.strip()]
@@ -168,8 +306,6 @@ def build_config_from_args(args: argparse.Namespace) -> Config:
 
 def run_job_alerts(cfg: Config) -> int:
     """Execute the job alert pipeline with exclusion filtering and stream routing."""
-    logger = logging.getLogger("job_alerts.main")
-
     logger.info("=" * 65)
     logger.info("🚀 Menjalankan Job Alert Bot (SI & Tech Edition)")
     logger.info("  • Kata Kunci      : %d role (%s...)", len(cfg.search_terms), ", ".join(cfg.search_terms[:4]))
@@ -179,160 +315,46 @@ def run_job_alerts(cfg: Config) -> int:
     logger.info("  • Mode Filter     : %s (only_top / highlight / all)", cfg.filter_mode)
     if cfg.exclude_title_keywords:
         logger.info("  • Negative Exclude: %d kata kunci (%s...)", len(cfg.exclude_title_keywords), ", ".join(cfg.exclude_title_keywords[:5]))
-    logger.info("  • Stream Routing  : %s", "Aktif (Multi-Channel)" if cfg.discord_routing.get("enable_stream_routing") else "Single Channel")
+    logger.info("  • Stream Routing  : %s", "Aktif (Multi-Channel)" if cfg.discord_routing.get("enable_stream_routing", True) else "Single Channel")
     logger.info("  • AI Extractor    : %s", "Aktif (URL terpasang)" if cfg.ai_api_url else "Offline (Rule-based Regex)")
     logger.info("  • Mode Dry Run    : %s", cfg.dry_run)
     logger.info("=" * 65)
 
-    # 1. Initialize Deduplicator & Company Matcher
     dedup = JobDeduplicator(filepath=cfg.seen_jobs_file, max_history=cfg.max_seen_history)
-    matcher = CompanyMatcher(
-        top_companies_dict=cfg.top_companies,
-        custom_companies=cfg.custom_companies,
-    )
+    matcher = CompanyMatcher(top_companies_dict=cfg.top_companies, custom_companies=cfg.custom_companies)
 
-    # 2. Scrape Jobs across terms & locations
     scraped_jobs = fetch_jobs(cfg)
     if not scraped_jobs:
         logger.info("Tidak ada lowongan ditemukan pada pencarian kali ini.")
         return 0
 
-    # 3. Apply Post-Scrape Location Filter (Anti-Foreign Leakage)
-    filtered_by_location = []
-    loc_excluded_count = 0
-    for job in scraped_jobs:
-        if is_location_allowed(job, cfg.locations):
-            filtered_by_location.append(job)
-        else:
-            loc_excluded_count += 1
-            logger.debug("Exclude lowongan '%s' karena lokasi '%s' di luar target", job.get("title"), job.get("location"))
-
-    if loc_excluded_count > 0:
-        logger.info(
-            "Filter lokasi: Mengabaikan %d lowongan di luar target wilayah (tersisa %d).",
-            loc_excluded_count,
-            len(filtered_by_location),
-        )
-
+    filtered_by_location = filter_by_location(scraped_jobs, cfg.locations)
     if not filtered_by_location:
         logger.info("Semua lowongan hasil scraping tereliminasi oleh filter lokasi.")
         return 0
 
-    # 4. Apply Negative Title Exclusion Filter
-    filtered_by_title = []
-    excluded_count = 0
-    for job in filtered_by_location:
-        is_ex, reason = is_title_excluded(job.get("title", ""), cfg.exclude_title_keywords)
-        if is_ex:
-            excluded_count += 1
-            logger.debug("Exclude lowongan '%s' karena mengandung '%s'", job.get("title"), reason)
-        else:
-            filtered_by_title.append(job)
-
-    if excluded_count > 0:
-        logger.info("Filter kata kunci negatif: Mengabaikan %d lowongan tidak relevan (tersisa %d).", excluded_count, len(filtered_by_title))
-
+    filtered_by_title = filter_by_title(filtered_by_location, cfg.exclude_title_keywords)
     if not filtered_by_title:
         logger.info("Semua lowongan hasil scraping tereliminasi oleh filter kata kunci negatif.")
         return 0
 
-    # 5. Early Deduplication against seen_jobs.json (avoid running expensive extraction on seen jobs)
     new_jobs = dedup.filter_unseen(filtered_by_title)
     if not new_jobs:
         logger.info("Semua lowongan (%d) sudah ada di riwayat seen_jobs. Tidak ada alert baru.", len(filtered_by_title))
         return 0
 
-    # 6. Extract Insights (Skills, YoE, Seniority, Level Code) ONLY for unseen jobs
-    logger.info("Mengekstrak keterampilan (skills), pengalaman (YoE), dan level jabatan untuk %d lowongan baru...", len(new_jobs))
-    for job in new_jobs:
-        job["company_match"] = matcher.match(job.get("company"))
-        job["insights"] = extract_job_insights(
-            job=job,
-            ai_api_url=cfg.ai_api_url,
-            ai_api_key=cfg.ai_api_key,
-        )
+    enrich_jobs(new_jobs, matcher, cfg)
+    filtered_by_level, rejected_by_level = split_by_level(new_jobs, cfg.allowed_experience_levels)
+    eligible_jobs, rejected_by_company = split_by_company_mode(filtered_by_level, cfg.filter_mode)
+    rejected_jobs = rejected_by_level + rejected_by_company
+    assign_streams(eligible_jobs, cfg.discord_routing)
 
-    # 7. Apply Seniority Level Filtering (if configured)
-    filtered_by_level = []
-    if cfg.allowed_experience_levels:
-        allowed_set = {lvl.lower().strip() for lvl in cfg.allowed_experience_levels if lvl.strip()}
-        level_excluded = 0
-        for job in new_jobs:
-            lvl_code = getattr(job["insights"], "level_code", "mid_senior")
-            if lvl_code in allowed_set:
-                filtered_by_level.append(job)
-            else:
-                level_excluded += 1
-                logger.debug("Exclude lowongan '%s' karena level '%s' tidak diizinkan", job.get("title"), lvl_code)
-
-        if level_excluded > 0:
-            logger.info("Filter level pengalaman: Mengabaikan %d lowongan level senior/lead (tersisa %d).", level_excluded, len(filtered_by_level))
-    else:
-        filtered_by_level = new_jobs
-
-    if not filtered_by_level:
-        logger.info("Tidak ada lowongan yang sesuai dengan level pengalaman yang diizinkan.")
-        return 0
-
-    # 8. Apply Company Filter Mode
-    eligible_jobs = []
-    if cfg.filter_mode == "only_top":
-        for job in filtered_by_level:
-            if job.get("company_match"):
-                eligible_jobs.append(job)
-        logger.info(
-            "Filter 'only_top': Menyaring %d lowongan dari perusahaan Top Tier (dari total %d).",
-            len(eligible_jobs),
-            len(filtered_by_level),
-        )
-    else:
-        eligible_jobs = filtered_by_level
-        # In 'highlight' mode, prioritize Top Tier companies first
-        if cfg.filter_mode == "highlight":
-            eligible_jobs.sort(key=lambda j: 0 if j.get("company_match") else 1)
-
-    if not eligible_jobs:
-        logger.info("Tidak ada lowongan yang memenuhi kriteria filter perusahaan.")
-        return 0
-
-    # 9. Classify stream for each job
-    routing_cfg = cfg.discord_routing
-    for job in eligible_jobs:
-        stream_key = classify_stream(job, routing_cfg)
-        job["stream_key"] = stream_key
-        stream_meta = routing_cfg.get("streams", {}).get(stream_key, {})
-        job["stream_name"] = stream_meta.get("name", stream_key)
-        job["stream_color"] = stream_meta.get("color")
-        job["role_id"] = stream_meta.get("role_id")
-
-    top_count = sum(1 for j in eligible_jobs if j.get("company_match"))
-    logger.info("Ditemukan %d lowongan baru (%d dari Top Tier/Big 4/Tech Giants)!", len(eligible_jobs), top_count)
-    # 10. Preview / Dry-run check
     if cfg.dry_run:
         logger.info("--- [MODE DRY RUN AKTIF - PREVIEW LOWONGAN & ROUTING STREAM] ---")
-        for i, job in enumerate(eligible_jobs, 1):
-            badge = f"[{job['company_match'].badge}] " if job.get("company_match") else ""
-            stream_tag = f"[{job.get('stream_name')}] "
-            ins = job.get("insights")
-            skills_str = f" | Skills: {', '.join(ins.skills[:5])}" if ins and ins.skills else ""
-            yoe_str = f" | YoE: {ins.yoe}" if ins and ins.yoe else ""
-            lvl_str = f" | Level: {ins.seniority}" if ins and ins.seniority else ""
-            logger.info(
-                "[%d] %s%s%s | %s%s%s%s | %s",
-                i,
-                stream_tag,
-                badge,
-                job.get("title"),
-                job.get("company"),
-                lvl_str,
-                yoe_str,
-                skills_str,
-                job.get("job_url"),
-            )
+        log_job_preview(eligible_jobs)
         logger.info("Dry run selesai. Tidak ada pesan dikirim dan seen_jobs.json tidak diubah.")
         return 0
 
-    # 11. Send alerts to Discord with stream-based routing
     notifier = DiscordNotifier(
         default_webhook_url=cfg.discord_webhook_url,
         config=cfg,
@@ -340,41 +362,40 @@ def run_job_alerts(cfg: Config) -> int:
     )
 
     if not notifier.has_any_webhook():
-        logger.warning(
-            "DISCORD_WEBHOOK_URL belum disetel! Menampilkan preview %d lowongan baru di konsol:",
-            len(eligible_jobs),
-        )
-        for i, job in enumerate(eligible_jobs, 1):
-            badge = f"[{job['company_match'].badge}] " if job.get("company_match") else ""
-            stream_tag = f"[{job.get('stream_name')}] "
-            ins = job.get("insights")
-            skills_str = f" | Skills: {', '.join(ins.skills[:5])}" if ins and ins.skills else ""
-            logger.info(
-                "[%d] %s%s%s | %s%s | %s",
-                i,
-                stream_tag,
-                badge,
-                job.get("title"),
-                job.get("company"),
-                skills_str,
-                job.get("job_url"),
+        if eligible_jobs:
+            logger.warning(
+                "DISCORD_WEBHOOK_URL belum disetel! Menampilkan preview %d lowongan baru di konsol:",
+                len(eligible_jobs),
             )
-        logger.info("Tips: Setel DISCORD_WEBHOOK_URL atau webhook per stream untuk mengirim otomatis ke Discord.")
+            log_job_preview(eligible_jobs)
+            logger.info("Tips: Setel DISCORD_WEBHOOK_URL atau webhook per stream untuk mengirim otomatis ke Discord.")
+        else:
+            logger.info("Tidak ada lowongan yang sesuai dengan filter level atau perusahaan.")
         return 0
 
-    # 12. Dispatch and mark seen
-    sent_jobs = notifier.notify_jobs(eligible_jobs)
-    for job in sent_jobs:
-        dedup.mark_seen(job)
+    # Real run: record post-extraction rejections too so future runs don't re-extract them,
+    # and always flush seen_jobs.json in `finally` even if a later send raises.
+    try:
+        for job in rejected_jobs:
+            dedup.mark_seen(job, status="rejected")
 
-    # 13. Persist seen jobs
-    if sent_jobs:
-        dedup.save()
-        logger.info("Berhasil menyimpan %d lowongan baru ke '%s'.", len(sent_jobs), cfg.seen_jobs_file)
-    else:
-        logger.warning("Tidak ada alert yang berhasil terkirim ke Discord.")
+        if not eligible_jobs:
+            if not filtered_by_level:
+                logger.info("Tidak ada lowongan yang sesuai dengan level pengalaman yang diizinkan.")
+            else:
+                logger.info("Tidak ada lowongan yang memenuhi kriteria filter perusahaan.")
+            return 0
 
-    return 0
+        top_count = sum(1 for j in eligible_jobs if j.get("company_match"))
+        logger.info("Ditemukan %d lowongan baru (%d dari Top Tier/Big 4/Tech Giants)!", len(eligible_jobs), top_count)
+
+        sent_jobs = notifier.notify_jobs(eligible_jobs, on_sent=dedup.mark_seen)
+        if not sent_jobs:
+            logger.warning("Tidak ada alert yang berhasil terkirim ke Discord.")
+        return 0
+    finally:
+        if dedup.dirty:
+            dedup.save()
 
 
 def main() -> None:

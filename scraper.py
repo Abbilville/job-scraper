@@ -103,8 +103,8 @@ def fetch_jobs(cfg: Config) -> List[Dict[str, Any]]:
     all_jobs: List[Dict[str, Any]] = []
     seen_keys = set()
 
-    search_terms = cfg.search_terms if cfg.search_terms else [cfg.search_term]
-    locations = cfg.locations if cfg.locations else [cfg.location]
+    search_terms = cfg.search_terms
+    locations = cfg.locations
     sites_to_query = list(cfg.site_names)
 
     total_combinations = len(search_terms) * len(locations)

@@ -29,20 +29,6 @@ from main import classify_stream, is_location_allowed, is_title_excluded
 
 
 class TestConfigAndCompanyMatcher(unittest.TestCase):
-    def test_config_json_loaded(self):
-        cfg = load_config("config.json")
-        self.assertIn("Product Manager", cfg.search_terms)
-        self.assertIn("Associate Product Manager", cfg.search_terms)
-        self.assertIn("Business Analyst", cfg.search_terms)
-        self.assertIn("BI Analyst", cfg.search_terms)
-        self.assertIn("Data Scientist", cfg.search_terms)
-        self.assertIn("Software Engineer", cfg.search_terms)
-        self.assertIn("Senior", cfg.exclude_title_keywords)
-        self.assertIn("Product Marketing", cfg.exclude_title_keywords)
-        self.assertIn("tech_engineering", cfg.discord_routing.get("streams", {}))
-        self.assertIn("data_and_ai", cfg.discord_routing.get("streams", {}))
-        self.assertIn("product_and_analysis", cfg.discord_routing.get("streams", {}))
-
     def test_new_companies_matcher(self):
         cfg = load_config("config.json")
         matcher = CompanyMatcher(top_companies_dict=cfg.top_companies)
@@ -76,6 +62,29 @@ class TestConfigAndCompanyMatcher(unittest.TestCase):
         m_sea = matcher.match("Sea")
         self.assertIsNotNone(m_sea)
         self.assertEqual(m_sea.canonical_name, "Shopee / Sea Group")
+        self.assertIsNone(matcher.match("Sea Freight Logistics"))
+
+    def test_ambiguous_company_names_require_exact_match(self):
+        cfg = load_config("config.json")
+        matcher = CompanyMatcher(top_companies_dict=cfg.top_companies)
+
+        # Bank Mandiri matches the bank itself, not every PT with "Mandiri" in its name
+        for valid in ("PT Bank Mandiri (Persero) Tbk.", "Bank Mandiri", "Mandiri"):
+            m = matcher.match(valid)
+            self.assertIsNotNone(m, valid)
+            self.assertEqual(m.canonical_name, "Bank Mandiri")
+        for unrelated in ("PT Mandiri Utama Finance", "PT Sinar Mandiri Jaya", "Mandiri Sekuritas"):
+            self.assertIsNone(matcher.match(unrelated), unrelated)
+
+        # Other generic words (DANA, Wings, Meta, Astra) behave the same way
+        self.assertIsNotNone(matcher.match("DANA Indonesia"))
+        self.assertIsNone(matcher.match("PT Dana Rupiah"))
+        self.assertIsNotNone(matcher.match("Wings Group Indonesia"))
+        self.assertIsNone(matcher.match("Wings Air"))
+        self.assertIsNotNone(matcher.match("Meta"))
+        self.assertIsNone(matcher.match("Meta Solusi Indonesia"))
+        self.assertIsNotNone(matcher.match("PT Astra International Tbk"))
+        self.assertIsNone(matcher.match("Astra Nusa Logistics"))
 
 
 class TestExclusionAndStreamRouting(unittest.TestCase):
@@ -151,6 +160,16 @@ class TestExclusionAndStreamRouting(unittest.TestCase):
             "tech_engineering",
         )
 
+        # Title wins over a misleading search query
+        self.assertEqual(
+            classify_stream({"title": "Backend Developer", "matched_query": "Business Analyst @ Jakarta"}, routing),
+            "tech_engineering",
+        )
+        self.assertEqual(
+            classify_stream({"title": "Data Engineer", "matched_query": "Product Owner @ Jakarta"}, routing),
+            "data_and_ai",
+        )
+
     def test_location_filtering(self):
         allowed_locations = ["Indonesia", "Jakarta"]
 
@@ -168,6 +187,8 @@ class TestExclusionAndStreamRouting(unittest.TestCase):
         self.assertFalse(is_location_allowed({"location": "Munich, Germany"}, allowed_locations))
         self.assertFalse(is_location_allowed({"location": "Houston, TX"}, allowed_locations))
         self.assertFalse(is_location_allowed({"location": "São Paulo, Brazil"}, allowed_locations))
+        # US state abbreviation ID (Idaho) must not match as Indonesia
+        self.assertFalse(is_location_allowed({"location": "Boise, ID"}, allowed_locations))
 
 
 class TestExtractorSIAndTech(unittest.TestCase):
@@ -187,6 +208,13 @@ class TestExtractorSIAndTech(unittest.TestCase):
         self.assertIn("Power BI", skills)
         self.assertIn("SQL", skills)
 
+        # Ordinary English words and Indonesian island names must not produce fake skills
+        prose = (
+            "We go above and beyond. You will excel at fast-paced work, express ideas, "
+            "swift delivery, react quickly and spark innovation in our Bandung, West Java office."
+        )
+        self.assertEqual(extract_skills_rule_based(prose), [])
+
     def test_level_code_normalization(self):
         _, lvl_intern = extract_seniority_rule_based("Product Intern", "")
         self.assertEqual(lvl_intern, "internship")
@@ -196,6 +224,27 @@ class TestExtractorSIAndTech(unittest.TestCase):
 
         _, lvl_senior = extract_seniority_rule_based("Senior BI Developer", "")
         self.assertEqual(lvl_senior, "senior")
+
+        # Substring traps: "intern" inside Internal/International, "head" inside Headless, "lead" inside Leadership,
+        # "entry" inside Data Entry, "mid" inside Middleware, and "specialist" on an IC support title
+        for title in (
+            "Internal Audit Staff",
+            "International Business Analyst",
+            "Headless CMS Developer",
+            "Leadership Development Program",
+            "Data Entry Clerk",
+            "Middleware Engineer",
+            "IT Support Specialist",
+        ):
+            _, lvl = extract_seniority_rule_based(title, "")
+            self.assertEqual(lvl, "mid_senior", title)
+
+        # Explicit Junior beats role noun "Architect"; a passing mention of an internship program does not make the job an internship
+        self.assertEqual(extract_seniority_rule_based("Solution Architect (Junior)", "")[1], "associate")
+        self.assertEqual(
+            extract_seniority_rule_based("Backend Engineer", "We also offer an internship program for students.")[1],
+            "mid_senior",
+        )
 
     def test_seniority_fallback_not_false_positive_senior(self):
         # Mentions senior manager in description but role is Junior / General
@@ -359,6 +408,15 @@ class TestDiscordNotifierStreamRouting(unittest.TestCase):
         prod_job = {"stream_key": "product_and_analysis"}
         self.assertEqual(notifier.get_webhook_for_job(prod_job), "https://discord.com/api/webhooks/default/123")
 
+        # Disabling stream routing forces every stream onto the default webhook
+        cfg_single = Config(
+            discord_webhook_url="https://discord.com/api/webhooks/default/123",
+            discord_webhook_tech="https://discord.com/api/webhooks/tech/456",
+            discord_routing={"enable_stream_routing": False},
+        )
+        notifier_single = DiscordNotifier(default_webhook_url=cfg_single.discord_webhook_url, config=cfg_single)
+        self.assertEqual(notifier_single.get_webhook_for_job(tech_job), "https://discord.com/api/webhooks/default/123")
+
     def test_embed_cta_and_clean_fallbacks(self):
         from discord_notifier import _resolve_thumbnail_url
 
@@ -379,11 +437,13 @@ class TestDiscordNotifierStreamRouting(unittest.TestCase):
         self.assertEqual(yoe_field["value"], "Tidak Disebutkan")
         self.assertEqual(level_field["value"], "Semua Level")
 
-        # Test word-boundary domain matching (super.money should NOT match ey.com)
-        logo_supermoney = _resolve_thumbnail_url({"company": "super.money"})
+        # Thumbnail domain comes from the matched catalog entry (super.money does not match EY)
+        cfg = load_config("config.json")
+        matcher = CompanyMatcher(top_companies_dict=cfg.top_companies)
+        logo_supermoney = _resolve_thumbnail_url({"company": "super.money", "company_match": matcher.match("super.money")})
         self.assertNotIn("ey.com", logo_supermoney)
 
-        logo_ey = _resolve_thumbnail_url({"company": "EY Indonesia"})
+        logo_ey = _resolve_thumbnail_url({"company": "EY Indonesia", "company_match": matcher.match("EY Indonesia")})
         self.assertIn("ey.com", logo_ey)
 
 

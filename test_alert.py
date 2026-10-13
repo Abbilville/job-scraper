@@ -42,6 +42,7 @@ def get_sample_test_jobs() -> List[Dict[str, Any]]:
                 canonical_name="GoTo (Gojek & Tokopedia)",
                 category="Top Tech Giants & Unicorns",
                 badge="🚀 Top Tech Giant",
+                domain="gojek.com",
             ),
             "insights": JobInsights(
                 skills=["React", "TypeScript", "Go", "PostgreSQL", "Docker", "Git"],
@@ -69,6 +70,7 @@ def get_sample_test_jobs() -> List[Dict[str, Any]]:
                 canonical_name="Bank Central Asia (BCA)",
                 category="Top Tier Banking & FinTech",
                 badge="🏛️ Top Tier Banking",
+                domain="bca.co.id",
             ),
             "insights": JobInsights(
                 skills=["SQL", "Python", "Tableau", "Power BI", "Excel", "Data Warehouse"],
@@ -95,6 +97,7 @@ def get_sample_test_jobs() -> List[Dict[str, Any]]:
                 canonical_name="tiket.com",
                 category="Top Tech Giants & Unicorns",
                 badge="🚀 Top Tech Unicorn",
+                domain="tiket.com",
             ),
             "insights": JobInsights(
                 skills=["Jira", "Figma", "PRD", "User Stories", "A/B Testing", "Scrum"],

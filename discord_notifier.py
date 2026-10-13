@@ -1,10 +1,9 @@
 """Discord Webhook Notifier with Modern Minimalist 3-Column Card and batch-level role mentions."""
 
 import logging
-import re
 import time
 from datetime import datetime, timezone
-from typing import Any, Dict, List, Optional, Set
+from typing import Any, Callable, Dict, List, Optional, Set
 import requests
 
 from config import Config
@@ -25,62 +24,6 @@ PORTAL_LOGOS = {
     "indeed": "https://www.google.com/s2/favicons?domain=indeed.com&sz=128",
 }
 
-# Known Top Company Domain Mapping for Instant High-Res PNG Logos
-TOP_COMPANY_DOMAINS = {
-    "goto": "gojek.com",
-    "gojek": "gojek.com",
-    "tokopedia": "tokopedia.com",
-    "traveloka": "traveloka.com",
-    "shopee": "shopee.co.id",
-    "grab": "grab.com",
-    "tiket": "tiket.com",
-    "blibli": "blibli.com",
-    "bukalapak": "bukalapak.com",
-    "dana": "dana.id",
-    "xendit": "xendit.co",
-    "kredivo": "kredivo.id",
-    "efishery": "efishery.com",
-    "ajaib": "ajaib.co.id",
-    "bibit": "bibit.id",
-    "stockbit": "stockbit.com",
-    "dkatalis": "dkatalis.com",
-    "sirclo": "sirclo.com",
-    "komerce": "komerce.id",
-    "ruangguru": "ruangguru.com",
-    "google": "google.com",
-    "microsoft": "microsoft.com",
-    "amazon": "amazon.com",
-    "aws": "aws.amazon.com",
-    "bytedance": "bytedance.com",
-    "tiktok": "tiktok.com",
-    "meta": "meta.com",
-    "pwc": "pwc.com",
-    "deloitte": "deloitte.com",
-    "ey": "ey.com",
-    "kpmg": "kpmg.com",
-    "mckinsey": "mckinsey.com",
-    "bcg": "bcg.com",
-    "bain": "bain.com",
-    "accenture": "accenture.com",
-    "bca": "bca.co.id",
-    "mandiri": "bankmandiri.co.id",
-    "bri": "bri.co.id",
-    "bni": "bni.co.id",
-    "dbs": "dbs.com",
-    "cimb": "cimbniaga.co.id",
-    "ocbc": "ocbc.id",
-    "jenius": "jenius.com",
-    "telkom": "telkom.co.id",
-    "telkomsel": "telkomsel.com",
-    "astra": "astra.co.id",
-    "unilever": "unilever.co.id",
-    "nestle": "nestle.co.id",
-    "kalbe": "kalbe.co.id",
-    "mayora": "mayoraindah.co.id",
-    "wings": "wingscorp.com",
-    "pertamina": "pertamina.com",
-}
-
 
 def _resolve_thumbnail_url(job: Dict[str, Any]) -> str:
     """Resolve a guaranteed raster PNG/JPEG thumbnail for Discord embed.
@@ -91,12 +34,12 @@ def _resolve_thumbnail_url(job: Dict[str, Any]) -> str:
     if logo and isinstance(logo, str) and logo.startswith("http") and not logo.lower().endswith(".svg"):
         return logo
 
-    # 2. Known company logo via Google Favicon PNG
-    company_name = str(job.get("company") or "")
-    for keyword, domain in TOP_COMPANY_DOMAINS.items():
-        pattern = rf"\b{re.escape(keyword)}\b"
-        if re.search(pattern, company_name, re.IGNORECASE):
-            return f"https://www.google.com/s2/favicons?domain={domain}&sz=128"
+    # 2. Known top company logo via Google Favicon PNG (domain comes from the config.json catalog)
+    company_match = job.get("company_match")
+    domain = getattr(company_match, "domain", None)
+    if domain:
+        return f"https://www.google.com/s2/favicons?domain={domain}&sz=128"
+
     # 3. Fallback to Job Portal Official PNG Logo
     site_key = str(job.get("site") or "linkedin").lower()
     return PORTAL_LOGOS.get(site_key, PORTAL_LOGOS["linkedin"])
@@ -376,9 +319,14 @@ class DiscordNotifier:
 
         return False
 
-    def notify_jobs(self, jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    def notify_jobs(
+        self,
+        jobs: List[Dict[str, Any]],
+        on_sent: Optional[Callable[[Dict[str, Any]], None]] = None,
+    ) -> List[Dict[str, Any]]:
         """Send alerts for a list of jobs routed to their respective channel streams.
-        Mentions the stream role ONLY ONCE per batch/run.
+        Mentions the stream role ONLY ONCE per batch/run. `on_sent` runs right after each successful
+        delivery so callers can persist progress even if a later send raises.
         """
         if not jobs:
             logger.info("Tidak ada lowongan baru untuk dikirim ke Discord.")
@@ -399,6 +347,8 @@ class DiscordNotifier:
             ok = self.send_single_job(job, mention_role=mention_role)
             if ok:
                 successful.append(job)
+                if on_sent:
+                    on_sent(job)
                 self.pinged_streams.add(stream_key)
 
             if idx < len(jobs):
