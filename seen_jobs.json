@@ -1,167 +1,7 @@
 {
-  "last_updated": "2026-10-13T13:10:27.541768+00:00",
-  "total_seen": 994,
+  "last_updated": "2026-10-13T20:26:37.245603+00:00",
+  "total_seen": 1000,
   "jobs": {
-    "li-4472321019": {
-      "title": ".Net Developer",
-      "company": "PT Pro Sigmaka Mandiri",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472321019",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315669+00:00"
-    },
-    "li-4443699651": {
-      "title": "Back End Engineer (Marketplace Order Operations) - Sea Labs",
-      "company": "Sea",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4443699651",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315693+00:00"
-    },
-    "li-4454776280": {
-      "title": "Frontend Engineer Intern (TikTok Shop by Tokopedia) - 2027 Start",
-      "company": "TikTok",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4454776280",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315700+00:00"
-    },
-    "li-4471451396": {
-      "title": "Presales Telco",
-      "company": "PT Media Telekomunikasi Mandiri",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4471451396",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315706+00:00"
-    },
-    "li-4436247675": {
-      "title": "T&T Consultant - ETP As Service/Operate (SAP Datasphere) - SEA",
-      "company": "Deloitte",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4436247675",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315713+00:00"
-    },
-    "li-4463572164": {
-      "title": "AI Model Data Operation Graduate (TikTok ADSO) - 2027 Start",
-      "company": "TikTok",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4463572164",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315719+00:00"
-    },
-    "li-4472331033": {
-      "title": "Accommodation Revenue Specialist",
-      "company": "tiket.com",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472331033",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315726+00:00"
-    },
-    "li-4454989700": {
-      "title": "Sales Data Analyst, Assistant Manager (IC)",
-      "company": "Kredivo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4454989700",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315734+00:00"
-    },
-    "li-4474136267": {
-      "title": "Data Analyst",
-      "company": "Traveloka",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474136267",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315741+00:00"
-    },
-    "li-4453205499": {
-      "title": "Logistics Operation Excellence Graduate (GTL Logistics, Indonesia) - 2027 Start",
-      "company": "TikTok",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4453205499",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315747+00:00"
-    },
-    "li-4445478144": {
-      "title": "Product Manager - Flight",
-      "company": "Traveloka",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4445478144",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315752+00:00"
-    },
-    "li-4448707680": {
-      "title": "Product Management, ShopeeFood",
-      "company": "Shopee",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4448707680",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315757+00:00"
-    },
-    "li-4456168031": {
-      "title": "Product Analyst",
-      "company": "Traveloka",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4456168031",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315762+00:00"
-    },
-    "li-4450323728": {
-      "title": "Marketing Homepage (Project), ShopeeFood",
-      "company": "Shopee",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4450323728",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315767+00:00"
-    },
-    "li-4472315388": {
-      "title": "Manajer/Pengawas Proyek",
-      "company": "PT Pro Sigmaka Mandiri",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472315388",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315772+00:00"
-    },
-    "li-4472513406": {
-      "title": "SAP FSCM Consultant (Treasury / Credit Management / Cash Management)",
-      "company": "PwC South East Asia Consulting",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472513406",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315777+00:00"
-    },
-    "li-4473508567": {
-      "title": "Procurement Associate - BP",
-      "company": "PT Astra International Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473508567",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315782+00:00"
-    },
-    "li-4472134961": {
-      "title": "Backend Engineers",
-      "company": "PT Asuransi Jiwa Sequis Life",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472134961",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315787+00:00"
-    },
-    "li-4472689292": {
-      "title": "Fullstack Developer",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472689292",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315792+00:00"
-    },
-    "li-4472389711": {
-      "title": "Junior Backend Developer (min. 2 years)",
-      "company": "PT Loren Tech Solutions",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472389711",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315797+00:00"
-    },
     "li-4472380926": {
       "title": "Python Developer (for Banking client)",
       "company": "Indocyber Global Teknologi, PT",
@@ -8047,6 +7887,240 @@
       "job_url": "https://www.linkedin.com/jobs/view/4477983055",
       "date_posted": "2026-10-13",
       "first_seen": "2026-10-13T13:10:27.541416+00:00",
+      "status": "sent"
+    },
+    "in-fe2fa8c45551ebbc": {
+      "title": "L3 Technical Support Engineer (AI Compute & Data Center Infrastructure)",
+      "company": "Asiacruit BPO, Inc.",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=fe2fa8c45551ebbc",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:05.786391+00:00",
+      "status": "rejected"
+    },
+    "in-2d7907485cc70f6e": {
+      "title": "Commercial Operations Strategy Manager - Lifestyle / Education",
+      "company": "Seven Retail",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=2d7907485cc70f6e",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:05.786413+00:00",
+      "status": "rejected"
+    },
+    "in-002b20521a373dcb": {
+      "title": "Customer Education and Training (CET) Manager, Injectable Aesthetics",
+      "company": "Galderma",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=002b20521a373dcb",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:05.786417+00:00",
+      "status": "rejected"
+    },
+    "li-4373676251": {
+      "title": "Android Engineer - SDE 2",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4373676251",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:06.688604+00:00",
+      "status": "sent"
+    },
+    "li-4470240958": {
+      "title": "Analytics Assistant Manager",
+      "company": "Grab",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4470240958",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:09.438746+00:00",
+      "status": "sent"
+    },
+    "li-4470413340": {
+      "title": "Marketplace Assistant Manager (Mobility)",
+      "company": "Grab",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4470413340",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:10.931759+00:00",
+      "status": "sent"
+    },
+    "li-4478118372": {
+      "title": "TikTok Shop Partner Strategy Project Intern (TikTok Shop by Tokopedia) - 2026 Start",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478118372",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:12.337189+00:00",
+      "status": "sent"
+    },
+    "in-957a8423d6632b92": {
+      "title": "TikTok Shop Partner Strategy Project Intern (TikTok Shop by Tokopedia) - 2026 Start",
+      "company": "TikTok",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=957a8423d6632b92",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:13.584525+00:00",
+      "status": "sent"
+    },
+    "li-4478116548": {
+      "title": "Local Business Empowerment Category Project Intern (TikTok Shop by Tokopedia) - 2026 Start",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478116548",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:14.975335+00:00",
+      "status": "sent"
+    },
+    "in-61b257726a8cd177": {
+      "title": "Fashion Sports Account Manager Project Intern (TikTok Shop by Tokopedia) - 2026 Start",
+      "company": "TikTok",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=61b257726a8cd177",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:16.418239+00:00",
+      "status": "sent"
+    },
+    "in-7947b08c332a4d95": {
+      "title": "Fashion Moslem Account Manager Project Intern (TikTok Shop by Tokopedia) - 2026 Start",
+      "company": "TikTok",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=7947b08c332a4d95",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:17.679989+00:00",
+      "status": "sent"
+    },
+    "in-5ef26a2f4388e292": {
+      "title": "Fashion Menswear Account Manager Project Intern (TikTok Shop by Tokopedia) - 2026 Start",
+      "company": "TikTok",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=5ef26a2f4388e292",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:18.886183+00:00",
+      "status": "sent"
+    },
+    "in-f262002a9e1c6111": {
+      "title": "Fashion Bags Account Manager Project Intern (TikTok Shop by Tokopedia) - 2026 Start",
+      "company": "TikTok",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=f262002a9e1c6111",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:20.153734+00:00",
+      "status": "sent"
+    },
+    "in-d95fd92b860d9a34": {
+      "title": "Channel Sales Manager - Indonesia Market - Lark Global",
+      "company": "ByteDance",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=d95fd92b860d9a34",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:21.363773+00:00",
+      "status": "sent"
+    },
+    "in-1ba045861df2809b": {
+      "title": "Fashion Womenswear 2 Account Manager Project Intern (TikTok Shop by Tokopedia) - 2026 Start",
+      "company": "TikTok",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=1ba045861df2809b",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:22.549908+00:00",
+      "status": "sent"
+    },
+    "li-4470413198": {
+      "title": "Product Manager - Core Banking (Loan Product)",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4470413198",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:23.953378+00:00",
+      "status": "sent"
+    },
+    "li-4451127361": {
+      "title": "Product Support - Transaction",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4451127361",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:25.283752+00:00",
+      "status": "sent"
+    },
+    "li-4476478320": {
+      "title": "L3 Technical Support Engineer (AI Compute &amp; Data Center Infrastructure)",
+      "company": "Asiacruit",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476478320",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:26.500190+00:00",
+      "status": "sent"
+    },
+    "li-4479048912": {
+      "title": "Partner Development Manager",
+      "company": "Severalnines",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479048912",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:27.776015+00:00",
+      "status": "sent"
+    },
+    "in-062bd7a12bb7673d": {
+      "title": "Production Technician - Intern I",
+      "company": "Siemens",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=062bd7a12bb7673d",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:29.053818+00:00",
+      "status": "sent"
+    },
+    "li-4467647226": {
+      "title": "National Consultant: A Gendered Analysis of Employment and Skills in the Large-Scale Mining Sector (Posting locations: Indonesia, the Philippines, Thailand, and the United Kingdom)",
+      "company": "International Institute for Sustainable Development",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4467647226",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:30.342627+00:00",
+      "status": "sent"
+    },
+    "li-4476461712": {
+      "title": "Finance Business Partner Manager - Lifestyle",
+      "company": "Seven Retail",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476461712",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:31.669664+00:00",
+      "status": "sent"
+    },
+    "li-4478133160": {
+      "title": "Intern Performance Controller and Business Administration",
+      "company": "Siemens",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478133160",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:33.339275+00:00",
+      "status": "sent"
+    },
+    "li-4478111767": {
+      "title": "Korean Reporting Manager",
+      "company": "LG Sinar Mas (LGSM)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478111767",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:34.744095+00:00",
+      "status": "sent"
+    },
+    "li-4479026887": {
+      "title": "Touchpoint Digital Release Specialist",
+      "company": "PT XLSMART Telecom Sejahtera Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479026887",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:36.012930+00:00",
+      "status": "sent"
+    },
+    "li-4459269387": {
+      "title": "Process Engineering Associate (Lean Six Sigma Yellow Belt and Green Belt Certification)",
+      "company": "UL Solutions",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4459269387",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-13T20:26:37.245180+00:00",
       "status": "sent"
     }
   }
