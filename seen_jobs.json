@@ -1,119 +1,7 @@
 {
-  "last_updated": "2026-10-13T20:26:37.245603+00:00",
+  "last_updated": "2026-10-14T00:01:20.315040+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4472380926": {
-      "title": "Python Developer (for Banking client)",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472380926",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315802+00:00"
-    },
-    "li-4472392323": {
-      "title": "Jr Backend Software Engineer – Java / Spring Boot / Quarkus",
-      "company": "PT Loren Tech Solutions",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472392323",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315807+00:00"
-    },
-    "li-4472520270": {
-      "title": "Back End Developement Officer",
-      "company": "PT Nojorono Tobacco International",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472520270",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315812+00:00"
-    },
-    "li-4471986923": {
-      "title": "iOS Developer",
-      "company": "AVOWS GLOBAL IT SOLUTIONS PRIVATE LIMITED",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4471986923",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315817+00:00"
-    },
-    "li-4472394648": {
-      "title": "Dotnet Developer",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472394648",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315822+00:00"
-    },
-    "li-4472528121": {
-      "title": "Golang Backend Developer",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472528121",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315827+00:00"
-    },
-    "li-4472518666": {
-      "title": "(Bank IT) Backend PHP Laravel / Python",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472518666",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315832+00:00"
-    },
-    "li-4473744628": {
-      "title": "Full Stack Engineer Intern",
-      "company": "Ternak Klip",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473744628",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315836+00:00"
-    },
-    "li-4472691252": {
-      "title": "Full Stack Engineer",
-      "company": "Sonata Software",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472691252",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315841+00:00"
-    },
-    "li-4472389852": {
-      "title": "DotNet & React Dev",
-      "company": "Accord Innovations",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472389852",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315845+00:00"
-    },
-    "li-4473974141": {
-      "title": "AdIns Academy IT Trainee Batch 2",
-      "company": "PT Adicipta Inovasi Teknologi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473974141",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315850+00:00"
-    },
-    "li-4472530157": {
-      "title": "AI Enablement Manager",
-      "company": "Mimin",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472530157",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315855+00:00"
-    },
-    "li-4474116364": {
-      "title": "Solution Consultant (Pre-Sales)",
-      "company": "AI Rudder",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474116364",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315860+00:00"
-    },
-    "li-4472378971": {
-      "title": "Presales Security Engineer",
-      "company": "PT Optima Solusindo Informatika",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472378971",
-      "date_posted": null,
-      "first_seen": "2026-10-01T08:06:06.315865+00:00"
-    },
     "li-4472695278": {
       "title": "Sales Engineer",
       "company": "Check Point Software",
@@ -8121,6 +8009,132 @@
       "job_url": "https://www.linkedin.com/jobs/view/4459269387",
       "date_posted": "2026-10-13",
       "first_seen": "2026-10-13T20:26:37.245180+00:00",
+      "status": "sent"
+    },
+    "li-4479081139": {
+      "title": "TSO - CRM & Data Intelligence Analyst - ITS Job Fair",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479081139",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-14T00:01:04.442782+00:00",
+      "status": "sent"
+    },
+    "li-4479066887": {
+      "title": "TSO - Marketing Analyst - ITS Job Fair",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479066887",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-14T00:01:05.586281+00:00",
+      "status": "sent"
+    },
+    "li-4479071497": {
+      "title": "TSO - After Sales Analyst - ITS Job Fair",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479071497",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-14T00:01:06.782987+00:00",
+      "status": "sent"
+    },
+    "in-8809cd06da5f6f69": {
+      "title": "Compliance Manager",
+      "company": "Kredivo Group",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=8809cd06da5f6f69",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-14T00:01:07.959652+00:00",
+      "status": "sent"
+    },
+    "li-4478182176": {
+      "title": "Security Compliance Strategist, Vendor Security",
+      "company": "Grab",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478182176",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-14T00:01:09.277347+00:00",
+      "status": "sent"
+    },
+    "li-4479070527": {
+      "title": "Corporate Communication & Management System Analyst - TSM",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479070527",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-14T00:01:10.639671+00:00",
+      "status": "sent"
+    },
+    "li-4479207580": {
+      "title": "Middle Data Engineer",
+      "company": "PT. Akhdani Reka Solusi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479207580",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-14T00:01:11.820330+00:00",
+      "status": "sent"
+    },
+    "li-4479094948": {
+      "title": "Android Developer",
+      "company": "Aleph-Labs",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479094948",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-14T00:01:13.005394+00:00",
+      "status": "sent"
+    },
+    "li-4479216185": {
+      "title": "Presales",
+      "company": "PT. Kairos Utama Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479216185",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-14T00:01:14.182952+00:00",
+      "status": "sent"
+    },
+    "li-4478162604": {
+      "title": "Field Sales  Laboratory Instrument (ANA)",
+      "company": "Mettler-Toledo International, Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478162604",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-14T00:01:15.415599+00:00",
+      "status": "sent"
+    },
+    "in-1d06b70be8f86720": {
+      "title": "Junior Executive, Social Media & Content - Indonesia",
+      "company": "IIX Global",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=1d06b70be8f86720",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-14T00:01:16.571826+00:00",
+      "status": "sent"
+    },
+    "in-d2c430c687d168f4": {
+      "title": "Junior Graphic Designer - Indonesia",
+      "company": "IIX Global",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=d2c430c687d168f4",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-14T00:01:17.816393+00:00",
+      "status": "sent"
+    },
+    "li-4479056927": {
+      "title": "Manager, Executive Compensation & Board Advisory (ECBA) ,  Indonesia",
+      "company": "WTW",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479056927",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-14T00:01:19.091505+00:00",
+      "status": "sent"
+    },
+    "li-4476469906": {
+      "title": "Product Executive",
+      "company": "DKSH",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476469906",
+      "date_posted": "2026-10-13",
+      "first_seen": "2026-10-14T00:01:20.314806+00:00",
       "status": "sent"
     }
   }
