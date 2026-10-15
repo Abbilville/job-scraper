@@ -1,183 +1,7 @@
 {
-  "last_updated": "2026-10-15T13:49:46.880368+00:00",
+  "last_updated": "2026-10-15T18:48:07.764574+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4473885093": {
-      "title": "Java Developer",
-      "company": "PT. Metrodata Electronics Tbk.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473885093",
-      "date_posted": "2026-10-03",
-      "first_seen": "2026-10-03T20:28:55.322443+00:00"
-    },
-    "li-4475339498": {
-      "title": "Data Engineer (Remote)",
-      "company": "Referensiin_Aja",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475339498",
-      "date_posted": "2026-10-03",
-      "first_seen": "2026-10-03T20:28:55.322450+00:00"
-    },
-    "li-4473887015": {
-      "title": "Field Activation Engineer",
-      "company": "PT Solusi Sinergi Digital Tbk (SURGE)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473887015",
-      "date_posted": "2026-10-03",
-      "first_seen": "2026-10-03T20:28:55.322457+00:00"
-    },
-    "li-4473874540": {
-      "title": "OT Cybersecurity Presales Specialist",
-      "company": "PT ITSEC Asia Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473874540",
-      "date_posted": "2026-10-03",
-      "first_seen": "2026-10-03T20:28:55.322462+00:00"
-    },
-    "li-4473860911": {
-      "title": "Co-Founder",
-      "company": "PT. Arproyek Evognitive Intelligence",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473860911",
-      "date_posted": "2026-10-03",
-      "first_seen": "2026-10-03T20:28:55.322465+00:00"
-    },
-    "li-4473874539": {
-      "title": "Growth Strategy Manager",
-      "company": "Finture",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473874539",
-      "date_posted": "2026-10-03",
-      "first_seen": "2026-10-03T20:28:55.322469+00:00"
-    },
-    "li-4473874241": {
-      "title": "(Contract) IT Product Partnership / Account Executive / Business Development (4 Years Working Experience)",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473874241",
-      "date_posted": "2026-10-03",
-      "first_seen": "2026-10-03T20:28:55.322472+00:00"
-    },
-    "li-4475341650": {
-      "title": "Sales ADP Manager",
-      "company": "LIXIL",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475341650",
-      "date_posted": "2026-10-03",
-      "first_seen": "2026-10-03T20:28:55.322475+00:00"
-    },
-    "li-4475351184": {
-      "title": "Specifier ADP",
-      "company": "LIXIL",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475351184",
-      "date_posted": "2026-10-03",
-      "first_seen": "2026-10-03T20:28:55.322479+00:00"
-    },
-    "li-4464463828": {
-      "title": "Project Manager",
-      "company": "ABB",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4464463828",
-      "date_posted": "2026-10-03",
-      "first_seen": "2026-10-03T20:28:55.322482+00:00"
-    },
-    "li-4473873277": {
-      "title": "Customer Success Manager (SaaS)",
-      "company": "KANNA",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473873277",
-      "date_posted": "2026-10-03",
-      "first_seen": "2026-10-03T20:28:55.322486+00:00"
-    },
-    "li-4473868421": {
-      "title": "(Contract) IT Technical Writer / Copy Writer",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473868421",
-      "date_posted": "2026-10-03",
-      "first_seen": "2026-10-03T20:28:55.322490+00:00"
-    },
-    "li-4473461246": {
-      "title": "Associate - Deals Advisory - Transaction Services",
-      "company": "PwC",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473461246",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T03:44:26.535718+00:00"
-    },
-    "li-4473449755": {
-      "title": "Associate - Advisory Deals - Deals Strategy and Operations",
-      "company": "PwC",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473449755",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T03:44:26.535738+00:00"
-    },
-    "li-4473872583": {
-      "title": "Field Engineer",
-      "company": "PT Solusi Sinergi Digital Tbk (SURGE)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473872583",
-      "date_posted": "2026-10-03",
-      "first_seen": "2026-10-04T03:44:26.535742+00:00"
-    },
-    "li-4448406078": {
-      "title": "Business Intelligence Analyst",
-      "company": "Rocketindo",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4448406078",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T03:44:26.535749+00:00"
-    },
-    "li-4473450991": {
-      "title": "Finance Manager",
-      "company": "Rocketindo",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473450991",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T03:44:26.535755+00:00"
-    },
-    "li-4473473067": {
-      "title": "PRODUCT EXECUTIVE ETHICAL",
-      "company": "International Beauty Products Ltd.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473473067",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T03:44:26.535760+00:00"
-    },
-    "li-4475345940": {
-      "title": "Sales ADP Manager",
-      "company": "LIXIL",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475345940",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T03:44:26.535765+00:00"
-    },
-    "li-4475359568": {
-      "title": "Specifier ADP",
-      "company": "LIXIL",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475359568",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T03:44:26.535772+00:00"
-    },
-    "li-4468498966": {
-      "title": "IT Asset Management",
-      "company": "PT. Intikom Berlian Mustika",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4468498966",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T03:44:26.535777+00:00"
-    },
-    "li-4473895898": {
-      "title": "TikTok Shop - Service Delivery Program Manager",
-      "company": "TikTok",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473895898",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T11:39:45.208214+00:00"
-    },
     "li-4430405164": {
       "title": "Strategy & Growth Manager (Travel Activities)",
       "company": "Traveloka",
@@ -8368,6 +8192,204 @@
       "job_url": "https://www.linkedin.com/jobs/view/4467825843",
       "date_posted": "2026-10-15",
       "first_seen": "2026-10-15T13:49:46.879932+00:00",
+      "status": "sent"
+    },
+    "li-4423888385": {
+      "title": "Country Head Office",
+      "company": "Shopee",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4423888385",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:39.021052+00:00",
+      "status": "rejected"
+    },
+    "li-4421598343": {
+      "title": "AI Software Engineering Consultant (Managerial)",
+      "company": "EY",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4421598343",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:39.334049+00:00",
+      "status": "sent"
+    },
+    "li-4462786983": {
+      "title": "InfraOps Engineer (SDE 1)",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4462786983",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:40.607668+00:00",
+      "status": "sent"
+    },
+    "li-4469397954": {
+      "title": "T&T Consultant - ETP As A Service/Operate (Oracle Fusion Cloud Finance) - SEA",
+      "company": "Deloitte",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4469397954",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:42.029349+00:00",
+      "status": "sent"
+    },
+    "li-4480116737": {
+      "title": "Data Visualization - AID",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480116737",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:43.245054+00:00",
+      "status": "sent"
+    },
+    "li-4423769626": {
+      "title": "Budgeting & Planning - Strategic Driver Planning (ShopeeFood)",
+      "company": "Shopee",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4423769626",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:46.726922+00:00",
+      "status": "sent"
+    },
+    "li-4366820149": {
+      "title": "Product Analyst",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4366820149",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:48.000708+00:00",
+      "status": "sent"
+    },
+    "li-4479139076": {
+      "title": "Fashion Global Regional Key Account Manager Project Intern (TikTok Shop by Tokopedia) - 2026 Start - 2027 Start",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479139076",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:49.297862+00:00",
+      "status": "sent"
+    },
+    "li-4479143252": {
+      "title": "Dotnet Developer",
+      "company": "Asiatek Solusi Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479143252",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:50.657890+00:00",
+      "status": "sent"
+    },
+    "li-4480110284": {
+      "title": "Junior Software Developer",
+      "company": "PT",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480110284",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:51.972584+00:00",
+      "status": "sent"
+    },
+    "li-4479121813": {
+      "title": "Data Engineer ETL",
+      "company": "Diksha Technologies",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479121813",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:53.345018+00:00",
+      "status": "sent"
+    },
+    "li-4471437447": {
+      "title": "Solutions Engineer",
+      "company": "Cisco",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4471437447",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:54.616051+00:00",
+      "status": "sent"
+    },
+    "li-4469381913": {
+      "title": "Business Development Manager",
+      "company": "Ingram Micro",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4469381913",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:55.817907+00:00",
+      "status": "sent"
+    },
+    "li-4479849304": {
+      "title": "Data Analyst - Work Force Management",
+      "company": "Monee",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479849304",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:57.097501+00:00",
+      "status": "sent"
+    },
+    "li-4449853722": {
+      "title": "Associate Manager, Sales Analysis",
+      "company": "SC Johnson",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4449853722",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:58.673462+00:00",
+      "status": "sent"
+    },
+    "li-4453091763": {
+      "title": "FORECASTING",
+      "company": "Brink’s Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4453091763",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:47:59.982776+00:00",
+      "status": "sent"
+    },
+    "li-4453076914": {
+      "title": "AMS Performance Staff",
+      "company": "Brink’s Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4453076914",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:48:01.293366+00:00",
+      "status": "sent"
+    },
+    "li-4417885218": {
+      "title": "Strategy & Operations, SPX Express",
+      "company": "SPX Express",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4417885218",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:48:02.540028+00:00",
+      "status": "sent"
+    },
+    "li-4479858018": {
+      "title": "UX Researcher",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479858018",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:48:03.825420+00:00",
+      "status": "sent"
+    },
+    "li-4479836942": {
+      "title": "Technical Support Officer",
+      "company": "Cermati Fintech Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479836942",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:48:05.071258+00:00",
+      "status": "sent"
+    },
+    "li-4479856146": {
+      "title": "IT Support Officer",
+      "company": "Cermati Fintech Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479856146",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:48:06.348582+00:00",
+      "status": "sent"
+    },
+    "li-4453089779": {
+      "title": "MONITORING",
+      "company": "Brink’s Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4453089779",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T18:48:07.764093+00:00",
       "status": "sent"
     }
   }
