@@ -1,103 +1,7 @@
 {
-  "last_updated": "2026-10-14T23:33:07.123045+00:00",
+  "last_updated": "2026-10-15T02:11:09.316187+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4472872228": {
-      "title": "DevOps Engineer",
-      "company": "ProHukum",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472872228",
-      "date_posted": "2026-10-02",
-      "first_seen": "2026-10-02T11:44:40.798231+00:00"
-    },
-    "li-4472861668": {
-      "title": "Cloud Engineer - Contract",
-      "company": "Packet Systems Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472861668",
-      "date_posted": "2026-10-02",
-      "first_seen": "2026-10-02T11:44:40.798235+00:00"
-    },
-    "li-4474597192": {
-      "title": "Full Stack Engineer",
-      "company": "PT. Intikom Berlian Mustika",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474597192",
-      "date_posted": "2026-10-02",
-      "first_seen": "2026-10-02T11:44:40.798240+00:00"
-    },
-    "li-4474705239": {
-      "title": "AI Intern",
-      "company": "Avanade",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474705239",
-      "date_posted": "2026-10-02",
-      "first_seen": "2026-10-02T11:44:40.798245+00:00"
-    },
-    "li-4472888519": {
-      "title": "Data Engineer Manager",
-      "company": "Hangry",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472888519",
-      "date_posted": "2026-10-02",
-      "first_seen": "2026-10-02T11:44:40.798250+00:00"
-    },
-    "li-4472883844": {
-      "title": "Anti-Fraud Credit Risk Strategy",
-      "company": "PT Bank Neo Commerce Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472883844",
-      "date_posted": "2026-10-02",
-      "first_seen": "2026-10-02T11:44:40.798256+00:00"
-    },
-    "li-4471219926": {
-      "title": "Data Management Engineer",
-      "company": "CBI Credit Bureau Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4471219926",
-      "date_posted": "2026-10-02",
-      "first_seen": "2026-10-02T11:44:40.798262+00:00"
-    },
-    "li-4472885730": {
-      "title": "Post-Loan Credit Risk Portfolio Management Policy & Strategy",
-      "company": "PT Bank Neo Commerce Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472885730",
-      "date_posted": "2026-10-02",
-      "first_seen": "2026-10-02T11:44:40.798266+00:00"
-    },
-    "li-4460970146": {
-      "title": "Demand Planning Manager",
-      "company": "bolttech",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4460970146",
-      "date_posted": "2026-10-02",
-      "first_seen": "2026-10-02T11:44:40.798269+00:00"
-    },
-    "li-4440034412": {
-      "title": "Marketing Intelligence",
-      "company": "TechConnect",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4440034412",
-      "date_posted": "2026-10-01",
-      "first_seen": "2026-10-02T11:44:40.798273+00:00"
-    },
-    "li-4472714168": {
-      "title": "Consultancy Needed - MEAL Data Closeout and Evidence",
-      "company": "Save the Children International",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472714168",
-      "date_posted": "2026-10-01",
-      "first_seen": "2026-10-02T11:44:40.798299+00:00"
-    },
-    "li-4474319577": {
-      "title": "Marketing Intelligence Specialist - Central Java (Semarang)",
-      "company": "PT XLSMART Telecom Sejahtera Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474319577",
-      "date_posted": "2026-10-01",
-      "first_seen": "2026-10-02T11:44:40.798302+00:00"
-    },
     "li-4472891422": {
       "title": "Finance Planning & Analysis Marketing Assistant Manager",
       "company": "PT Nojorono Tobacco International",
@@ -8262,6 +8166,114 @@
       "job_url": "https://www.linkedin.com/jobs/view/4479716195",
       "date_posted": "2026-10-14",
       "first_seen": "2026-10-14T23:33:07.122733+00:00",
+      "status": "sent"
+    },
+    "li-4477969579": {
+      "title": "Site CTO, Indonesia at an Insight Partners-backed Enterprise AI Company",
+      "company": "Harper",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4477969579",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T02:10:57.499567+00:00",
+      "status": "rejected"
+    },
+    "li-4478826496": {
+      "title": "Transformation Office Sr. Specialist",
+      "company": "PT Asuransi Jiwa Sequis Life",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478826496",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T02:10:57.499579+00:00",
+      "status": "rejected"
+    },
+    "li-4478842031": {
+      "title": "Data Scientist - Decision Intelligence & Agentic Solutions",
+      "company": "PT. Indosat Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478842031",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T02:10:57.727353+00:00",
+      "status": "sent"
+    },
+    "li-4478818877": {
+      "title": "Data Scientist - Domain AI & Model Engineering",
+      "company": "PT. Indosat Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478818877",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T02:10:58.950780+00:00",
+      "status": "sent"
+    },
+    "in-28337f98116ec84c": {
+      "title": "Specialist - Site Planner",
+      "company": "Organon Pharmaceuticals",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=28337f98116ec84c",
+      "date_posted": "2026-10-14",
+      "first_seen": "2026-10-15T02:11:00.232990+00:00",
+      "status": "sent"
+    },
+    "in-fb0b8cdd4ea6ee8e": {
+      "title": "Assoc. Specialist - Buyer",
+      "company": "Organon Pharmaceuticals",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=fb0b8cdd4ea6ee8e",
+      "date_posted": "2026-10-14",
+      "first_seen": "2026-10-15T02:11:01.603534+00:00",
+      "status": "sent"
+    },
+    "in-7ecc7c910bf6db12": {
+      "title": "Assoc. Specialist - Production Planner",
+      "company": "Organon Pharmaceuticals",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=7ecc7c910bf6db12",
+      "date_posted": "2026-10-14",
+      "first_seen": "2026-10-15T02:11:03.060215+00:00",
+      "status": "sent"
+    },
+    "li-4478836135": {
+      "title": "Product Manager (Investment)",
+      "company": "The Convergence Project",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478836135",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T02:11:04.449840+00:00",
+      "status": "sent"
+    },
+    "li-4479748440": {
+      "title": "Business Analyst",
+      "company": "NRI Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479748440",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T02:11:05.647011+00:00",
+      "status": "sent"
+    },
+    "li-4478837002": {
+      "title": "Odoo Functional",
+      "company": "PT. Karunia Jasindo",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478837002",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T02:11:06.835348+00:00",
+      "status": "sent"
+    },
+    "li-4478821847": {
+      "title": "Analyst, Financial Crime Department",
+      "company": "MUFG",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478821847",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T02:11:08.112718+00:00",
+      "status": "sent"
+    },
+    "li-4478839057": {
+      "title": "Ecommerce Manager",
+      "company": "The Parentinc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478839057",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-15T02:11:09.315821+00:00",
       "status": "sent"
     }
   }
