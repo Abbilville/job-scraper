@@ -1,127 +1,7 @@
 {
-  "last_updated": "2026-10-15T23:24:26.502711+00:00",
+  "last_updated": "2026-10-16T02:02:04.218801+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4420496015": {
-      "title": "Revenue Associate",
-      "company": "Garena",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4420496015",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T16:18:09.209757+00:00"
-    },
-    "li-4401433136": {
-      "title": "Product Manager - User",
-      "company": "Kredivo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4401433136",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T16:18:09.209762+00:00"
-    },
-    "li-4421785794": {
-      "title": "Risk Transformation (FSO) - Junior Consultant",
-      "company": "EY",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4421785794",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T16:18:09.209766+00:00"
-    },
-    "li-4409293060": {
-      "title": "Backend Developer",
-      "company": "NTT DATA, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4409293060",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T16:18:09.209771+00:00"
-    },
-    "li-4474220091": {
-      "title": "Data Engineer",
-      "company": "MSBU Konsultan",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474220091",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T16:18:09.209775+00:00"
-    },
-    "li-4409292066": {
-      "title": "AI & Data Management Consultant",
-      "company": "NTT DATA Asia Pacific",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4409292066",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T16:18:09.209781+00:00"
-    },
-    "li-4409286269": {
-      "title": "Frontend Developer",
-      "company": "NTT DATA, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4409286269",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T16:18:09.209786+00:00"
-    },
-    "li-4409282457": {
-      "title": "Database Administrator",
-      "company": "NTT DATA, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4409282457",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T16:18:09.209790+00:00"
-    },
-    "li-4409293066": {
-      "title": "Database Administrator",
-      "company": "NTT DATA, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4409293066",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T16:18:09.209795+00:00"
-    },
-    "li-4474226021": {
-      "title": "Office of The Board - Executive Support Analyst",
-      "company": "IDSURVEY",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474226021",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T16:18:09.209798+00:00"
-    },
-    "li-4447186821": {
-      "title": "Trade Payables Finance Product Manager - AVP",
-      "company": "Citi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4447186821",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T16:18:09.209802+00:00"
-    },
-    "li-4457808927": {
-      "title": "AVP-Fixed Voice Product & Service",
-      "company": "PT. Indosat Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4457808927",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T16:18:09.209807+00:00"
-    },
-    "li-4475387938": {
-      "title": "Specifier ADP",
-      "company": "LIXIL",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475387938",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T16:18:09.209810+00:00"
-    },
-    "li-4457522786": {
-      "title": "Monitoring",
-      "company": "Brink’s Inc",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4457522786",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T16:18:09.209814+00:00"
-    },
-    "li-4419018909": {
-      "title": "QA Engineer (SDE 2) - Merchant",
-      "company": "Kredivo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4419018909",
-      "date_posted": "2026-10-04",
-      "first_seen": "2026-10-04T20:47:12.570017+00:00"
-    },
     "li-4474228083": {
       "title": "SMB BPO Management Manager - TikTok Local Services",
       "company": "TikTok",
@@ -8406,6 +8286,141 @@
       "job_url": "https://www.linkedin.com/jobs/view/4480153923",
       "date_posted": "2026-10-15",
       "first_seen": "2026-10-15T23:24:26.502331+00:00",
+      "status": "sent"
+    },
+    "li-4479310119": {
+      "title": "ERM Risk Specialist – Multi-Finance (Indonesia) - Global Payment",
+      "company": "ByteDance",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479310119",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T02:01:45.940888+00:00",
+      "status": "sent"
+    },
+    "li-4479193661": {
+      "title": "Full Stack Developer (Golang ReactJS)",
+      "company": "Binar Academy",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479193661",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T02:01:47.154156+00:00",
+      "status": "sent"
+    },
+    "li-4479302496": {
+      "title": "Backend Java Developer (Banking)",
+      "company": "Insura Media Solusi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479302496",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T02:01:48.566874+00:00",
+      "status": "sent"
+    },
+    "li-4479182941": {
+      "title": "Junior Data Engineer",
+      "company": "Binar Academy",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479182941",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T02:01:49.960788+00:00",
+      "status": "sent"
+    },
+    "li-4479302386": {
+      "title": "L3 Technical SME – AI Compute",
+      "company": "AMK Technology Sdn Bhd",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479302386",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T02:01:51.228430+00:00",
+      "status": "sent"
+    },
+    "li-4479193667": {
+      "title": "DevSecOps Engineer",
+      "company": "Binar Academy",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479193667",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T02:01:52.611100+00:00",
+      "status": "sent"
+    },
+    "li-4479198439": {
+      "title": "Quality Assurance Automation Engineer (Playwright)",
+      "company": "Binar Academy",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479198439",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T02:01:53.921254+00:00",
+      "status": "sent"
+    },
+    "li-4479181989": {
+      "title": "Information Technology Business Analyst",
+      "company": "Binar Academy",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479181989",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T02:01:55.248901+00:00",
+      "status": "sent"
+    },
+    "li-4480168503": {
+      "title": "Junior Tester Automation",
+      "company": "PT. Adi Data Informatika",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480168503",
+      "date_posted": "2026-10-15",
+      "first_seen": "2026-10-16T02:01:56.506380+00:00",
+      "status": "sent"
+    },
+    "li-4479309352": {
+      "title": "Junior L2 Support",
+      "company": "PT IDstar Cipta Teknologi (IDstar)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479309352",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T02:01:57.765094+00:00",
+      "status": "sent"
+    },
+    "li-4479310356": {
+      "title": "Presales Security Engineer",
+      "company": "PT Optima Solusindo Informatika",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479310356",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T02:01:58.959853+00:00",
+      "status": "sent"
+    },
+    "li-4479318063": {
+      "title": "Information & Technology",
+      "company": "PT Heksa Solution Insurance",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479318063",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T02:02:00.207860+00:00",
+      "status": "sent"
+    },
+    "li-4479193980": {
+      "title": "Desk Audit And Data Analytics Specialist",
+      "company": "PT Sinarmas Multifinance",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479193980",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T02:02:01.472990+00:00",
+      "status": "sent"
+    },
+    "li-4477348173": {
+      "title": "SCHOOL DEVELOPMENT OUTREACH - QUALITY ASSURANCE/MONITORING AND EVALUATION STAFF",
+      "company": "Sampoerna Schools System",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4477348173",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T02:02:02.792419+00:00",
+      "status": "sent"
+    },
+    "li-4479300535": {
+      "title": "GPFS Storage Engineer (English)",
+      "company": "AMK Technology Sdn Bhd",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479300535",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T02:02:04.218369+00:00",
       "status": "sent"
     }
   }
