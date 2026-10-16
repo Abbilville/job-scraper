@@ -1,71 +1,7 @@
 {
-  "last_updated": "2026-10-16T18:31:00.882525+00:00",
+  "last_updated": "2026-10-16T23:06:54.174312+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4474615725": {
-      "title": "Data Analyst Freelance - Emtek Commerce",
-      "company": "Vidio",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474615725",
-      "date_posted": "2026-10-05",
-      "first_seen": "2026-10-05T23:35:41.750440+00:00"
-    },
-    "li-4474615724": {
-      "title": "Data Analyst",
-      "company": "BINUS Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474615724",
-      "date_posted": "2026-10-05",
-      "first_seen": "2026-10-05T23:35:41.750442+00:00"
-    },
-    "li-4473676171": {
-      "title": "Corporate Strategy - Group Service",
-      "company": "Seven Retail",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473676171",
-      "date_posted": "2026-10-05",
-      "first_seen": "2026-10-05T23:35:41.750444+00:00"
-    },
-    "li-4469723671": {
-      "title": "Product Manager",
-      "company": "Tech Data APAC",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4469723671",
-      "date_posted": "2026-10-05",
-      "first_seen": "2026-10-05T23:35:41.750447+00:00"
-    },
-    "li-4474605128": {
-      "title": "Product Manager",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474605128",
-      "date_posted": "2026-10-05",
-      "first_seen": "2026-10-05T23:35:41.750449+00:00"
-    },
-    "li-4474622469": {
-      "title": "System Analyst",
-      "company": "BINUS Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474622469",
-      "date_posted": "2026-10-05",
-      "first_seen": "2026-10-05T23:35:41.750451+00:00"
-    },
-    "li-4475851367": {
-      "title": "ADMO - SDET - Contract-based",
-      "company": "PT Astra International Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475851367",
-      "date_posted": "2026-10-05",
-      "first_seen": "2026-10-06T02:31:56.358696+00:00"
-    },
-    "li-4474655677": {
-      "title": "Prog. Full Stack Dev / .NET Dev",
-      "company": "PT Amber Solusi Internasional",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474655677",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T02:31:56.358713+00:00"
-    },
     "li-4474230484": {
       "title": "Full Stack Dev / .NET",
       "company": "PT Amber Solusi Internasional",
@@ -8525,6 +8461,78 @@
       "job_url": "https://www.linkedin.com/jobs/view/4479373048",
       "date_posted": "2026-10-16",
       "first_seen": "2026-10-16T18:31:00.882121+00:00",
+      "status": "sent"
+    },
+    "li-4480516874": {
+      "title": "ETL Data Architect (RA)",
+      "company": "Referensiin_Aja",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480516874",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T23:06:46.031119+00:00",
+      "status": "rejected"
+    },
+    "li-4463344880": {
+      "title": "Data Center Project Manager",
+      "company": "Microsoft",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4463344880",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T23:06:46.223246+00:00",
+      "status": "sent"
+    },
+    "li-4480519795": {
+      "title": "Business Analyst",
+      "company": "ATI Business Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480519795",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T23:06:47.494586+00:00",
+      "status": "sent"
+    },
+    "li-4480396783": {
+      "title": "Global Affiliate Manager",
+      "company": "Binance",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480396783",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T23:06:48.814554+00:00",
+      "status": "sent"
+    },
+    "li-4479621752": {
+      "title": "Trade Marketing Specialist",
+      "company": "Facetology",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479621752",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T23:06:50.082687+00:00",
+      "status": "sent"
+    },
+    "li-4479342928": {
+      "title": "(contract) Campaign Ops",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479342928",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T23:06:51.608559+00:00",
+      "status": "sent"
+    },
+    "li-4479623652": {
+      "title": "IT Support",
+      "company": "PT. Metrodata Electronics Tbk.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479623652",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T23:06:52.803494+00:00",
+      "status": "sent"
+    },
+    "li-4477719959": {
+      "title": "Solutions Engineer",
+      "company": "PreSales Collective",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4477719959",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-16T23:06:54.173955+00:00",
       "status": "sent"
     }
   }
