@@ -1,31 +1,7 @@
 {
-  "last_updated": "2026-10-17T01:55:34.491270+00:00",
+  "last_updated": "2026-10-17T07:16:07.191714+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4476116604": {
-      "title": "SAP Consultant (FICO/S4HANA) (Contract-Based 1 Year)",
-      "company": "PT SMART Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476116604",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T02:31:56.358728+00:00"
-    },
-    "li-4475831683": {
-      "title": "MSME Business Analyst Intern",
-      "company": "Amar Bank",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475831683",
-      "date_posted": "2026-10-05",
-      "first_seen": "2026-10-06T02:31:56.358731+00:00"
-    },
-    "li-4474671285": {
-      "title": "Odoo Developer",
-      "company": "Deltadata Mandiri",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474671285",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.104863+00:00"
-    },
     "li-4476135087": {
       "title": "Staff Mobile Engineer",
       "company": "Ajaib",
@@ -8536,6 +8512,33 @@
       "job_url": "https://www.linkedin.com/jobs/view/4479629377",
       "date_posted": "2026-10-16",
       "first_seen": "2026-10-17T01:55:34.490873+00:00",
+      "status": "sent"
+    },
+    "li-4479360667": {
+      "title": "Golang Dev",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479360667",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T07:16:04.795810+00:00",
+      "status": "sent"
+    },
+    "li-4479654844": {
+      "title": "Data Engineer",
+      "company": "PT IDstar Cipta Teknologi (IDstar)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479654844",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T07:16:05.977082+00:00",
+      "status": "sent"
+    },
+    "li-4479669003": {
+      "title": "Project Manager",
+      "company": "Mimin",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479669003",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T07:16:07.191509+00:00",
       "status": "sent"
     }
   }
