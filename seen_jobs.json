@@ -1,31 +1,7 @@
 {
-  "last_updated": "2026-10-16T23:06:54.174312+00:00",
+  "last_updated": "2026-10-17T01:55:34.491270+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4474230484": {
-      "title": "Full Stack Dev / .NET",
-      "company": "PT Amber Solusi Internasional",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474230484",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T02:31:56.358718+00:00"
-    },
-    "li-4474643431": {
-      "title": "System Integration (SI) Engineer",
-      "company": "PT. IIJ Global Solutions Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474643431",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T02:31:56.358722+00:00"
-    },
-    "li-4474644680": {
-      "title": "ETL Developer / Data Engineer",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474644680",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T02:31:56.358725+00:00"
-    },
     "li-4476116604": {
       "title": "SAP Consultant (FICO/S4HANA) (Contract-Based 1 Year)",
       "company": "PT SMART Tbk",
@@ -8533,6 +8509,33 @@
       "job_url": "https://www.linkedin.com/jobs/view/4477719959",
       "date_posted": "2026-10-16",
       "first_seen": "2026-10-16T23:06:54.173955+00:00",
+      "status": "sent"
+    },
+    "li-4480544927": {
+      "title": "Specifier ADP",
+      "company": "LIXIL",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480544927",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-17T01:55:31.838906+00:00",
+      "status": "sent"
+    },
+    "li-4480575152": {
+      "title": "Internal Audit",
+      "company": "PT Hino Finance Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480575152",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-17T01:55:33.202720+00:00",
+      "status": "sent"
+    },
+    "li-4479629377": {
+      "title": "Operations Coordinator – Audit, Training & HR(Jakarta)",
+      "company": "Integrated Assessment Services Sdn Bhd",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479629377",
+      "date_posted": "2026-10-16",
+      "first_seen": "2026-10-17T01:55:34.490873+00:00",
       "status": "sent"
     }
   }
