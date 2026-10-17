@@ -1,39 +1,7 @@
 {
-  "last_updated": "2026-10-17T19:47:32.492376+00:00",
+  "last_updated": "2026-10-17T22:45:44.738088+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4474925894": {
-      "title": "Corporate Planning & Strategic Management Analyst",
-      "company": "PT SURYA SEMESTA INTERNUSA TBK",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474925894",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.105085+00:00"
-    },
-    "li-4474675149": {
-      "title": "Research Executive",
-      "company": "Kadence International",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474675149",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.105090+00:00"
-    },
-    "li-4474668469": {
-      "title": "Product Manager",
-      "company": "Pluang",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474668469",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.105096+00:00"
-    },
-    "li-4474952668": {
-      "title": "Product Category Manager",
-      "company": "Kopi Kenangan",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474952668",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.105101+00:00"
-    },
     "li-4474045737": {
       "title": "IBM Product (Hardware)",
       "company": "Tech Data APAC",
@@ -8574,6 +8542,42 @@
       "job_url": "https://www.linkedin.com/jobs/view/4477774993",
       "date_posted": "2026-10-17",
       "first_seen": "2026-10-17T19:47:32.492084+00:00",
+      "status": "sent"
+    },
+    "li-4479693588": {
+      "title": "Partnership Manager - TikTok Local Services",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479693588",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T22:45:40.951202+00:00",
+      "status": "sent"
+    },
+    "li-4480857296": {
+      "title": "Backend Developer Intern",
+      "company": "PT ALTO Network",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480857296",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T22:45:42.245421+00:00",
+      "status": "sent"
+    },
+    "li-4480858132": {
+      "title": "Account Manager",
+      "company": "Kinobi AI",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480858132",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T22:45:43.459168+00:00",
+      "status": "sent"
+    },
+    "li-4479670462": {
+      "title": "Management Trainee Program (Jakarta Sudirman)",
+      "company": "Viction.id",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479670462",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T22:45:44.737724+00:00",
       "status": "sent"
     }
   }
