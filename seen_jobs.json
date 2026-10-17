@@ -1,15 +1,7 @@
 {
-  "last_updated": "2026-10-17T17:37:10.338424+00:00",
+  "last_updated": "2026-10-17T19:47:32.492376+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4474901049": {
-      "title": "Financial Business Analyst",
-      "company": "PT Bank Sinarmas Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474901049",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.105079+00:00"
-    },
     "li-4474925894": {
       "title": "Corporate Planning & Strategic Management Analyst",
       "company": "PT SURYA SEMESTA INTERNUSA TBK",
@@ -8573,6 +8565,15 @@
       "job_url": "https://www.linkedin.com/jobs/view/4285703651",
       "date_posted": "2026-10-17",
       "first_seen": "2026-10-17T17:37:10.337943+00:00",
+      "status": "sent"
+    },
+    "li-4477774993": {
+      "title": "BRAND EXECUTIVE",
+      "company": "International Beauty Products Ltd.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4477774993",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T19:47:32.492084+00:00",
       "status": "sent"
     }
   }
