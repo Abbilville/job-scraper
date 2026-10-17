@@ -1,119 +1,7 @@
 {
-  "last_updated": "2026-10-17T07:16:07.191714+00:00",
+  "last_updated": "2026-10-17T12:33:55.700859+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4476135087": {
-      "title": "Staff Mobile Engineer",
-      "company": "Ajaib",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476135087",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.104890+00:00"
-    },
-    "li-4474674011": {
-      "title": "Data Scientist",
-      "company": "DANA Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474674011",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.104900+00:00"
-    },
-    "li-4463811942": {
-      "title": "Fraud Prevention & Detection Analytics",
-      "company": "OCBC Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4463811942",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.104906+00:00"
-    },
-    "li-4474695650": {
-      "title": "Operations Analytics Assistant Manager",
-      "company": "Grab",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474695650",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.104913+00:00"
-    },
-    "li-4476301571": {
-      "title": "Analyst, Data & Business Intelligence (6-months Contract)",
-      "company": "Traveloka",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476301571",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.104919+00:00"
-    },
-    "li-4466197024": {
-      "title": "T&T Manager - Technology, Strategy & Transformation - FSI - ID /PH",
-      "company": "Deloitte",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4466197024",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.104926+00:00"
-    },
-    "li-4476150194": {
-      "title": "Software Engineer",
-      "company": "Beca",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476150194",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.104934+00:00"
-    },
-    "li-4474662674": {
-      "title": "Java Developer",
-      "company": "Lancesoft Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474662674",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.104940+00:00"
-    },
-    "li-4476134126": {
-      "title": "Software Engineer (.NET)",
-      "company": "VLink Inc",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476134126",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.104945+00:00"
-    },
-    "li-4474659602": {
-      "title": "Golang Developer (Mandarin Speaker)",
-      "company": "UangMe",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474659602",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.104950+00:00"
-    },
-    "li-4474670682": {
-      "title": "Backend Engineer (Python & Typescript) - 3+ YoE",
-      "company": "Nityo Infotech Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474670682",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.104956+00:00"
-    },
-    "li-4409294024": {
-      "title": "Jr Developer",
-      "company": "NTT DATA, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4409294024",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.104961+00:00"
-    },
-    "li-4474047698": {
-      "title": "fullstack developer",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474047698",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.104966+00:00"
-    },
-    "li-4474691239": {
-      "title": "Back End Developer",
-      "company": "LanceSoft, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474691239",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.104971+00:00"
-    },
     "li-4474666383": {
       "title": "Dotnet Developer",
       "company": "PT Tekno Gemilang Indonesia (TOG Indonesia)",
@@ -8539,6 +8427,132 @@
       "job_url": "https://www.linkedin.com/jobs/view/4479669003",
       "date_posted": "2026-10-17",
       "first_seen": "2026-10-17T07:16:07.191509+00:00",
+      "status": "sent"
+    },
+    "li-4380085442": {
+      "title": "SR&T Manager - Strategy & Business Design - ID",
+      "company": "Deloitte",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4380085442",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T12:33:39.657492+00:00",
+      "status": "rejected"
+    },
+    "li-4472018428": {
+      "title": "Customer Care Operations Manager (Flight)",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4472018428",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T12:33:39.865616+00:00",
+      "status": "sent"
+    },
+    "li-4453668501": {
+      "title": "Product Operations Analyst",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4453668501",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T12:33:41.286068+00:00",
+      "status": "sent"
+    },
+    "li-4479684197": {
+      "title": "BE Go Lang Dev",
+      "company": "Insura Media Solusi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479684197",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T12:33:42.480285+00:00",
+      "status": "sent"
+    },
+    "li-4441076717": {
+      "title": "Application Engineer",
+      "company": "Johnson Controls",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4441076717",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T12:33:43.863087+00:00",
+      "status": "sent"
+    },
+    "li-4479664895": {
+      "title": "Project Delivery Manager",
+      "company": "Mimin",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479664895",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T12:33:45.067338+00:00",
+      "status": "sent"
+    },
+    "li-4476243435": {
+      "title": "Digital Acquisition Consultant (Credit Cards)",
+      "company": "Auxo Talent",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476243435",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T12:33:46.268601+00:00",
+      "status": "sent"
+    },
+    "li-4461989409": {
+      "title": "Distribution Strategy - Zurich General Takaful Indonesia",
+      "company": "Zurich Insurance",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4461989409",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T12:33:47.458583+00:00",
+      "status": "sent"
+    },
+    "li-4479689004": {
+      "title": "Affiliate Specialist",
+      "company": "PT Good Sale Tech",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479689004",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T12:33:48.645260+00:00",
+      "status": "sent"
+    },
+    "li-4479673612": {
+      "title": "Operational & Execution Auditor",
+      "company": "MAP Tech Asia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479673612",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T12:33:49.913445+00:00",
+      "status": "sent"
+    },
+    "li-4434366886": {
+      "title": "Global Markets Fixed Income, Currencies & Commodities Sales Summer Analyst - 2027 - Jakarta",
+      "company": "Bank of America",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4434366886",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T12:33:51.550361+00:00",
+      "status": "sent"
+    },
+    "li-4452727753": {
+      "title": "Lending Segment Program & Policy Manager",
+      "company": "UOB",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4452727753",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T12:33:52.744486+00:00",
+      "status": "sent"
+    },
+    "li-4461969072": {
+      "title": "Product Implementation Assistant Manager",
+      "company": "Manulife",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4461969072",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T12:33:54.434976+00:00",
+      "status": "sent"
+    },
+    "li-4461989410": {
+      "title": "Digital Project Manager - Zurich Asuransi Indonesia",
+      "company": "Zurich Insurance",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4461989410",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-17T12:33:55.700281+00:00",
       "status": "sent"
     }
   }
