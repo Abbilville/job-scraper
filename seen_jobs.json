@@ -1,71 +1,7 @@
 {
-  "last_updated": "2026-10-18T07:30:14.246014+00:00",
+  "last_updated": "2026-10-18T12:52:03.710618+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4474647906": {
-      "title": "Supervisor Enterprise Application",
-      "company": "PT Loren Tech Solutions",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474647906",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.105148+00:00"
-    },
-    "li-4379639599": {
-      "title": "Backend Engineer - Python (SDE 2)",
-      "company": "Kredivo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4379639599",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T19:57:03.195366+00:00"
-    },
-    "li-4299325817": {
-      "title": "T&T Consultant - Artificial Intelligence & Data (Data Engineer) - ID",
-      "company": "Deloitte",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4299325817",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T19:57:03.195379+00:00"
-    },
-    "li-4466178432": {
-      "title": "Strategy and Planning GrabBike, Assistant Manager",
-      "company": "Grab",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4466178432",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T19:57:03.195383+00:00"
-    },
-    "in-a1e2a6be5e67349b": {
-      "title": "Fullstack Developer (Golang)",
-      "company": "PT Lawencon Internasional",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=a1e2a6be5e67349b",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T19:57:03.195387+00:00"
-    },
-    "li-4474989366": {
-      "title": "DevOps Engineer",
-      "company": "AVOWS CONSULTING LIMITED",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474989366",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T19:57:03.195391+00:00"
-    },
-    "in-4353bd830e2747fe": {
-      "title": "Field Sales Engineer - Capital Equipment",
-      "company": "Atlas Copco Group",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=4353bd830e2747fe",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T19:57:03.195395+00:00"
-    },
-    "li-4474905446": {
-      "title": "Product Manager",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474905446",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T19:57:03.195398+00:00"
-    },
     "li-4475108502": {
       "title": "Product Executive (Hematology & Rare Disease)",
       "company": "AstraZeneca",
@@ -8586,6 +8522,78 @@
       "job_url": "https://www.linkedin.com/jobs/view/4479905686",
       "date_posted": "2026-10-18",
       "first_seen": "2026-10-18T07:30:14.245617+00:00",
+      "status": "sent"
+    },
+    "li-4480878561": {
+      "title": "Tencent Cloud - AI Native Cloud Solution Architect (Indonesia)",
+      "company": "Tencent",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480878561",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T12:51:54.666404+00:00",
+      "status": "rejected"
+    },
+    "li-4444953994": {
+      "title": "Manager, Backend Engineering",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4444953994",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T12:51:54.871016+00:00",
+      "status": "sent"
+    },
+    "li-4453264011": {
+      "title": "SAP FSCM Consultant",
+      "company": "Accenture Southeast Asia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4453264011",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T12:51:56.084874+00:00",
+      "status": "sent"
+    },
+    "li-4454528732": {
+      "title": "Product Associate",
+      "company": "Garena",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4454528732",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T12:51:57.315755+00:00",
+      "status": "sent"
+    },
+    "li-4479934332": {
+      "title": "Graduate Management Trainee  Staff (Area Jakarta)",
+      "company": "Vplus Global Jakarta",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479934332",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T12:51:59.502402+00:00",
+      "status": "sent"
+    },
+    "li-4479921866": {
+      "title": "Finance Manager (Mandarin Speaker)",
+      "company": "PT Abadi Rajawali Semesta",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479921866",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T12:52:00.787615+00:00",
+      "status": "sent"
+    },
+    "li-4436320286": {
+      "title": "Business Manager - Niche Multi-Brand Store",
+      "company": "LUXASIA",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4436320286",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T12:52:02.516411+00:00",
+      "status": "sent"
+    },
+    "li-4450863884": {
+      "title": "Technical Account Manager",
+      "company": "Supermicro",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4450863884",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T12:52:03.710317+00:00",
       "status": "sent"
     }
   }
