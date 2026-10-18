@@ -1,95 +1,7 @@
 {
-  "last_updated": "2026-10-18T17:39:39.870857+00:00",
+  "last_updated": "2026-10-18T19:49:56.106649+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4475196042": {
-      "title": "Business Analyst",
-      "company": "Deltadata Mandiri",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475196042",
-      "date_posted": "2026-10-07",
-      "first_seen": "2026-10-07T09:32:35.809953+00:00"
-    },
-    "li-4475198566": {
-      "title": "Fullstack Engineer",
-      "company": "Rata.id",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475198566",
-      "date_posted": "2026-10-07",
-      "first_seen": "2026-10-07T09:32:35.809956+00:00"
-    },
-    "li-4476559486": {
-      "title": "Product Engineer",
-      "company": "MGMI - mGanik Grup Mitra Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476559486",
-      "date_posted": "2026-10-07",
-      "first_seen": "2026-10-07T09:32:35.809959+00:00"
-    },
-    "li-4474237168": {
-      "title": ".NET Programmer",
-      "company": "PT Amber Solusi Internasional",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474237168",
-      "date_posted": "2026-10-07",
-      "first_seen": "2026-10-07T09:32:35.809961+00:00"
-    },
-    "li-4475154544": {
-      "title": "Integration Engineer (3+ YoE) - Immediate Joiner",
-      "company": "Nityo Infotech Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475154544",
-      "date_posted": "2026-10-07",
-      "first_seen": "2026-10-07T09:32:35.809966+00:00"
-    },
-    "li-4474661500": {
-      "title": "GenAI Engineer",
-      "company": "ArcFusion",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474661500",
-      "date_posted": "2026-10-07",
-      "first_seen": "2026-10-07T09:32:35.809970+00:00"
-    },
-    "li-4475190076": {
-      "title": "Mid-Level Front End Developer",
-      "company": "PT Siaga Abdi Utama",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475190076",
-      "date_posted": "2026-10-07",
-      "first_seen": "2026-10-07T09:32:35.809973+00:00"
-    },
-    "li-4475174541": {
-      "title": "Java Developer",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475174541",
-      "date_posted": "2026-10-07",
-      "first_seen": "2026-10-07T09:32:35.809976+00:00"
-    },
-    "li-4476161631": {
-      "title": "Front End / Full Stack Developer",
-      "company": "Airswift",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476161631",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-07T09:32:35.809978+00:00"
-    },
-    "li-4475147672": {
-      "title": "Cloud Engineer AWS",
-      "company": "PT Amber Solusi Internasional",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475147672",
-      "date_posted": "2026-10-07",
-      "first_seen": "2026-10-07T09:32:35.809981+00:00"
-    },
-    "li-4476533991": {
-      "title": "AI Process Automation Engineer",
-      "company": "Newlab+ Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476533991",
-      "date_posted": "2026-10-07",
-      "first_seen": "2026-10-07T09:32:35.809984+00:00"
-    },
     "li-4475161233": {
       "title": "Data Manager",
       "company": "AIZEN Indonesia",
@@ -8608,6 +8520,105 @@
       "job_url": "https://www.linkedin.com/jobs/view/4479934615",
       "date_posted": "2026-10-18",
       "first_seen": "2026-10-18T17:39:39.870459+00:00",
+      "status": "sent"
+    },
+    "li-4479944355": {
+      "title": "TikTok Shop by Tokopedia - Affiliate Operations Specialist, Semi-Consignment - Indonesia",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479944355",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T19:49:43.342821+00:00",
+      "status": "sent"
+    },
+    "li-4479930766": {
+      "title": "Javaspring Golang",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479930766",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T19:49:44.629736+00:00",
+      "status": "sent"
+    },
+    "li-4479926859": {
+      "title": "PHP Python",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479926859",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T19:49:45.937920+00:00",
+      "status": "sent"
+    },
+    "li-4479938594": {
+      "title": "Oracle Cloud EPM & Enterprise Data Consultant",
+      "company": "Tata Consultancy Services",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479938594",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T19:49:47.233729+00:00",
+      "status": "sent"
+    },
+    "li-4479949025": {
+      "title": "Oracle Fusion Supply Chain & Order Management Consultant",
+      "company": "Tata Consultancy Services",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479949025",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T19:49:48.739247+00:00",
+      "status": "sent"
+    },
+    "li-4479932851": {
+      "title": "Oracle Fusion Supply Chain & Order Management Consultant",
+      "company": "Tata Consultancy Services",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479932851",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T19:49:50.213121+00:00",
+      "status": "sent"
+    },
+    "li-4479948105": {
+      "title": "Management Trainee Staff (Jakarta Area)",
+      "company": "vplus platinum 8 indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479948105",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T19:49:51.396380+00:00",
+      "status": "sent"
+    },
+    "li-4479927877": {
+      "title": "Affiliate Manager (TAP & MCN)",
+      "company": "KOL.ID",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479927877",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T19:49:52.593489+00:00",
+      "status": "sent"
+    },
+    "li-4479936239": {
+      "title": "Management Trainee Staff (Area Jakarta)",
+      "company": "PT. Victory International (Branch Satrio Tower)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479936239",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T19:49:53.729563+00:00",
+      "status": "sent"
+    },
+    "li-4426954431": {
+      "title": "Business Manager, Smart Effects",
+      "company": "Evonik",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4426954431",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T19:49:54.958471+00:00",
+      "status": "sent"
+    },
+    "li-4479929851": {
+      "title": "Technical & Operations Staff (OOH)",
+      "company": "StickEarn",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479929851",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T19:49:56.106286+00:00",
       "status": "sent"
     }
   }
