@@ -1,31 +1,7 @@
 {
-  "last_updated": "2026-10-17T22:45:44.738088+00:00",
+  "last_updated": "2026-10-18T01:54:43.223482+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4474045737": {
-      "title": "IBM Product (Hardware)",
-      "company": "Tech Data APAC",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474045737",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.105106+00:00"
-    },
-    "li-4474667741": {
-      "title": "Oracle Functional Manager - Retail Group",
-      "company": "Adecco",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474667741",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.105112+00:00"
-    },
-    "li-4474677323": {
-      "title": "Business Analyst",
-      "company": "PT Adicipta Inovasi Teknologi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474677323",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.105117+00:00"
-    },
     "li-4474651951": {
       "title": "Functional Analyst",
       "company": "Accord Innovations",
@@ -8578,6 +8554,33 @@
       "job_url": "https://www.linkedin.com/jobs/view/4479670462",
       "date_posted": "2026-10-17",
       "first_seen": "2026-10-17T22:45:44.737724+00:00",
+      "status": "sent"
+    },
+    "li-4479692936": {
+      "title": "Sr. Full-Stack Software Engineer - Remote",
+      "company": "YO AI Labs",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479692936",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T01:54:40.891651+00:00",
+      "status": "rejected"
+    },
+    "li-4479905437": {
+      "title": "Back End Dev",
+      "company": "PT IDstar Cipta Teknologi (IDstar)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479905437",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T01:54:41.999549+00:00",
+      "status": "sent"
+    },
+    "li-4479907281": {
+      "title": "Chief of Staff",
+      "company": "Dealls – Jobs, CV & Mentoring",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479907281",
+      "date_posted": "2026-10-17",
+      "first_seen": "2026-10-18T01:54:43.223087+00:00",
       "status": "sent"
     }
   }
