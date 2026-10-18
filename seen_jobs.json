@@ -1,47 +1,7 @@
 {
-  "last_updated": "2026-10-18T01:54:43.223482+00:00",
+  "last_updated": "2026-10-18T07:30:14.246014+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4474651951": {
-      "title": "Functional Analyst",
-      "company": "Accord Innovations",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474651951",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.105121+00:00"
-    },
-    "li-4474699471": {
-      "title": "Solution Consultant",
-      "company": "PT Tekno Gemilang Indonesia (TOG Indonesia)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474699471",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.105126+00:00"
-    },
-    "li-4474669125": {
-      "title": "Tenaga Alih Daya",
-      "company": "PT Mitra Utama Solusi Telematika",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474669125",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.105131+00:00"
-    },
-    "li-4476159539": {
-      "title": "Enterprise Resources Planning Functional Consultant",
-      "company": "Phintraco Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476159539",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.105137+00:00"
-    },
-    "li-4476199297": {
-      "title": "System Analyst – Integration (IBM App Connect & MFT)",
-      "company": "PT. Intikom Berlian Mustika",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476199297",
-      "date_posted": "2026-10-06",
-      "first_seen": "2026-10-06T14:04:14.105142+00:00"
-    },
     "li-4474647906": {
       "title": "Supervisor Enterprise Application",
       "company": "PT Loren Tech Solutions",
@@ -8581,6 +8541,51 @@
       "job_url": "https://www.linkedin.com/jobs/view/4479907281",
       "date_posted": "2026-10-17",
       "first_seen": "2026-10-18T01:54:43.223087+00:00",
+      "status": "sent"
+    },
+    "li-4479924078": {
+      "title": "Product Owner",
+      "company": "MSBU Konsultan",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479924078",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T07:30:10.334095+00:00",
+      "status": "rejected"
+    },
+    "li-4479903773": {
+      "title": "Founding Engineer - AI Security",
+      "company": "Durin Security",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479903773",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T07:30:10.628097+00:00",
+      "status": "sent"
+    },
+    "li-4479922232": {
+      "title": "RPA Developer",
+      "company": "PT IDstar Cipta Teknologi (IDstar)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479922232",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T07:30:11.816839+00:00",
+      "status": "sent"
+    },
+    "li-4479908830": {
+      "title": "Data Engineer",
+      "company": "RCTI (Rajawali Citra Televisi Indonesia)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479908830",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T07:30:13.010314+00:00",
+      "status": "sent"
+    },
+    "li-4479905686": {
+      "title": "User Experience Researcher",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479905686",
+      "date_posted": "2026-10-18",
+      "first_seen": "2026-10-18T07:30:14.245617+00:00",
       "status": "sent"
     }
   }
