@@ -1,135 +1,7 @@
 {
-  "last_updated": "2026-10-19T16:01:29.899880+00:00",
+  "last_updated": "2026-10-19T21:50:09.784895+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4475768465": {
-      "title": "Data Quality Engineer",
-      "company": "IYKRA",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475768465",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T09:43:16.003309+00:00"
-    },
-    "li-4475725679": {
-      "title": "Hardware Product Owner",
-      "company": "McEasy",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475725679",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T09:43:16.003312+00:00"
-    },
-    "li-4474816036": {
-      "title": "Product Category Manager",
-      "company": "Kawan Lama Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474816036",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T09:43:16.003315+00:00"
-    },
-    "li-4475734308": {
-      "title": "Apprenticeship - Product Implementation",
-      "company": "Prudential Indonesia (PT Prudential Life Assurance)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475734308",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T09:43:16.003318+00:00"
-    },
-    "li-4475737142": {
-      "title": "Business Process Analyst",
-      "company": "Lancesoft Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475737142",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T09:43:16.003321+00:00"
-    },
-    "li-4475155978": {
-      "title": "Business Analyst",
-      "company": "Technosoft Automotive | Yana Automotive Solution",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475155978",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T09:43:16.003324+00:00"
-    },
-    "li-4475728898": {
-      "title": "Business Strategy Associate (Consulting & Strategy Professionals)",
-      "company": "Seven Retail",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475728898",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T09:43:16.003327+00:00"
-    },
-    "li-4477164012": {
-      "title": "Data Analyst",
-      "company": "PT. Tirta Sukses Perkasa (subsidiary of Indofood)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477164012",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905070+00:00"
-    },
-    "li-4448996433": {
-      "title": "Data Governance Engineer",
-      "company": "Kredivo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4448996433",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905087+00:00"
-    },
-    "li-4467566144": {
-      "title": "Full Stack Engineer",
-      "company": "Fitch Ratings",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4467566144",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905092+00:00"
-    },
-    "li-4475921781": {
-      "title": "Backend Developer",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475921781",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905097+00:00"
-    },
-    "li-4475901292": {
-      "title": "FULL STACK DEVELOPER",
-      "company": "JAPFA",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475901292",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905101+00:00"
-    },
-    "li-4477191783": {
-      "title": "React js Dev",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477191783",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905105+00:00"
-    },
-    "li-4475732924": {
-      "title": "Associate iOS Developer",
-      "company": "AVOWS GLOBAL IT SOLUTIONS PRIVATE LIMITED",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475732924",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905108+00:00"
-    },
-    "li-4475735450": {
-      "title": "iOS Developer",
-      "company": "AVOWS CONSULTING LIMITED",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475735450",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905113+00:00"
-    },
-    "li-4466291329": {
-      "title": "PS Technical Consultant II Jakarta",
-      "company": "NCR Atleos",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4466291329",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905119+00:00"
-    },
     "li-4475957680": {
       "title": "Backend Developer (join ASAP only)",
       "company": "Diksha Technologies",
@@ -8718,6 +8590,150 @@
       "job_url": "https://www.linkedin.com/jobs/view/4479981484",
       "date_posted": "2026-10-19",
       "first_seen": "2026-10-19T16:01:29.899531+00:00",
+      "status": "sent"
+    },
+    "li-4385033791": {
+      "title": "Enterprise Solution Architecture (Managerial)",
+      "company": "EY",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4385033791",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:49:49.978953+00:00",
+      "status": "sent"
+    },
+    "li-4481255245": {
+      "title": "TN - IT Infrastructure & Network",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481255245",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:49:51.310197+00:00",
+      "status": "sent"
+    },
+    "li-4481277583": {
+      "title": "Mobile Developer",
+      "company": "PT. Adi Data Informatika",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481277583",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:49:52.733803+00:00",
+      "status": "sent"
+    },
+    "li-4480268037": {
+      "title": "Middleware",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480268037",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:49:54.122784+00:00",
+      "status": "sent"
+    },
+    "li-4480246570": {
+      "title": "Integration Engineer",
+      "company": "Ericsson",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480246570",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:49:55.438868+00:00",
+      "status": "sent"
+    },
+    "li-4481262969": {
+      "title": "Linux Engineer L1 & L2",
+      "company": "CODE.ID",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481262969",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:49:56.709504+00:00",
+      "status": "sent"
+    },
+    "li-4481218189": {
+      "title": "Product Manager - Sales Platform (CRM)",
+      "company": "First Circle",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481218189",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:49:57.886450+00:00",
+      "status": "sent"
+    },
+    "li-4452914648": {
+      "title": "Customer Success Manager (CSM) - SAP Academy for Customer Success - Indonesia (Hybrid)",
+      "company": "SAP",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4452914648",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:49:59.144692+00:00",
+      "status": "sent"
+    },
+    "li-4478617081": {
+      "title": "Distributor Development Manager",
+      "company": "PepsiCo",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478617081",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:50:00.525087+00:00",
+      "status": "sent"
+    },
+    "in-6ffe52a64b6073c2": {
+      "title": "Project Manager",
+      "company": "Schneider Electric",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=6ffe52a64b6073c2",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:50:01.760309+00:00",
+      "status": "sent"
+    },
+    "in-aae5e4f996c99f1d": {
+      "title": "Trade Payables Finance Product Manager - AVP",
+      "company": "Citi",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=aae5e4f996c99f1d",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:50:02.941166+00:00",
+      "status": "sent"
+    },
+    "in-9e70e5bd4d70bea1": {
+      "title": "Product Manager - Sales Platform (CRM)",
+      "company": "First Circle",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=9e70e5bd4d70bea1",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:50:04.158946+00:00",
+      "status": "sent"
+    },
+    "in-7ae0dc2862d47237": {
+      "title": "Patient Access and Advocacy Manager",
+      "company": "GSK",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=7ae0dc2862d47237",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:50:05.544644+00:00",
+      "status": "sent"
+    },
+    "in-73ceb2c9593af447": {
+      "title": "Tier 1 Partnerships Manager, YouTube Music Partnerships (English, Bahasa Indonesia)",
+      "company": "Youtube",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=73ceb2c9593af447",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:50:06.722865+00:00",
+      "status": "sent"
+    },
+    "in-06ecbada6ba19995": {
+      "title": "Duty Manager - Jakarta Marriott Hotel Gelora",
+      "company": "Marriott International",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=06ecbada6ba19995",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:50:07.917583+00:00",
+      "status": "sent"
+    },
+    "li-4480264795": {
+      "title": "Procurement Analyst (Logistic)",
+      "company": "PT SMART Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480264795",
+      "date_posted": "2026-10-19",
+      "first_seen": "2026-10-19T21:50:09.784587+00:00",
       "status": "sent"
     }
   }
