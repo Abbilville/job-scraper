@@ -1,87 +1,7 @@
 {
-  "last_updated": "2026-10-19T21:50:09.784895+00:00",
+  "last_updated": "2026-10-20T02:27:07.396362+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4475957680": {
-      "title": "Backend Developer (join ASAP only)",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475957680",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905122+00:00"
-    },
-    "li-4412747280": {
-      "title": ".NET Full Stack Developer (Project Based)",
-      "company": "Meratus Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4412747280",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905125+00:00"
-    },
-    "li-4477194635": {
-      "title": "FE Reactjs Dev (Tech IT)",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477194635",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905129+00:00"
-    },
-    "li-4477193538": {
-      "title": "Application Engineer - Sensing",
-      "company": "Michael Page",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477193538",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905137+00:00"
-    },
-    "li-4474442217": {
-      "title": "DevOps Engineer",
-      "company": "AVOWS CONSULTING LIMITED",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474442217",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905143+00:00"
-    },
-    "li-4477183489": {
-      "title": "DevOps Engineer (L2)",
-      "company": "SIGMATECH",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477183489",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905149+00:00"
-    },
-    "li-4477131809": {
-      "title": "IT Infrastructure/DevOps",
-      "company": "PT Asuransi Digital Bersama Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477131809",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905156+00:00"
-    },
-    "li-4477427394": {
-      "title": "Site Reliability Engineer (SRE)",
-      "company": "Referensiin_Aja",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477427394",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905162+00:00"
-    },
-    "li-4477158227": {
-      "title": "Product Architecture Intern(A134893)",
-      "company": "AI Rudder",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477158227",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905167+00:00"
-    },
-    "li-4475969107": {
-      "title": "IT Product Manager (Mandarin Speaker)",
-      "company": "J&T Cargo Indonesia (PT Global Yimi Cargo)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475969107",
-      "date_posted": "2026-10-08",
-      "first_seen": "2026-10-08T18:10:47.905173+00:00"
-    },
     "li-4477186372": {
       "title": "Intern - Digital Analyst (3 months)",
       "company": "VML",
@@ -8734,6 +8654,96 @@
       "job_url": "https://www.linkedin.com/jobs/view/4480264795",
       "date_posted": "2026-10-19",
       "first_seen": "2026-10-19T21:50:09.784587+00:00",
+      "status": "sent"
+    },
+    "in-dd021567c6fbe6ff": {
+      "title": "Distributor Development Manager",
+      "company": "PepsiCo",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=dd021567c6fbe6ff",
+      "date_posted": "2026-10-20",
+      "first_seen": "2026-10-20T02:26:58.386928+00:00",
+      "status": "rejected"
+    },
+    "in-330c7e7c0bd08328": {
+      "title": "Area Sales Manager General Trade (Greater Jakarta)",
+      "company": "PepsiCo",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=330c7e7c0bd08328",
+      "date_posted": "2026-10-20",
+      "first_seen": "2026-10-20T02:26:58.386946+00:00",
+      "status": "rejected"
+    },
+    "li-4480410517": {
+      "title": ".Net Developer",
+      "company": "Lancesoft Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480410517",
+      "date_posted": "2026-10-20",
+      "first_seen": "2026-10-20T02:26:58.585372+00:00",
+      "status": "sent"
+    },
+    "li-4480415155": {
+      "title": "Application Developer (.NET)",
+      "company": "PT Adicipta Inovasi Teknologi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480415155",
+      "date_posted": "2026-10-20",
+      "first_seen": "2026-10-20T02:26:59.875335+00:00",
+      "status": "sent"
+    },
+    "li-4480419000": {
+      "title": "System Analyst (.NET)",
+      "company": "PT Adicipta Inovasi Teknologi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480419000",
+      "date_posted": "2026-10-20",
+      "first_seen": "2026-10-20T02:27:01.068484+00:00",
+      "status": "sent"
+    },
+    "li-4481517719": {
+      "title": "DevSecOps Engineer",
+      "company": "DVI Solutions Asia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481517719",
+      "date_posted": "2026-10-20",
+      "first_seen": "2026-10-20T02:27:02.318593+00:00",
+      "status": "sent"
+    },
+    "li-4480413216": {
+      "title": "Data Migration Specialist",
+      "company": "PT Adicipta Inovasi Teknologi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480413216",
+      "date_posted": "2026-10-20",
+      "first_seen": "2026-10-20T02:27:03.705415+00:00",
+      "status": "sent"
+    },
+    "li-4480293962": {
+      "title": "Freelance Dapodik Staff",
+      "company": "Global Sevilla School",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480293962",
+      "date_posted": "2026-10-20",
+      "first_seen": "2026-10-20T02:27:04.905015+00:00",
+      "status": "sent"
+    },
+    "li-4479336631": {
+      "title": "Corporate Planning Staff (Fresh Graduate)",
+      "company": "PT Bank of India Indonesia TBK",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479336631",
+      "date_posted": "2026-10-20",
+      "first_seen": "2026-10-20T02:27:06.114564+00:00",
+      "status": "sent"
+    },
+    "li-4480406488": {
+      "title": "Business Analyst",
+      "company": "PT Adicipta Inovasi Teknologi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480406488",
+      "date_posted": "2026-10-20",
+      "first_seen": "2026-10-20T02:27:07.396058+00:00",
       "status": "sent"
     }
   }
