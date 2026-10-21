@@ -1,159 +1,7 @@
 {
-  "last_updated": "2026-10-21T14:16:38.297000+00:00",
+  "last_updated": "2026-10-21T19:04:17.654334+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4468728257": {
-      "title": "Software Engineer, Mobile (iOS)",
-      "company": "Grab",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4468728257",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491630+00:00"
-    },
-    "li-4268217099": {
-      "title": "Machine Learning Engineer",
-      "company": "Kredivo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4268217099",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491646+00:00"
-    },
-    "li-4421573912": {
-      "title": "AI Data Engineering Consultant (Managerial)",
-      "company": "EY",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4421573912",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491654+00:00"
-    },
-    "in-a9bb2e326a865540": {
-      "title": "Data Center Technicians",
-      "company": "Microsoft",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=a9bb2e326a865540",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491661+00:00"
-    },
-    "in-ef58d8d4b8c75da1": {
-      "title": "Data Center Engineering Operation (DCEO) Trainee",
-      "company": "Amazon.com",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=ef58d8d4b8c75da1",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491667+00:00"
-    },
-    "in-0be79996a2b44648": {
-      "title": "Quality Control Inspector",
-      "company": "PT Indofood Sukses Makmur Tbk",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=0be79996a2b44648",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491674+00:00"
-    },
-    "li-4477581960": {
-      "title": "Associate Product Manager - AI",
-      "company": "Kredivo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477581960",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491681+00:00"
-    },
-    "li-4450323976": {
-      "title": "T&T Consultant - Technology Strategy & Transformation - ID",
-      "company": "Deloitte",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4450323976",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491690+00:00"
-    },
-    "li-4477590830": {
-      "title": "SAP FICO Consultant",
-      "company": "Accenture Southeast Asia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477590830",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491695+00:00"
-    },
-    "li-4478703423": {
-      "title": "Fullstack Developer with Monitoring Experience",
-      "company": "PT. Akhdani Reka Solusi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478703423",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491698+00:00"
-    },
-    "li-4477906966": {
-      "title": "Software Engineer (Automation & AI Workflow)",
-      "company": "Ku Creatives Unlimited",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477906966",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491707+00:00"
-    },
-    "li-4475734426": {
-      "title": "Mobile Engineer",
-      "company": "Xellar",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475734426",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491713+00:00"
-    },
-    "in-88f98f4c3455ce8e": {
-      "title": "Software Engineer (Automation & AI Workflow)",
-      "company": "Ku Creatives Unlimited",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=88f98f4c3455ce8e",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491720+00:00"
-    },
-    "li-4478550100": {
-      "title": "Data Scientist - Risk Analytics & Modelling",
-      "company": "Cermati Fintech Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478550100",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491726+00:00"
-    },
-    "in-cb1e2f7b679054a9": {
-      "title": "QA Engineer (Test Automation)",
-      "company": "Lintas Media Danawa",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=cb1e2f7b679054a9",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491733+00:00"
-    },
-    "in-e4d57bfb3186a6a5": {
-      "title": "Fleet Quality Management",
-      "company": "Sinergi Performa Cipta",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=e4d57bfb3186a6a5",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491738+00:00"
-    },
-    "in-fb8960ba2fe88bb0": {
-      "title": "Business development Manager",
-      "company": "Hitachi Energy",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=fb8960ba2fe88bb0",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491741+00:00"
-    },
-    "li-4477289314": {
-      "title": "Customer Marketing Executive (Trade Marketing)",
-      "company": "PT. Garudafood Putra Putri Jaya, Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477289314",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491745+00:00"
-    },
-    "in-fea0e09c04d83dd7": {
-      "title": "Admin Services Associate/ Finance (Jakarta Raya)",
-      "company": "CBRE",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=fea0e09c04d83dd7",
-      "date_posted": "2026-10-12",
-      "first_seen": "2026-10-12T22:20:07.491749+00:00"
-    },
     "in-d34768b2cd339021": {
       "title": "Relationship Manager Corporate Lending",
       "company": "Amar Bank",
@@ -8978,6 +8826,177 @@
       "job_url": "https://www.linkedin.com/jobs/view/4480786638",
       "date_posted": "2026-10-21",
       "first_seen": "2026-10-21T14:16:38.296643+00:00",
+      "status": "sent"
+    },
+    "in-4355f159925dbdb8": {
+      "title": "ICT PD",
+      "company": "Ericsson",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=4355f159925dbdb8",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:03:57.564859+00:00",
+      "status": "rejected"
+    },
+    "li-4481140211": {
+      "title": "ICT PD",
+      "company": "Ericsson",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481140211",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:03:57.564880+00:00",
+      "status": "rejected"
+    },
+    "li-4454989700": {
+      "title": "Sales Data Analyst, Assistant Manager (IC)",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4454989700",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:03:57.800649+00:00",
+      "status": "sent"
+    },
+    "li-4471314835": {
+      "title": "Reputational Risk, Corporate Risk",
+      "company": "Shopee",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4471314835",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:03:58.968826+00:00",
+      "status": "sent"
+    },
+    "li-4454740446": {
+      "title": "Technology Risk - Associate",
+      "company": "EY",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4454740446",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:04:00.356629+00:00",
+      "status": "sent"
+    },
+    "li-4385042568": {
+      "title": "Consulting - FSO Finance Manager",
+      "company": "EY",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4385042568",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:04:01.560261+00:00",
+      "status": "sent"
+    },
+    "li-4481127913": {
+      "title": ".NET Developer (Junior - Middle)",
+      "company": "TechTiera Services Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481127913",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:04:02.714600+00:00",
+      "status": "sent"
+    },
+    "li-4479422879": {
+      "title": "Commercial Data Engineer",
+      "company": "PepsiCo",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479422879",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:04:03.930504+00:00",
+      "status": "sent"
+    },
+    "li-4481123556": {
+      "title": "DevOps Cloud Engineer",
+      "company": "Aventis Technology",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481123556",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:04:05.148106+00:00",
+      "status": "sent"
+    },
+    "li-4438134081": {
+      "title": "Procurement Intelligent and AI Innovation",
+      "company": "TechConnect",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4438134081",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:04:06.354408+00:00",
+      "status": "sent"
+    },
+    "li-4438646451": {
+      "title": "Presales",
+      "company": "TechConnect",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4438646451",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:04:07.582966+00:00",
+      "status": "sent"
+    },
+    "li-4471958420": {
+      "title": "Automotive Technician (Remote) (Contractor)",
+      "company": "Geotab",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4471958420",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:04:08.824460+00:00",
+      "status": "sent"
+    },
+    "li-4473786424": {
+      "title": "Field Service Engineer",
+      "company": "GE HealthCare",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473786424",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:04:10.079277+00:00",
+      "status": "sent"
+    },
+    "li-4453593620": {
+      "title": "Sales Engineer (Indonesia - East Jakarta)",
+      "company": "Bulten Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4453593620",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:04:11.261925+00:00",
+      "status": "sent"
+    },
+    "li-4479434432": {
+      "title": "Sales Analytics",
+      "company": "PepsiCo",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479434432",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:04:12.725623+00:00",
+      "status": "sent"
+    },
+    "li-4482144183": {
+      "title": "Risk Management Officer",
+      "company": "Amar Bank",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482144183",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:04:14.084934+00:00",
+      "status": "sent"
+    },
+    "li-4442831020": {
+      "title": "Manager, Internal Control & Profit Protection",
+      "company": "adidas",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4442831020",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:04:15.263838+00:00",
+      "status": "sent"
+    },
+    "li-4403185323": {
+      "title": "Monitoring ATM",
+      "company": "Brink’s Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4403185323",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:04:16.446140+00:00",
+      "status": "sent"
+    },
+    "li-4414209746": {
+      "title": "MONITORING",
+      "company": "Brink’s Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4414209746",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T19:04:17.653938+00:00",
       "status": "sent"
     }
   }
