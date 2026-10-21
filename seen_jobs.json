@@ -1,103 +1,7 @@
 {
-  "last_updated": "2026-10-20T23:32:24.109045+00:00",
+  "last_updated": "2026-10-21T02:21:30.237673+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4467840740": {
-      "title": "Anti-Fraud Analyst",
-      "company": "UOB",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4467840740",
-      "date_posted": "2026-10-10",
-      "first_seen": "2026-10-11T03:09:56.128624+00:00"
-    },
-    "li-4478094308": {
-      "title": "Internal Control",
-      "company": "PT. Pharos Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478094308",
-      "date_posted": "2026-10-11",
-      "first_seen": "2026-10-11T03:09:56.128631+00:00"
-    },
-    "li-4478085738": {
-      "title": "Sales ADP Manager",
-      "company": "LIXIL",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478085738",
-      "date_posted": "2026-10-11",
-      "first_seen": "2026-10-11T03:09:56.128637+00:00"
-    },
-    "li-4477242582": {
-      "title": "SSD Network Management Officer",
-      "company": "Rapid Technology",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477242582",
-      "date_posted": "2026-10-11",
-      "first_seen": "2026-10-11T03:09:56.128643+00:00"
-    },
-    "li-4382951617": {
-      "title": "Operations Manufacturing Lean Consultant - Operations Excellence Program",
-      "company": "McKinsey & Company",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4382951617",
-      "date_posted": "2026-10-11",
-      "first_seen": "2026-10-11T11:46:17.982060+00:00"
-    },
-    "li-4477249740": {
-      "title": "Frontend Developer",
-      "company": "MSBU Konsultan",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477249740",
-      "date_posted": "2026-10-11",
-      "first_seen": "2026-10-11T11:46:17.982082+00:00"
-    },
-    "li-4477251736": {
-      "title": "IT DevOps (Asst. Manager - Manager)",
-      "company": "PT Central Asia Financial (CAF)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477251736",
-      "date_posted": "2026-10-11",
-      "first_seen": "2026-10-11T11:46:17.982090+00:00"
-    },
-    "li-4478093865": {
-      "title": "Specifier ADP",
-      "company": "LIXIL",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478093865",
-      "date_posted": "2026-10-11",
-      "first_seen": "2026-10-11T11:46:17.982094+00:00"
-    },
-    "li-4477268040": {
-      "title": "Digital Specialist Intern (3 months)",
-      "company": "Longetiv Digital Hub",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477268040",
-      "date_posted": "2026-10-11",
-      "first_seen": "2026-10-11T11:46:17.982097+00:00"
-    },
-    "li-4414690066": {
-      "title": "Finance Business Partner（产发）",
-      "company": "JD.COM",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4414690066",
-      "date_posted": "2026-10-11",
-      "first_seen": "2026-10-11T11:46:17.982101+00:00"
-    },
-    "li-4441166314": {
-      "title": "Sales Support Intern",
-      "company": "JD.COM",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4441166314",
-      "date_posted": "2026-10-11",
-      "first_seen": "2026-10-11T11:46:17.982104+00:00"
-    },
-    "li-4478305432": {
-      "title": "Sales ADP Manager",
-      "company": "LIXIL",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478305432",
-      "date_posted": "2026-10-11",
-      "first_seen": "2026-10-11T11:46:17.982109+00:00"
-    },
     "li-4420102341": {
       "title": "Security Managed Services Engineer (L1)",
       "company": "NTT DATA, Inc.",
@@ -8878,6 +8782,114 @@
       "job_url": "https://www.linkedin.com/jobs/view/4480714701",
       "date_posted": "2026-10-20",
       "first_seen": "2026-10-20T23:32:24.108670+00:00",
+      "status": "sent"
+    },
+    "li-4465678024": {
+      "title": "Azure Cloud Solutions Architect (Terraform, IaC)",
+      "company": "Avanade",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4465678024",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T02:21:18.245219+00:00",
+      "status": "rejected"
+    },
+    "li-4482036179": {
+      "title": "Medical Reimbursement Pricing & Actuarial Risk Consultant",
+      "company": "Outsized",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482036179",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T02:21:18.245239+00:00",
+      "status": "rejected"
+    },
+    "li-4482015846": {
+      "title": "Software Engineer (AI Training)",
+      "company": "Alignerr",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482015846",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T02:21:18.536414+00:00",
+      "status": "sent"
+    },
+    "li-4482008940": {
+      "title": "Back End Developer (AI Infrastructure)",
+      "company": "Alignerr",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482008940",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T02:21:19.822426+00:00",
+      "status": "sent"
+    },
+    "li-4242244042": {
+      "title": "Digital Marketing Specialist",
+      "company": "PT baraka group indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4242244042",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T02:21:21.071371+00:00",
+      "status": "sent"
+    },
+    "li-4480752300": {
+      "title": "Management Trainee Program (Jakarta Area)",
+      "company": "Viction.id (Branch Sona Topas )",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480752300",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T02:21:22.355027+00:00",
+      "status": "sent"
+    },
+    "li-4480459664": {
+      "title": "Search Engine Optimization Specialist",
+      "company": "Self-employed",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480459664",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T02:21:23.971079+00:00",
+      "status": "sent"
+    },
+    "li-4478951553": {
+      "title": "Staff Material Management",
+      "company": "J&T Express",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4478951553",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T02:21:25.202211+00:00",
+      "status": "sent"
+    },
+    "li-4480757115": {
+      "title": "Ecommerce Specialist",
+      "company": "PT Beautymax Essential Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480757115",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T02:21:26.523685+00:00",
+      "status": "sent"
+    },
+    "li-4480745589": {
+      "title": "Management Trainee Program (Jakarta Area)",
+      "company": "Viction.id",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480745589",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T02:21:27.760198+00:00",
+      "status": "sent"
+    },
+    "li-4480727879": {
+      "title": "Funding Analyst",
+      "company": "Pandai Gadai",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480727879",
+      "date_posted": "2026-10-20",
+      "first_seen": "2026-10-21T02:21:28.997639+00:00",
+      "status": "sent"
+    },
+    "li-4480749394": {
+      "title": "Product Manager  Support Intern",
+      "company": "Landson PT Pertiwi Agung (a member of Mensa Group)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480749394",
+      "date_posted": "2026-10-21",
+      "first_seen": "2026-10-21T02:21:30.237303+00:00",
       "status": "sent"
     }
   }
