@@ -1,115 +1,7 @@
 {
-  "last_updated": "2026-10-21T23:49:20.210719+00:00",
+  "last_updated": "2026-10-22T02:16:19.432830+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4477951501": {
-      "title": "Software Engineer (Java Springboot)",
-      "company": "PT. Intikom Berlian Mustika",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477951501",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-13T04:19:47.971249+00:00",
-      "status": "sent"
-    },
-    "li-4477508363": {
-      "title": "Fullstack Engineer - AI Native",
-      "company": "Pandai Emas",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477508363",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-13T04:19:49.134529+00:00",
-      "status": "sent"
-    },
-    "li-4478728685": {
-      "title": "Software Engineer (AI Training)",
-      "company": "Alignerr",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478728685",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-13T04:19:50.436810+00:00",
-      "status": "sent"
-    },
-    "li-4476098108": {
-      "title": "ETL Developer | Banking Project",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476098108",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-13T04:19:51.655260+00:00",
-      "status": "sent"
-    },
-    "li-4477955497": {
-      "title": "Data Engineer",
-      "company": "Accord Innovations",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477955497",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-13T04:19:52.949275+00:00",
-      "status": "sent"
-    },
-    "li-4477954481": {
-      "title": "Technical Business Development",
-      "company": "Idealtata Building Products",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477954481",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-13T04:19:54.183610+00:00",
-      "status": "sent"
-    },
-    "li-4477943913": {
-      "title": "React Native Developer",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477943913",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-13T04:19:55.420725+00:00",
-      "status": "sent"
-    },
-    "li-4477960089": {
-      "title": "Data Migration Specialist",
-      "company": "PT Adicipta Inovasi Teknologi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477960089",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-13T04:19:56.693561+00:00",
-      "status": "sent"
-    },
-    "li-4477958306": {
-      "title": "Penetration Tester",
-      "company": "Accord Innovations",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477958306",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-13T04:19:57.903995+00:00",
-      "status": "sent"
-    },
-    "li-4477957082": {
-      "title": "AI Infrastructure Support Engineer (10986)",
-      "company": "AMK Technology Sdn Bhd",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477957082",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-13T04:19:59.095511+00:00",
-      "status": "sent"
-    },
-    "li-4477955398": {
-      "title": "Cloud Security Engineer",
-      "company": "AVOWS GLOBAL IT SOLUTIONS PRIVATE LIMITED",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477955398",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-13T04:20:00.629869+00:00",
-      "status": "sent"
-    },
-    "li-4478735656": {
-      "title": "Pricing Analyst",
-      "company": "Cinch",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478735656",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-13T04:20:01.894241+00:00",
-      "status": "sent"
-    },
     "li-4478762079": {
       "title": "Commercial Planning & Business Analyst",
       "company": "EssilorLuxottica",
@@ -9000,6 +8892,114 @@
       "job_url": "https://www.linkedin.com/jobs/view/4482163811",
       "date_posted": "2026-10-21",
       "first_seen": "2026-10-21T23:49:20.210329+00:00",
+      "status": "sent"
+    },
+    "li-4481190095": {
+      "title": "(2210) Solution Architect",
+      "company": "PT Amber Solusi Internasional",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481190095",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T02:16:05.381967+00:00",
+      "status": "rejected"
+    },
+    "li-4480780624": {
+      "title": "Software Engineer",
+      "company": "Andal",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480780624",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T02:16:05.686969+00:00",
+      "status": "sent"
+    },
+    "li-4481182404": {
+      "title": "Quality Assurance Engineer",
+      "company": "Andal",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481182404",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T02:16:07.026444+00:00",
+      "status": "sent"
+    },
+    "li-4480752628": {
+      "title": "Product Application Engineer (Civil Engineering & Material Testing)",
+      "company": "PT. Arkamaya Guna Saharsa",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480752628",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T02:16:08.225756+00:00",
+      "status": "sent"
+    },
+    "li-4481188185": {
+      "title": "Business Consultant",
+      "company": "PT. Permodalan Nasional Madani (Persero)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481188185",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T02:16:09.535461+00:00",
+      "status": "sent"
+    },
+    "li-4479980644": {
+      "title": "Business Partner",
+      "company": "veroza.co",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479980644",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T02:16:10.780300+00:00",
+      "status": "sent"
+    },
+    "li-4481185389": {
+      "title": "Management Trainee Program (Jakarta Regency)",
+      "company": "Viction.id (Branch Sona Topas )",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481185389",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T02:16:12.425568+00:00",
+      "status": "sent"
+    },
+    "li-4481191048": {
+      "title": "Data Privacy Analyst",
+      "company": "PT Bank Sinarmas Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481191048",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T02:16:13.635823+00:00",
+      "status": "sent"
+    },
+    "li-4481193062": {
+      "title": "Management Trainee Program (Jakarta District)",
+      "company": "Viction.id",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481193062",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T02:16:14.954579+00:00",
+      "status": "sent"
+    },
+    "li-4481174609": {
+      "title": "Product Manager (Prepaid Card)",
+      "company": "The Convergence Project",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481174609",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T02:16:16.259876+00:00",
+      "status": "sent"
+    },
+    "li-4481174389": {
+      "title": "IT Business Analyst",
+      "company": "TechTiera Services Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481174389",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T02:16:17.518234+00:00",
+      "status": "sent"
+    },
+    "li-4481168963": {
+      "title": "Information Technology Auditor",
+      "company": "PT Bank Sinarmas Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481168963",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T02:16:19.432522+00:00",
       "status": "sent"
     }
   }
