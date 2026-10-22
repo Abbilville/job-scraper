@@ -1,115 +1,7 @@
 {
-  "last_updated": "2026-10-22T18:58:41.618828+00:00",
+  "last_updated": "2026-10-22T23:46:21.769154+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4478415020": {
-      "title": "Dotnet Developer",
-      "company": "LanceSoft, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478415020",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:08:52.139763+00:00",
-      "status": "sent"
-    },
-    "li-4478402488": {
-      "title": "Software Developer Mandarin Speaker",
-      "company": "PT Yonyou Network Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478402488",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:08:53.371640+00:00",
-      "status": "sent"
-    },
-    "li-4468397495": {
-      "title": "Jr. Full Stack Engineer",
-      "company": "Somethinc - BeautyHaul",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4468397495",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:08:54.666289+00:00",
-      "status": "sent"
-    },
-    "li-4478427034": {
-      "title": "Junior Springboot Developer",
-      "company": "PT IDstar Cipta Teknologi (IDstar)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478427034",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:08:55.977857+00:00",
-      "status": "sent"
-    },
-    "li-4478184914": {
-      "title": "Net Developer",
-      "company": "LanceSoft, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478184914",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:08:57.220355+00:00",
-      "status": "sent"
-    },
-    "li-4478413222": {
-      "title": "LifeAsia developer",
-      "company": "Accord Innovations",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478413222",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:08:58.647901+00:00",
-      "status": "sent"
-    },
-    "li-4478416060": {
-      "title": "Software Engineer Intern Mandarin Speaker",
-      "company": "PT Yonyou Network Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478416060",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:09:00.000556+00:00",
-      "status": "sent"
-    },
-    "li-4478409009": {
-      "title": "Golang Backend Developer",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478409009",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:09:01.260692+00:00",
-      "status": "sent"
-    },
-    "li-4478405356": {
-      "title": "NVIDIA AI Software Engineer (AI Data Center)",
-      "company": "Asiacruit",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478405356",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:09:02.517138+00:00",
-      "status": "sent"
-    },
-    "li-4476616709": {
-      "title": "Business Solutions Engineer",
-      "company": "Teleakses Solusindo",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476616709",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:09:03.871514+00:00",
-      "status": "sent"
-    },
-    "li-4476629135": {
-      "title": "Solution Consultant 2 (TELCO)",
-      "company": "Palo Alto Networks",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476629135",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:09:05.205813+00:00",
-      "status": "sent"
-    },
-    "li-4478405131": {
-      "title": "IT Security Consultant - Professional Service",
-      "company": "Packet Systems Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478405131",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:09:06.406246+00:00",
-      "status": "sent"
-    },
     "li-4476627781": {
       "title": "NVIDIA Certified SME – Technical Specialist (AI Data Center)",
       "company": "Asiacruit",
@@ -9000,6 +8892,114 @@
       "job_url": "https://www.linkedin.com/jobs/view/4403185322",
       "date_posted": "2026-10-22",
       "first_seen": "2026-10-22T18:58:41.618434+00:00",
+      "status": "sent"
+    },
+    "li-4481615676": {
+      "title": "SAP PS Consultant",
+      "company": "Accenture Southeast Asia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481615676",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T23:46:07.304437+00:00",
+      "status": "sent"
+    },
+    "li-4481630054": {
+      "title": "SAP Data Migration",
+      "company": "Accenture Southeast Asia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481630054",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T23:46:08.547262+00:00",
+      "status": "sent"
+    },
+    "li-4481630046": {
+      "title": "SAP FSCM Consultant",
+      "company": "Accenture Southeast Asia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481630046",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T23:46:09.800785+00:00",
+      "status": "sent"
+    },
+    "li-4481615670": {
+      "title": "SAP Signavio",
+      "company": "Accenture Southeast Asia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481615670",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T23:46:11.218590+00:00",
+      "status": "sent"
+    },
+    "li-4481619501": {
+      "title": "SAP SuccessFactors Consultant",
+      "company": "Accenture Southeast Asia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481619501",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T23:46:12.877542+00:00",
+      "status": "sent"
+    },
+    "li-4481612798": {
+      "title": "SAP Group Reporting",
+      "company": "Accenture Southeast Asia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481612798",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T23:46:14.319320+00:00",
+      "status": "sent"
+    },
+    "li-4481626150": {
+      "title": "SAP JVA (Joint Venture Accounting) Consultant",
+      "company": "Accenture Southeast Asia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481626150",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T23:46:15.582845+00:00",
+      "status": "sent"
+    },
+    "li-4481398418": {
+      "title": "TikTok Shop by Tokopedia - IP Campaign Manager, Campaign & Community (FMCG) - Indonesia",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481398418",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T23:46:16.864411+00:00",
+      "status": "sent"
+    },
+    "in-6460eaeae92b1a83": {
+      "title": "Release Engineer - Bandung, Indonesia",
+      "company": "NinjaOne",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=6460eaeae92b1a83",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T23:46:18.100998+00:00",
+      "status": "sent"
+    },
+    "li-4481616516": {
+      "title": "Product Manager (Banking)",
+      "company": "The Convergence Project",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481616516",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T23:46:19.357062+00:00",
+      "status": "sent"
+    },
+    "li-4440180699": {
+      "title": "Associate Managing Consultant – Deploy",
+      "company": "Mastercard",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4440180699",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T23:46:20.562342+00:00",
+      "status": "sent"
+    },
+    "li-4477985376": {
+      "title": "Residential Business Development Staff",
+      "company": "JAC Recruitment",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4477985376",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T23:46:21.768725+00:00",
       "status": "sent"
     }
   }
