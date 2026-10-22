@@ -1,178 +1,7 @@
 {
-  "last_updated": "2026-10-22T14:15:32.117139+00:00",
+  "last_updated": "2026-10-22T18:58:41.618828+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4479071497": {
-      "title": "TSO - After Sales Analyst - ITS Job Fair",
-      "company": "PT Astra International Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479071497",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-14T00:01:06.782987+00:00",
-      "status": "sent"
-    },
-    "in-8809cd06da5f6f69": {
-      "title": "Compliance Manager",
-      "company": "Kredivo Group",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=8809cd06da5f6f69",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-14T00:01:07.959652+00:00",
-      "status": "sent"
-    },
-    "li-4478182176": {
-      "title": "Security Compliance Strategist, Vendor Security",
-      "company": "Grab",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478182176",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-14T00:01:09.277347+00:00",
-      "status": "sent"
-    },
-    "li-4479070527": {
-      "title": "Corporate Communication & Management System Analyst - TSM",
-      "company": "PT Astra International Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479070527",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-14T00:01:10.639671+00:00",
-      "status": "sent"
-    },
-    "li-4479207580": {
-      "title": "Middle Data Engineer",
-      "company": "PT. Akhdani Reka Solusi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479207580",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-14T00:01:11.820330+00:00",
-      "status": "sent"
-    },
-    "li-4479094948": {
-      "title": "Android Developer",
-      "company": "Aleph-Labs",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479094948",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-14T00:01:13.005394+00:00",
-      "status": "sent"
-    },
-    "li-4479216185": {
-      "title": "Presales",
-      "company": "PT. Kairos Utama Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479216185",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-14T00:01:14.182952+00:00",
-      "status": "sent"
-    },
-    "li-4478162604": {
-      "title": "Field Sales  Laboratory Instrument (ANA)",
-      "company": "Mettler-Toledo International, Inc",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478162604",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-14T00:01:15.415599+00:00",
-      "status": "sent"
-    },
-    "in-1d06b70be8f86720": {
-      "title": "Junior Executive, Social Media & Content - Indonesia",
-      "company": "IIX Global",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=1d06b70be8f86720",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-14T00:01:16.571826+00:00",
-      "status": "sent"
-    },
-    "in-d2c430c687d168f4": {
-      "title": "Junior Graphic Designer - Indonesia",
-      "company": "IIX Global",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=d2c430c687d168f4",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-14T00:01:17.816393+00:00",
-      "status": "sent"
-    },
-    "li-4479056927": {
-      "title": "Manager, Executive Compensation & Board Advisory (ECBA) ,  Indonesia",
-      "company": "WTW",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479056927",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-14T00:01:19.091505+00:00",
-      "status": "sent"
-    },
-    "li-4476469906": {
-      "title": "Product Executive",
-      "company": "DKSH",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476469906",
-      "date_posted": "2026-10-13",
-      "first_seen": "2026-10-14T00:01:20.314806+00:00",
-      "status": "sent"
-    },
-    "li-4454481577": {
-      "title": "Policy & Methodology (FTP & ALCO)",
-      "company": "OCBC Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4454481577",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:08:46.372508+00:00",
-      "status": "rejected"
-    },
-    "in-a4761741313df8c6": {
-      "title": "Sr. Specialist Solutions Architect",
-      "company": "Databricks",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=a4761741313df8c6",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:08:46.372527+00:00",
-      "status": "rejected"
-    },
-    "li-4478416280": {
-      "title": "Global Product Line Manager - Mining Accessories",
-      "company": "Epiroc",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478416280",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:08:46.372532+00:00",
-      "status": "rejected"
-    },
-    "li-4479281369": {
-      "title": "Artificial Intelligence Specialist - TSO",
-      "company": "PT Astra International Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479281369",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:08:46.771237+00:00",
-      "status": "sent"
-    },
-    "li-4478431063": {
-      "title": "T&T Manager - Organization & Workforce Transformation - ID",
-      "company": "Deloitte",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478431063",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:08:48.111833+00:00",
-      "status": "sent"
-    },
-    "li-4471087511": {
-      "title": "Software Engineer",
-      "company": "Insignia Ventures Partners",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4471087511",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:08:49.444534+00:00",
-      "status": "sent"
-    },
-    "li-4478411493": {
-      "title": "Dotnet Developer",
-      "company": "MSBU Konsultan",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478411493",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:08:50.842917+00:00",
-      "status": "sent"
-    },
     "li-4478415020": {
       "title": "Dotnet Developer",
       "company": "LanceSoft, Inc.",
@@ -9000,6 +8829,177 @@
       "job_url": "https://www.linkedin.com/jobs/view/4481359361",
       "date_posted": "2026-10-22",
       "first_seen": "2026-10-22T14:15:32.116698+00:00",
+      "status": "sent"
+    },
+    "li-4465029514": {
+      "title": "Solution Architect Analyst - AID",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4465029514",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:19.746818+00:00",
+      "status": "rejected"
+    },
+    "li-4436181745": {
+      "title": "Financing Analytics & Modeling Division Head",
+      "company": "TechConnect",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4436181745",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:19.746845+00:00",
+      "status": "rejected"
+    },
+    "li-4436187652": {
+      "title": "Leaseback Marketing & Product Management Division Head",
+      "company": "TechConnect",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4436187652",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:19.746850+00:00",
+      "status": "rejected"
+    },
+    "li-4464519081": {
+      "title": "Sales Analytics Executive",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4464519081",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:20.396684+00:00",
+      "status": "sent"
+    },
+    "li-4481542298": {
+      "title": "Campus Hiring Malang - Business Strategic - PML",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481542298",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:21.605488+00:00",
+      "status": "sent"
+    },
+    "li-4385040602": {
+      "title": "TC - SOC Cybersecurity Consultant Manager",
+      "company": "EY",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4385040602",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:22.854515+00:00",
+      "status": "sent"
+    },
+    "li-4446306286": {
+      "title": "Data Scientist",
+      "company": "Tripledot Studios",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4446306286",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:24.099307+00:00",
+      "status": "sent"
+    },
+    "li-4481302356": {
+      "title": "DBA Engineer",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481302356",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:25.400048+00:00",
+      "status": "sent"
+    },
+    "li-4436194486": {
+      "title": "Cybersecurity Engineer",
+      "company": "TechConnect",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4436194486",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:26.749894+00:00",
+      "status": "sent"
+    },
+    "li-4453413462": {
+      "title": "Solution Consultant 2",
+      "company": "Palo Alto Networks",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4453413462",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:27.958111+00:00",
+      "status": "sent"
+    },
+    "li-4452575207": {
+      "title": "Business Development Advisor-Indonesia-Telco Industry",
+      "company": "Alibaba Cloud",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4452575207",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:29.180804+00:00",
+      "status": "sent"
+    },
+    "li-4463878968": {
+      "title": "GenAI Content Creator",
+      "company": "OLIVER | The Brandtech Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4463878968",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:32.459172+00:00",
+      "status": "sent"
+    },
+    "li-4437164282": {
+      "title": "FORECASTING",
+      "company": "Brink’s Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4437164282",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:33.732283+00:00",
+      "status": "sent"
+    },
+    "li-4481363516": {
+      "title": "Quality Control Specialist",
+      "company": "J&T Cargo Indonesia (PT Global Yimi Cargo)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481363516",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:34.998909+00:00",
+      "status": "sent"
+    },
+    "li-4481388774": {
+      "title": "Corporate Budget Officer",
+      "company": "RCTI (Rajawali Citra Televisi Indonesia)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481388774",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:36.219367+00:00",
+      "status": "sent"
+    },
+    "li-4481388073": {
+      "title": "UIUX Engineer",
+      "company": "MSBU Konsultan",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481388073",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:37.604093+00:00",
+      "status": "sent"
+    },
+    "li-4414206787": {
+      "title": "Monitoring",
+      "company": "Brink’s Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4414206787",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:38.975946+00:00",
+      "status": "sent"
+    },
+    "li-4436178901": {
+      "title": "SIEM (Security Information and Event Management) Administrator",
+      "company": "TechConnect",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4436178901",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:40.360337+00:00",
+      "status": "sent"
+    },
+    "li-4403185322": {
+      "title": "Monitoring ATM",
+      "company": "Brink’s Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4403185322",
+      "date_posted": "2026-10-22",
+      "first_seen": "2026-10-22T18:58:41.618434+00:00",
       "status": "sent"
     }
   }
