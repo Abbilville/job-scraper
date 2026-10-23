@@ -1,52 +1,7 @@
 {
-  "last_updated": "2026-10-22T23:46:21.769154+00:00",
+  "last_updated": "2026-10-23T02:22:00.980950+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4476627781": {
-      "title": "NVIDIA Certified SME – Technical Specialist (AI Data Center)",
-      "company": "Asiacruit",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476627781",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:09:07.720411+00:00",
-      "status": "sent"
-    },
-    "li-4478198906": {
-      "title": "NVIDIA Certified SME – Technical Specialist (AI Data Center)",
-      "company": "Asiacruit",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478198906",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:09:08.971835+00:00",
-      "status": "sent"
-    },
-    "li-4479281095": {
-      "title": "Field Service Engineer (Mandarin Speaker)",
-      "company": "Endress+Hauser Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479281095",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:09:10.177222+00:00",
-      "status": "sent"
-    },
-    "li-4478402491": {
-      "title": "(AWS) Cloud Engineer",
-      "company": "PT Amber Solusi Internasional",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478402491",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:09:11.440897+00:00",
-      "status": "sent"
-    },
-    "li-4478199635": {
-      "title": "Backend Developer",
-      "company": "Nityo Infotech Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478199635",
-      "date_posted": "2026-10-14",
-      "first_seen": "2026-10-14T08:09:12.726783+00:00",
-      "status": "sent"
-    },
     "li-4476633444": {
       "title": "NVIDIA AI Software Engineer (AI Data Center)",
       "company": "Asiacruit",
@@ -9000,6 +8955,51 @@
       "job_url": "https://www.linkedin.com/jobs/view/4477985376",
       "date_posted": "2026-10-22",
       "first_seen": "2026-10-22T23:46:21.768725+00:00",
+      "status": "sent"
+    },
+    "li-4481628879": {
+      "title": "Product Information Staff - Head Office",
+      "company": "monotaro.id",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481628879",
+      "date_posted": "2026-10-23",
+      "first_seen": "2026-10-23T02:21:56.964370+00:00",
+      "status": "rejected"
+    },
+    "li-4471580903": {
+      "title": "ERP Consultant Mandarin Speaker",
+      "company": "PT Yonyou Network Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4471580903",
+      "date_posted": "2026-10-23",
+      "first_seen": "2026-10-23T02:21:57.159501+00:00",
+      "status": "sent"
+    },
+    "li-4481633804": {
+      "title": "Project Controller (Urgent Hiring)",
+      "company": "Impactto",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481633804",
+      "date_posted": "2026-10-23",
+      "first_seen": "2026-10-23T02:21:58.390892+00:00",
+      "status": "sent"
+    },
+    "li-4481640369": {
+      "title": "CEO Office Intern",
+      "company": "Logisly",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481640369",
+      "date_posted": "2026-10-23",
+      "first_seen": "2026-10-23T02:21:59.621517+00:00",
+      "status": "sent"
+    },
+    "li-4481629680": {
+      "title": "CEO Office Manager",
+      "company": "Logisly",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481629680",
+      "date_posted": "2026-10-23",
+      "first_seen": "2026-10-23T02:22:00.980525+00:00",
       "status": "sent"
     }
   }
