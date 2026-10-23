@@ -1,34 +1,7 @@
 {
-  "last_updated": "2026-10-23T18:49:24.075582+00:00",
+  "last_updated": "2026-10-23T23:38:21.773058+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4478842946": {
-      "title": "Jr. Data Engineer - Insurance Industry",
-      "company": "Nityo Infotech Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478842946",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:07.253909+00:00",
-      "status": "sent"
-    },
-    "li-4478407773": {
-      "title": "Golang Backend Dev",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478407773",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:08.440998+00:00",
-      "status": "sent"
-    },
-    "li-4478826702": {
-      "title": "Fullstack (AI) Dev",
-      "company": "Accord Innovations",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478826702",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:09.550271+00:00",
-      "status": "sent"
-    },
     "li-4478827757": {
       "title": "Platform Engineer",
       "company": "Ruang Partners",
@@ -9000,6 +8973,33 @@
       "job_url": "https://www.linkedin.com/jobs/view/4361063087",
       "date_posted": "2026-10-23",
       "first_seen": "2026-10-23T18:49:24.075318+00:00",
+      "status": "sent"
+    },
+    "li-4481935792": {
+      "title": "Strategic Programs & AI Transformation Manager - Indonesia - GBS",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481935792",
+      "date_posted": "2026-10-23",
+      "first_seen": "2026-10-23T23:38:19.266920+00:00",
+      "status": "sent"
+    },
+    "li-4483165254": {
+      "title": "Android Developer",
+      "company": "CODE.ID",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4483165254",
+      "date_posted": "2026-10-23",
+      "first_seen": "2026-10-23T23:38:20.457519+00:00",
+      "status": "sent"
+    },
+    "li-4446042347": {
+      "title": "Cost Controller",
+      "company": "WSP in Canada",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4446042347",
+      "date_posted": "2026-10-23",
+      "first_seen": "2026-10-23T23:38:21.772771+00:00",
       "status": "sent"
     }
   }
