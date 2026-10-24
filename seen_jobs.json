@@ -1,133 +1,7 @@
 {
-  "last_updated": "2026-10-24T07:42:04.384529+00:00",
+  "last_updated": "2026-10-24T12:59:52.172167+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4478820996": {
-      "title": "DevOps",
-      "company": "PT IDstar Cipta Teknologi (IDstar)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478820996",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:23.013204+00:00",
-      "status": "sent"
-    },
-    "li-4477051548": {
-      "title": "Software Engineer",
-      "company": "JustBacked",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477051548",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:24.236023+00:00",
-      "status": "sent"
-    },
-    "li-4477057239": {
-      "title": "System Analyst",
-      "company": "Sonata Software",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477057239",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:25.446100+00:00",
-      "status": "sent"
-    },
-    "li-4477060658": {
-      "title": "AI Builder",
-      "company": "Mekari",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477060658",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:26.601825+00:00",
-      "status": "sent"
-    },
-    "li-4478853248": {
-      "title": "Apprenticeship - Data Analytics",
-      "company": "Prudential Indonesia (PT Prudential Life Assurance)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478853248",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:28.285846+00:00",
-      "status": "sent"
-    },
-    "li-4479791401": {
-      "title": "Anaplan Model Builder Manager",
-      "company": "PT Kapal Api Global",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479791401",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:29.459965+00:00",
-      "status": "sent"
-    },
-    "li-4478839667": {
-      "title": "ETL Developer",
-      "company": "Tvaksa Technologies Private Limited",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478839667",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:30.576240+00:00",
-      "status": "sent"
-    },
-    "li-4478842097": {
-      "title": "ODU Product Pricing & Revenue",
-      "company": "PT. Indosat Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478842097",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:31.918577+00:00",
-      "status": "sent"
-    },
-    "li-4467493566": {
-      "title": "UX Researcher",
-      "company": "Krom",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4467493566",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:33.054832+00:00",
-      "status": "sent"
-    },
-    "li-4479784254": {
-      "title": "Talent & Performance Management Analyst",
-      "company": "iForte Solusi Infotek",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479784254",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:34.177050+00:00",
-      "status": "sent"
-    },
-    "li-4478833340": {
-      "title": "ODU & IDU Sales Planning & Program",
-      "company": "PT. Indosat Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478833340",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:35.461110+00:00",
-      "status": "sent"
-    },
-    "li-4399154378": {
-      "title": "Merchandising & Planning Assistant Manager",
-      "company": "PT. Erajaya Swasembada, Tbk.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4399154378",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:36.623115+00:00",
-      "status": "sent"
-    },
-    "li-4471440339": {
-      "title": "B2B Channel Management (Digital Marketing)",
-      "company": "PT. Erajaya Swasembada, Tbk.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4471440339",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:37.859028+00:00",
-      "status": "sent"
-    },
-    "li-4468491866": {
-      "title": "Channel Management Specialist",
-      "company": "PT. Erajaya Swasembada, Tbk.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4468491866",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:39.135610+00:00",
-      "status": "sent"
-    },
     "li-4478826522": {
       "title": "AVP - S&D Product (Sales Execution Applications)",
       "company": "PT. Indosat Tbk",
@@ -9000,6 +8874,132 @@
       "job_url": "https://www.linkedin.com/jobs/view/4481687363",
       "date_posted": "2026-10-24",
       "first_seen": "2026-10-24T07:42:04.384113+00:00",
+      "status": "sent"
+    },
+    "li-4474727837": {
+      "title": "D365 F&O Sr Technical Consultant",
+      "company": "Avanade",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474727837",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T12:59:37.239718+00:00",
+      "status": "rejected"
+    },
+    "li-4474768360": {
+      "title": "Sr Officer-Digital Services Product Expert",
+      "company": "PT. Indosat Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474768360",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T12:59:37.239745+00:00",
+      "status": "rejected"
+    },
+    "li-4474749866": {
+      "title": "Associate Treasury Planning Manager",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474749866",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T12:59:37.720938+00:00",
+      "status": "sent"
+    },
+    "li-4457091877": {
+      "title": "DevOps & AI Analyst (Talent Pool)",
+      "company": "PT Chandra Asri Pacific Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4457091877",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T12:59:38.961383+00:00",
+      "status": "sent"
+    },
+    "li-4473362387": {
+      "title": "IT Application Intern",
+      "company": "Siemens",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473362387",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T12:59:40.335546+00:00",
+      "status": "sent"
+    },
+    "li-4466075081": {
+      "title": "Technical Service Representative",
+      "company": "Sherwin-Williams",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4466075081",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T12:59:41.603772+00:00",
+      "status": "sent"
+    },
+    "li-4437006185": {
+      "title": "Sales Application Engineer",
+      "company": "Siemens Energy",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4437006185",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T12:59:42.920337+00:00",
+      "status": "sent"
+    },
+    "li-4399136144": {
+      "title": "Financial Reporting&Analyst Team Leader",
+      "company": "UOB",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4399136144",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T12:59:44.182437+00:00",
+      "status": "sent"
+    },
+    "li-4469834430": {
+      "title": "CERT Analyst",
+      "company": "Group-IB",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4469834430",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T12:59:45.601949+00:00",
+      "status": "sent"
+    },
+    "li-4310164582": {
+      "title": "Syariah Actuary",
+      "company": "AIA Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4310164582",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T12:59:46.802595+00:00",
+      "status": "sent"
+    },
+    "li-4473140278": {
+      "title": "Manager, Production Finance - Indonesia",
+      "company": "Netflix",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473140278",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T12:59:48.158903+00:00",
+      "status": "sent"
+    },
+    "li-4482619548": {
+      "title": "Finance & Accounting Manager",
+      "company": "Winsee Optik",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482619548",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T12:59:49.383896+00:00",
+      "status": "sent"
+    },
+    "li-4455436502": {
+      "title": "Wholesale Banking & GM Comp Advisory Spc",
+      "company": "UOB",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4455436502",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T12:59:50.924986+00:00",
+      "status": "sent"
+    },
+    "li-4473162383": {
+      "title": "Proposal Specialist",
+      "company": "Johnson Controls",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473162383",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T12:59:52.171875+00:00",
       "status": "sent"
     }
   }
