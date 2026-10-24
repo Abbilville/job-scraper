@@ -1,25 +1,7 @@
 {
-  "last_updated": "2026-10-24T19:57:13.838003+00:00",
+  "last_updated": "2026-10-24T22:47:03.563699+00:00",
   "total_seen": 1000,
   "jobs": {
-    "in-f21183e66cba29db": {
-      "title": "Technical Program Manager",
-      "company": "TechConnect GmbH",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=f21183e66cba29db",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:07.245789+00:00",
-      "status": "sent"
-    },
-    "li-4478855968": {
-      "title": "Junior Java SpringBoot",
-      "company": "PT 360 Teknologi Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478855968",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:08.457762+00:00",
-      "status": "sent"
-    },
     "li-4478873331": {
       "title": "Data Platform Engineer",
       "company": "ASTRO",
@@ -9000,6 +8982,24 @@
       "job_url": "https://www.linkedin.com/jobs/view/4422301999",
       "date_posted": "2026-10-24",
       "first_seen": "2026-10-24T19:57:13.837794+00:00",
+      "status": "sent"
+    },
+    "li-4482662435": {
+      "title": "Integrated Media Manager",
+      "company": "Maker Lab",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482662435",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T22:47:02.460418+00:00",
+      "status": "sent"
+    },
+    "li-4482449647": {
+      "title": "NKAM - Banking & Retail",
+      "company": "PT XLSMART Telecom Sejahtera Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482449647",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T22:47:03.563496+00:00",
       "status": "sent"
     }
   }
