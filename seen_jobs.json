@@ -1,97 +1,7 @@
 {
-  "last_updated": "2026-10-24T17:42:42.809358+00:00",
+  "last_updated": "2026-10-24T19:57:13.838003+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4384884443": {
-      "title": "Data Scientist II - QuantumBlack, AI by McKinsey",
-      "company": "QuantumBlack, AI by McKinsey",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4384884443",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:48:54.267239+00:00",
-      "status": "sent"
-    },
-    "li-4427465173": {
-      "title": "Budgeting & Planning (B&P) - Health Planning (ShopeeFood)",
-      "company": "Shopee",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4427465173",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:48:55.698590+00:00",
-      "status": "sent"
-    },
-    "li-4422353707": {
-      "title": "Product Management (S&R&A&C - Promotion) - Sea Labs",
-      "company": "Sea",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4422353707",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:48:56.922195+00:00",
-      "status": "sent"
-    },
-    "li-4470949371": {
-      "title": "Analyst, Product Operations",
-      "company": "Traveloka",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4470949371",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:48:58.110929+00:00",
-      "status": "sent"
-    },
-    "li-4419014334": {
-      "title": "Strategic Project - Operations, Warehouse",
-      "company": "Shopee",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4419014334",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:48:59.376001+00:00",
-      "status": "sent"
-    },
-    "li-4460612060": {
-      "title": "FMCG Home Supplies Account Manager Project Intern (TikTok Shop by Tokopedia) - 2026 Start",
-      "company": "TikTok",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4460612060",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:00.620378+00:00",
-      "status": "sent"
-    },
-    "li-4418893445": {
-      "title": "Strategic Project - Regional Buyer Experience",
-      "company": "Shopee",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4418893445",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:01.896042+00:00",
-      "status": "sent"
-    },
-    "li-4437380682": {
-      "title": "Regional Content & Creator Experience",
-      "company": "Shopee",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4437380682",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:03.157102+00:00",
-      "status": "sent"
-    },
-    "in-302d74e8852aaf6b": {
-      "title": "Full Stack Software Engineer",
-      "company": "PT Intikom Berlian Mustika",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=302d74e8852aaf6b",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:04.478712+00:00",
-      "status": "sent"
-    },
-    "in-a3fdc340595f2a73": {
-      "title": "Software Development Engineer in Test",
-      "company": "PT. Inovasi Anak Indonesia - PARKEE",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=a3fdc340595f2a73",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:06.027866+00:00",
-      "status": "sent"
-    },
     "in-f21183e66cba29db": {
       "title": "Technical Program Manager",
       "company": "TechConnect GmbH",
@@ -9000,6 +8910,96 @@
       "job_url": "https://www.linkedin.com/jobs/view/4482363016",
       "date_posted": "2026-10-24",
       "first_seen": "2026-10-24T17:42:42.809163+00:00",
+      "status": "sent"
+    },
+    "li-4399534607": {
+      "title": "Manager - Technology Consulting (Financial Services)",
+      "company": "EY",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4399534607",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T19:57:02.347908+00:00",
+      "status": "sent"
+    },
+    "li-4482662151": {
+      "title": "Management Trainee Officer (Area Jakarta)",
+      "company": "PT. Victory International (Branch Satrio Tower)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482662151",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T19:57:03.836030+00:00",
+      "status": "sent"
+    },
+    "li-4482643700": {
+      "title": "CU ODM Specialist",
+      "company": "Ericsson",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482643700",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T19:57:05.028904+00:00",
+      "status": "sent"
+    },
+    "li-4464829357": {
+      "title": "Business Controller",
+      "company": "ib vogt GmbH",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4464829357",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T19:57:06.342304+00:00",
+      "status": "sent"
+    },
+    "li-4482642780": {
+      "title": "CU ODM Specialist",
+      "company": "Ericsson",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482642780",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T19:57:07.616472+00:00",
+      "status": "sent"
+    },
+    "li-4482368981": {
+      "title": "Management Trainee",
+      "company": "PT. Victory International (Branch Satrio Tower)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482368981",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T19:57:08.872629+00:00",
+      "status": "sent"
+    },
+    "li-4413954375": {
+      "title": "Monitoring",
+      "company": "Brink’s Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4413954375",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T19:57:10.119804+00:00",
+      "status": "sent"
+    },
+    "li-4482664101": {
+      "title": "IT Infrastructure & Security Engineer",
+      "company": "Pintarnya",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482664101",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T19:57:11.300203+00:00",
+      "status": "sent"
+    },
+    "li-4391540926": {
+      "title": "Monitoring ATM",
+      "company": "Brink’s Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4391540926",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T19:57:12.594201+00:00",
+      "status": "sent"
+    },
+    "li-4422301999": {
+      "title": "Customer Service Agent",
+      "company": "Brink’s Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4422301999",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T19:57:13.837794+00:00",
       "status": "sent"
     }
   }
