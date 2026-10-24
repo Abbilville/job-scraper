@@ -1,52 +1,7 @@
 {
-  "last_updated": "2026-10-24T02:18:43.559952+00:00",
+  "last_updated": "2026-10-24T07:42:04.384529+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4477062274": {
-      "title": "Outcome manager",
-      "company": "devx AI labs",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477062274",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:17.033599+00:00",
-      "status": "sent"
-    },
-    "li-4478837547": {
-      "title": "Pre-Sales Executive / Pre-Sales Specialist (Cyber Security & IT Solutions) - Jakarta",
-      "company": "ARBEIT GROUP INC",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478837547",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:18.305299+00:00",
-      "status": "sent"
-    },
-    "li-4478836338": {
-      "title": "Presales Officer",
-      "company": "Protergo",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478836338",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:19.456141+00:00",
-      "status": "sent"
-    },
-    "li-4478449618": {
-      "title": "Golang Backend Dev",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478449618",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:20.688341+00:00",
-      "status": "sent"
-    },
-    "li-4478863054": {
-      "title": "Cloud Engineer AWS",
-      "company": "PT Amber Solusi Internasional",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478863054",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:21.868627+00:00",
-      "status": "sent"
-    },
     "li-4478820996": {
       "title": "DevOps",
       "company": "PT IDstar Cipta Teknologi (IDstar)",
@@ -9000,6 +8955,51 @@
       "job_url": "https://id.indeed.com/viewjob?jk=3b50abadc8b38db1",
       "date_posted": "2026-10-24",
       "first_seen": "2026-10-24T02:18:43.559454+00:00",
+      "status": "sent"
+    },
+    "li-4482396839": {
+      "title": "Full-Stack Developer",
+      "company": "Spectrum Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482396839",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T07:41:59.265506+00:00",
+      "status": "sent"
+    },
+    "li-4482376186": {
+      "title": "Data Analyst (can join ASAP)",
+      "company": "Diksha Technologies",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482376186",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T07:42:00.610516+00:00",
+      "status": "sent"
+    },
+    "li-4482389625": {
+      "title": "Finance Manager",
+      "company": "Prambors Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482389625",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T07:42:01.905167+00:00",
+      "status": "sent"
+    },
+    "li-4481023373": {
+      "title": "BRAND EXECUTIVE",
+      "company": "International Beauty Products Ltd.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481023373",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T07:42:03.173416+00:00",
+      "status": "sent"
+    },
+    "li-4481687363": {
+      "title": "Information Technology Operations",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481687363",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T07:42:04.384113+00:00",
       "status": "sent"
     }
   }
