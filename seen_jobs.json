@@ -1,52 +1,7 @@
 {
-  "last_updated": "2026-10-23T23:38:21.773058+00:00",
+  "last_updated": "2026-10-24T02:18:43.559952+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4478827757": {
-      "title": "Platform Engineer",
-      "company": "Ruang Partners",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478827757",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:10.937229+00:00",
-      "status": "sent"
-    },
-    "li-4477041879": {
-      "title": "Salesforce Developer",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477041879",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:12.199488+00:00",
-      "status": "sent"
-    },
-    "li-4478839762": {
-      "title": ".NET Developer (Big Data ETL)",
-      "company": "ADI Consulting Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478839762",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:13.311209+00:00",
-      "status": "sent"
-    },
-    "li-4478833925": {
-      "title": "Presales Engineer - CybeSecurity Solution",
-      "company": "PT. Nusa Network Prakarsa",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478833925",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:14.501635+00:00",
-      "status": "sent"
-    },
-    "li-4466814912": {
-      "title": "Application Engineer",
-      "company": "McEasy",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4466814912",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:15.775572+00:00",
-      "status": "sent"
-    },
     "li-4477062274": {
       "title": "Outcome manager",
       "company": "devx AI labs",
@@ -9000,6 +8955,51 @@
       "job_url": "https://www.linkedin.com/jobs/view/4446042347",
       "date_posted": "2026-10-23",
       "first_seen": "2026-10-23T23:38:21.772771+00:00",
+      "status": "sent"
+    },
+    "li-4482323555": {
+      "title": "Junior Back End Developer (java spring boot)",
+      "company": "PT IDstar Cipta Teknologi (IDstar)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482323555",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T02:18:38.290385+00:00",
+      "status": "sent"
+    },
+    "li-4476297207": {
+      "title": "Sales Engineer",
+      "company": "AZO Ltd.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476297207",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T02:18:39.568740+00:00",
+      "status": "sent"
+    },
+    "li-4482333522": {
+      "title": "Finance Manager",
+      "company": "INTAV",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482333522",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T02:18:40.704637+00:00",
+      "status": "sent"
+    },
+    "li-4481662927": {
+      "title": "Management Trainee Program (Jakarta Regency)",
+      "company": "Viction.id",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4481662927",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T02:18:42.402313+00:00",
+      "status": "sent"
+    },
+    "in-3b50abadc8b38db1": {
+      "title": "Sales Team Leader",
+      "company": "VIFX Jakarta Sudirman",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=3b50abadc8b38db1",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T02:18:43.559454+00:00",
       "status": "sent"
     }
   }
