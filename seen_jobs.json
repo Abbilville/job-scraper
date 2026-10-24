@@ -1,115 +1,7 @@
 {
-  "last_updated": "2026-10-24T12:59:52.172167+00:00",
+  "last_updated": "2026-10-24T17:42:42.809358+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4478826522": {
-      "title": "AVP - S&D Product (Sales Execution Applications)",
-      "company": "PT. Indosat Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478826522",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:40.405418+00:00",
-      "status": "sent"
-    },
-    "li-4478840189": {
-      "title": "Product & Channel Development ODU & IDU",
-      "company": "PT. Indosat Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478840189",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:41.585441+00:00",
-      "status": "sent"
-    },
-    "li-4436094417": {
-      "title": "Merchandiser",
-      "company": "PT. Erajaya Swasembada, Tbk.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4436094417",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:42.969483+00:00",
-      "status": "sent"
-    },
-    "li-4478839873": {
-      "title": "Business Analyst - Treasury Banking",
-      "company": "PT Pronata Data Insani",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478839873",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:44.123386+00:00",
-      "status": "sent"
-    },
-    "li-4478851345": {
-      "title": "IT Business Analyst",
-      "company": "TechTiera Services Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478851345",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:45.249227+00:00",
-      "status": "sent"
-    },
-    "li-4478850332": {
-      "title": "IT Business Analyst",
-      "company": "TechTiera Services Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478850332",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:46.550626+00:00",
-      "status": "sent"
-    },
-    "li-4478860079": {
-      "title": "System Analyst - Insurance Project",
-      "company": "NTT DATA, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478860079",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:47.766858+00:00",
-      "status": "sent"
-    },
-    "li-4478189622": {
-      "title": "Odoo Functional Consultant",
-      "company": "PT. Ditama Teknologi Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478189622",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:49.666814+00:00",
-      "status": "sent"
-    },
-    "li-4478833781": {
-      "title": "SAP FICO",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478833781",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T07:51:50.851563+00:00",
-      "status": "sent"
-    },
-    "li-4468994903": {
-      "title": "Network Technical Architect",
-      "company": "NTT DATA, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4468994903",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:48:52.716594+00:00",
-      "status": "rejected"
-    },
-    "li-4479803598": {
-      "title": "Index Universal Life (IUL) Product Consultant",
-      "company": "Outsized",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479803598",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:48:52.716614+00:00",
-      "status": "rejected"
-    },
-    "li-4478870465": {
-      "title": "Software Engineer II ( GRAND )",
-      "company": "tiket.com",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478870465",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:48:53.082861+00:00",
-      "status": "sent"
-    },
     "li-4384884443": {
       "title": "Data Scientist II - QuantumBlack, AI by McKinsey",
       "company": "QuantumBlack, AI by McKinsey",
@@ -9000,6 +8892,114 @@
       "job_url": "https://www.linkedin.com/jobs/view/4473162383",
       "date_posted": "2026-10-24",
       "first_seen": "2026-10-24T12:59:52.171875+00:00",
+      "status": "sent"
+    },
+    "li-4409957165": {
+      "title": "Fullstack Engineer - Collection (SDE 2)",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4409957165",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T17:42:29.607003+00:00",
+      "status": "sent"
+    },
+    "li-4446728887": {
+      "title": "QA Engineer (SDE 1) - B2B Team",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4446728887",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T17:42:30.828062+00:00",
+      "status": "sent"
+    },
+    "li-4437993275": {
+      "title": "Engineering Manager - Internal Tools (SDE 5)",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4437993275",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T17:42:31.990687+00:00",
+      "status": "sent"
+    },
+    "li-4465823544": {
+      "title": "Technical Account Manager, ES – APJC - ASEAN (Indonesia)",
+      "company": "Amazon Web Services (AWS)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4465823544",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T17:42:33.206472+00:00",
+      "status": "sent"
+    },
+    "li-4482643612": {
+      "title": "RPA Developer Specialist",
+      "company": "PT IDstar Cipta Teknologi (IDstar)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482643612",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T17:42:34.371033+00:00",
+      "status": "sent"
+    },
+    "li-4482636811": {
+      "title": "DevOps Engineer",
+      "company": "PT IDstar Cipta Teknologi (IDstar)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482636811",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T17:42:35.632919+00:00",
+      "status": "sent"
+    },
+    "li-4366112460": {
+      "title": "Data Scientist (Risk Modeling) Executive Monee Credit",
+      "company": "Monee",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4366112460",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T17:42:36.796824+00:00",
+      "status": "sent"
+    },
+    "li-4456384690": {
+      "title": "Solutions Engineer",
+      "company": "Cisco",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4456384690",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T17:42:38.050222+00:00",
+      "status": "sent"
+    },
+    "li-4453862770": {
+      "title": "Partner Development Manager-Jakarta",
+      "company": "Alibaba Cloud",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4453862770",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T17:42:39.233732+00:00",
+      "status": "sent"
+    },
+    "li-4438599029": {
+      "title": "Territory Sales Manager - Data Centre",
+      "company": "Victaulic",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4438599029",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T17:42:40.471698+00:00",
+      "status": "sent"
+    },
+    "li-4464222583": {
+      "title": "Fullstack Developer",
+      "company": "NTT DATA, Inc.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4464222583",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T17:42:41.638273+00:00",
+      "status": "sent"
+    },
+    "li-4482363016": {
+      "title": "Assistant to COO – Data Analytics & AI Digitalization (Mandarin Speaker)",
+      "company": "MOMOYO INDONESIA",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482363016",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-24T17:42:42.809163+00:00",
       "status": "sent"
     }
   }
