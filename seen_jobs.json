@@ -1,52 +1,7 @@
 {
-  "last_updated": "2026-10-25T20:15:05.263775+00:00",
+  "last_updated": "2026-10-25T22:54:25.071364+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4417885218": {
-      "title": "Strategy & Operations, SPX Express",
-      "company": "SPX Express",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4417885218",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T18:48:02.540028+00:00",
-      "status": "sent"
-    },
-    "li-4479858018": {
-      "title": "UX Researcher",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479858018",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T18:48:03.825420+00:00",
-      "status": "sent"
-    },
-    "li-4479836942": {
-      "title": "Technical Support Officer",
-      "company": "Cermati Fintech Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479836942",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T18:48:05.071258+00:00",
-      "status": "sent"
-    },
-    "li-4479856146": {
-      "title": "IT Support Officer",
-      "company": "Cermati Fintech Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479856146",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T18:48:06.348582+00:00",
-      "status": "sent"
-    },
-    "li-4453089779": {
-      "title": "MONITORING",
-      "company": "Brink’s Inc",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4453089779",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T18:48:07.764093+00:00",
-      "status": "sent"
-    },
     "li-4477339165": {
       "title": "Data Protection Governance Staff",
       "company": "PT BCA Finance",
@@ -9000,6 +8955,51 @@
       "job_url": "https://www.linkedin.com/jobs/view/4483387798",
       "date_posted": "2026-10-25",
       "first_seen": "2026-10-25T20:15:05.263600+00:00",
+      "status": "sent"
+    },
+    "li-4483512156": {
+      "title": "JF ITB - After Sales Consultant - UT Trainee",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4483512156",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-25T22:54:19.775203+00:00",
+      "status": "sent"
+    },
+    "li-4483391911": {
+      "title": "JF ITB - Business Consultant Trainee - UT Trainee",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4483391911",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-25T22:54:21.064589+00:00",
+      "status": "sent"
+    },
+    "li-4483503676": {
+      "title": "JF ITB - United Tractors Intern Pool - Magang Kemnaker - UT Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4483503676",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-25T22:54:22.562524+00:00",
+      "status": "sent"
+    },
+    "li-4482731825": {
+      "title": "Reward & Performance Management - GSI",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482731825",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-25T22:54:23.806551+00:00",
+      "status": "sent"
+    },
+    "li-4483511257": {
+      "title": "JF ITB - United Tractors Intern Pool - AIF & Harmonika - UT Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4483511257",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-25T22:54:25.071157+00:00",
       "status": "sent"
     }
   }
