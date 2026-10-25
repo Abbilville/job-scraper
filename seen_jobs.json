@@ -1,52 +1,7 @@
 {
-  "last_updated": "2026-10-25T02:05:31.791325+00:00",
+  "last_updated": "2026-10-25T07:53:49.666501+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4478860104": {
-      "title": "Data Engineer",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478860104",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:14.873304+00:00",
-      "status": "sent"
-    },
-    "li-4478864507": {
-      "title": "NVIDIA AI Software Engineer",
-      "company": "VyntraPro Innovations",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478864507",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:16.099291+00:00",
-      "status": "sent"
-    },
-    "li-4443133153": {
-      "title": "System Development Support Consultant",
-      "company": "ABeam Consulting Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4443133153",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:17.316160+00:00",
-      "status": "sent"
-    },
-    "li-4479109364": {
-      "title": "( Talent Bank IT ) ETL Dev / Data Engineerr.",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479109364",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:18.507504+00:00",
-      "status": "sent"
-    },
-    "li-4478853552": {
-      "title": "DevOps Engineer",
-      "company": "AVOWS INFO SOLUTIONS PRIVATE LIMITED",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478853552",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:19.693153+00:00",
-      "status": "sent"
-    },
     "li-4478837588": {
       "title": "Microsoft Copilot Specialist",
       "company": "BIT - Barito Technologies Group",
@@ -9000,6 +8955,51 @@
       "job_url": "https://www.linkedin.com/jobs/view/4482667615",
       "date_posted": "2026-10-25",
       "first_seen": "2026-10-25T02:05:31.791179+00:00",
+      "status": "sent"
+    },
+    "li-4482689047": {
+      "title": "Fullstack (Website Enhancement)",
+      "company": "TechTiera Services Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482689047",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-25T07:53:44.674932+00:00",
+      "status": "sent"
+    },
+    "li-4483331495": {
+      "title": "IT Infrastructure/DevOps",
+      "company": "PT Asuransi Digital Bersama Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4483331495",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-25T07:53:45.827961+00:00",
+      "status": "sent"
+    },
+    "li-4482670739": {
+      "title": "Data Analyst (Google Cloud Platform)",
+      "company": "Diksha Technologies",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482670739",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-25T07:53:47.166694+00:00",
+      "status": "sent"
+    },
+    "li-4482653393": {
+      "title": "Graduate Management Trainee (Area Jakarta)",
+      "company": "Vplus Global Jakarta",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482653393",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-25T07:53:48.351422+00:00",
+      "status": "sent"
+    },
+    "li-4477920045": {
+      "title": "SaaS Account manager (Customer Success)",
+      "company": "KANNA",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4477920045",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-25T07:53:49.666322+00:00",
       "status": "sent"
     }
   }
