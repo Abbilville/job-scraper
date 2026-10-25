@@ -1,43 +1,7 @@
 {
-  "last_updated": "2026-10-24T22:47:03.563699+00:00",
+  "last_updated": "2026-10-25T02:05:31.791325+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4478873331": {
-      "title": "Data Platform Engineer",
-      "company": "ASTRO",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478873331",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:09.840396+00:00",
-      "status": "sent"
-    },
-    "li-4478854914": {
-      "title": "Full Stack Engineer",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478854914",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:11.154223+00:00",
-      "status": "sent"
-    },
-    "li-4479807073": {
-      "title": "Full-Stack Web Developer Intern",
-      "company": "INNOCEAN Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479807073",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:12.436585+00:00",
-      "status": "sent"
-    },
-    "li-4479811368": {
-      "title": "AI Engineer [2026 Graduates] - Indonesia",
-      "company": "Xingyun Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479811368",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T13:49:13.692903+00:00",
-      "status": "sent"
-    },
     "li-4478860104": {
       "title": "Data Engineer",
       "company": "Indocyber Global Teknologi, PT",
@@ -9000,6 +8964,42 @@
       "job_url": "https://www.linkedin.com/jobs/view/4482449647",
       "date_posted": "2026-10-24",
       "first_seen": "2026-10-24T22:47:03.563496+00:00",
+      "status": "sent"
+    },
+    "li-4483357679": {
+      "title": "GTM - Regional Scientific Partnerships and Lab Operations Manager (KLI-97)",
+      "company": "KitaLulus",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4483357679",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-25T02:05:28.029933+00:00",
+      "status": "sent"
+    },
+    "in-85d60847d135fe22": {
+      "title": "DevOps Engineer",
+      "company": "VELZI.AI LIMITED",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=85d60847d135fe22",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-25T02:05:29.327078+00:00",
+      "status": "sent"
+    },
+    "li-4482645962": {
+      "title": "Data Analyst (Middle Level)",
+      "company": "Diksha Technologies",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482645962",
+      "date_posted": "2026-10-24",
+      "first_seen": "2026-10-25T02:05:30.530180+00:00",
+      "status": "sent"
+    },
+    "li-4482667615": {
+      "title": "Management Trainee Program (Jakarta Selatan)",
+      "company": "Viction.id (Branch Sona Topas )",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482667615",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-25T02:05:31.791179+00:00",
       "status": "sent"
     }
   }
