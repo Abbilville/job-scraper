@@ -1,34 +1,7 @@
 {
-  "last_updated": "2026-10-25T17:59:32.654564+00:00",
+  "last_updated": "2026-10-25T20:15:05.263775+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4449853722": {
-      "title": "Associate Manager, Sales Analysis",
-      "company": "SC Johnson",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4449853722",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T18:47:58.673462+00:00",
-      "status": "sent"
-    },
-    "li-4453091763": {
-      "title": "FORECASTING",
-      "company": "Brink’s Inc",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4453091763",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T18:47:59.982776+00:00",
-      "status": "sent"
-    },
-    "li-4453076914": {
-      "title": "AMS Performance Staff",
-      "company": "Brink’s Inc",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4453076914",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T18:48:01.293366+00:00",
-      "status": "sent"
-    },
     "li-4417885218": {
       "title": "Strategy & Operations, SPX Express",
       "company": "SPX Express",
@@ -9000,6 +8973,33 @@
       "job_url": "https://www.linkedin.com/jobs/view/4457523771",
       "date_posted": "2026-10-25",
       "first_seen": "2026-10-25T17:59:32.654367+00:00",
+      "status": "sent"
+    },
+    "li-4423769626": {
+      "title": "Budgeting & Planning - Strategic Driver Planning (ShopeeFood)",
+      "company": "Shopee",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4423769626",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-25T20:15:02.849688+00:00",
+      "status": "sent"
+    },
+    "li-4482906112": {
+      "title": "Business Development Engineer Trainee",
+      "company": "Eonchemicals Putra",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482906112",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-25T20:15:04.024028+00:00",
+      "status": "sent"
+    },
+    "li-4483387798": {
+      "title": "Customer Success Operations Intern",
+      "company": "Kinobi AI",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4483387798",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-25T20:15:05.263600+00:00",
       "status": "sent"
     }
   }
