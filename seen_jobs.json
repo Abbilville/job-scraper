@@ -1,160 +1,7 @@
 {
-  "last_updated": "2026-10-25T22:54:25.071364+00:00",
+  "last_updated": "2026-10-26T02:08:24.050922+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4477339165": {
-      "title": "Data Protection Governance Staff",
-      "company": "PT BCA Finance",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477339165",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:06.302112+00:00",
-      "status": "sent"
-    },
-    "in-40a0ee6c63ba731b": {
-      "title": "IT Technician / Engineer",
-      "company": "Asia Technology Solutions",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=40a0ee6c63ba731b",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:07.600293+00:00",
-      "status": "sent"
-    },
-    "li-4479159632": {
-      "title": "Technology Manager (App)",
-      "company": "Tentang Anak",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479159632",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:08.788464+00:00",
-      "status": "sent"
-    },
-    "li-4471622731": {
-      "title": "Tencent Cloud–Regional Product Operations Specialist (Southeast Asia）",
-      "company": "Tencent",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4471622731",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:10.446642+00:00",
-      "status": "sent"
-    },
-    "li-4479171376": {
-      "title": "Risk Management Analyst - Zurich Asuransi Indonesia",
-      "company": "Zurich Insurance",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479171376",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:11.607505+00:00",
-      "status": "sent"
-    },
-    "li-4479135606": {
-      "title": "E-Commerce Specialist (Amazon Shopify Rakuten Tmall Shopee) for California Sports Sunglass Brand (Cycling, Baseball, Padel)",
-      "company": "SUPACAZ",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479135606",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:12.826115+00:00",
-      "status": "sent"
-    },
-    "li-4479169033": {
-      "title": "Finance Manager",
-      "company": "VKTR",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479169033",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:14.043776+00:00",
-      "status": "sent"
-    },
-    "li-4480141410": {
-      "title": "Performance Marketing Partner (Remote)",
-      "company": "MonetizeMore",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480141410",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:15.241641+00:00",
-      "status": "sent"
-    },
-    "li-4479126894": {
-      "title": "Digital Advertising Specialist for California Sports Sunglass Brand (Cycling, Baseball, Padel)",
-      "company": "SUPACAZ",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479126894",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:16.582531+00:00",
-      "status": "sent"
-    },
-    "li-4477320046": {
-      "title": "Trade Marketing Manager - MTI and Traditional Trade",
-      "company": "PepsiCo",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477320046",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:18.764796+00:00",
-      "status": "sent"
-    },
-    "li-4477313372": {
-      "title": "Quaker Trade Marketing Manager",
-      "company": "PepsiCo",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477313372",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:20.225778+00:00",
-      "status": "sent"
-    },
-    "li-4480145563": {
-      "title": "Cash Operations Analyst (6-Month Maternity Cover) -",
-      "company": "JPMorganChase",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480145563",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:21.508961+00:00",
-      "status": "sent"
-    },
-    "li-4480174059": {
-      "title": "IT System Analyst",
-      "company": "CODE.ID",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480174059",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:22.719330+00:00",
-      "status": "sent"
-    },
-    "li-4440189402": {
-      "title": "Managing Consultant, Advisor and Consulting Service, Deploy (Acquiring)",
-      "company": "Mastercard",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4440189402",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:23.953556+00:00",
-      "status": "sent"
-    },
-    "li-4477316351": {
-      "title": "A400M Flight Operations Specialist",
-      "company": "Airbus",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477316351",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:25.212603+00:00",
-      "status": "sent"
-    },
-    "li-4480153923": {
-      "title": "Cyber Security Operations & Analyst",
-      "company": "Bumi Amartha Teknologi Mandiri",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480153923",
-      "date_posted": "2026-10-15",
-      "first_seen": "2026-10-15T23:24:26.502331+00:00",
-      "status": "sent"
-    },
-    "li-4479310119": {
-      "title": "ERM Risk Specialist – Multi-Finance (Indonesia) - Global Payment",
-      "company": "ByteDance",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479310119",
-      "date_posted": "2026-10-16",
-      "first_seen": "2026-10-16T02:01:45.940888+00:00",
-      "status": "sent"
-    },
     "li-4479193661": {
       "title": "Full Stack Developer (Golang ReactJS)",
       "company": "Binar Academy",
@@ -9000,6 +8847,159 @@
       "job_url": "https://www.linkedin.com/jobs/view/4483511257",
       "date_posted": "2026-10-25",
       "first_seen": "2026-10-25T22:54:25.071157+00:00",
+      "status": "sent"
+    },
+    "li-4482697676": {
+      "title": "Software Engineer - C# .Net",
+      "company": "PT. Intikom Berlian Mustika",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482697676",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:01.664648+00:00",
+      "status": "sent"
+    },
+    "li-4482903593": {
+      "title": "AI/ML Engineer",
+      "company": "PT. Adi Data Informatika",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482903593",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:03.031781+00:00",
+      "status": "sent"
+    },
+    "li-4482903552": {
+      "title": "Back End Developer (Java Spring Boot)",
+      "company": "Binar Academy",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482903552",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:06.241433+00:00",
+      "status": "sent"
+    },
+    "li-4482694925": {
+      "title": "(AWS) Cloud Engineer",
+      "company": "PT Amber Solusi Internasional",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482694925",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:07.462537+00:00",
+      "status": "sent"
+    },
+    "li-4482682881": {
+      "title": "Consultor de Inteligencia Artificial",
+      "company": "daypass.com",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482682881",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:08.995037+00:00",
+      "status": "sent"
+    },
+    "li-4482694758": {
+      "title": "IT Business Analyst – SAP Integration",
+      "company": "Binar Academy",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482694758",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:10.359159+00:00",
+      "status": "sent"
+    },
+    "li-4482916161": {
+      "title": "ERP Functional -Manufacturing",
+      "company": "PT. Nimbus Dinamis Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482916161",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:11.550303+00:00",
+      "status": "sent"
+    },
+    "li-4482900603": {
+      "title": "Product Manager (Acquiring)",
+      "company": "The Convergence Project",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482900603",
+      "date_posted": "2026-10-25",
+      "first_seen": "2026-10-26T02:08:12.811007+00:00",
+      "status": "sent"
+    },
+    "li-4479870051": {
+      "title": "Business Partner",
+      "company": "veroza.co",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479870051",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:14.136337+00:00",
+      "status": "sent"
+    },
+    "li-4483506938": {
+      "title": "Financial Planning and Analysis Manager",
+      "company": "Bank Saqu",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4483506938",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:15.370634+00:00",
+      "status": "sent"
+    },
+    "li-4482693948": {
+      "title": "Cost Control Specialist",
+      "company": "About All Day",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482693948",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:16.577317+00:00",
+      "status": "sent"
+    },
+    "li-4483512378": {
+      "title": "Internship, Strategy and Planning",
+      "company": "Bank Saqu",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4483512378",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:17.861207+00:00",
+      "status": "sent"
+    },
+    "li-4482695870": {
+      "title": "E-commerce Marketing Leader (HO)",
+      "company": "TCL INDONESIA",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482695870",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:19.119015+00:00",
+      "status": "sent"
+    },
+    "li-4482695905": {
+      "title": "Management Trainee Program (Jakarta Sudirman)",
+      "company": "Viction.id",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482695905",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:20.336378+00:00",
+      "status": "sent"
+    },
+    "li-4483523160": {
+      "title": "GM Digital Product",
+      "company": "Confidential",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4483523160",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:21.545825+00:00",
+      "status": "sent"
+    },
+    "li-4482692940": {
+      "title": "General Manager – Digital Product",
+      "company": "Binar Academy",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482692940",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:22.842456+00:00",
+      "status": "sent"
+    },
+    "li-4482699863": {
+      "title": "Management Trainee Program (Area Jakarta)",
+      "company": "Viction.id (Branch Sona Topas )",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4482699863",
+      "date_posted": "2026-10-26",
+      "first_seen": "2026-10-26T02:08:24.050759+00:00",
       "status": "sent"
     }
   }
