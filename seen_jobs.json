@@ -1,106 +1,7 @@
 {
-  "last_updated": "2026-10-27T19:54:07.826582+00:00",
+  "last_updated": "2026-10-28T00:08:31.843197+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4475529840": {
-      "title": "Game Designer (LiveOps Specialist)",
-      "company": "Firerock Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475529840",
-      "date_posted": "2026-10-19",
-      "first_seen": "2026-10-19T08:16:30.051834+00:00",
-      "status": "sent"
-    },
-    "li-4479974219": {
-      "title": "Finance Data Intern",
-      "company": "Himalaya Wellness Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479974219",
-      "date_posted": "2026-10-19",
-      "first_seen": "2026-10-19T08:16:31.168683+00:00",
-      "status": "sent"
-    },
-    "li-4478255106": {
-      "title": "Corporate Strategy - Group Service (Talent Pool)",
-      "company": "Seven Retail",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478255106",
-      "date_posted": "2026-10-19",
-      "first_seen": "2026-10-19T08:16:32.281487+00:00",
-      "status": "sent"
-    },
-    "li-4479945260": {
-      "title": "Data Engineer",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479945260",
-      "date_posted": "2026-10-19",
-      "first_seen": "2026-10-19T08:16:33.555291+00:00",
-      "status": "sent"
-    },
-    "li-4479947746": {
-      "title": "Commercial Strategy & Planning Specialist",
-      "company": "Modinity",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479947746",
-      "date_posted": "2026-10-19",
-      "first_seen": "2026-10-19T08:16:34.758137+00:00",
-      "status": "sent"
-    },
-    "li-4479965142": {
-      "title": "E-Commerce Campaign Specialist",
-      "company": "ANKER INDONESIA",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479965142",
-      "date_posted": "2026-10-19",
-      "first_seen": "2026-10-19T08:16:35.887160+00:00",
-      "status": "sent"
-    },
-    "li-4479972368": {
-      "title": "Data Center FP&A Manager",
-      "company": "Princeton Digital Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479972368",
-      "date_posted": "2026-10-19",
-      "first_seen": "2026-10-19T08:16:37.019229+00:00",
-      "status": "sent"
-    },
-    "li-4479957777": {
-      "title": "Corporate Finance and Accounting Manager",
-      "company": "CarbonX",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479957777",
-      "date_posted": "2026-10-19",
-      "first_seen": "2026-10-19T08:16:38.211498+00:00",
-      "status": "sent"
-    },
-    "li-4478240650": {
-      "title": "New Product Development Specialist",
-      "company": "Rocketindo",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478240650",
-      "date_posted": "2026-10-19",
-      "first_seen": "2026-10-19T08:16:39.719669+00:00",
-      "status": "sent"
-    },
-    "li-4479956874": {
-      "title": "Research And Development Manager",
-      "company": "TSM TECHNOLOGIES",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479956874",
-      "date_posted": "2026-10-19",
-      "first_seen": "2026-10-19T08:16:40.854623+00:00",
-      "status": "sent"
-    },
-    "li-4478260138": {
-      "title": "Project Management",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478260138",
-      "date_posted": "2026-10-19",
-      "first_seen": "2026-10-19T08:16:42.169321+00:00",
-      "status": "sent"
-    },
     "li-4479969626": {
       "title": "PO - Junior",
       "company": "Tech Troops",
@@ -9000,6 +8901,105 @@
       "job_url": "https://www.linkedin.com/jobs/view/4481895637",
       "date_posted": "2026-10-27",
       "first_seen": "2026-10-27T19:54:07.826406+00:00",
+      "status": "sent"
+    },
+    "li-4484252004": {
+      "title": "Talent Acquisition Analyst",
+      "company": "Ruangguru",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4484252004",
+      "date_posted": "2026-10-27",
+      "first_seen": "2026-10-28T00:08:18.216724+00:00",
+      "status": "sent"
+    },
+    "li-4484240714": {
+      "title": "Organization Development Staff",
+      "company": "PT BCA Finance",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4484240714",
+      "date_posted": "2026-10-27",
+      "first_seen": "2026-10-28T00:08:19.712867+00:00",
+      "status": "sent"
+    },
+    "li-4484236892": {
+      "title": "Supply Management Intern - MODA",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4484236892",
+      "date_posted": "2026-10-27",
+      "first_seen": "2026-10-28T00:08:21.433367+00:00",
+      "status": "sent"
+    },
+    "li-4484235832": {
+      "title": "Junior Java Developer",
+      "company": "Bumi Amartha Teknologi Mandiri",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4484235832",
+      "date_posted": "2026-10-27",
+      "first_seen": "2026-10-28T00:08:22.679477+00:00",
+      "status": "sent"
+    },
+    "li-4483698083": {
+      "title": "System Implementer",
+      "company": "Jubelio",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4483698083",
+      "date_posted": "2026-10-27",
+      "first_seen": "2026-10-28T00:08:23.869077+00:00",
+      "status": "sent"
+    },
+    "li-4483811379": {
+      "title": "TikTok Shop Growth Manager",
+      "company": "ScaleJet | eCommerce Recruitment agency",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4483811379",
+      "date_posted": "2026-10-27",
+      "first_seen": "2026-10-28T00:08:25.092433+00:00",
+      "status": "sent"
+    },
+    "li-4477155737": {
+      "title": "KOL Specialist",
+      "company": "Team Liquid",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4477155737",
+      "date_posted": "2026-10-27",
+      "first_seen": "2026-10-28T00:08:26.268692+00:00",
+      "status": "sent"
+    },
+    "li-4484231964": {
+      "title": "Jr. Project Manager",
+      "company": "Bumi Amartha Teknologi Mandiri",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4484231964",
+      "date_posted": "2026-10-27",
+      "first_seen": "2026-10-28T00:08:27.842962+00:00",
+      "status": "sent"
+    },
+    "li-4484250144": {
+      "title": "System Engineer",
+      "company": "PT. Mastersystem Infotama",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4484250144",
+      "date_posted": "2026-10-27",
+      "first_seen": "2026-10-28T00:08:29.238740+00:00",
+      "status": "sent"
+    },
+    "li-4483676887": {
+      "title": "IT Tester (Junior)",
+      "company": "Insura Media Solusi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4483676887",
+      "date_posted": "2026-10-27",
+      "first_seen": "2026-10-28T00:08:30.545130+00:00",
+      "status": "sent"
+    },
+    "li-4475791012": {
+      "title": "Qualification Engineer",
+      "company": "Pfizer",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475791012",
+      "date_posted": "2026-10-27",
+      "first_seen": "2026-10-28T00:08:31.843038+00:00",
       "status": "sent"
     }
   }
