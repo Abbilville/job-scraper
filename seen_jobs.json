@@ -1,52 +1,7 @@
 {
-  "last_updated": "2026-10-29T17:45:36.832073+00:00",
+  "last_updated": "2026-10-29T22:10:26.888421+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4478685017": {
-      "title": "Financial Planning & Analyst Staff",
-      "company": "PT Korea Tomorrow & Global TSPM",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4478685017",
-      "date_posted": "2026-10-20",
-      "first_seen": "2026-10-20T13:59:16.548229+00:00",
-      "status": "sent"
-    },
-    "in-94b5d700ea65b658": {
-      "title": "Strategy & Business Development",
-      "company": "AIA Australia",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=94b5d700ea65b658",
-      "date_posted": "2026-10-20",
-      "first_seen": "2026-10-20T13:59:17.857403+00:00",
-      "status": "sent"
-    },
-    "in-8ef269a44553a573": {
-      "title": "Digital Strategy for F&B Client",
-      "company": "Cfactory",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=8ef269a44553a573",
-      "date_posted": "2026-10-20",
-      "first_seen": "2026-10-20T13:59:19.132527+00:00",
-      "status": "sent"
-    },
-    "li-4481564469": {
-      "title": "Product Owner",
-      "company": "VLink Inc",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481564469",
-      "date_posted": "2026-10-20",
-      "first_seen": "2026-10-20T13:59:20.794546+00:00",
-      "status": "sent"
-    },
-    "li-4480469258": {
-      "title": "Brand Manager",
-      "company": "Haleon",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480469258",
-      "date_posted": "2026-10-20",
-      "first_seen": "2026-10-20T13:59:22.001566+00:00",
-      "status": "sent"
-    },
     "li-4480446812": {
       "title": "System Analyst",
       "company": "PT Deptech Digital Indonesia",
@@ -9000,6 +8955,51 @@
       "job_url": "https://www.linkedin.com/jobs/view/4485212016",
       "date_posted": "2026-10-29",
       "first_seen": "2026-10-29T17:45:36.831902+00:00",
+      "status": "sent"
+    },
+    "in-c426cd39d59fcca9": {
+      "title": "Data & AI Platform Engineer",
+      "company": "wego",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=c426cd39d59fcca9",
+      "date_posted": "2026-10-29",
+      "first_seen": "2026-10-29T22:10:22.981761+00:00",
+      "status": "rejected"
+    },
+    "li-4475792620": {
+      "title": "Solution Specialist, Finance Systems",
+      "company": "Grab",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475792620",
+      "date_posted": "2026-10-29",
+      "first_seen": "2026-10-29T22:10:23.117280+00:00",
+      "status": "sent"
+    },
+    "li-4459842513": {
+      "title": "Product Manager, Press felt & Belt, AP",
+      "company": "Valmet",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4459842513",
+      "date_posted": "2026-10-29",
+      "first_seen": "2026-10-29T22:10:24.463352+00:00",
+      "status": "sent"
+    },
+    "li-4468347292": {
+      "title": "Customer Support Manager",
+      "company": "Motorola Solutions",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4468347292",
+      "date_posted": "2026-10-29",
+      "first_seen": "2026-10-29T22:10:25.647610+00:00",
+      "status": "sent"
+    },
+    "li-4459352569": {
+      "title": "Software Solutions Specialist",
+      "company": "Elekta",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4459352569",
+      "date_posted": "2026-10-29",
+      "first_seen": "2026-10-29T22:10:26.888278+00:00",
       "status": "sent"
     }
   }
