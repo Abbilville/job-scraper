@@ -1,70 +1,7 @@
 {
-  "last_updated": "2026-10-28T22:00:37.958861+00:00",
+  "last_updated": "2026-10-29T03:16:18.617604+00:00",
   "total_seen": 1000,
   "jobs": {
-    "in-4ed4cc1b3db193a2": {
-      "title": "Data Implementor (FMCG)",
-      "company": "HITOPIA",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=4ed4cc1b3db193a2",
-      "date_posted": "2026-10-20",
-      "first_seen": "2026-10-20T08:02:33.013494+00:00",
-      "status": "sent"
-    },
-    "in-ae886712c6ecf829": {
-      "title": "IT Business Analyst (Banking)",
-      "company": "PT Lawencon Internasional",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=ae886712c6ecf829",
-      "date_posted": "2026-10-20",
-      "first_seen": "2026-10-20T08:02:34.638810+00:00",
-      "status": "sent"
-    },
-    "li-4480443399": {
-      "title": "Portfolio Analyst Manager - B2C",
-      "company": "PT Lautan Luas Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480443399",
-      "date_posted": "2026-10-20",
-      "first_seen": "2026-10-20T08:02:35.803220+00:00",
-      "status": "sent"
-    },
-    "li-4480419686": {
-      "title": "Grafana Developer / Specialist",
-      "company": "Beyondsoft Singapore",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480419686",
-      "date_posted": "2026-10-20",
-      "first_seen": "2026-10-20T08:02:37.031950+00:00",
-      "status": "sent"
-    },
-    "li-4480454054": {
-      "title": "Portfolio Analyst Manager - B2B",
-      "company": "PT Lautan Luas Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480454054",
-      "date_posted": "2026-10-20",
-      "first_seen": "2026-10-20T08:02:38.415875+00:00",
-      "status": "sent"
-    },
-    "li-4480423248": {
-      "title": "Customer Lifecycle Management Manager",
-      "company": "Home Credit Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480423248",
-      "date_posted": "2026-10-20",
-      "first_seen": "2026-10-20T08:02:39.914797+00:00",
-      "status": "sent"
-    },
-    "li-4480450302": {
-      "title": "Demand Planning Manager",
-      "company": "JAPFA Food",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480450302",
-      "date_posted": "2026-10-20",
-      "first_seen": "2026-10-20T08:02:41.121218+00:00",
-      "status": "sent"
-    },
     "li-4480432030": {
       "title": "Finance Business Partner  Digital Channel (E Commerce)",
       "company": "ParagonCorp",
@@ -9000,6 +8937,69 @@
       "job_url": "https://www.linkedin.com/jobs/view/4484742161",
       "date_posted": "2026-10-28",
       "first_seen": "2026-10-28T22:00:37.958684+00:00",
+      "status": "sent"
+    },
+    "li-4484783449": {
+      "title": "Software AG",
+      "company": "PT. Intikom Berlian Mustika",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4484783449",
+      "date_posted": "2026-10-29",
+      "first_seen": "2026-10-29T03:16:10.329506+00:00",
+      "status": "sent"
+    },
+    "li-4484789203": {
+      "title": "Frontend Developer",
+      "company": "HTC Global Services",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4484789203",
+      "date_posted": "2026-10-29",
+      "first_seen": "2026-10-29T03:16:11.887781+00:00",
+      "status": "sent"
+    },
+    "li-4484775857": {
+      "title": "Back End Developer (Spring/Springboot)",
+      "company": "HTC Global Services",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4484775857",
+      "date_posted": "2026-10-29",
+      "first_seen": "2026-10-29T03:16:13.376239+00:00",
+      "status": "sent"
+    },
+    "in-9639d60c5a22244d": {
+      "title": "Indonesia Pre-sales Engineer - Kubernetes (Chinese Speaking)",
+      "company": "MKIT Holdings",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=9639d60c5a22244d",
+      "date_posted": "2026-10-28",
+      "first_seen": "2026-10-29T03:16:14.696867+00:00",
+      "status": "sent"
+    },
+    "in-ccc6aa8d070eeed2": {
+      "title": "Service Sales Engineer",
+      "company": "GEA",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=ccc6aa8d070eeed2",
+      "date_posted": "2026-10-29",
+      "first_seen": "2026-10-29T03:16:16.108421+00:00",
+      "status": "sent"
+    },
+    "in-8627f6743c1a34eb": {
+      "title": "Scrum Master (Technical & ERP Background).",
+      "company": "PT Intikom Berlian Mustika",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=8627f6743c1a34eb",
+      "date_posted": "2026-10-29",
+      "first_seen": "2026-10-29T03:16:17.373381+00:00",
+      "status": "sent"
+    },
+    "in-9f475acc93505604": {
+      "title": "Sales Executive – Nutraceutical Ingredients",
+      "company": "Agensi Pekerjaan & Perundingcara Bright Prospect Sdn Bhd",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=9f475acc93505604",
+      "date_posted": "2026-10-29",
+      "first_seen": "2026-10-29T03:16:18.617398+00:00",
       "status": "sent"
     }
   }
