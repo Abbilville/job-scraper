@@ -1,70 +1,7 @@
 {
-  "last_updated": "2026-10-31T16:29:09.321983+00:00",
+  "last_updated": "2026-10-31T20:45:53.637390+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4481159313": {
-      "title": "Fullstack Software Engineer",
-      "company": "Ukirama",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481159313",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T23:49:05.184015+00:00",
-      "status": "sent"
-    },
-    "li-4482184209": {
-      "title": "Frontend Developer",
-      "company": "PT. Adi Data Informatika",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482184209",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T23:49:06.506582+00:00",
-      "status": "sent"
-    },
-    "li-4481164431": {
-      "title": "Backend Developer Python Golang (ASAP Joiner)",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481164431",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T23:49:07.748228+00:00",
-      "status": "sent"
-    },
-    "li-4482177480": {
-      "title": "AI ML Operator",
-      "company": "CODE.ID",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482177480",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T23:49:09.103856+00:00",
-      "status": "sent"
-    },
-    "li-4481163093": {
-      "title": "Technology Manager (ERP)",
-      "company": "Tentang Anak",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481163093",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T23:49:10.316569+00:00",
-      "status": "sent"
-    },
-    "li-4481143919": {
-      "title": "Application Support",
-      "company": "PT. Metrodata Electronics Tbk.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481143919",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T23:49:11.564803+00:00",
-      "status": "sent"
-    },
-    "li-4481161263": {
-      "title": "Product Support Autodesk (AEC)",
-      "company": "PT. Metrodata Electronics Tbk.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481161263",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T23:49:12.820568+00:00",
-      "status": "sent"
-    },
     "li-4481155435": {
       "title": "Presales Consultant",
       "company": "PT. Mandiri International Technology",
@@ -9000,6 +8937,69 @@
       "job_url": "https://www.linkedin.com/jobs/view/4475234435",
       "date_posted": "2026-10-31",
       "first_seen": "2026-10-31T16:29:09.321841+00:00",
+      "status": "sent"
+    },
+    "li-4449991746": {
+      "title": "Solutions Architect (AI)",
+      "company": "TechConnect",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4449991746",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T20:45:47.685659+00:00",
+      "status": "rejected"
+    },
+    "li-4450200703": {
+      "title": "IT Enterprise Architect Manager",
+      "company": "TechConnect",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4450200703",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T20:45:47.685687+00:00",
+      "status": "rejected"
+    },
+    "li-4485166664": {
+      "title": "Software Engineer (Payment Network) - Global Payment - Indonesia",
+      "company": "ByteDance",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485166664",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T20:45:48.030362+00:00",
+      "status": "sent"
+    },
+    "li-4485152805": {
+      "title": "Measurement Partner, Indonesia",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485152805",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T20:45:49.374405+00:00",
+      "status": "sent"
+    },
+    "li-4467848453": {
+      "title": "Inverto | Associate Consultant, Procurement",
+      "company": "Boston Consulting Group (BCG)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4467848453",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T20:45:50.589728+00:00",
+      "status": "sent"
+    },
+    "li-4467849497": {
+      "title": "Project Leader to Partner, Insurance Practice",
+      "company": "Boston Consulting Group (BCG)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4467849497",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T20:45:52.393023+00:00",
+      "status": "sent"
+    },
+    "li-4485174476": {
+      "title": "PROJECT SCHEDULER / CONTROLS ENGINEER #NAC",
+      "company": "Impactiva",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485174476",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T20:45:53.637224+00:00",
       "status": "sent"
     }
   }
