@@ -1,16 +1,7 @@
 {
-  "last_updated": "2026-10-31T20:45:53.637390+00:00",
+  "last_updated": "2026-10-31T23:50:34.850127+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4481155435": {
-      "title": "Presales Consultant",
-      "company": "PT. Mandiri International Technology",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481155435",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T23:49:14.037917+00:00",
-      "status": "sent"
-    },
     "li-4482175075": {
       "title": "Market Intelligence Analyst / Business Analyst (Pharma)",
       "company": "Michael Page",
@@ -9001,6 +8992,15 @@
       "date_posted": "2026-10-31",
       "first_seen": "2026-10-31T20:45:53.637224+00:00",
       "status": "sent"
+    },
+    "in-b7cd50eee17a83fc": {
+      "title": "Deputy Operations Manager",
+      "company": "ABB",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=b7cd50eee17a83fc",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T23:50:34.850020+00:00",
+      "status": "rejected"
     }
   }
 }
