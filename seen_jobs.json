@@ -1,133 +1,7 @@
 {
-  "last_updated": "2026-10-31T03:02:26.011798+00:00",
+  "last_updated": "2026-10-31T11:23:00.110748+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4480779560": {
-      "title": "Business Application & System Analyst - Upstream Application",
-      "company": "Neo Energy Materials",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480779560",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T14:16:33.245376+00:00",
-      "status": "sent"
-    },
-    "li-4480772869": {
-      "title": "Finance Project Transformation",
-      "company": "ParagonCorp",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480772869",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T14:16:34.485863+00:00",
-      "status": "sent"
-    },
-    "li-4479408166": {
-      "title": "Project Manager-SAP HANA",
-      "company": "IBM",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479408166",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T14:16:35.818556+00:00",
-      "status": "sent"
-    },
-    "li-4480790571": {
-      "title": "SAP HR Functional Consultant",
-      "company": "Nityo Infotech Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480790571",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T14:16:37.085792+00:00",
-      "status": "sent"
-    },
-    "li-4480786638": {
-      "title": "Solution Engineer",
-      "company": "PT. Secure Pasifik Teknologi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480786638",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T14:16:38.296643+00:00",
-      "status": "sent"
-    },
-    "in-4355f159925dbdb8": {
-      "title": "ICT PD",
-      "company": "Ericsson",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=4355f159925dbdb8",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T19:03:57.564859+00:00",
-      "status": "rejected"
-    },
-    "li-4481140211": {
-      "title": "ICT PD",
-      "company": "Ericsson",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481140211",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T19:03:57.564880+00:00",
-      "status": "rejected"
-    },
-    "li-4454989700": {
-      "title": "Sales Data Analyst, Assistant Manager (IC)",
-      "company": "Kredivo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4454989700",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T19:03:57.800649+00:00",
-      "status": "sent"
-    },
-    "li-4471314835": {
-      "title": "Reputational Risk, Corporate Risk",
-      "company": "Shopee",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4471314835",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T19:03:58.968826+00:00",
-      "status": "sent"
-    },
-    "li-4454740446": {
-      "title": "Technology Risk - Associate",
-      "company": "EY",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4454740446",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T19:04:00.356629+00:00",
-      "status": "sent"
-    },
-    "li-4385042568": {
-      "title": "Consulting - FSO Finance Manager",
-      "company": "EY",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4385042568",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T19:04:01.560261+00:00",
-      "status": "sent"
-    },
-    "li-4481127913": {
-      "title": ".NET Developer (Junior - Middle)",
-      "company": "TechTiera Services Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481127913",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T19:04:02.714600+00:00",
-      "status": "sent"
-    },
-    "li-4479422879": {
-      "title": "Commercial Data Engineer",
-      "company": "PepsiCo",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479422879",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T19:04:03.930504+00:00",
-      "status": "sent"
-    },
-    "li-4481123556": {
-      "title": "DevOps Cloud Engineer",
-      "company": "Aventis Technology",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481123556",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T19:04:05.148106+00:00",
-      "status": "sent"
-    },
     "li-4438134081": {
       "title": "Procurement Intelligent and AI Innovation",
       "company": "TechConnect",
@@ -9000,6 +8874,132 @@
       "job_url": "https://www.linkedin.com/jobs/view/4485123612",
       "date_posted": "2026-10-30",
       "first_seen": "2026-10-31T03:02:26.011697+00:00",
+      "status": "sent"
+    },
+    "li-4466251857": {
+      "title": "Solutions Architect",
+      "company": "NTT DATA, Inc.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4466251857",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T11:22:45.182205+00:00",
+      "status": "rejected"
+    },
+    "li-4476807605": {
+      "title": "Electronics Category Strategy Project Intern (TikTok Shop by Tokopedia) - 2026 Start",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476807605",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T11:22:45.438144+00:00",
+      "status": "sent"
+    },
+    "li-4477695575": {
+      "title": "Product Manager, Customer Journey",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4477695575",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T11:22:46.802736+00:00",
+      "status": "sent"
+    },
+    "li-4485691445": {
+      "title": "Forward Deployed Engineer (FDE) - Enterprise AI Technology",
+      "company": "Michael Page",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485691445",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T11:22:48.009304+00:00",
+      "status": "sent"
+    },
+    "li-4485137670": {
+      "title": "Data Engineer (MongoDB)",
+      "company": "Insura Media Solusi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485137670",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T11:22:49.213146+00:00",
+      "status": "sent"
+    },
+    "li-4403338847": {
+      "title": "CPP and Consolidation Business Finance, Team Leader",
+      "company": "UOB",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4403338847",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T11:22:50.454355+00:00",
+      "status": "sent"
+    },
+    "li-4467840740": {
+      "title": "Anti-Fraud Analyst",
+      "company": "UOB",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4467840740",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T11:22:51.738736+00:00",
+      "status": "sent"
+    },
+    "li-4457900287": {
+      "title": "Perfomance Marketing Manager",
+      "company": "Brokoli Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4457900287",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T11:22:52.935683+00:00",
+      "status": "sent"
+    },
+    "li-4485669833": {
+      "title": "Corporate Finance/Business Development Specialist (Renewable Energy & Investment)",
+      "company": "Paesa Pasindo Engineering",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485669833",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T11:22:54.222936+00:00",
+      "status": "sent"
+    },
+    "li-4475217991": {
+      "title": "Finance Manager",
+      "company": "Eaton",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475217991",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T11:22:55.440335+00:00",
+      "status": "sent"
+    },
+    "li-4467854508": {
+      "title": "Anti-Fraud Analyst-3",
+      "company": "UOB",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4467854508",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T11:22:56.625458+00:00",
+      "status": "sent"
+    },
+    "li-4485161050": {
+      "title": "Business Analyst (Banking)",
+      "company": "PT. Intikom Berlian Mustika",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485161050",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T11:22:57.763500+00:00",
+      "status": "sent"
+    },
+    "li-4477656809": {
+      "title": "KA Logistics project manager",
+      "company": "JD.COM",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4477656809",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T11:22:58.975746+00:00",
+      "status": "sent"
+    },
+    "li-4485145928": {
+      "title": "Payroll & HRIS Specialist (Mekari Talenta)",
+      "company": "PT Talenta Eksekutif Asia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485145928",
+      "date_posted": "2026-10-31",
+      "first_seen": "2026-10-31T11:23:00.110545+00:00",
       "status": "sent"
     }
   }
