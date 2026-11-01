@@ -1,97 +1,7 @@
 {
-  "last_updated": "2026-11-01T09:57:44.985608+00:00",
+  "last_updated": "2026-11-01T17:21:35.602573+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4482163811": {
-      "title": "IT Project Management Officer Jakarta",
-      "company": "PT. Akhdani Reka Solusi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482163811",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T23:49:20.210329+00:00",
-      "status": "sent"
-    },
-    "li-4481190095": {
-      "title": "(2210) Solution Architect",
-      "company": "PT Amber Solusi Internasional",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481190095",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T02:16:05.381967+00:00",
-      "status": "rejected"
-    },
-    "li-4480780624": {
-      "title": "Software Engineer",
-      "company": "Andal",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480780624",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T02:16:05.686969+00:00",
-      "status": "sent"
-    },
-    "li-4481182404": {
-      "title": "Quality Assurance Engineer",
-      "company": "Andal",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481182404",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T02:16:07.026444+00:00",
-      "status": "sent"
-    },
-    "li-4480752628": {
-      "title": "Product Application Engineer (Civil Engineering & Material Testing)",
-      "company": "PT. Arkamaya Guna Saharsa",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480752628",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T02:16:08.225756+00:00",
-      "status": "sent"
-    },
-    "li-4481188185": {
-      "title": "Business Consultant",
-      "company": "PT. Permodalan Nasional Madani (Persero)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481188185",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T02:16:09.535461+00:00",
-      "status": "sent"
-    },
-    "li-4479980644": {
-      "title": "Business Partner",
-      "company": "veroza.co",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479980644",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T02:16:10.780300+00:00",
-      "status": "sent"
-    },
-    "li-4481185389": {
-      "title": "Management Trainee Program (Jakarta Regency)",
-      "company": "Viction.id (Branch Sona Topas )",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481185389",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T02:16:12.425568+00:00",
-      "status": "sent"
-    },
-    "li-4481191048": {
-      "title": "Data Privacy Analyst",
-      "company": "PT Bank Sinarmas Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481191048",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T02:16:13.635823+00:00",
-      "status": "sent"
-    },
-    "li-4481193062": {
-      "title": "Management Trainee Program (Jakarta District)",
-      "company": "Viction.id",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481193062",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T02:16:14.954579+00:00",
-      "status": "sent"
-    },
     "li-4481174609": {
       "title": "Product Manager (Prepaid Card)",
       "company": "The Convergence Project",
@@ -9000,6 +8910,96 @@
       "job_url": "https://id.indeed.com/viewjob?jk=f980477d5974beec",
       "date_posted": "2026-11-01",
       "first_seen": "2026-11-01T09:57:44.985479+00:00",
+      "status": "sent"
+    },
+    "li-4450330759": {
+      "title": "T&T Consultant - SAP ABAP - AMS - SEA",
+      "company": "Deloitte",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4450330759",
+      "date_posted": "2026-11-01",
+      "first_seen": "2026-11-01T17:21:24.379898+00:00",
+      "status": "sent"
+    },
+    "li-4433305002": {
+      "title": "COO Office (Project Manager)",
+      "company": "Sea",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4433305002",
+      "date_posted": "2026-11-01",
+      "first_seen": "2026-11-01T17:21:25.652241+00:00",
+      "status": "sent"
+    },
+    "li-4485421423": {
+      "title": "AI Engineer",
+      "company": "Nextalent",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485421423",
+      "date_posted": "2026-11-01",
+      "first_seen": "2026-11-01T17:21:26.924582+00:00",
+      "status": "sent"
+    },
+    "li-4484822749": {
+      "title": "AM – Business Development (Manufacturing AI Solutions)",
+      "company": "IROOTECH",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4484822749",
+      "date_posted": "2026-11-01",
+      "first_seen": "2026-11-01T17:21:28.357009+00:00",
+      "status": "sent"
+    },
+    "li-4485199976": {
+      "title": "Sales Engineer, Runtech",
+      "company": "Ingersoll Rand Compressor Systems & Services",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485199976",
+      "date_posted": "2026-11-01",
+      "first_seen": "2026-11-01T17:21:29.514471+00:00",
+      "status": "sent"
+    },
+    "li-4485405553": {
+      "title": "Information Security Engineer",
+      "company": "Pintarnya",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485405553",
+      "date_posted": "2026-11-01",
+      "first_seen": "2026-11-01T17:21:30.696334+00:00",
+      "status": "sent"
+    },
+    "li-4330251394": {
+      "title": "Data Operations Analyst (3 Months Contract)",
+      "company": "NielsenIQ",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4330251394",
+      "date_posted": "2026-11-01",
+      "first_seen": "2026-11-01T17:21:31.861585+00:00",
+      "status": "sent"
+    },
+    "li-4449991747": {
+      "title": "IT Application Delivery Manager",
+      "company": "TechConnect",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4449991747",
+      "date_posted": "2026-11-01",
+      "first_seen": "2026-11-01T17:21:33.139135+00:00",
+      "status": "sent"
+    },
+    "li-4485422343": {
+      "title": "Asia AZpire Graduate Program - Indonesia",
+      "company": "AstraZeneca",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485422343",
+      "date_posted": "2026-11-01",
+      "first_seen": "2026-11-01T17:21:34.316979+00:00",
+      "status": "sent"
+    },
+    "li-4485410546": {
+      "title": "Asia AZpire Graduate Program - Philippines",
+      "company": "AstraZeneca",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485410546",
+      "date_posted": "2026-11-01",
+      "first_seen": "2026-11-01T17:21:35.602409+00:00",
       "status": "sent"
     }
   }
