@@ -1,34 +1,7 @@
 {
-  "last_updated": "2026-11-01T02:57:21.200863+00:00",
+  "last_updated": "2026-11-01T09:57:44.985608+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4481144834": {
-      "title": "Credit Risk Manager",
-      "company": "Akulaku Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481144834",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T23:49:16.531773+00:00",
-      "status": "sent"
-    },
-    "li-4477084894": {
-      "title": "Supply Chain Planning Analyst (Planner)",
-      "company": "Solenis",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4477084894",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T23:49:17.772204+00:00",
-      "status": "sent"
-    },
-    "li-4481160276": {
-      "title": "Asst. Manager Media Solution",
-      "company": "Vidio",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481160276",
-      "date_posted": "2026-10-21",
-      "first_seen": "2026-10-21T23:49:18.962152+00:00",
-      "status": "sent"
-    },
     "li-4482163811": {
       "title": "IT Project Management Officer Jakarta",
       "company": "PT. Akhdani Reka Solusi",
@@ -9000,6 +8973,33 @@
       "job_url": "https://www.linkedin.com/jobs/view/4485189007",
       "date_posted": "2026-11-01",
       "first_seen": "2026-11-01T02:57:21.200719+00:00",
+      "status": "sent"
+    },
+    "li-4485184685": {
+      "title": "Java Software Engineer",
+      "company": "MSBU Konsultan",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485184685",
+      "date_posted": "2026-11-01",
+      "first_seen": "2026-11-01T09:57:42.516714+00:00",
+      "status": "sent"
+    },
+    "li-4485182303": {
+      "title": "AI Backend Developer (Golang AND Python)",
+      "company": "Diksha Technologies",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485182303",
+      "date_posted": "2026-11-01",
+      "first_seen": "2026-11-01T09:57:43.702490+00:00",
+      "status": "sent"
+    },
+    "in-f980477d5974beec": {
+      "title": "Service Technician",
+      "company": "Accelleron Industries",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=f980477d5974beec",
+      "date_posted": "2026-11-01",
+      "first_seen": "2026-11-01T09:57:44.985479+00:00",
       "status": "sent"
     }
   }
