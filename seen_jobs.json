@@ -1,25 +1,7 @@
 {
-  "last_updated": "2026-11-01T17:21:35.602573+00:00",
+  "last_updated": "2026-11-01T21:27:10.093773+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4481174609": {
-      "title": "Product Manager (Prepaid Card)",
-      "company": "The Convergence Project",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481174609",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T02:16:16.259876+00:00",
-      "status": "sent"
-    },
-    "li-4481174389": {
-      "title": "IT Business Analyst",
-      "company": "TechTiera Services Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481174389",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T02:16:17.518234+00:00",
-      "status": "sent"
-    },
     "li-4481168963": {
       "title": "Information Technology Auditor",
       "company": "PT Bank Sinarmas Tbk",
@@ -9000,6 +8982,24 @@
       "job_url": "https://www.linkedin.com/jobs/view/4485410546",
       "date_posted": "2026-11-01",
       "first_seen": "2026-11-01T17:21:35.602409+00:00",
+      "status": "sent"
+    },
+    "li-4485404939": {
+      "title": "TikTok Shop by Tokopedia - Mall Strategy Specialist - Indonesia",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485404939",
+      "date_posted": "2026-11-01",
+      "first_seen": "2026-11-01T21:27:08.887356+00:00",
+      "status": "sent"
+    },
+    "li-4485421449": {
+      "title": "Finance & cost accounting",
+      "company": "KREA DIANMARA",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485421449",
+      "date_posted": "2026-11-01",
+      "first_seen": "2026-11-01T21:27:10.093638+00:00",
       "status": "sent"
     }
   }
