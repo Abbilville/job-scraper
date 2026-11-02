@@ -1,70 +1,7 @@
 {
-  "last_updated": "2026-11-02T14:06:20.171788+00:00",
+  "last_updated": "2026-11-02T22:56:19.402104+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4480019814": {
-      "title": "Dotnet Developer",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480019814",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T14:14:51.253010+00:00",
-      "status": "sent"
-    },
-    "li-4480035597": {
-      "title": "Back End Developer",
-      "company": "Atreus Global",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480035597",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T14:14:53.568634+00:00",
-      "status": "sent"
-    },
-    "li-4481330080": {
-      "title": "Dotnet Developer",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481330080",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T14:14:54.938738+00:00",
-      "status": "sent"
-    },
-    "li-4465640010": {
-      "title": "AVP-Data Integration",
-      "company": "PT. Indosat Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4465640010",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T14:14:56.197791+00:00",
-      "status": "sent"
-    },
-    "li-4480007585": {
-      "title": "Fullstack Developer – .NET & Angular",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480007585",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T14:14:57.564487+00:00",
-      "status": "sent"
-    },
-    "li-4481363341": {
-      "title": "ERP Functional Consultant",
-      "company": "PT. Intikom Berlian Mustika",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481363341",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T14:14:58.892841+00:00",
-      "status": "sent"
-    },
-    "li-4456474553": {
-      "title": "Specialist Solution Engineer, Digital 360",
-      "company": "Salesforce",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4456474553",
-      "date_posted": "2026-10-22",
-      "first_seen": "2026-10-22T14:15:00.152181+00:00",
-      "status": "sent"
-    },
     "li-4482449818": {
       "title": "技术销售工程师",
       "company": "BLUETTI",
@@ -9000,6 +8937,69 @@
       "job_url": "https://www.linkedin.com/jobs/view/4485473200",
       "date_posted": "2026-11-02",
       "first_seen": "2026-11-02T14:06:20.171552+00:00",
+      "status": "sent"
+    },
+    "li-4468728257": {
+      "title": "Software Engineer, Mobile (iOS)",
+      "company": "Grab",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4468728257",
+      "date_posted": "2026-11-02",
+      "first_seen": "2026-11-02T22:56:11.896917+00:00",
+      "status": "sent"
+    },
+    "li-4485751548": {
+      "title": "(Associate) Tech Solution Sales Manager",
+      "company": "IQVIA",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485751548",
+      "date_posted": "2026-11-02",
+      "first_seen": "2026-11-02T22:56:13.175303+00:00",
+      "status": "sent"
+    },
+    "in-b6afa83f68467cba": {
+      "title": "Marketing Data Analyst",
+      "company": "wego",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=b6afa83f68467cba",
+      "date_posted": "2026-11-02",
+      "first_seen": "2026-11-02T22:56:14.435444+00:00",
+      "status": "sent"
+    },
+    "in-297e70d8af5506b4": {
+      "title": "Commercial & Operations Staff",
+      "company": "Seven Retail",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=297e70d8af5506b4",
+      "date_posted": "2026-11-02",
+      "first_seen": "2026-11-02T22:56:15.688563+00:00",
+      "status": "sent"
+    },
+    "li-4485757856": {
+      "title": "Revenue Partnership Intern",
+      "company": "Segari",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485757856",
+      "date_posted": "2026-11-02",
+      "first_seen": "2026-11-02T22:56:16.977627+00:00",
+      "status": "sent"
+    },
+    "li-4485759088": {
+      "title": "Graduate Management Trainee",
+      "company": "Vplus Global Jakarta",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485759088",
+      "date_posted": "2026-11-02",
+      "first_seen": "2026-11-02T22:56:18.169625+00:00",
+      "status": "sent"
+    },
+    "in-a97e8e7f7d395894": {
+      "title": "Market Street Fishmonger",
+      "company": "Wm Morrisons Supermarkets",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=a97e8e7f7d395894",
+      "date_posted": "2026-11-02",
+      "first_seen": "2026-11-02T22:56:19.401954+00:00",
       "status": "sent"
     }
   }
