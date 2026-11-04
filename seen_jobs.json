@@ -1,70 +1,7 @@
 {
-  "last_updated": "2026-11-03T20:45:02.366743+00:00",
+  "last_updated": "2026-11-04T00:58:29.374731+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4464844915": {
-      "title": "T&T Consultant - Technology Strategy & Transformation - ID",
-      "company": "Deloitte",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4464844915",
-      "date_posted": "2026-10-23",
-      "first_seen": "2026-10-23T13:57:36.241992+00:00",
-      "status": "sent"
-    },
-    "li-4446051139": {
-      "title": "T&T Analyst/Consultant - Technology Strategy & Transformation (Telco) - ID",
-      "company": "Deloitte",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4446051139",
-      "date_posted": "2026-10-23",
-      "first_seen": "2026-10-23T13:57:37.504363+00:00",
-      "status": "sent"
-    },
-    "li-4464862010": {
-      "title": "T&T Consultant - Technology Strategy & Transformation - ID",
-      "company": "Deloitte",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4464862010",
-      "date_posted": "2026-10-23",
-      "first_seen": "2026-10-23T13:57:38.753690+00:00",
-      "status": "sent"
-    },
-    "li-4474721620": {
-      "title": "Product Management (S&R&A&C - Video & Live) - Sea Labs",
-      "company": "Sea",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474721620",
-      "date_posted": "2026-10-23",
-      "first_seen": "2026-10-23T13:57:39.926836+00:00",
-      "status": "sent"
-    },
-    "li-4456463749": {
-      "title": "Performance Marketing Analyst",
-      "company": "Traveloka",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4456463749",
-      "date_posted": "2026-10-23",
-      "first_seen": "2026-10-23T13:57:41.231752+00:00",
-      "status": "sent"
-    },
-    "li-4474701614": {
-      "title": "Loyalty Marketing Associate Manager",
-      "company": "Traveloka",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474701614",
-      "date_posted": "2026-10-23",
-      "first_seen": "2026-10-23T13:57:42.624632+00:00",
-      "status": "sent"
-    },
-    "li-4481661831": {
-      "title": "Finance Transformation Manager – Anaplan",
-      "company": "PwC South East Asia Consulting",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481661831",
-      "date_posted": "2026-10-23",
-      "first_seen": "2026-10-23T13:57:43.817456+00:00",
-      "status": "sent"
-    },
     "li-4464824025": {
       "title": "Associate Product Manager I, Internal Tools",
       "company": "tiket.com",
@@ -9000,6 +8937,69 @@
       "job_url": "https://www.linkedin.com/jobs/view/4487016354",
       "date_posted": "2026-11-03",
       "first_seen": "2026-11-03T20:45:02.366568+00:00",
+      "status": "sent"
+    },
+    "li-4423609128": {
+      "title": "SR&T Manager - Valuation & Modeling - ID",
+      "company": "Deloitte",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4423609128",
+      "date_posted": "2026-11-03",
+      "first_seen": "2026-11-04T00:58:22.961293+00:00",
+      "status": "rejected"
+    },
+    "li-4487052420": {
+      "title": "Otopprentice Information & Technology / Intern - AOP",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487052420",
+      "date_posted": "2026-11-03",
+      "first_seen": "2026-11-04T00:58:23.296695+00:00",
+      "status": "sent"
+    },
+    "li-4487048553": {
+      "title": "IT Programmer",
+      "company": "CARE TECHNOLOGIES",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487048553",
+      "date_posted": "2026-11-03",
+      "first_seen": "2026-11-04T00:58:24.483435+00:00",
+      "status": "sent"
+    },
+    "li-4487035921": {
+      "title": "IT Application Consultant",
+      "company": "CARE TECHNOLOGIES",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487035921",
+      "date_posted": "2026-11-03",
+      "first_seen": "2026-11-04T00:58:25.728518+00:00",
+      "status": "sent"
+    },
+    "li-4487038921": {
+      "title": "Junior QA Automation",
+      "company": "Bumi Amartha Teknologi Mandiri",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487038921",
+      "date_posted": "2026-11-03",
+      "first_seen": "2026-11-04T00:58:26.938729+00:00",
+      "status": "sent"
+    },
+    "li-4487040827": {
+      "title": "IT Security",
+      "company": "PT Adicipta Inovasi Teknologi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487040827",
+      "date_posted": "2026-11-03",
+      "first_seen": "2026-11-04T00:58:28.177711+00:00",
+      "status": "sent"
+    },
+    "li-4486097381": {
+      "title": "Program Manager, Triple Elimination",
+      "company": "Clinton Health Access Initiative, Inc.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4486097381",
+      "date_posted": "2026-11-03",
+      "first_seen": "2026-11-04T00:58:29.374538+00:00",
       "status": "sent"
     }
   }
