@@ -1,151 +1,7 @@
 {
-  "last_updated": "2026-11-04T19:02:04.711404+00:00",
+  "last_updated": "2026-11-05T01:10:36.688855+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4481023373": {
-      "title": "BRAND EXECUTIVE",
-      "company": "International Beauty Products Ltd.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481023373",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T07:42:03.173416+00:00",
-      "status": "sent"
-    },
-    "li-4481687363": {
-      "title": "Information Technology Operations",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481687363",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T07:42:04.384113+00:00",
-      "status": "sent"
-    },
-    "li-4474727837": {
-      "title": "D365 F&O Sr Technical Consultant",
-      "company": "Avanade",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474727837",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T12:59:37.239718+00:00",
-      "status": "rejected"
-    },
-    "li-4474768360": {
-      "title": "Sr Officer-Digital Services Product Expert",
-      "company": "PT. Indosat Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474768360",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T12:59:37.239745+00:00",
-      "status": "rejected"
-    },
-    "li-4474749866": {
-      "title": "Associate Treasury Planning Manager",
-      "company": "Traveloka",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474749866",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T12:59:37.720938+00:00",
-      "status": "sent"
-    },
-    "li-4457091877": {
-      "title": "DevOps & AI Analyst (Talent Pool)",
-      "company": "PT Chandra Asri Pacific Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4457091877",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T12:59:38.961383+00:00",
-      "status": "sent"
-    },
-    "li-4473362387": {
-      "title": "IT Application Intern",
-      "company": "Siemens",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473362387",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T12:59:40.335546+00:00",
-      "status": "sent"
-    },
-    "li-4466075081": {
-      "title": "Technical Service Representative",
-      "company": "Sherwin-Williams",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4466075081",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T12:59:41.603772+00:00",
-      "status": "sent"
-    },
-    "li-4437006185": {
-      "title": "Sales Application Engineer",
-      "company": "Siemens Energy",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4437006185",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T12:59:42.920337+00:00",
-      "status": "sent"
-    },
-    "li-4399136144": {
-      "title": "Financial Reporting&Analyst Team Leader",
-      "company": "UOB",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4399136144",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T12:59:44.182437+00:00",
-      "status": "sent"
-    },
-    "li-4469834430": {
-      "title": "CERT Analyst",
-      "company": "Group-IB",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4469834430",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T12:59:45.601949+00:00",
-      "status": "sent"
-    },
-    "li-4310164582": {
-      "title": "Syariah Actuary",
-      "company": "AIA Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4310164582",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T12:59:46.802595+00:00",
-      "status": "sent"
-    },
-    "li-4473140278": {
-      "title": "Manager, Production Finance - Indonesia",
-      "company": "Netflix",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473140278",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T12:59:48.158903+00:00",
-      "status": "sent"
-    },
-    "li-4482619548": {
-      "title": "Finance & Accounting Manager",
-      "company": "Winsee Optik",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482619548",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T12:59:49.383896+00:00",
-      "status": "sent"
-    },
-    "li-4455436502": {
-      "title": "Wholesale Banking & GM Comp Advisory Spc",
-      "company": "UOB",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4455436502",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T12:59:50.924986+00:00",
-      "status": "sent"
-    },
-    "li-4473162383": {
-      "title": "Proposal Specialist",
-      "company": "Johnson Controls",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4473162383",
-      "date_posted": "2026-10-24",
-      "first_seen": "2026-10-24T12:59:52.171875+00:00",
-      "status": "sent"
-    },
     "li-4409957165": {
       "title": "Fullstack Engineer - Collection (SDE 2)",
       "company": "Kredivo Group",
@@ -9000,6 +8856,150 @@
       "job_url": "https://www.linkedin.com/jobs/view/4487527063",
       "date_posted": "2026-11-04",
       "first_seen": "2026-11-04T19:02:04.711244+00:00",
+      "status": "sent"
+    },
+    "li-4486527880": {
+      "title": "BE Go Lang Dev",
+      "company": "Insura Media Solusi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4486527880",
+      "date_posted": "2026-11-04",
+      "first_seen": "2026-11-05T01:10:14.121302+00:00",
+      "status": "sent"
+    },
+    "li-4486365837": {
+      "title": "Kubernetess Engineer",
+      "company": "Insura Media Solusi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4486365837",
+      "date_posted": "2026-11-04",
+      "first_seen": "2026-11-05T01:10:15.556573+00:00",
+      "status": "sent"
+    },
+    "li-4487533660": {
+      "title": "Product Manager",
+      "company": "Mobius Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487533660",
+      "date_posted": "2026-11-04",
+      "first_seen": "2026-11-05T01:10:16.762756+00:00",
+      "status": "sent"
+    },
+    "li-4487544403": {
+      "title": "DBA SQL Server",
+      "company": "PT. Metrodata Electronics Tbk.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487544403",
+      "date_posted": "2026-11-04",
+      "first_seen": "2026-11-05T01:10:18.197577+00:00",
+      "status": "sent"
+    },
+    "li-4487550147": {
+      "title": "Implementation Consultant",
+      "company": "PT Adicipta Inovasi Teknologi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487550147",
+      "date_posted": "2026-11-04",
+      "first_seen": "2026-11-05T01:10:20.038383+00:00",
+      "status": "sent"
+    },
+    "li-4487560799": {
+      "title": "Partner Sales Rep, PS/CP",
+      "company": "HP",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487560799",
+      "date_posted": "2026-11-04",
+      "first_seen": "2026-11-05T01:10:21.341808+00:00",
+      "status": "sent"
+    },
+    "li-4487534624": {
+      "title": "Marketing Analyst (Remote, Contract)",
+      "company": "INFUSE",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487534624",
+      "date_posted": "2026-11-04",
+      "first_seen": "2026-11-05T01:10:22.586461+00:00",
+      "status": "sent"
+    },
+    "li-4487551000": {
+      "title": "Marketing Analyst (Remote, Contract)",
+      "company": "INFUSE",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487551000",
+      "date_posted": "2026-11-04",
+      "first_seen": "2026-11-05T01:10:23.830512+00:00",
+      "status": "sent"
+    },
+    "li-4485561380": {
+      "title": "Low Carbon Technology Analyst",
+      "company": "World Resources Institute (WRI) Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485561380",
+      "date_posted": "2026-11-04",
+      "first_seen": "2026-11-05T01:10:25.032290+00:00",
+      "status": "sent"
+    },
+    "li-4487531753": {
+      "title": "Marketing Analyst (Remote, Contract)",
+      "company": "INFUSE",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487531753",
+      "date_posted": "2026-11-04",
+      "first_seen": "2026-11-05T01:10:27.492083+00:00",
+      "status": "sent"
+    },
+    "li-4487527996": {
+      "title": "Deal Desk Specialist (Remote, Contract)",
+      "company": "INFUSE",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487527996",
+      "date_posted": "2026-11-04",
+      "first_seen": "2026-11-05T01:10:29.899179+00:00",
+      "status": "sent"
+    },
+    "li-4487532659": {
+      "title": "Deal Desk Specialist (Remote, Contract)",
+      "company": "INFUSE",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487532659",
+      "date_posted": "2026-11-04",
+      "first_seen": "2026-11-05T01:10:31.194598+00:00",
+      "status": "sent"
+    },
+    "li-4487539536": {
+      "title": "Deal Desk Specialist (Remote, Contract)",
+      "company": "INFUSE",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487539536",
+      "date_posted": "2026-11-04",
+      "first_seen": "2026-11-05T01:10:32.496852+00:00",
+      "status": "sent"
+    },
+    "li-4486351854": {
+      "title": "Specialist B2B",
+      "company": "PT INJAE ALAT OLAHRAGA",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4486351854",
+      "date_posted": "2026-11-05",
+      "first_seen": "2026-11-05T01:10:33.718478+00:00",
+      "status": "sent"
+    },
+    "li-4485569021": {
+      "title": "Project Implementation Assistant",
+      "company": "World Resources Institute (WRI) Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485569021",
+      "date_posted": "2026-11-04",
+      "first_seen": "2026-11-05T01:10:35.170316+00:00",
+      "status": "sent"
+    },
+    "li-4485560491": {
+      "title": "IT Intern",
+      "company": "Laku6.com",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485560491",
+      "date_posted": "2026-11-04",
+      "first_seen": "2026-11-05T01:10:36.688658+00:00",
       "status": "sent"
     }
   }
