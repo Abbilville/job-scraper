@@ -1,79 +1,7 @@
 {
-  "last_updated": "2026-11-05T19:13:21.601133+00:00",
+  "last_updated": "2026-11-06T01:15:14.123814+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4482694925": {
-      "title": "(AWS) Cloud Engineer",
-      "company": "PT Amber Solusi Internasional",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482694925",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T02:08:07.462537+00:00",
-      "status": "sent"
-    },
-    "li-4482682881": {
-      "title": "Consultor de Inteligencia Artificial",
-      "company": "daypass.com",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482682881",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T02:08:08.995037+00:00",
-      "status": "sent"
-    },
-    "li-4482694758": {
-      "title": "IT Business Analyst – SAP Integration",
-      "company": "Binar Academy",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482694758",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T02:08:10.359159+00:00",
-      "status": "sent"
-    },
-    "li-4482916161": {
-      "title": "ERP Functional -Manufacturing",
-      "company": "PT. Nimbus Dinamis Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482916161",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T02:08:11.550303+00:00",
-      "status": "sent"
-    },
-    "li-4482900603": {
-      "title": "Product Manager (Acquiring)",
-      "company": "The Convergence Project",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482900603",
-      "date_posted": "2026-10-25",
-      "first_seen": "2026-10-26T02:08:12.811007+00:00",
-      "status": "sent"
-    },
-    "li-4479870051": {
-      "title": "Business Partner",
-      "company": "veroza.co",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479870051",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T02:08:14.136337+00:00",
-      "status": "sent"
-    },
-    "li-4483506938": {
-      "title": "Financial Planning and Analysis Manager",
-      "company": "Bank Saqu",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483506938",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T02:08:15.370634+00:00",
-      "status": "sent"
-    },
-    "li-4482693948": {
-      "title": "Cost Control Specialist",
-      "company": "About All Day",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482693948",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T02:08:16.577317+00:00",
-      "status": "sent"
-    },
     "li-4483512378": {
       "title": "Internship, Strategy and Planning",
       "company": "Bank Saqu",
@@ -9000,6 +8928,78 @@
       "job_url": "https://www.linkedin.com/jobs/view/4453087783",
       "date_posted": "2026-11-05",
       "first_seen": "2026-11-05T19:13:21.600935+00:00",
+      "status": "sent"
+    },
+    "li-4486933419": {
+      "title": "AI Enablement Manager",
+      "company": "Mimin",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4486933419",
+      "date_posted": "2026-11-06",
+      "first_seen": "2026-11-06T01:15:05.079595+00:00",
+      "status": "sent"
+    },
+    "li-4488055227": {
+      "title": "Middle Product Analyst",
+      "company": "PT. Akhdani Reka Solusi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488055227",
+      "date_posted": "2026-11-05",
+      "first_seen": "2026-11-06T01:15:06.321318+00:00",
+      "status": "sent"
+    },
+    "li-4486919685": {
+      "title": "Performance Marketing Specialist",
+      "company": "Griity",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4486919685",
+      "date_posted": "2026-11-05",
+      "first_seen": "2026-11-06T01:15:07.533115+00:00",
+      "status": "sent"
+    },
+    "li-4488063886": {
+      "title": "Customer Service Operation",
+      "company": "Reckitt",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488063886",
+      "date_posted": "2026-11-05",
+      "first_seen": "2026-11-06T01:15:08.987235+00:00",
+      "status": "sent"
+    },
+    "li-4486921369": {
+      "title": "Trade Payables Finance Product Manager - AVP",
+      "company": "Citi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4486921369",
+      "date_posted": "2026-11-05",
+      "first_seen": "2026-11-06T01:15:10.381328+00:00",
+      "status": "sent"
+    },
+    "li-4485879492": {
+      "title": "Aircraft Sales Gov./Mil Intern",
+      "company": "Airbus",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485879492",
+      "date_posted": "2026-11-06",
+      "first_seen": "2026-11-06T01:15:11.573486+00:00",
+      "status": "sent"
+    },
+    "li-4486921461": {
+      "title": "Securities & Derivatives Intmd Analyst",
+      "company": "Citi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4486921461",
+      "date_posted": "2026-11-05",
+      "first_seen": "2026-11-06T01:15:12.882295+00:00",
+      "status": "sent"
+    },
+    "li-4488059060": {
+      "title": "Endpoint Intune Administrator",
+      "company": "PT. Kairos Utama Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488059060",
+      "date_posted": "2026-11-05",
+      "first_seen": "2026-11-06T01:15:14.123623+00:00",
       "status": "sent"
     }
   }
