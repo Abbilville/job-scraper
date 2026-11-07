@@ -1,160 +1,7 @@
 {
-  "last_updated": "2026-11-07T09:23:42.290443+00:00",
+  "last_updated": "2026-11-07T17:07:11.758114+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4483217024": {
-      "title": "Marketing Analyst",
-      "company": "UPS",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483217024",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:14.625388+00:00",
-      "status": "sent"
-    },
-    "li-4483204733": {
-      "title": "Marketing Analyst",
-      "company": "UPS",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483204733",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:16.027941+00:00",
-      "status": "sent"
-    },
-    "li-4483204746": {
-      "title": "Marketing Analyst",
-      "company": "UPS",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483204746",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:17.348481+00:00",
-      "status": "sent"
-    },
-    "li-4482998782": {
-      "title": "Marketing Analyst",
-      "company": "UPS",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482998782",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:18.673349+00:00",
-      "status": "sent"
-    },
-    "li-4483216366": {
-      "title": "Marketing Analyst",
-      "company": "UPS",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483216366",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:19.950476+00:00",
-      "status": "sent"
-    },
-    "li-4483204836": {
-      "title": "Marketing Analyst",
-      "company": "UPS",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483204836",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:21.123578+00:00",
-      "status": "sent"
-    },
-    "li-4483203794": {
-      "title": "Marketing Analyst",
-      "company": "UPS",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483203794",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:22.351967+00:00",
-      "status": "sent"
-    },
-    "li-4483234047": {
-      "title": "Associate Advisory Consultant",
-      "company": "BDO in Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483234047",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:23.473056+00:00",
-      "status": "sent"
-    },
-    "li-4483738463": {
-      "title": "Credit Analyst Jakarta",
-      "company": "PT Hino Finance Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483738463",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:24.623113+00:00",
-      "status": "sent"
-    },
-    "li-4483581703": {
-      "title": "Internal Audit",
-      "company": "AIA Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483581703",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:25.794263+00:00",
-      "status": "sent"
-    },
-    "li-4474260552": {
-      "title": "Assistant Finance Manager",
-      "company": "Turner & Townsend",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4474260552",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:27.132993+00:00",
-      "status": "sent"
-    },
-    "li-4483733718": {
-      "title": "RECEIVABLE COLLECTION MANAGEMENT [RCM] SPECIALIST",
-      "company": "PT Pantja Artha Niaga",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483733718",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:28.269916+00:00",
-      "status": "sent"
-    },
-    "li-4483217087": {
-      "title": "Accounting Data Entry Intern",
-      "company": "Luxehouze",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483217087",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:29.396671+00:00",
-      "status": "sent"
-    },
-    "li-4483731917": {
-      "title": "Product Management",
-      "company": "CODE.ID",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483731917",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:30.551637+00:00",
-      "status": "sent"
-    },
-    "li-4483208613": {
-      "title": "Program Management Trainee For Branch Jakarta",
-      "company": "PT. Victory International - Sudirman Jakarta",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483208613",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:31.896616+00:00",
-      "status": "sent"
-    },
-    "li-4483591556": {
-      "title": "Engineering Advisor - Reliability",
-      "company": "Baker Hughes",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483591556",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:33.287854+00:00",
-      "status": "sent"
-    },
-    "in-d6388131b66faf4f": {
-      "title": "Chief Engineer",
-      "company": "Cushman & Wakefield",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=d6388131b66faf4f",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:33.241629+00:00",
-      "status": "rejected"
-    },
     "in-f1d30266c3d6f5e2": {
       "title": "Facility Manager",
       "company": "Cushman & Wakefield",
@@ -9000,6 +8847,159 @@
       "job_url": "https://www.linkedin.com/jobs/view/4486965393",
       "date_posted": "2026-11-07",
       "first_seen": "2026-11-07T09:23:42.290293+00:00",
+      "status": "sent"
+    },
+    "li-4461952438": {
+      "title": "BCG Platinion AI Tech Architect (Hiring across Singapore, Malaysia, Thailand, Indonesia)",
+      "company": "Boston Consulting Group (BCG)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4461952438",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:06:54.207172+00:00",
+      "status": "rejected"
+    },
+    "li-4471897017": {
+      "title": "business development manager Civil / Digital",
+      "company": "Thales",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4471897017",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:06:54.207200+00:00",
+      "status": "rejected"
+    },
+    "li-4443418618": {
+      "title": "Expert Consultant, Procurement",
+      "company": "Boston Consulting Group (BCG)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4443418618",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:06:54.207203+00:00",
+      "status": "rejected"
+    },
+    "li-4479383947": {
+      "title": "Deliveries Demand Strategy, Assistant Manager",
+      "company": "Grab",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479383947",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:06:54.752595+00:00",
+      "status": "sent"
+    },
+    "li-4452390445": {
+      "title": "Risk Consulting - Actuarial (Junior Consultant)",
+      "company": "EY",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4452390445",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:06:56.215457+00:00",
+      "status": "sent"
+    },
+    "li-4434472631": {
+      "title": "Strategy & Operations - Marketing & Community",
+      "company": "Garena",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4434472631",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:06:57.425885+00:00",
+      "status": "sent"
+    },
+    "li-4461979887": {
+      "title": "Product Support - Core Banking",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4461979887",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:06:58.614718+00:00",
+      "status": "sent"
+    },
+    "li-4432969868": {
+      "title": "Sales Development Engineer (Data Center), Commercial Building Services Indonesia",
+      "company": "GRUNDFOS",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4432969868",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:06:59.854377+00:00",
+      "status": "sent"
+    },
+    "li-4480544927": {
+      "title": "Specifier ADP",
+      "company": "LIXIL",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480544927",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:07:01.091282+00:00",
+      "status": "sent"
+    },
+    "li-4471881694": {
+      "title": "Industrial Manager - Transfer of Production",
+      "company": "Thales",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4471881694",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:07:02.347823+00:00",
+      "status": "sent"
+    },
+    "li-4453521065": {
+      "title": "FORECASTING",
+      "company": "Brink’s Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4453521065",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:07:03.766283+00:00",
+      "status": "sent"
+    },
+    "li-4443799949": {
+      "title": "Consultant - FP&A - Financial Planning & Analysis",
+      "company": "Anaplan",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4443799949",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:07:05.104951+00:00",
+      "status": "sent"
+    },
+    "li-4480825780": {
+      "title": "Performance Marketing Executive (Shopee, Lazada, Tiktok Ads)",
+      "company": "Intrepid Asia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480825780",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:07:06.687084+00:00",
+      "status": "sent"
+    },
+    "li-4480396783": {
+      "title": "Global Affiliate Manager",
+      "company": "Binance",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480396783",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:07:07.911261+00:00",
+      "status": "sent"
+    },
+    "li-4487614362": {
+      "title": "Junior IT Project Manager (ASAP Joiner)",
+      "company": "Diksha Technologies",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487614362",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:07:09.080842+00:00",
+      "status": "sent"
+    },
+    "li-4470128576": {
+      "title": "Client Project Manager",
+      "company": "NTT DATA, Inc.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4470128576",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:07:10.341389+00:00",
+      "status": "sent"
+    },
+    "li-4487604768": {
+      "title": "Logistic Solution Design Manager",
+      "company": "Kalibri Logistik",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487604768",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T17:07:11.757994+00:00",
       "status": "sent"
     }
   }
