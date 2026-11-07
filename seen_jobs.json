@@ -1,88 +1,7 @@
 {
-  "last_updated": "2026-11-07T00:29:36.013209+00:00",
+  "last_updated": "2026-11-07T09:23:42.290443+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4483236809": {
-      "title": "AI & Cloud Solution Architect, BytePlus - Indonesia",
-      "company": "ByteDance",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483236809",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:05.217616+00:00",
-      "status": "rejected"
-    },
-    "li-4400723505": {
-      "title": "Fullstack Engineer (SDE 2)",
-      "company": "Kredivo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4400723505",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:05.406767+00:00",
-      "status": "sent"
-    },
-    "li-4447901799": {
-      "title": "Software Engineer in Test (SEIT) - Data Team",
-      "company": "Kredivo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4447901799",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:06.636303+00:00",
-      "status": "sent"
-    },
-    "li-4419018909": {
-      "title": "QA Engineer (SDE 2) - Merchant",
-      "company": "Kredivo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4419018909",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:07.752196+00:00",
-      "status": "sent"
-    },
-    "li-4483221157": {
-      "title": "Full Stack Developer",
-      "company": "TechTiera Services Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483221157",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:08.911596+00:00",
-      "status": "sent"
-    },
-    "li-4483204652": {
-      "title": "Full Stack Engineer",
-      "company": "Conextlab Technology (Pekerja AI & IT Services)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483204652",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:10.032379+00:00",
-      "status": "sent"
-    },
-    "li-4475555674": {
-      "title": "Workday Application Engineer",
-      "company": "Thales",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475555674",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:11.187798+00:00",
-      "status": "sent"
-    },
-    "li-4483729993": {
-      "title": "System Engineer",
-      "company": "PASIFIK SATELIT NUSANTARA",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483729993",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:12.320272+00:00",
-      "status": "sent"
-    },
-    "li-4481470424": {
-      "title": "GIS/Remote Sensing and MRV Specialist",
-      "company": "FAO",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481470424",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T22:02:13.436598+00:00",
-      "status": "sent"
-    },
     "li-4483217024": {
       "title": "Marketing Analyst",
       "company": "UPS",
@@ -9000,6 +8919,87 @@
       "job_url": "https://www.linkedin.com/jobs/view/4488424687",
       "date_posted": "2026-11-06",
       "first_seen": "2026-11-07T00:29:36.013036+00:00",
+      "status": "sent"
+    },
+    "li-4487397045": {
+      "title": "CRM / CEP Specialist (Experienced with Insider One)",
+      "company": "ARENARA",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487397045",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T09:23:32.887081+00:00",
+      "status": "sent"
+    },
+    "li-4453674736": {
+      "title": "Sales Engineer- South East Asia",
+      "company": "Branch",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4453674736",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T09:23:34.040542+00:00",
+      "status": "sent"
+    },
+    "li-4480505190": {
+      "title": "Commercial Process Analyst",
+      "company": "PT HM Sampoerna Tbk.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480505190",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T09:23:35.272424+00:00",
+      "status": "sent"
+    },
+    "li-4487399232": {
+      "title": "Marketing Division",
+      "company": "Viction.id",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487399232",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T09:23:36.489334+00:00",
+      "status": "sent"
+    },
+    "li-4487377430": {
+      "title": "MARKETING STRATEGY & GROWTH EXECUTIVE",
+      "company": "PT. MEJUSO MARGA MULTIDAYA",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487377430",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T09:23:37.612920+00:00",
+      "status": "sent"
+    },
+    "li-4487607022": {
+      "title": "Team Leader of Credit Control",
+      "company": "SCG CBM Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487607022",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T09:23:38.767444+00:00",
+      "status": "sent"
+    },
+    "li-4487395701": {
+      "title": "Graduate Management Trainee",
+      "company": "VIFX Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487395701",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T09:23:39.973521+00:00",
+      "status": "sent"
+    },
+    "li-4488465735": {
+      "title": "Product & Strategy Manager",
+      "company": "PT Asuransi Digital Bersama Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488465735",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T09:23:41.085642+00:00",
+      "status": "sent"
+    },
+    "li-4486965393": {
+      "title": "Finance and Compliance Officer",
+      "company": "Yasa Karsa Insani (YKI)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4486965393",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T09:23:42.290293+00:00",
       "status": "sent"
     }
   }
