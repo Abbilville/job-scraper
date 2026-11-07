@@ -1,106 +1,7 @@
 {
-  "last_updated": "2026-11-06T18:42:16.306134+00:00",
+  "last_updated": "2026-11-07T00:29:36.013209+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4481434920": {
-      "title": "Performance Marketing Associate - Lifestyle",
-      "company": "Seven Retail",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481434920",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T15:38:27.549117+00:00",
-      "status": "sent"
-    },
-    "li-4483208159": {
-      "title": "Performance Marketing Specialist for Mobile Banking Apps (Contract Based)",
-      "company": "ARENARA",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483208159",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T15:38:28.776909+00:00",
-      "status": "sent"
-    },
-    "li-4482946363": {
-      "title": "Key Account Executive (TSP)",
-      "company": "F-Commerce",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482946363",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T15:38:30.039975+00:00",
-      "status": "sent"
-    },
-    "li-4483553171": {
-      "title": "Customer Value Management Intern",
-      "company": "PT Link Net Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483553171",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T15:38:31.215373+00:00",
-      "status": "sent"
-    },
-    "li-4483205136": {
-      "title": "Growth Campaign Specialist ( Mobile Banking - Contract Based )",
-      "company": "ARENARA",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483205136",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T15:38:32.685725+00:00",
-      "status": "sent"
-    },
-    "li-4482991925": {
-      "title": "Produk Manajer",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482991925",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T15:38:33.988801+00:00",
-      "status": "sent"
-    },
-    "li-4409288247": {
-      "title": "Client Delivery Manager",
-      "company": "NTT DATA, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4409288247",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T15:38:35.341732+00:00",
-      "status": "sent"
-    },
-    "li-4481432851": {
-      "title": "Project Manager",
-      "company": "Siemens Healthineers",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481432851",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T15:38:36.558855+00:00",
-      "status": "sent"
-    },
-    "li-4409272935": {
-      "title": "Client Delivery Manager",
-      "company": "NTT DATA, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4409272935",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T15:38:37.810835+00:00",
-      "status": "sent"
-    },
-    "li-4409293066": {
-      "title": "Database Administrator",
-      "company": "NTT DATA, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4409293066",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T15:38:39.452831+00:00",
-      "status": "sent"
-    },
-    "li-4482953281": {
-      "title": "Network Engineer",
-      "company": "Lintasarta",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482953281",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-26T15:38:40.731063+00:00",
-      "status": "sent"
-    },
     "li-4483236809": {
       "title": "AI & Cloud Solution Architect, BytePlus - Indonesia",
       "company": "ByteDance",
@@ -9000,6 +8901,105 @@
       "job_url": "https://www.linkedin.com/jobs/view/4453089779",
       "date_posted": "2026-11-06",
       "first_seen": "2026-11-06T18:42:16.305948+00:00",
+      "status": "sent"
+    },
+    "li-4486298460": {
+      "title": "Solution Architect - Application",
+      "company": "NTT DATA, Inc.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4486298460",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T00:29:24.101665+00:00",
+      "status": "rejected"
+    },
+    "li-4487341652": {
+      "title": "Labs Bootcamp Program",
+      "company": "Shopee",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487341652",
+      "date_posted": "2026-11-06",
+      "first_seen": "2026-11-07T00:29:24.294806+00:00",
+      "status": "sent"
+    },
+    "li-4487353625": {
+      "title": "Business Intelligence Intern",
+      "company": "tiket.com",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487353625",
+      "date_posted": "2026-11-06",
+      "first_seen": "2026-11-07T00:29:25.548948+00:00",
+      "status": "sent"
+    },
+    "li-4488420166": {
+      "title": "Channel Category Modern Trade Analys",
+      "company": "Danone",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488420166",
+      "date_posted": "2026-11-06",
+      "first_seen": "2026-11-07T00:29:26.786632+00:00",
+      "status": "sent"
+    },
+    "li-4488435199": {
+      "title": "Odoo Functional - GSI",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488435199",
+      "date_posted": "2026-11-06",
+      "first_seen": "2026-11-07T00:29:27.977275+00:00",
+      "status": "sent"
+    },
+    "li-4488435136": {
+      "title": "Data Engineer (SQL)",
+      "company": "Bumi Amartha Teknologi Mandiri",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488435136",
+      "date_posted": "2026-11-06",
+      "first_seen": "2026-11-07T00:29:29.418429+00:00",
+      "status": "sent"
+    },
+    "li-4488449990": {
+      "title": "Field Service Engineer",
+      "company": "BD",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488449990",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T00:29:30.873591+00:00",
+      "status": "sent"
+    },
+    "li-4415478585": {
+      "title": "IT VAPT Cybersecurity",
+      "company": "AVOWS GLOBAL IT SOLUTIONS PRIVATE LIMITED",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4415478585",
+      "date_posted": "2026-11-06",
+      "first_seen": "2026-11-07T00:29:32.113263+00:00",
+      "status": "sent"
+    },
+    "li-4488432330": {
+      "title": "Provider Relation & Quality Manager",
+      "company": "Asuransi Astra",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488432330",
+      "date_posted": "2026-11-06",
+      "first_seen": "2026-11-07T00:29:33.444376+00:00",
+      "status": "sent"
+    },
+    "li-4488425702": {
+      "title": "Digital Product Manager",
+      "company": "Bumi Amartha Teknologi Mandiri",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488425702",
+      "date_posted": "2026-11-06",
+      "first_seen": "2026-11-07T00:29:34.642998+00:00",
+      "status": "sent"
+    },
+    "li-4488424687": {
+      "title": "Governance Risk Compliance",
+      "company": "Bumi Amartha Teknologi Mandiri",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488424687",
+      "date_posted": "2026-11-06",
+      "first_seen": "2026-11-07T00:29:36.013036+00:00",
       "status": "sent"
     }
   }
