@@ -1,43 +1,7 @@
 {
-  "last_updated": "2026-11-07T17:07:11.758114+00:00",
+  "last_updated": "2026-11-07T21:11:54.886248+00:00",
   "total_seen": 1000,
   "jobs": {
-    "in-f1d30266c3d6f5e2": {
-      "title": "Facility Manager",
-      "company": "Cushman & Wakefield",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=f1d30266c3d6f5e2",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:33.241652+00:00",
-      "status": "rejected"
-    },
-    "li-4483521334": {
-      "title": "JF ITB - Parts Department Head Trainee - UT Trainee",
-      "company": "PT Astra International Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483521334",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-27T02:44:33.241656+00:00",
-      "status": "rejected"
-    },
-    "in-9229f7086c28e850": {
-      "title": "Public Policy Associate Manager, Indonesia",
-      "company": "Meta",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=9229f7086c28e850",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:33.452739+00:00",
-      "status": "sent"
-    },
-    "li-4483523265": {
-      "title": "JF ITB - Cost Control Trainee - UT Trainee",
-      "company": "PT Astra International Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483523265",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-27T02:44:34.640407+00:00",
-      "status": "sent"
-    },
     "li-4483292090": {
       "title": "JAVA Programmer Staff Entry",
       "company": "PT. PRISMA SRI INFOTAMA",
@@ -9000,6 +8964,42 @@
       "job_url": "https://www.linkedin.com/jobs/view/4487604768",
       "date_posted": "2026-11-07",
       "first_seen": "2026-11-07T17:07:11.757994+00:00",
+      "status": "sent"
+    },
+    "li-4472272631": {
+      "title": "Partner Development Manager",
+      "company": "Microsoft",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4472272631",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T21:11:52.209646+00:00",
+      "status": "rejected"
+    },
+    "li-4487622515": {
+      "title": "Customer Success Manager - Lark - Jakarta",
+      "company": "ByteDance",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487622515",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T21:11:52.465881+00:00",
+      "status": "sent"
+    },
+    "li-4479397410": {
+      "title": "Food Demand Strategy, Assistant Manager",
+      "company": "Grab",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479397410",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T21:11:53.692040+00:00",
+      "status": "sent"
+    },
+    "li-4463192820": {
+      "title": "Engineer, Systems - Datacenter",
+      "company": "CommScope",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4463192820",
+      "date_posted": "2026-11-07",
+      "first_seen": "2026-11-07T21:11:54.886129+00:00",
       "status": "sent"
     }
   }
