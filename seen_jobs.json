@@ -1,79 +1,7 @@
 {
-  "last_updated": "2026-11-08T03:03:59.705227+00:00",
+  "last_updated": "2026-11-08T12:22:24.953998+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4483274777": {
-      "title": "Cloud Engineer AWS",
-      "company": "PT Amber Solusi Internasional",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483274777",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:39.565957+00:00",
-      "status": "sent"
-    },
-    "li-4482993743": {
-      "title": "SAP FICO",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482993743",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:40.906684+00:00",
-      "status": "sent"
-    },
-    "li-4483769468": {
-      "title": "IMS Cloud Engineer",
-      "company": "Thales",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483769468",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-27T02:44:42.211083+00:00",
-      "status": "sent"
-    },
-    "li-4483269326": {
-      "title": "IT Data Analyst (Tableau, GCP)",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483269326",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-27T02:44:43.416365+00:00",
-      "status": "sent"
-    },
-    "li-4483270906": {
-      "title": "IT Operations",
-      "company": "MSBU Konsultan",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483270906",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:44.612446+00:00",
-      "status": "sent"
-    },
-    "li-4483280631": {
-      "title": "Market Research Analyst",
-      "company": "CARSURIN",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483280631",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:45.813238+00:00",
-      "status": "sent"
-    },
-    "li-4483249888": {
-      "title": "Research and Insight Specialist",
-      "company": "Luxehouze",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483249888",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-27T02:44:47.278031+00:00",
-      "status": "sent"
-    },
-    "in-a715d7882579beb6": {
-      "title": "Specialist Data Engineering",
-      "company": "Sanggar Sarana Baja",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=a715d7882579beb6",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:48.520738+00:00",
-      "status": "sent"
-    },
     "li-4483284564": {
       "title": "Performance Ads Specialist (Google Ads & Meta Ads)",
       "company": "Idealtata Building Products",
@@ -9000,6 +8928,78 @@
       "job_url": "https://www.linkedin.com/jobs/view/4487622932",
       "date_posted": "2026-11-08",
       "first_seen": "2026-11-08T03:03:59.705099+00:00",
+      "status": "sent"
+    },
+    "li-4487650235": {
+      "title": "Tencent Cloud - AI Native Cloud Solution Architect (Indonesia)",
+      "company": "Tencent",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487650235",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T12:22:16.959469+00:00",
+      "status": "rejected"
+    },
+    "li-4454528732": {
+      "title": "Product Associate (Talent Pool)",
+      "company": "Garena",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4454528732",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T12:22:17.134283+00:00",
+      "status": "sent"
+    },
+    "li-4487645583": {
+      "title": "AI Engineer",
+      "company": "MSBU Konsultan",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487645583",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T12:22:18.473814+00:00",
+      "status": "sent"
+    },
+    "li-4487629817": {
+      "title": "Freelance Database Migration (PostgreSQL)",
+      "company": "IYKRA",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487629817",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T12:22:19.807957+00:00",
+      "status": "sent"
+    },
+    "li-4487632606": {
+      "title": "腾讯云- 印尼AI原生云解决方案架构师",
+      "company": "Tencent",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487632606",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T12:22:21.041853+00:00",
+      "status": "sent"
+    },
+    "li-4488782045": {
+      "title": "Junior Mobile Engineer",
+      "company": "VLink Inc",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488782045",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T12:22:22.237915+00:00",
+      "status": "sent"
+    },
+    "li-4441076717": {
+      "title": "Application Engineer",
+      "company": "Johnson Controls",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4441076717",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T12:22:23.553827+00:00",
+      "status": "sent"
+    },
+    "li-4450863884": {
+      "title": "Technical Account Manager",
+      "company": "Supermicro",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4450863884",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T12:22:24.953830+00:00",
       "status": "sent"
     }
   }
