@@ -1,52 +1,7 @@
 {
-  "last_updated": "2026-11-08T12:22:24.953998+00:00",
+  "last_updated": "2026-11-08T19:13:57.430406+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4483284564": {
-      "title": "Performance Ads Specialist (Google Ads & Meta Ads)",
-      "company": "Idealtata Building Products",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483284564",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:49.773769+00:00",
-      "status": "sent"
-    },
-    "li-4483269969": {
-      "title": "Feedstock Admin Intern",
-      "company": "PT Polytama Propindo",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483269969",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:51.084611+00:00",
-      "status": "sent"
-    },
-    "li-4483274787": {
-      "title": "UX Researcher",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483274787",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:52.334095+00:00",
-      "status": "sent"
-    },
-    "li-4483282681": {
-      "title": "Management Trainee Program (Jakarta)",
-      "company": "Viction.id (Branch Sona Topas )",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483282681",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:53.508237+00:00",
-      "status": "sent"
-    },
-    "li-4483278321": {
-      "title": "Management Trainee Staff",
-      "company": "PT. Victory International (Branch Satrio Tower)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483278321",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:57.535726+00:00",
-      "status": "sent"
-    },
     "li-4480348429": {
       "title": "Consultancy Needed - Middle Donor & Stewardship",
       "company": "Save the Children International",
@@ -9000,6 +8955,51 @@
       "job_url": "https://www.linkedin.com/jobs/view/4450863884",
       "date_posted": "2026-11-08",
       "first_seen": "2026-11-08T12:22:24.953830+00:00",
+      "status": "sent"
+    },
+    "li-4480878561": {
+      "title": "Tencent Cloud - AI Native Cloud Solution Architect (Indonesia)",
+      "company": "Tencent",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4480878561",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T19:13:53.672696+00:00",
+      "status": "rejected"
+    },
+    "li-4324980219": {
+      "title": "Data Scientist",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4324980219",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T19:13:53.852365+00:00",
+      "status": "sent"
+    },
+    "li-4487643780": {
+      "title": "jr. Quality Assurance Engineer",
+      "company": "Asiatek Solusi Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487643780",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T19:13:55.037403+00:00",
+      "status": "sent"
+    },
+    "li-4462834469": {
+      "title": "Product & Solution Leader - MS, Indonesia",
+      "company": "GE HealthCare",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4462834469",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T19:13:56.185228+00:00",
+      "status": "sent"
+    },
+    "li-4487635842": {
+      "title": "Field Force Performance Analyst - JAKARTA",
+      "company": "SWAKARYA INSAN MANDIRI",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487635842",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T19:13:57.430232+00:00",
       "status": "sent"
     }
   }
