@@ -1,34 +1,7 @@
 {
-  "last_updated": "2026-11-07T21:11:54.886248+00:00",
+  "last_updated": "2026-11-08T03:03:59.705227+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4483292090": {
-      "title": "JAVA Programmer Staff Entry",
-      "company": "PT. PRISMA SRI INFOTAMA",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483292090",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:35.894674+00:00",
-      "status": "sent"
-    },
-    "li-4483270964": {
-      "title": "Java Developer (Contract)",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483270964",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:37.172504+00:00",
-      "status": "sent"
-    },
-    "li-4483278668": {
-      "title": "NET Core Developer (Winform)",
-      "company": "Insura Media Solusi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483278668",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:44:38.365479+00:00",
-      "status": "sent"
-    },
     "li-4483274777": {
       "title": "Cloud Engineer AWS",
       "company": "PT Amber Solusi Internasional",
@@ -9000,6 +8973,33 @@
       "job_url": "https://www.linkedin.com/jobs/view/4463192820",
       "date_posted": "2026-11-07",
       "first_seen": "2026-11-07T21:11:54.886129+00:00",
+      "status": "sent"
+    },
+    "li-4487636163": {
+      "title": "Middleware WebMethods Developer",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487636163",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T03:03:57.293748+00:00",
+      "status": "sent"
+    },
+    "li-4487642108": {
+      "title": "Frontend Developer Next.js",
+      "company": "Insura Media Solusi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487642108",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T03:03:58.471977+00:00",
+      "status": "sent"
+    },
+    "li-4487622932": {
+      "title": "srr QA Auto Engineerr",
+      "company": "Insura Media Solusi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487622932",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-08T03:03:59.705099+00:00",
       "status": "sent"
     }
   }
