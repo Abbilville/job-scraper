@@ -1,439 +1,7 @@
 {
-  "last_updated": "2026-11-09T00:14:34.045749+00:00",
+  "last_updated": "2026-11-09T10:35:05.342780+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4483279680": {
-      "title": "Product Manager",
-      "company": "Lancesoft Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483279680",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:45:01.281338+00:00",
-      "status": "sent"
-    },
-    "li-4483282646": {
-      "title": "Information Technology Project Manager",
-      "company": "LanceSoft, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483282646",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:45:02.592384+00:00",
-      "status": "sent"
-    },
-    "li-4480436132": {
-      "title": "Product Development Staff",
-      "company": "PT Onda Mega Integra",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480436132",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-27T02:45:03.811456+00:00",
-      "status": "sent"
-    },
-    "li-4483294016": {
-      "title": "Management Trainee Program",
-      "company": "Viction.id",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483294016",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:45:05.044305+00:00",
-      "status": "sent"
-    },
-    "li-4483286583": {
-      "title": "Project Manager",
-      "company": "Lancesoft Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483286583",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:45:06.378665+00:00",
-      "status": "sent"
-    },
-    "li-4483280670": {
-      "title": "Jr Customer Engineer",
-      "company": "Terralogiq",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483280670",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:45:07.608172+00:00",
-      "status": "sent"
-    },
-    "li-4481823646": {
-      "title": "Organizational Development Specialist",
-      "company": "PT Sanggar Sarana Baja",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481823646",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:45:08.895653+00:00",
-      "status": "sent"
-    },
-    "li-4483272772": {
-      "title": "Technical Writer",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483272772",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T02:45:10.286156+00:00",
-      "status": "sent"
-    },
-    "li-4483601718": {
-      "title": "App Operations (Marketplace App & Mobile) - Sea Labs",
-      "company": "Shopee",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483601718",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:29:57.159051+00:00",
-      "status": "sent"
-    },
-    "li-4483296409": {
-      "title": "B2B Affiliate Intern",
-      "company": "tiket.com",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483296409",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:29:58.306470+00:00",
-      "status": "sent"
-    },
-    "li-4483610690": {
-      "title": "Software Engineer (Odoo)",
-      "company": "PT. Integra Putra Mandiri",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483610690",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:29:59.461747+00:00",
-      "status": "sent"
-    },
-    "li-4483600561": {
-      "title": "Dotnet Developer",
-      "company": "Asiatek Solusi Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483600561",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:00.641206+00:00",
-      "status": "sent"
-    },
-    "li-4481853417": {
-      "title": "Full Stack Developer",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481853417",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:01.848284+00:00",
-      "status": "sent"
-    },
-    "li-4483610010": {
-      "title": "Application Developer (.NET)",
-      "company": "PT Adicipta Inovasi Teknologi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483610010",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:03.084147+00:00",
-      "status": "sent"
-    },
-    "li-4483295762": {
-      "title": "Java Developer (Banking)",
-      "company": "PT Pronata Data Insani",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483295762",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:04.202591+00:00",
-      "status": "sent"
-    },
-    "li-4483272830": {
-      "title": "Platform Engineer 2026",
-      "company": "Ruang Partners",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483272830",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:05.459420+00:00",
-      "status": "sent"
-    },
-    "li-4443775962": {
-      "title": "NET Developer (Jogja & Jakarta based)",
-      "company": "VLink Inc",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4443775962",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:06.571865+00:00",
-      "status": "sent"
-    },
-    "li-4482937380": {
-      "title": "Junior .Net Developer",
-      "company": "PT IDstar Cipta Teknologi (IDstar)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482937380",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:07.840852+00:00",
-      "status": "sent"
-    },
-    "li-4481849108": {
-      "title": ".NET Backend Developer",
-      "company": "PT Siaga Abdi Utama",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481849108",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:09.110137+00:00",
-      "status": "sent"
-    },
-    "li-4481851449": {
-      "title": "Liferay Developer",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481851449",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:10.330176+00:00",
-      "status": "sent"
-    },
-    "li-4483297260": {
-      "title": "System Analyst (.NET)",
-      "company": "PT Adicipta Inovasi Teknologi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483297260",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:11.517487+00:00",
-      "status": "sent"
-    },
-    "li-4483610147": {
-      "title": "Fullstack IAM Developer",
-      "company": "Tvaksa Technologies Private Limited",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483610147",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:12.676293+00:00",
-      "status": "sent"
-    },
-    "li-4483285949": {
-      "title": "Fullstack Developer",
-      "company": "Insura Media Solusi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483285949",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:13.927100+00:00",
-      "status": "sent"
-    },
-    "li-4484002227": {
-      "title": "Product Manager",
-      "company": "Aplikas Servis Pesona",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4484002227",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:15.058442+00:00",
-      "status": "sent"
-    },
-    "li-4483611100": {
-      "title": "Technical Business Development Manager, Indonesia",
-      "company": "Ackcio",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483611100",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:16.156404+00:00",
-      "status": "sent"
-    },
-    "li-4481848515": {
-      "title": "Sales Engineer Profesional",
-      "company": "Sandvik",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481848515",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:17.269649+00:00",
-      "status": "sent"
-    },
-    "li-4483617006": {
-      "title": "Data Engineer",
-      "company": "Terralogiq",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483617006",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:18.490437+00:00",
-      "status": "sent"
-    },
-    "li-4483600695": {
-      "title": "Data Engineer",
-      "company": "Insignia.co.id",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483600695",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:19.611128+00:00",
-      "status": "sent"
-    },
-    "li-4483286995": {
-      "title": "Data Migration Specialist",
-      "company": "PT Adicipta Inovasi Teknologi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483286995",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:21.050625+00:00",
-      "status": "sent"
-    },
-    "li-4483294851": {
-      "title": "IT Learning Facilitator - Cloud Computing",
-      "company": "Terralogiq",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483294851",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:22.426982+00:00",
-      "status": "sent"
-    },
-    "li-4483615451": {
-      "title": "DevOps",
-      "company": "PT. Elektronik Distribusi Otomatisasi Terkemuka (eDOT)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483615451",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:23.604013+00:00",
-      "status": "sent"
-    },
-    "li-4483607670": {
-      "title": "Cloud Engineer (AWS)",
-      "company": "PT Amber Solusi Internasional",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483607670",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:25.018218+00:00",
-      "status": "sent"
-    },
-    "li-4481852306": {
-      "title": "Full Stack Developer – IAM",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481852306",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:26.295280+00:00",
-      "status": "sent"
-    },
-    "li-4484022406": {
-      "title": "Middle Data Engineer (AWS)",
-      "company": "VLink Inc",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4484022406",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:27.812611+00:00",
-      "status": "sent"
-    },
-    "li-4483295081": {
-      "title": "ETL Developer/ Data Engineer",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483295081",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:28.962555+00:00",
-      "status": "sent"
-    },
-    "li-4483614435": {
-      "title": "Java Developer",
-      "company": "ONE INDONESIA",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483614435",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:30.081701+00:00",
-      "status": "sent"
-    },
-    "li-4483279818": {
-      "title": "Regulatory Reporting",
-      "company": "Accord Innovations",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483279818",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:31.195419+00:00",
-      "status": "sent"
-    },
-    "li-4483600792": {
-      "title": "Risk Management (Fintech/P2P Lending)",
-      "company": "BantuFazz Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483600792",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:32.462031+00:00",
-      "status": "sent"
-    },
-    "li-4484019410": {
-      "title": "Business and Data Analyst - eCommerce SME",
-      "company": "Intrepid Asia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4484019410",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:33.895617+00:00",
-      "status": "sent"
-    },
-    "li-4484008674": {
-      "title": "Business and Data Analyst - Social Commerce SME",
-      "company": "Intrepid Asia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4484008674",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:35.166410+00:00",
-      "status": "sent"
-    },
-    "li-4483279757": {
-      "title": "Financial Planning and Analysis Manager",
-      "company": "Lancesoft Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483279757",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:36.407039+00:00",
-      "status": "sent"
-    },
-    "li-4483294071": {
-      "title": "Database Administrator Specialist",
-      "company": "TechTiera Services Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483294071",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:37.529812+00:00",
-      "status": "sent"
-    },
-    "li-4481859592": {
-      "title": "SCHOOL DEVELOPMENT OUTREACH - QUALITY ASSURANCE/MONITORING AND EVALUATION STAFF",
-      "company": "Putera Sampoerna Foundation",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481859592",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:38.822215+00:00",
-      "status": "sent"
-    },
-    "li-4483606093": {
-      "title": "Business Analyst",
-      "company": "PT Adicipta Inovasi Teknologi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483606093",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:40.029001+00:00",
-      "status": "sent"
-    },
-    "li-4483291845": {
-      "title": "Cust Life Cycle Mgt & Revenue Optimization",
-      "company": "UOB",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4483291845",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:41.176219+00:00",
-      "status": "sent"
-    },
-    "in-6ce4e5bbbc9ae659": {
-      "title": "Business and Data Analyst - Social Commerce SME",
-      "company": "Intrepid Asia",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=6ce4e5bbbc9ae659",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:42.360561+00:00",
-      "status": "sent"
-    },
-    "in-8401ce1ca66a99a9": {
-      "title": "Business and Data Analyst - eCommerce SME",
-      "company": "Intrepid Asia",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=8401ce1ca66a99a9",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:47.143343+00:00",
-      "status": "sent"
-    },
-    "in-16e17ed20e686a92": {
-      "title": "Mediation & Negotiation Sales Analyst",
-      "company": "Flin",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=16e17ed20e686a92",
-      "date_posted": "2026-10-27",
-      "first_seen": "2026-10-27T08:30:48.348031+00:00",
-      "status": "sent"
-    },
     "in-fc26eb703c50236e": {
       "title": "Junior Operations Executive (E-Commerce Logistic)",
       "company": "Intrepid Asia",
@@ -9000,6 +8568,438 @@
       "job_url": "https://www.linkedin.com/jobs/view/4487651831",
       "date_posted": "2026-11-08",
       "first_seen": "2026-11-09T00:14:34.045623+00:00",
+      "status": "sent"
+    },
+    "li-4488826511": {
+      "title": "Sr Marketing Manager",
+      "company": "Visa",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488826511",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:10.356106+00:00",
+      "status": "rejected"
+    },
+    "li-4354415381": {
+      "title": "Finance Information Management Head",
+      "company": "UOB",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4354415381",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:10.356131+00:00",
+      "status": "rejected"
+    },
+    "li-4487666843": {
+      "title": "Product Intern - ID Games",
+      "company": "Shopee",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487666843",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:10.654088+00:00",
+      "status": "sent"
+    },
+    "li-4487680118": {
+      "title": "Java Software Engineer",
+      "company": "MSBU Konsultan",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487680118",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:12.155346+00:00",
+      "status": "sent"
+    },
+    "li-4487674682": {
+      "title": "Fullstack Developer (Java, Angular & .NET)",
+      "company": "Asiatek Solusi Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487674682",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:13.364694+00:00",
+      "status": "sent"
+    },
+    "li-4464832582": {
+      "title": "Dotnet Developer",
+      "company": "Lancesoft Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4464832582",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:14.497532+00:00",
+      "status": "sent"
+    },
+    "li-4487679341": {
+      "title": "MIddleware/Fullstack Developer WebMethods",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487679341",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:15.591018+00:00",
+      "status": "sent"
+    },
+    "li-4487685673": {
+      "title": "Golang Developer",
+      "company": "Indocyber Global Teknologi, PT",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487685673",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:16.721658+00:00",
+      "status": "sent"
+    },
+    "li-4488822828": {
+      "title": "AI Systems Engineer",
+      "company": "Hadl.ai",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488822828",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:18.048823+00:00",
+      "status": "sent"
+    },
+    "li-4487683255": {
+      "title": "Software Engineer (Java)",
+      "company": "Indocyber Global Teknologi, PT",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487683255",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:19.224055+00:00",
+      "status": "sent"
+    },
+    "li-4486701059": {
+      "title": "Python Developer",
+      "company": "Akar Inti Enterprise",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4486701059",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:20.462477+00:00",
+      "status": "sent"
+    },
+    "li-4487689057": {
+      "title": "Backend Java Engineer",
+      "company": "ADI Consulting Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487689057",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:21.611813+00:00",
+      "status": "sent"
+    },
+    "li-4485439937": {
+      "title": "DevOps Engineer",
+      "company": "AVOWS CONSULTING LIMITED",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485439937",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:22.738450+00:00",
+      "status": "sent"
+    },
+    "li-4487689324": {
+      "title": "(Talent Bank IT) BE Golang Dev.",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487689324",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:24.017058+00:00",
+      "status": "sent"
+    },
+    "li-4487658955": {
+      "title": "Dotnet Developer",
+      "company": "PT Pro Sigmaka Mandiri",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487658955",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:25.217821+00:00",
+      "status": "sent"
+    },
+    "li-4487694286": {
+      "title": "junior .NET Developer (Project Basec",
+      "company": "PT IDstar Cipta Teknologi (IDstar)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487694286",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:26.502123+00:00",
+      "status": "sent"
+    },
+    "li-4487677545": {
+      "title": "Golang Developer",
+      "company": "Indocyber Global Teknologi, PT",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487677545",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:27.701134+00:00",
+      "status": "sent"
+    },
+    "li-4488822839": {
+      "title": "Data Scientist (Forecasting & Analytics)",
+      "company": "Hadl.ai",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488822839",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:29.201198+00:00",
+      "status": "sent"
+    },
+    "li-4416525164": {
+      "title": "Modelling Analyst",
+      "company": "UOB",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4416525164",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:30.452520+00:00",
+      "status": "sent"
+    },
+    "li-4487677618": {
+      "title": "Data Engineer",
+      "company": "Indocyber Global Teknologi, PT",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487677618",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:31.694320+00:00",
+      "status": "sent"
+    },
+    "li-4488837756": {
+      "title": "Talent Pool Development Program",
+      "company": "TechConnect",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488837756",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:32.796014+00:00",
+      "status": "sent"
+    },
+    "li-4487693112": {
+      "title": "Middle level ETL Developer/Data Engineer (pengalaman kerja 2 thn)",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487693112",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:34.063252+00:00",
+      "status": "sent"
+    },
+    "li-4487693328": {
+      "title": "Data Engineer",
+      "company": "Indocyber Global Teknologi, PT",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487693328",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:35.249243+00:00",
+      "status": "sent"
+    },
+    "li-4487692524": {
+      "title": "Analyst",
+      "company": "KATADATAcoid",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487692524",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:36.353257+00:00",
+      "status": "sent"
+    },
+    "li-4487900271": {
+      "title": "Research Associate | Macroeconomics and Industry",
+      "company": "PERSOL APAC",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487900271",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:37.472880+00:00",
+      "status": "sent"
+    },
+    "li-4487689119": {
+      "title": "PPIC Manager",
+      "company": "Hangry",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487689119",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:38.661762+00:00",
+      "status": "sent"
+    },
+    "li-4487687151": {
+      "title": "DBA/Database Engineer/ IT Database Administrator",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487687151",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:39.961330+00:00",
+      "status": "sent"
+    },
+    "li-4488835326": {
+      "title": "Business Analyst",
+      "company": "Interport Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488835326",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:41.105304+00:00",
+      "status": "sent"
+    },
+    "li-4487678825": {
+      "title": "E-Commerce Specialist",
+      "company": "PT Good Sale Tech",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487678825",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:42.265377+00:00",
+      "status": "sent"
+    },
+    "li-4487682360": {
+      "title": "E-Commerce Manager",
+      "company": "Arya Noble",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487682360",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:43.500194+00:00",
+      "status": "sent"
+    },
+    "li-4487683071": {
+      "title": "Marketplace Ads Specialist",
+      "company": "Awin Agency",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487683071",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:44.603205+00:00",
+      "status": "sent"
+    },
+    "li-4488823887": {
+      "title": "Risk Controller",
+      "company": "C&D Inc.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488823887",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:45.817111+00:00",
+      "status": "sent"
+    },
+    "li-4487686210": {
+      "title": "Technology & Platform Officer",
+      "company": "HBM Peatland Conservation Project - PT Hutani Berkah Mulia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487686210",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:47.140661+00:00",
+      "status": "sent"
+    },
+    "li-4487678656": {
+      "title": "SAP FICO CONSULTANT - Freelance",
+      "company": "AsiaQuest Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487678656",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:48.251316+00:00",
+      "status": "sent"
+    },
+    "li-4487699200": {
+      "title": "GIS Intern (CLIP)",
+      "company": "CarbonEthics",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487699200",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:49.361976+00:00",
+      "status": "sent"
+    },
+    "li-4488828634": {
+      "title": "Project Manager (Technology Delivery)",
+      "company": "Hadl.ai",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488828634",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:50.595248+00:00",
+      "status": "sent"
+    },
+    "li-4487673960": {
+      "title": "R&D Product Development Manager (Experienced in Food Manufacturing)",
+      "company": "HeadHunter",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487673960",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:51.753056+00:00",
+      "status": "sent"
+    },
+    "li-4487682380": {
+      "title": "Brand Manager",
+      "company": "Confidential Company",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487682380",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:53.168000+00:00",
+      "status": "sent"
+    },
+    "li-4487688233": {
+      "title": "Technical Delivery Manager",
+      "company": "Nityo Infotech Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487688233",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:54.389359+00:00",
+      "status": "sent"
+    },
+    "li-4487696414": {
+      "title": "Business Analyst",
+      "company": "Adhyatama Teknologi Solusi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487696414",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:55.600285+00:00",
+      "status": "sent"
+    },
+    "li-4487687539": {
+      "title": "Business Analyst",
+      "company": "Asiatek Solusi Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487687539",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:56.829607+00:00",
+      "status": "sent"
+    },
+    "li-4488842369": {
+      "title": "Listing Business Development Manager",
+      "company": "BTSE",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488842369",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:57.985501+00:00",
+      "status": "sent"
+    },
+    "li-4487690374": {
+      "title": "Product Executive",
+      "company": "PT Interbat",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487690374",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:34:59.351562+00:00",
+      "status": "sent"
+    },
+    "li-4487677571": {
+      "title": "International Marketing Manager",
+      "company": "Lemonilo",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487677571",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:35:00.459410+00:00",
+      "status": "sent"
+    },
+    "li-4487694167": {
+      "title": "Functional Odoo",
+      "company": "PT. Karunia Jasindo",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487694167",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:35:01.604484+00:00",
+      "status": "sent"
+    },
+    "li-4487135539": {
+      "title": "Quality Assurance Specialist",
+      "company": "Fortress Digital Services",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487135539",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:35:03.028450+00:00",
+      "status": "sent"
+    },
+    "li-4487689320": {
+      "title": "Information Technology Business Analyst",
+      "company": "TechTiera Corporation",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487689320",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:35:04.140595+00:00",
+      "status": "sent"
+    },
+    "li-4487691111": {
+      "title": "SAP HCM Payroll Consultant - SuccessFactors ECP",
+      "company": "Nityo Infotech Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487691111",
+      "date_posted": "2026-11-09",
+      "first_seen": "2026-11-09T10:35:05.342553+00:00",
       "status": "sent"
     }
   }
