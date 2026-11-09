@@ -1,16 +1,7 @@
 {
-  "last_updated": "2026-11-08T19:13:57.430406+00:00",
+  "last_updated": "2026-11-09T00:14:34.045749+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4480348429": {
-      "title": "Consultancy Needed - Middle Donor & Stewardship",
-      "company": "Save the Children International",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480348429",
-      "date_posted": "2026-10-26",
-      "first_seen": "2026-10-27T02:44:58.801520+00:00",
-      "status": "sent"
-    },
     "li-4483279680": {
       "title": "Product Manager",
       "company": "Lancesoft Indonesia",
@@ -9000,6 +8991,15 @@
       "job_url": "https://www.linkedin.com/jobs/view/4487635842",
       "date_posted": "2026-11-08",
       "first_seen": "2026-11-08T19:13:57.430232+00:00",
+      "status": "sent"
+    },
+    "li-4487651831": {
+      "title": "Field Activation Engineer",
+      "company": "PT Solusi Sinergi Digital Tbk (SURGE)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4487651831",
+      "date_posted": "2026-11-08",
+      "first_seen": "2026-11-09T00:14:34.045623+00:00",
       "status": "sent"
     }
   }
