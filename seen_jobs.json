@@ -1,106 +1,7 @@
 {
-  "last_updated": "2026-11-14T03:53:51.282152+00:00",
+  "last_updated": "2026-11-14T12:39:47.026352+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4324249713": {
-      "title": "Business Analyst",
-      "company": "DXC Technology",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4324249713",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:21.234481+00:00",
-      "status": "sent"
-    },
-    "li-4485476220": {
-      "title": "DevOps Engineer",
-      "company": "Ivosights",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485476220",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:22.501548+00:00",
-      "status": "sent"
-    },
-    "li-4485452909": {
-      "title": "Dotnet Developer (C# .NET)",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485452909",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:23.686873+00:00",
-      "status": "sent"
-    },
-    "li-4485460621": {
-      "title": "Software Engineer (Korean Speaker)",
-      "company": "LG Sinar Mas (LGSM)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485460621",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:24.867154+00:00",
-      "status": "sent"
-    },
-    "li-4484359378": {
-      "title": "Programmer Intern (MagangHub)",
-      "company": "Great Giant Foods",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4484359378",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:27.068872+00:00",
-      "status": "sent"
-    },
-    "li-4485462411": {
-      "title": "AI Software Engineer",
-      "company": "PT Loren Tech Solutions",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485462411",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:28.857815+00:00",
-      "status": "sent"
-    },
-    "li-4485476002": {
-      "title": "Cloud Database Operation",
-      "company": "LG Sinar Mas (LGSM)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485476002",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:30.134835+00:00",
-      "status": "sent"
-    },
-    "li-4485469300": {
-      "title": "Data Consultant",
-      "company": "PT IDstar Cipta Teknologi (IDstar)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485469300",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:31.375048+00:00",
-      "status": "sent"
-    },
-    "li-4485705049": {
-      "title": "ETL Developer",
-      "company": "PT IDstar Cipta Teknologi (IDstar)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485705049",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:32.650200+00:00",
-      "status": "sent"
-    },
-    "li-4484324522": {
-      "title": "System Analyst",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4484324522",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:33.862429+00:00",
-      "status": "sent"
-    },
-    "li-4485720362": {
-      "title": "RPA Developer",
-      "company": "Asiatek Solusi Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485720362",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:35.151241+00:00",
-      "status": "sent"
-    },
     "li-4485475220": {
       "title": "Product & Application Specialist",
       "company": "PT GeneCraft Labs",
@@ -9000,6 +8901,105 @@
       "job_url": "https://www.linkedin.com/jobs/view/4489854258",
       "date_posted": "2026-11-14",
       "first_seen": "2026-11-14T03:53:51.281996+00:00",
+      "status": "sent"
+    },
+    "li-4489865829": {
+      "title": "Consultant, Services Project Program Management",
+      "company": "Dell Technologies",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4489865829",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T12:39:35.308399+00:00",
+      "status": "rejected"
+    },
+    "li-4464862010": {
+      "title": "T&T Consultant - Technology Strategy & Transformation - ID",
+      "company": "Deloitte",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4464862010",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T12:39:35.679078+00:00",
+      "status": "sent"
+    },
+    "li-4479024333": {
+      "title": "Fraud Operations Manager",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4479024333",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T12:39:36.941318+00:00",
+      "status": "sent"
+    },
+    "li-4489562379": {
+      "title": "Golang Dev",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4489562379",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T12:39:38.257965+00:00",
+      "status": "sent"
+    },
+    "li-4437006185": {
+      "title": "Sales Application Engineer",
+      "company": "Siemens Energy",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4437006185",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T12:39:39.424777+00:00",
+      "status": "sent"
+    },
+    "li-4455416763": {
+      "title": "Pricing Analyst - Zurich Asuransi Indonesia",
+      "company": "Zurich Insurance",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4455416763",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T12:39:40.664005+00:00",
+      "status": "sent"
+    },
+    "li-4473140278": {
+      "title": "Manager, Production Finance - Indonesia",
+      "company": "Netflix",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473140278",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T12:39:41.928112+00:00",
+      "status": "sent"
+    },
+    "li-4491071166": {
+      "title": "Intern - Channel & Partner Operations",
+      "company": "aCommerce",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4491071166",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T12:39:43.160457+00:00",
+      "status": "sent"
+    },
+    "li-4474153700": {
+      "title": "Market Category Manager, Marketing Procurement(SEA)",
+      "company": "Diageo",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4474153700",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T12:39:44.342771+00:00",
+      "status": "sent"
+    },
+    "li-4489869571": {
+      "title": "Product Manager EDC (Tech IT).",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4489869571",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T12:39:45.703936+00:00",
+      "status": "sent"
+    },
+    "li-4489868513": {
+      "title": "Design Ops / Design Operations. ( Tech Bank IT ).",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4489868513",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T12:39:47.026201+00:00",
       "status": "sent"
     }
   }
