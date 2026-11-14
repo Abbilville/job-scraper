@@ -1,88 +1,7 @@
 {
-  "last_updated": "2026-11-13T21:06:27.845068+00:00",
+  "last_updated": "2026-11-14T03:53:51.282152+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4485444162": {
-      "title": "Operational Excellence Intern",
-      "company": "PT Asuransi Jiwa Sequis Life",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485444162",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T03:06:34.406958+00:00",
-      "status": "sent"
-    },
-    "in-cd7f917b82e02a03": {
-      "title": "Engineering Supervisor",
-      "company": "Kenvue",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=cd7f917b82e02a03",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:14.416144+00:00",
-      "status": "rejected"
-    },
-    "li-4485457770": {
-      "title": "Deputy Manager of Financial Analysis (East Indonesia) (FMCG - Perishable Goods)",
-      "company": "PT Talenta Eksekutif Asia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485457770",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:14.416168+00:00",
-      "status": "rejected"
-    },
-    "li-4485473223": {
-      "title": "Product Development & Technical GM",
-      "company": "Crownswere PVT LTD",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485473223",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:14.416172+00:00",
-      "status": "rejected"
-    },
-    "li-4468499244": {
-      "title": "GoTo Financial - Business Intelligence Ops",
-      "company": "GoTo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4468499244",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:14.682778+00:00",
-      "status": "sent"
-    },
-    "li-4382951617": {
-      "title": "Operations Manufacturing Lean Consultant - Operations Excellence Program",
-      "company": "McKinsey & Company",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4382951617",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:15.907284+00:00",
-      "status": "sent"
-    },
-    "in-6a2846b08d4057c9": {
-      "title": "IT Support Engineer (Shifting)",
-      "company": "PT Lawencon Internasional",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=6a2846b08d4057c9",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:17.469506+00:00",
-      "status": "sent"
-    },
-    "in-3ec2b901f8669774": {
-      "title": "SAMPOERNA ACADEMY - OPERATIONS STAFF",
-      "company": "Sampoerna University",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=3ec2b901f8669774",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:18.762415+00:00",
-      "status": "sent"
-    },
-    "li-4485469325": {
-      "title": "(Contract) Golang Dev",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485469325",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:05:19.963351+00:00",
-      "status": "sent"
-    },
     "li-4324249713": {
       "title": "Business Analyst",
       "company": "DXC Technology",
@@ -9000,6 +8919,87 @@
       "job_url": "https://www.linkedin.com/jobs/view/4453413462",
       "date_posted": "2026-11-13",
       "first_seen": "2026-11-13T21:06:27.844913+00:00",
+      "status": "sent"
+    },
+    "li-4490523206": {
+      "title": "Management Representative & PDCA Analyst - AIS",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490523206",
+      "date_posted": "2026-11-13",
+      "first_seen": "2026-11-14T03:53:41.399776+00:00",
+      "status": "sent"
+    },
+    "li-4490511766": {
+      "title": "ATN - Risk Analyst",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490511766",
+      "date_posted": "2026-11-13",
+      "first_seen": "2026-11-14T03:53:42.671677+00:00",
+      "status": "sent"
+    },
+    "li-4489849642": {
+      "title": "Management Trainee - Jakarta (Jabodetabek Area)",
+      "company": "Life at Viction",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4489849642",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T03:53:43.927172+00:00",
+      "status": "sent"
+    },
+    "li-4489859079": {
+      "title": "Management Trainee - Jakarta (Jabodetabek Area)",
+      "company": "Viction Generation",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4489859079",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T03:53:45.143094+00:00",
+      "status": "sent"
+    },
+    "li-4491001741": {
+      "title": "Specialist, Advisory Services, Southeast Asia",
+      "company": "Women's World Banking",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4491001741",
+      "date_posted": "2026-11-13",
+      "first_seen": "2026-11-14T03:53:46.334279+00:00",
+      "status": "sent"
+    },
+    "li-4489846778": {
+      "title": "Sap B1 support consultan",
+      "company": "PT Anugrah Visi Inti Teknologi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4489846778",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T03:53:47.558396+00:00",
+      "status": "sent"
+    },
+    "li-4489859205": {
+      "title": "Management Trainee (Jakarta)",
+      "company": "Viction Generation",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4489859205",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T03:53:48.908921+00:00",
+      "status": "sent"
+    },
+    "li-4489857250": {
+      "title": "Design Operations",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4489857250",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T03:53:50.123329+00:00",
+      "status": "sent"
+    },
+    "li-4489854258": {
+      "title": "Internship",
+      "company": "Generali Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4489854258",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-14T03:53:51.281996+00:00",
       "status": "sent"
     }
   }
