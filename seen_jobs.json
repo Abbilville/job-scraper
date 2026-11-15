@@ -1,25 +1,7 @@
 {
-  "last_updated": "2026-11-14T19:35:01.643194+00:00",
+  "last_updated": "2026-11-15T00:29:54.193547+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4485463358": {
-      "title": "Tableau Developer",
-      "company": "Tvaksa Technologies Private Limited",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485463358",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:06:04.926857+00:00",
-      "status": "sent"
-    },
-    "li-4485467527": {
-      "title": "Database Administrator (DBA)",
-      "company": "Radya Labs",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485467527",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:06:06.123926+00:00",
-      "status": "sent"
-    },
     "li-4485462426": {
       "title": "Tableau Developer",
       "company": "Diksha Technologies",
@@ -9000,6 +8982,24 @@
       "job_url": "https://www.linkedin.com/jobs/view/4403175445",
       "date_posted": "2026-11-14",
       "first_seen": "2026-11-14T19:35:01.643023+00:00",
+      "status": "sent"
+    },
+    "li-4489895772": {
+      "title": "IT Project Manager",
+      "company": "BOSNET Distribution Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4489895772",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-15T00:29:53.015533+00:00",
+      "status": "sent"
+    },
+    "li-4489891885": {
+      "title": "IT Project Manager Intern",
+      "company": "BOSNET Distribution Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4489891885",
+      "date_posted": "2026-11-14",
+      "first_seen": "2026-11-15T00:29:54.193365+00:00",
       "status": "sent"
     }
   }
