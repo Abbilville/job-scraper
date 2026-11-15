@@ -1,115 +1,7 @@
 {
-  "last_updated": "2026-11-15T00:29:54.193547+00:00",
+  "last_updated": "2026-11-15T10:05:12.937202+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4485462426": {
-      "title": "Tableau Developer",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485462426",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:06:07.583953+00:00",
-      "status": "sent"
-    },
-    "li-4484355566": {
-      "title": "Inventory Analyst (Food & Beverages)",
-      "company": "Kawan Lama Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4484355566",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:06:08.868524+00:00",
-      "status": "sent"
-    },
-    "li-4484352591": {
-      "title": "Commercial & Operations Staff",
-      "company": "Seven Retail",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4484352591",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:06:10.049304+00:00",
-      "status": "sent"
-    },
-    "li-4484341024": {
-      "title": "ITBP - Sales & Distribution Intern (MagangHub)",
-      "company": "Great Giant Foods",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4484341024",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:06:11.501794+00:00",
-      "status": "sent"
-    },
-    "li-4482051191": {
-      "title": "CP Business Controller",
-      "company": "Syngenta",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482051191",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:06:12.784832+00:00",
-      "status": "sent"
-    },
-    "li-4440048153": {
-      "title": "Product Manager - Monee Credit",
-      "company": "Monee",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4440048153",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:06:14.003959+00:00",
-      "status": "sent"
-    },
-    "li-4475544524": {
-      "title": "Product Manager",
-      "company": "FIT HUB",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4475544524",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:06:15.227315+00:00",
-      "status": "sent"
-    },
-    "li-4486136669": {
-      "title": "Health Product Design & Proposition",
-      "company": "Prudential Syariah",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486136669",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:06:16.403120+00:00",
-      "status": "sent"
-    },
-    "li-4486129920": {
-      "title": "Product & Channel Development ODU & IDU Officer",
-      "company": "PT. Indosat Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486129920",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:06:17.636013+00:00",
-      "status": "sent"
-    },
-    "li-4484341131": {
-      "title": "IT Business Partner Manager",
-      "company": "Kawan Lama Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4484341131",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:06:18.898083+00:00",
-      "status": "sent"
-    },
-    "li-4485473200": {
-      "title": "Customer Operation-Kota Jakarta Selatan",
-      "company": "BIPO",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485473200",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T14:06:20.171552+00:00",
-      "status": "sent"
-    },
-    "li-4468728257": {
-      "title": "Software Engineer, Mobile (iOS)",
-      "company": "Grab",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4468728257",
-      "date_posted": "2026-11-02",
-      "first_seen": "2026-11-02T22:56:11.896917+00:00",
-      "status": "sent"
-    },
     "li-4485751548": {
       "title": "(Associate) Tech Solution Sales Manager",
       "company": "IQVIA",
@@ -9000,6 +8892,114 @@
       "job_url": "https://www.linkedin.com/jobs/view/4489891885",
       "date_posted": "2026-11-14",
       "first_seen": "2026-11-15T00:29:54.193365+00:00",
+      "status": "sent"
+    },
+    "li-4490211630": {
+      "title": "Solution Sales Expert (AI Expertise)",
+      "company": "Rolejob",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490211630",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-15T10:05:00.617259+00:00",
+      "status": "rejected"
+    },
+    "li-4490210452": {
+      "title": ".NET Developer",
+      "company": "Horizon Perdana",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490210452",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-15T10:05:00.837779+00:00",
+      "status": "sent"
+    },
+    "li-4490217598": {
+      "title": "Cloud Engineer - PCA Certification (must have)",
+      "company": "Terralogiq",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490217598",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-15T10:05:02.079603+00:00",
+      "status": "sent"
+    },
+    "li-4490211641": {
+      "title": "Quality Assurance Engineer",
+      "company": "PT Hermes Solusi Integrasi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490211641",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-15T10:05:03.330318+00:00",
+      "status": "sent"
+    },
+    "li-4490220185": {
+      "title": "MySQL Engineer",
+      "company": "PT Mojosoft Infiniti Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490220185",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-15T10:05:04.507138+00:00",
+      "status": "sent"
+    },
+    "li-4490222392": {
+      "title": "Field Activation Engineer",
+      "company": "PT Solusi Sinergi Digital Tbk (SURGE)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490222392",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-15T10:05:05.670062+00:00",
+      "status": "sent"
+    },
+    "li-4491234079": {
+      "title": "Technical Sales Project - SEA+",
+      "company": "Wavin Indonesia, an Orbia business",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4491234079",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-15T10:05:06.855086+00:00",
+      "status": "sent"
+    },
+    "li-4399136144": {
+      "title": "Financial Reporting&Analyst Team Leader",
+      "company": "UOB",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4399136144",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-15T10:05:08.026046+00:00",
+      "status": "sent"
+    },
+    "li-4447790451": {
+      "title": "2027 Asia Analyst Development Program - Summer Analyst - Indonesia",
+      "company": "JPMorganChase",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4447790451",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-15T10:05:09.278238+00:00",
+      "status": "sent"
+    },
+    "li-4490210679": {
+      "title": "Management Trainee Program",
+      "company": "PT. Victory International (Branch Jakarta Satrio)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490210679",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-15T10:05:10.457200+00:00",
+      "status": "sent"
+    },
+    "li-4455436502": {
+      "title": "Wholesale Banking & GM Comp Advisory Spc",
+      "company": "UOB",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4455436502",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-15T10:05:11.723775+00:00",
+      "status": "sent"
+    },
+    "li-4473162383": {
+      "title": "Proposal Specialist",
+      "company": "Johnson Controls",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4473162383",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-15T10:05:12.936999+00:00",
       "status": "sent"
     }
   }
