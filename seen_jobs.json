@@ -1,232 +1,7 @@
 {
-  "last_updated": "2026-11-16T10:23:12.514965+00:00",
+  "last_updated": "2026-11-16T21:23:23.493632+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4486044244": {
-      "title": "Data Analyst (Mandarin Speaker) - Pluit",
-      "company": "J&T Cargo Indonesia (PT Global Yimi Cargo)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486044244",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:36.636924+00:00",
-      "status": "sent"
-    },
-    "li-4486844312": {
-      "title": "Demand Supply Planner",
-      "company": "AlloFresh",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486844312",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:37.868352+00:00",
-      "status": "sent"
-    },
-    "li-4486044268": {
-      "title": "Data Analyst",
-      "company": "PT. Intikom Berlian Mustika",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486044268",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:39.249285+00:00",
-      "status": "sent"
-    },
-    "li-4486050418": {
-      "title": "Digital Ads",
-      "company": "FOOM LAB GLOBAL",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486050418",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:40.443515+00:00",
-      "status": "sent"
-    },
-    "li-4484664200": {
-      "title": "Associate Sales Force Effectiveness (Contract)",
-      "company": "DKSH",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4484664200",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:41.557134+00:00",
-      "status": "sent"
-    },
-    "li-4486866457": {
-      "title": "Data Validation Specialist",
-      "company": "Tanla Platforms Limited",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486866457",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:42.737119+00:00",
-      "status": "sent"
-    },
-    "li-4486824595": {
-      "title": "Penetration Tester",
-      "company": "Protergo",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486824595",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:44.121763+00:00",
-      "status": "sent"
-    },
-    "li-4484676006": {
-      "title": "Merchandising Planning",
-      "company": "MAP Active Asia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4484676006",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:45.261666+00:00",
-      "status": "sent"
-    },
-    "li-4486830300": {
-      "title": "Business Analyst",
-      "company": "ATI Business Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486830300",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:46.405543+00:00",
-      "status": "sent"
-    },
-    "li-4486828372": {
-      "title": "E-commerce Executive",
-      "company": "MULTITREND Indo Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486828372",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:47.556813+00:00",
-      "status": "sent"
-    },
-    "li-4414721562": {
-      "title": "Sales Support (JD YOUNG Internship Program) (Open)",
-      "company": "JD.COM",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4414721562",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:48.739650+00:00",
-      "status": "sent"
-    },
-    "li-4414732270": {
-      "title": "Operations Support (JD YOUNG Internship Program)",
-      "company": "JD.COM",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4414732270",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:49.982872+00:00",
-      "status": "sent"
-    },
-    "li-4486828981": {
-      "title": "Finance - Manager",
-      "company": "Biomed Global",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486828981",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:51.157368+00:00",
-      "status": "sent"
-    },
-    "li-4486038738": {
-      "title": "Product Manager",
-      "company": "AkzoNobel",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486038738",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:52.278469+00:00",
-      "status": "sent"
-    },
-    "li-4486848378": {
-      "title": "Product Manager",
-      "company": "Nufarm",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486848378",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:53.411402+00:00",
-      "status": "sent"
-    },
-    "li-4484662344": {
-      "title": "Product Executive",
-      "company": "DKSH",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4484662344",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:54.581563+00:00",
-      "status": "sent"
-    },
-    "li-4486850444": {
-      "title": "商品经理",
-      "company": "MINISO Global",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486850444",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:55.752119+00:00",
-      "status": "sent"
-    },
-    "li-4486023965": {
-      "title": "Growth & Business Development",
-      "company": "BingX",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486023965",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:56.892788+00:00",
-      "status": "sent"
-    },
-    "li-4486835324": {
-      "title": "Business Analyst",
-      "company": "Lancesoft Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486835324",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:58.729798+00:00",
-      "status": "sent"
-    },
-    "li-4486825983": {
-      "title": "Technical Delivery Manager",
-      "company": "Nityo Infotech Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486825983",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:14:59.928370+00:00",
-      "status": "sent"
-    },
-    "li-4486845323": {
-      "title": "Business Analyst - Insurance Project (Urgent Hiring)",
-      "company": "NTT DATA, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486845323",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:15:01.397318+00:00",
-      "status": "sent"
-    },
-    "li-4486853143": {
-      "title": "Technical Project Manager (Insurance)",
-      "company": "Nityo Infotech Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486853143",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:15:02.617916+00:00",
-      "status": "sent"
-    },
-    "li-4486852365": {
-      "title": "Sap Finance Control Consultant x4",
-      "company": "Abstract Resources Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486852365",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:15:03.764506+00:00",
-      "status": "sent"
-    },
-    "li-4358242330": {
-      "title": "Assistant IT Infrastructure Manager",
-      "company": "LUXASIA",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4358242330",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T13:15:04.906512+00:00",
-      "status": "sent"
-    },
-    "li-4482063882": {
-      "title": "Sales Specialist - Digital, Motion Services",
-      "company": "ABB",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482063882",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T20:44:29.954324+00:00",
-      "status": "rejected"
-    },
     "li-4479004270": {
       "title": "Digital Solution Area Specialists",
       "company": "Microsoft",
@@ -9000,6 +8775,231 @@
       "job_url": "https://www.linkedin.com/jobs/view/4489710707",
       "date_posted": "2026-11-16",
       "first_seen": "2026-11-16T10:23:12.514777+00:00",
+      "status": "sent"
+    },
+    "in-aa9c8b0bd11ebcbb": {
+      "title": "Program Manager",
+      "company": "RePurpose Global",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=aa9c8b0bd11ebcbb",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:01.418154+00:00",
+      "status": "rejected"
+    },
+    "in-b1bdf9b5bd21c212": {
+      "title": "Procurement & Contract Expert",
+      "company": "RePurpose Global",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=b1bdf9b5bd21c212",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:01.418168+00:00",
+      "status": "rejected"
+    },
+    "in-433c42caf56fd664": {
+      "title": "Government Liaison & Partnerships Manager",
+      "company": "RePurpose Global",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=433c42caf56fd664",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:01.418172+00:00",
+      "status": "rejected"
+    },
+    "in-397efc9b3849d45d": {
+      "title": "Electro-Mechanical Expert",
+      "company": "RePurpose Global",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=397efc9b3849d45d",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:01.418175+00:00",
+      "status": "rejected"
+    },
+    "in-be42477ab7fad8ee": {
+      "title": "Treatment Innovation & Development Manager - SOZO Skin",
+      "company": "Seven Retail",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=be42477ab7fad8ee",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:01.418179+00:00",
+      "status": "rejected"
+    },
+    "in-933403babb63b50c": {
+      "title": "Project Accounts & Admin Officer",
+      "company": "RePurpose Global",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=933403babb63b50c",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:01.418183+00:00",
+      "status": "rejected"
+    },
+    "li-4490129948": {
+      "title": "Organization Development Sr. Specialist",
+      "company": "Arya Noble",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490129948",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:01.418186+00:00",
+      "status": "rejected"
+    },
+    "li-4400723505": {
+      "title": "Fullstack Engineer (SDE 2)",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4400723505",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:01.618964+00:00",
+      "status": "sent"
+    },
+    "li-4447901799": {
+      "title": "Software Engineer in Test (SEIT) - Data Team",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4447901799",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:02.931887+00:00",
+      "status": "sent"
+    },
+    "li-4421788701": {
+      "title": "Financial Technology Junior Consultant (FSO)",
+      "company": "EY",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4421788701",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:04.131859+00:00",
+      "status": "sent"
+    },
+    "li-4421796481": {
+      "title": "Business Consulting Finance (FSO) - Junior Consultant",
+      "company": "EY",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4421796481",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:05.479528+00:00",
+      "status": "sent"
+    },
+    "li-4490128127": {
+      "title": "Management Consulting - Industry Banking",
+      "company": "Accenture Southeast Asia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490128127",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:06.677799+00:00",
+      "status": "sent"
+    },
+    "li-4421785794": {
+      "title": "Risk Transformation (FSO) - Junior Consultant",
+      "company": "EY",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4421785794",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:07.961706+00:00",
+      "status": "sent"
+    },
+    "li-4475555675": {
+      "title": "Workday Software and Integration Engineer",
+      "company": "Thales",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475555675",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:09.222003+00:00",
+      "status": "sent"
+    },
+    "li-4489787993": {
+      "title": "( Tech IT ) Middleware WebMethods Dev",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4489787993",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:10.461012+00:00",
+      "status": "sent"
+    },
+    "li-4490900307": {
+      "title": "BE Golang Dev (Tech IT)",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490900307",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:11.685271+00:00",
+      "status": "sent"
+    },
+    "li-4475555674": {
+      "title": "Workday Application Engineer",
+      "company": "Thales",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475555674",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:12.965952+00:00",
+      "status": "sent"
+    },
+    "in-7506ef462958f7d9": {
+      "title": "Project Management Associate (contract)",
+      "company": "PayJoy",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=7506ef462958f7d9",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:14.210482+00:00",
+      "status": "sent"
+    },
+    "in-d258b06dd3043436": {
+      "title": "Project Management Associate",
+      "company": "RePurpose Global",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=d258b06dd3043436",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:15.442511+00:00",
+      "status": "sent"
+    },
+    "in-32c67973c094a04a": {
+      "title": "Ready4Work Batch 11",
+      "company": "Bester & Co.",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=32c67973c094a04a",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:17.273085+00:00",
+      "status": "sent"
+    },
+    "in-94e8bafc6c58188a": {
+      "title": "Middle User Acqusition Meta",
+      "company": "Ruby Labs",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=94e8bafc6c58188a",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:18.519711+00:00",
+      "status": "sent"
+    },
+    "li-4490668193": {
+      "title": "Management Trainee (Jakarta, Jabodetabek Area Only).",
+      "company": "Viction Generation",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490668193",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:19.702358+00:00",
+      "status": "sent"
+    },
+    "li-4490681017": {
+      "title": "Promoter Coordinator (contract)",
+      "company": "PayJoy",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490681017",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:20.997359+00:00",
+      "status": "sent"
+    },
+    "li-4490661795": {
+      "title": "Project Management Associate (contract)",
+      "company": "PayJoy",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490661795",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:22.321678+00:00",
+      "status": "sent"
+    },
+    "li-4490129949": {
+      "title": "IT Support",
+      "company": "PT. Metrodata Electronics Tbk.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490129949",
+      "date_posted": "2026-11-16",
+      "first_seen": "2026-11-16T21:23:23.493473+00:00",
       "status": "sent"
     }
   }
