@@ -1,79 +1,7 @@
 {
-  "last_updated": "2026-11-15T18:08:14.127868+00:00",
+  "last_updated": "2026-11-16T00:30:52.663527+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4486021230": {
-      "title": "IT JAVA Staff",
-      "company": "PT. PRISMA SRI INFOTAMA",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486021230",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T04:26:31.578113+00:00",
-      "status": "sent"
-    },
-    "li-4486012331": {
-      "title": "Backend Java Developer",
-      "company": "ADI Consulting Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486012331",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T04:26:32.778364+00:00",
-      "status": "sent"
-    },
-    "li-4486490983": {
-      "title": "Site Reliability Engineer",
-      "company": "AlloFresh",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486490983",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T04:26:34.016095+00:00",
-      "status": "sent"
-    },
-    "li-4486014266": {
-      "title": "DevOps Monitoring",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486014266",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T04:26:35.291394+00:00",
-      "status": "sent"
-    },
-    "li-4486011262": {
-      "title": "Cloud Engineer – Must Have PCA Certification Google",
-      "company": "Terralogiq",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486011262",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T04:26:36.580021+00:00",
-      "status": "sent"
-    },
-    "li-4486016296": {
-      "title": "[Talent Pool] Forward Support Engineer",
-      "company": "PT. Indosat Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486016296",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T04:26:37.814649+00:00",
-      "status": "sent"
-    },
-    "li-4484637060": {
-      "title": "L3 Technical SME - AI Compute",
-      "company": "FPT Software",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4484637060",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T04:26:39.001353+00:00",
-      "status": "sent"
-    },
-    "li-4486009427": {
-      "title": "DevOps Engineer",
-      "company": "Avows Technologies Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486009427",
-      "date_posted": "2026-11-03",
-      "first_seen": "2026-11-03T04:26:40.334206+00:00",
-      "status": "sent"
-    },
     "li-4486011337": {
       "title": "IT Governance Risk Compliance & Security",
       "company": "Indivara Group",
@@ -9000,6 +8928,78 @@
       "job_url": "https://www.linkedin.com/jobs/view/4490232492",
       "date_posted": "2026-11-15",
       "first_seen": "2026-11-15T18:08:14.127681+00:00",
+      "status": "sent"
+    },
+    "li-4490231713": {
+      "title": "Client Solutions Manager (App and Web Performance), Indonesia",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490231713",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-16T00:30:43.769567+00:00",
+      "status": "sent"
+    },
+    "li-4490236602": {
+      "title": "ERM Risk Specialist – Multi-Finance (Indonesia) - Global Payment",
+      "company": "ByteDance",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490236602",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-16T00:30:45.034352+00:00",
+      "status": "sent"
+    },
+    "li-4491257658": {
+      "title": "FY 27 - Associate 1 - Assurance - CMAAS",
+      "company": "PwC",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4491257658",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-16T00:30:46.291464+00:00",
+      "status": "sent"
+    },
+    "li-4491251882": {
+      "title": "FY27 - Associate 1 - Risk Assurance - IT Governance",
+      "company": "PwC",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4491251882",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-16T00:30:47.789022+00:00",
+      "status": "sent"
+    },
+    "li-4490229748": {
+      "title": "Technology Manager (App)",
+      "company": "Tentang Anak",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490229748",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-16T00:30:48.984759+00:00",
+      "status": "sent"
+    },
+    "li-4490247276": {
+      "title": "Design System Specialist",
+      "company": "Entrepreneur Trust Digital | Entrust Digital",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490247276",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-16T00:30:50.200436+00:00",
+      "status": "sent"
+    },
+    "li-4490233725": {
+      "title": "Channel Partner Manager",
+      "company": "TOTM Labs",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490233725",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-16T00:30:51.466361+00:00",
+      "status": "sent"
+    },
+    "li-4490239527": {
+      "title": "Wholesale Banking Analyst",
+      "company": "Bank Shinhan Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490239527",
+      "date_posted": "2026-11-15",
+      "first_seen": "2026-11-16T00:30:52.663344+00:00",
       "status": "sent"
     }
   }
