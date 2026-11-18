@@ -1,106 +1,7 @@
 {
-  "last_updated": "2026-11-17T15:08:07.140276+00:00",
+  "last_updated": "2026-11-18T00:09:22.773854+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4451122568": {
-      "title": "Product Manager - Transaction",
-      "company": "Kredivo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4451122568",
-      "date_posted": "2026-11-04",
-      "first_seen": "2026-11-04T19:01:46.919397+00:00",
-      "status": "sent"
-    },
-    "li-4254100734": {
-      "title": "Product Manager - B2B (Mandarin Speaker)",
-      "company": "Kredivo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4254100734",
-      "date_posted": "2026-11-04",
-      "first_seen": "2026-11-04T19:01:48.140788+00:00",
-      "status": "sent"
-    },
-    "li-4451127361": {
-      "title": "Product Support - Transaction",
-      "company": "Kredivo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4451127361",
-      "date_posted": "2026-11-04",
-      "first_seen": "2026-11-04T19:01:49.361714+00:00",
-      "status": "sent"
-    },
-    "li-4486389510": {
-      "title": "Software Engineer (Golang)",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486389510",
-      "date_posted": "2026-11-04",
-      "first_seen": "2026-11-04T19:01:50.710686+00:00",
-      "status": "sent"
-    },
-    "li-4479282417": {
-      "title": "Data Intelligence ( 1 year Contract)",
-      "company": "TechConnect",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479282417",
-      "date_posted": "2026-11-04",
-      "first_seen": "2026-11-04T19:01:53.343667+00:00",
-      "status": "sent"
-    },
-    "li-4479285349": {
-      "title": "Automation Engineer",
-      "company": "GEA Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479285349",
-      "date_posted": "2026-11-04",
-      "first_seen": "2026-11-04T19:01:54.682038+00:00",
-      "status": "sent"
-    },
-    "li-4476629135": {
-      "title": "Solution Consultant 2 (TELCO)",
-      "company": "Palo Alto Networks",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4476629135",
-      "date_posted": "2026-11-04",
-      "first_seen": "2026-11-04T19:01:56.100338+00:00",
-      "status": "sent"
-    },
-    "li-4471600123": {
-      "title": "Professional Learning & Development Manager - 7617",
-      "company": "Cambridge University Press & Assessment",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4471600123",
-      "date_posted": "2026-11-04",
-      "first_seen": "2026-11-04T19:01:57.330414+00:00",
-      "status": "sent"
-    },
-    "li-4486390112": {
-      "title": "Data Analyst (join ASAP only)",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486390112",
-      "date_posted": "2026-11-04",
-      "first_seen": "2026-11-04T19:01:58.583220+00:00",
-      "status": "sent"
-    },
-    "li-4461721286": {
-      "title": "Forecasting",
-      "company": "Brink’s Inc",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4461721286",
-      "date_posted": "2026-11-04",
-      "first_seen": "2026-11-04T19:01:59.752111+00:00",
-      "status": "sent"
-    },
-    "li-4344827679": {
-      "title": "CDAR Execution Executive",
-      "company": "NielsenIQ",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4344827679",
-      "date_posted": "2026-11-04",
-      "first_seen": "2026-11-04T19:02:00.938604+00:00",
-      "status": "sent"
-    },
     "li-4478403438": {
       "title": "Online Brand Manager",
       "company": "L'Oréal",
@@ -9000,6 +8901,105 @@
       "job_url": "https://www.linkedin.com/jobs/view/4409288247",
       "date_posted": "2026-11-17",
       "first_seen": "2026-11-17T15:08:07.140080+00:00",
+      "status": "sent"
+    },
+    "li-4491416203": {
+      "title": "Partnership Manager - TikTok Local Services",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4491416203",
+      "date_posted": "2026-11-17",
+      "first_seen": "2026-11-18T00:09:10.769130+00:00",
+      "status": "sent"
+    },
+    "li-4491751087": {
+      "title": "Mobile Developer",
+      "company": "Bumi Amartha Teknologi Mandiri",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4491751087",
+      "date_posted": "2026-11-17",
+      "first_seen": "2026-11-18T00:09:11.890400+00:00",
+      "status": "sent"
+    },
+    "li-4491751090": {
+      "title": "DevOps Engineer",
+      "company": "Bumi Amartha Teknologi Mandiri",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4491751090",
+      "date_posted": "2026-11-17",
+      "first_seen": "2026-11-18T00:09:13.080947+00:00",
+      "status": "sent"
+    },
+    "li-4491744426": {
+      "title": "System Analyst",
+      "company": "PT. Metrodata Electronics Tbk.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4491744426",
+      "date_posted": "2026-11-17",
+      "first_seen": "2026-11-18T00:09:14.238806+00:00",
+      "status": "sent"
+    },
+    "li-4486877887": {
+      "title": "Sales Specialist",
+      "company": "ABB",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4486877887",
+      "date_posted": "2026-11-17",
+      "first_seen": "2026-11-18T00:09:15.508993+00:00",
+      "status": "sent"
+    },
+    "li-4491746306": {
+      "title": "IT Business Partner and Innovation Incubation Officer",
+      "company": "Indonesia Stock Exchange",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4491746306",
+      "date_posted": "2026-11-17",
+      "first_seen": "2026-11-18T00:09:16.649238+00:00",
+      "status": "sent"
+    },
+    "li-4484049214": {
+      "title": "Resident Engineer",
+      "company": "DDN",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4484049214",
+      "date_posted": "2026-11-17",
+      "first_seen": "2026-11-18T00:09:18.002204+00:00",
+      "status": "sent"
+    },
+    "li-4491454014": {
+      "title": "Assistant",
+      "company": "Universitas Trisakti",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4491454014",
+      "date_posted": "2026-11-17",
+      "first_seen": "2026-11-18T00:09:19.165484+00:00",
+      "status": "sent"
+    },
+    "li-4490250835": {
+      "title": "Commercial Strategic Development Assistant Manager",
+      "company": "DHL Supply Chain",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4490250835",
+      "date_posted": "2026-11-17",
+      "first_seen": "2026-11-18T00:09:20.280969+00:00",
+      "status": "sent"
+    },
+    "li-4491741572": {
+      "title": "Governance Risk Compliance",
+      "company": "Bumi Amartha Teknologi Mandiri",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4491741572",
+      "date_posted": "2026-11-17",
+      "first_seen": "2026-11-18T00:09:21.453342+00:00",
+      "status": "sent"
+    },
+    "li-4491734854": {
+      "title": "Technical Trainer",
+      "company": "PT Adicipta Inovasi Teknologi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4491734854",
+      "date_posted": "2026-11-17",
+      "first_seen": "2026-11-18T00:09:22.773710+00:00",
       "status": "sent"
     }
   }
