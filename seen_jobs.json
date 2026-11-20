@@ -1,250 +1,7 @@
 {
-  "last_updated": "2026-11-20T10:43:45.380711+00:00",
+  "last_updated": "2026-11-20T19:22:19.537740+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4487614362": {
-      "title": "Junior IT Project Manager (ASAP Joiner)",
-      "company": "Diksha Technologies",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487614362",
-      "date_posted": "2026-11-07",
-      "first_seen": "2026-11-07T17:07:09.080842+00:00",
-      "status": "sent"
-    },
-    "li-4470128576": {
-      "title": "Client Project Manager",
-      "company": "NTT DATA, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4470128576",
-      "date_posted": "2026-11-07",
-      "first_seen": "2026-11-07T17:07:10.341389+00:00",
-      "status": "sent"
-    },
-    "li-4487604768": {
-      "title": "Logistic Solution Design Manager",
-      "company": "Kalibri Logistik",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487604768",
-      "date_posted": "2026-11-07",
-      "first_seen": "2026-11-07T17:07:11.757994+00:00",
-      "status": "sent"
-    },
-    "li-4472272631": {
-      "title": "Partner Development Manager",
-      "company": "Microsoft",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472272631",
-      "date_posted": "2026-11-07",
-      "first_seen": "2026-11-07T21:11:52.209646+00:00",
-      "status": "rejected"
-    },
-    "li-4487622515": {
-      "title": "Customer Success Manager - Lark - Jakarta",
-      "company": "ByteDance",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487622515",
-      "date_posted": "2026-11-07",
-      "first_seen": "2026-11-07T21:11:52.465881+00:00",
-      "status": "sent"
-    },
-    "li-4479397410": {
-      "title": "Food Demand Strategy, Assistant Manager",
-      "company": "Grab",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4479397410",
-      "date_posted": "2026-11-07",
-      "first_seen": "2026-11-07T21:11:53.692040+00:00",
-      "status": "sent"
-    },
-    "li-4463192820": {
-      "title": "Engineer, Systems - Datacenter",
-      "company": "CommScope",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4463192820",
-      "date_posted": "2026-11-07",
-      "first_seen": "2026-11-07T21:11:54.886129+00:00",
-      "status": "sent"
-    },
-    "li-4487636163": {
-      "title": "Middleware WebMethods Developer",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487636163",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T03:03:57.293748+00:00",
-      "status": "sent"
-    },
-    "li-4487642108": {
-      "title": "Frontend Developer Next.js",
-      "company": "Insura Media Solusi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487642108",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T03:03:58.471977+00:00",
-      "status": "sent"
-    },
-    "li-4487622932": {
-      "title": "srr QA Auto Engineerr",
-      "company": "Insura Media Solusi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487622932",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T03:03:59.705099+00:00",
-      "status": "sent"
-    },
-    "li-4487650235": {
-      "title": "Tencent Cloud - AI Native Cloud Solution Architect (Indonesia)",
-      "company": "Tencent",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487650235",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T12:22:16.959469+00:00",
-      "status": "rejected"
-    },
-    "li-4454528732": {
-      "title": "Product Associate (Talent Pool)",
-      "company": "Garena",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4454528732",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T12:22:17.134283+00:00",
-      "status": "sent"
-    },
-    "li-4487645583": {
-      "title": "AI Engineer",
-      "company": "MSBU Konsultan",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487645583",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T12:22:18.473814+00:00",
-      "status": "sent"
-    },
-    "li-4487629817": {
-      "title": "Freelance Database Migration (PostgreSQL)",
-      "company": "IYKRA",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487629817",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T12:22:19.807957+00:00",
-      "status": "sent"
-    },
-    "li-4487632606": {
-      "title": "腾讯云- 印尼AI原生云解决方案架构师",
-      "company": "Tencent",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487632606",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T12:22:21.041853+00:00",
-      "status": "sent"
-    },
-    "li-4488782045": {
-      "title": "Junior Mobile Engineer",
-      "company": "VLink Inc",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4488782045",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T12:22:22.237915+00:00",
-      "status": "sent"
-    },
-    "li-4441076717": {
-      "title": "Application Engineer",
-      "company": "Johnson Controls",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4441076717",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T12:22:23.553827+00:00",
-      "status": "sent"
-    },
-    "li-4450863884": {
-      "title": "Technical Account Manager",
-      "company": "Supermicro",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4450863884",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T12:22:24.953830+00:00",
-      "status": "sent"
-    },
-    "li-4480878561": {
-      "title": "Tencent Cloud - AI Native Cloud Solution Architect (Indonesia)",
-      "company": "Tencent",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480878561",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T19:13:53.672696+00:00",
-      "status": "rejected"
-    },
-    "li-4324980219": {
-      "title": "Data Scientist",
-      "company": "Kredivo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4324980219",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T19:13:53.852365+00:00",
-      "status": "sent"
-    },
-    "li-4487643780": {
-      "title": "jr. Quality Assurance Engineer",
-      "company": "Asiatek Solusi Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487643780",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T19:13:55.037403+00:00",
-      "status": "sent"
-    },
-    "li-4462834469": {
-      "title": "Product & Solution Leader - MS, Indonesia",
-      "company": "GE HealthCare",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4462834469",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T19:13:56.185228+00:00",
-      "status": "sent"
-    },
-    "li-4487635842": {
-      "title": "Field Force Performance Analyst - JAKARTA",
-      "company": "SWAKARYA INSAN MANDIRI",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487635842",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-08T19:13:57.430232+00:00",
-      "status": "sent"
-    },
-    "li-4487651831": {
-      "title": "Field Activation Engineer",
-      "company": "PT Solusi Sinergi Digital Tbk (SURGE)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487651831",
-      "date_posted": "2026-11-08",
-      "first_seen": "2026-11-09T00:14:34.045623+00:00",
-      "status": "sent"
-    },
-    "li-4488826511": {
-      "title": "Sr Marketing Manager",
-      "company": "Visa",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4488826511",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:10.356106+00:00",
-      "status": "rejected"
-    },
-    "li-4354415381": {
-      "title": "Finance Information Management Head",
-      "company": "UOB",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4354415381",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:10.356131+00:00",
-      "status": "rejected"
-    },
-    "li-4487666843": {
-      "title": "Product Intern - ID Games",
-      "company": "Shopee",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487666843",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:10.654088+00:00",
-      "status": "sent"
-    },
     "li-4487680118": {
       "title": "Java Software Engineer",
       "company": "MSBU Konsultan",
@@ -9000,6 +8757,249 @@
       "job_url": "https://www.linkedin.com/jobs/view/4492905375",
       "date_posted": "2026-11-20",
       "first_seen": "2026-11-20T10:43:45.380482+00:00",
+      "status": "sent"
+    },
+    "li-4485228583": {
+      "title": "Tencent Cloud – Solution Architect, Big Data & AI (Indonesia)",
+      "company": "Tencent",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4485228583",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:21:48.847025+00:00",
+      "status": "rejected"
+    },
+    "in-8a655ec4c49f9913": {
+      "title": "Bancassurance Sales Trainer Manager",
+      "company": "Manulife",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=8a655ec4c49f9913",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:21:48.847044+00:00",
+      "status": "rejected"
+    },
+    "li-4448996433": {
+      "title": "Data Governance Engineer",
+      "company": "Kredivo Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4448996433",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:21:49.088544+00:00",
+      "status": "sent"
+    },
+    "li-4476793486": {
+      "title": "Data Center Operations Trainee, AWS Data Center Operation",
+      "company": "Amazon Web Services (AWS)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476793486",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:21:50.301131+00:00",
+      "status": "sent"
+    },
+    "li-4476280119": {
+      "title": "T&T Consultant - SAP MM - ID",
+      "company": "Deloitte",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476280119",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:21:51.507748+00:00",
+      "status": "sent"
+    },
+    "li-4475792620": {
+      "title": "Solution Specialist, Finance Systems",
+      "company": "Grab",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475792620",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:21:53.637267+00:00",
+      "status": "sent"
+    },
+    "li-4431800432": {
+      "title": "T&T Consultant - AMS (SAP FICO) - SEA",
+      "company": "Deloitte",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4431800432",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:21:54.873286+00:00",
+      "status": "sent"
+    },
+    "li-4431495546": {
+      "title": "T&T Consultant - Workday HCM Functional/ Data - MY / ID / TH / PH",
+      "company": "Deloitte",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4431495546",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:21:56.203989+00:00",
+      "status": "sent"
+    },
+    "li-4448997511": {
+      "title": "Business Analyst, Internship, Indonesia",
+      "company": "Boston Consulting Group (BCG)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4448997511",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:21:57.466038+00:00",
+      "status": "sent"
+    },
+    "li-4467851459": {
+      "title": "Associate to Consultant, Technology & Digital Advantage Practice",
+      "company": "Boston Consulting Group (BCG)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4467851459",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:21:58.596710+00:00",
+      "status": "sent"
+    },
+    "li-4492811509": {
+      "title": "Full Stack Software Developer – Python / TypeScript / Azure",
+      "company": "Hawksworth",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4492811509",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:21:59.723493+00:00",
+      "status": "sent"
+    },
+    "li-4466291329": {
+      "title": "PS Technical Consultant II Jakarta",
+      "company": "NCR Atleos",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4466291329",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:00.846116+00:00",
+      "status": "sent"
+    },
+    "li-4492806665": {
+      "title": "Manufacture Digitalization Intern #2",
+      "company": "Siemens",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4492806665",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:01.989955+00:00",
+      "status": "sent"
+    },
+    "li-4492809612": {
+      "title": "Manufacture Digitalization Intern",
+      "company": "Siemens",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4492809612",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:03.186072+00:00",
+      "status": "sent"
+    },
+    "li-4492824084": {
+      "title": "Digital Industries - Project and Service Execution Intern",
+      "company": "Siemens",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4492824084",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:04.402540+00:00",
+      "status": "sent"
+    },
+    "in-8ac25a2c35e83b0a": {
+      "title": "Production Technician-Intern VII",
+      "company": "Siemens",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=8ac25a2c35e83b0a",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:05.620656+00:00",
+      "status": "sent"
+    },
+    "in-58c9cbb92570e1ce": {
+      "title": "Production Technician-Intern XI",
+      "company": "Siemens",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=58c9cbb92570e1ce",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:06.827446+00:00",
+      "status": "sent"
+    },
+    "in-8052db72b2a77770": {
+      "title": "Production Technician-Intern III",
+      "company": "Siemens",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=8052db72b2a77770",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:08.086870+00:00",
+      "status": "sent"
+    },
+    "in-791e6204e0b5e222": {
+      "title": "Production Technician-Intern VIII",
+      "company": "Siemens",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=791e6204e0b5e222",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:09.285624+00:00",
+      "status": "sent"
+    },
+    "in-29be5286e8550055": {
+      "title": "Production Technician-Intern X",
+      "company": "Siemens",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=29be5286e8550055",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:10.617793+00:00",
+      "status": "sent"
+    },
+    "in-17ae9fea6a577eb6": {
+      "title": "Production Technician-Intern IX",
+      "company": "Siemens",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=17ae9fea6a577eb6",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:11.905806+00:00",
+      "status": "sent"
+    },
+    "in-84832d8705fb2e45": {
+      "title": "Manufacture Engineer Intern",
+      "company": "Siemens",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=84832d8705fb2e45",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:13.179883+00:00",
+      "status": "sent"
+    },
+    "in-9c667406e2d4fb36": {
+      "title": "Business Controller",
+      "company": "Air Liquide",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=9c667406e2d4fb36",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:14.341886+00:00",
+      "status": "sent"
+    },
+    "li-4491946556": {
+      "title": "Data Analyst Associate - Group Service",
+      "company": "Seven Retail",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4491946556",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:15.557232+00:00",
+      "status": "sent"
+    },
+    "li-4492810594": {
+      "title": "Manufacture Engineer Intern",
+      "company": "Siemens",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4492810594",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:16.754483+00:00",
+      "status": "sent"
+    },
+    "li-4491945688": {
+      "title": "Commercial & Operations Staff",
+      "company": "Seven Retail",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4491945688",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:18.231122+00:00",
+      "status": "sent"
+    },
+    "li-4459842513": {
+      "title": "Product Manager, Press felt & Belt, AP",
+      "company": "Valmet",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4459842513",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-20T19:22:19.537592+00:00",
       "status": "sent"
     }
   }
