@@ -1,106 +1,7 @@
 {
-  "last_updated": "2026-11-20T19:22:19.537740+00:00",
+  "last_updated": "2026-11-21T01:52:26.600808+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4487680118": {
-      "title": "Java Software Engineer",
-      "company": "MSBU Konsultan",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487680118",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:12.155346+00:00",
-      "status": "sent"
-    },
-    "li-4487674682": {
-      "title": "Fullstack Developer (Java, Angular & .NET)",
-      "company": "Asiatek Solusi Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487674682",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:13.364694+00:00",
-      "status": "sent"
-    },
-    "li-4464832582": {
-      "title": "Dotnet Developer",
-      "company": "Lancesoft Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4464832582",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:14.497532+00:00",
-      "status": "sent"
-    },
-    "li-4487679341": {
-      "title": "MIddleware/Fullstack Developer WebMethods",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487679341",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:15.591018+00:00",
-      "status": "sent"
-    },
-    "li-4487685673": {
-      "title": "Golang Developer",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487685673",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:16.721658+00:00",
-      "status": "sent"
-    },
-    "li-4488822828": {
-      "title": "AI Systems Engineer",
-      "company": "Hadl.ai",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4488822828",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:18.048823+00:00",
-      "status": "sent"
-    },
-    "li-4487683255": {
-      "title": "Software Engineer (Java)",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487683255",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:19.224055+00:00",
-      "status": "sent"
-    },
-    "li-4486701059": {
-      "title": "Python Developer",
-      "company": "Akar Inti Enterprise",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4486701059",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:20.462477+00:00",
-      "status": "sent"
-    },
-    "li-4487689057": {
-      "title": "Backend Java Engineer",
-      "company": "ADI Consulting Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487689057",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:21.611813+00:00",
-      "status": "sent"
-    },
-    "li-4485439937": {
-      "title": "DevOps Engineer",
-      "company": "AVOWS CONSULTING LIMITED",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4485439937",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:22.738450+00:00",
-      "status": "sent"
-    },
-    "li-4487689324": {
-      "title": "(Talent Bank IT) BE Golang Dev.",
-      "company": "Entrepreneur Trust Digital | Entrust Digital",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487689324",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:24.017058+00:00",
-      "status": "sent"
-    },
     "li-4487658955": {
       "title": "Dotnet Developer",
       "company": "PT Pro Sigmaka Mandiri",
@@ -9000,6 +8901,105 @@
       "job_url": "https://www.linkedin.com/jobs/view/4459842513",
       "date_posted": "2026-11-20",
       "first_seen": "2026-11-20T19:22:19.537592+00:00",
+      "status": "sent"
+    },
+    "in-0bf33da8a1231e69": {
+      "title": "Business Analyst",
+      "company": "Kawan Lama Group",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=0bf33da8a1231e69",
+      "date_posted": "2026-11-21",
+      "first_seen": "2026-11-21T01:52:15.775603+00:00",
+      "status": "rejected"
+    },
+    "in-9ed095159360c831": {
+      "title": "Product Design Engineer",
+      "company": "IDEMIA",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=9ed095159360c831",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-21T01:52:15.981587+00:00",
+      "status": "sent"
+    },
+    "li-4492526846": {
+      "title": "System Operation Officer",
+      "company": "Datascrip",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4492526846",
+      "date_posted": "2026-11-21",
+      "first_seen": "2026-11-21T01:52:17.080790+00:00",
+      "status": "sent"
+    },
+    "li-4493236082": {
+      "title": "Integration DevOps Engineer",
+      "company": "Thales",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493236082",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-21T01:52:18.281837+00:00",
+      "status": "sent"
+    },
+    "li-4492997788": {
+      "title": "Technical Internship – Expression of Interest",
+      "company": "ABB",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4492997788",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-21T01:52:19.529312+00:00",
+      "status": "sent"
+    },
+    "li-4492874085": {
+      "title": "Junior Associate",
+      "company": "KR Consulting",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4492874085",
+      "date_posted": "2026-11-21",
+      "first_seen": "2026-11-21T01:52:20.792981+00:00",
+      "status": "sent"
+    },
+    "in-bab3c19dd9570eab": {
+      "title": "Responsible Pharmacist - Quality Control",
+      "company": "GSK",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=bab3c19dd9570eab",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-21T01:52:21.972665+00:00",
+      "status": "sent"
+    },
+    "in-f1a8c87b1a7665f5": {
+      "title": "Sales Manager",
+      "company": "ALLEGIANCE PRIMAPARTS INDONESIA",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=f1a8c87b1a7665f5",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-21T01:52:23.192512+00:00",
+      "status": "sent"
+    },
+    "li-4492995770": {
+      "title": "Project Manager",
+      "company": "PT. Adi Data Informatika",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4492995770",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-21T01:52:24.301330+00:00",
+      "status": "sent"
+    },
+    "li-4492858084": {
+      "title": "Technician",
+      "company": "PT. VITA NOVA",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4492858084",
+      "date_posted": "2026-11-21",
+      "first_seen": "2026-11-21T01:52:25.427829+00:00",
+      "status": "sent"
+    },
+    "li-4493200251": {
+      "title": "Technical Writer",
+      "company": "PT. Adi Data Informatika",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493200251",
+      "date_posted": "2026-11-20",
+      "first_seen": "2026-11-21T01:52:26.600624+00:00",
       "status": "sent"
     }
   }
