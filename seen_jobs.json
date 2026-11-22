@@ -1,61 +1,7 @@
 {
-  "last_updated": "2026-11-22T00:45:36.865633+00:00",
+  "last_updated": "2026-11-22T10:27:52.035947+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4488842369": {
-      "title": "Listing Business Development Manager",
-      "company": "BTSE",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4488842369",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:57.985501+00:00",
-      "status": "sent"
-    },
-    "li-4487690374": {
-      "title": "Product Executive",
-      "company": "PT Interbat",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487690374",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:59.351562+00:00",
-      "status": "sent"
-    },
-    "li-4487677571": {
-      "title": "International Marketing Manager",
-      "company": "Lemonilo",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487677571",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:35:00.459410+00:00",
-      "status": "sent"
-    },
-    "li-4487694167": {
-      "title": "Functional Odoo",
-      "company": "PT. Karunia Jasindo",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487694167",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:35:01.604484+00:00",
-      "status": "sent"
-    },
-    "li-4487135539": {
-      "title": "Quality Assurance Specialist",
-      "company": "Fortress Digital Services",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487135539",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:35:03.028450+00:00",
-      "status": "sent"
-    },
-    "li-4487689320": {
-      "title": "Information Technology Business Analyst",
-      "company": "TechTiera Corporation",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487689320",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:35:04.140595+00:00",
-      "status": "sent"
-    },
     "li-4487691111": {
       "title": "SAP HCM Payroll Consultant - SuccessFactors ECP",
       "company": "Nityo Infotech Indonesia",
@@ -9000,6 +8946,60 @@
       "job_url": "https://www.linkedin.com/jobs/view/4492897732",
       "date_posted": "2026-11-21",
       "first_seen": "2026-11-22T00:45:36.865503+00:00",
+      "status": "sent"
+    },
+    "li-4493157553": {
+      "title": "Engineering Manager, Consumer Experience",
+      "company": "Grab",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493157553",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-22T10:27:45.840545+00:00",
+      "status": "sent"
+    },
+    "li-4476807605": {
+      "title": "Electronics Category Strategy Project Intern (TikTok Shop by Tokopedia) - 2026 Start",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4476807605",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-22T10:27:47.125752+00:00",
+      "status": "sent"
+    },
+    "li-4493178907": {
+      "title": "Full-stack Developer (Project)    .",
+      "company": "KPN Corp",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493178907",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-22T10:27:48.310942+00:00",
+      "status": "sent"
+    },
+    "li-4493186511": {
+      "title": "Tester Consultant",
+      "company": "PT IDstar Cipta Teknologi (IDstar)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493186511",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-22T10:27:49.570271+00:00",
+      "status": "sent"
+    },
+    "li-4403338847": {
+      "title": "CPP and Consolidation Business Finance, Team Leader",
+      "company": "UOB",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4403338847",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-22T10:27:50.783860+00:00",
+      "status": "sent"
+    },
+    "li-4475217991": {
+      "title": "Finance Manager",
+      "company": "Eaton",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4475217991",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-22T10:27:52.035826+00:00",
       "status": "sent"
     }
   }
