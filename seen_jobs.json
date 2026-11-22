@@ -1,16 +1,7 @@
 {
-  "last_updated": "2026-11-21T18:25:33.835652+00:00",
+  "last_updated": "2026-11-22T00:45:36.865633+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4487687539": {
-      "title": "Business Analyst",
-      "company": "Asiatek Solusi Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487687539",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T10:34:56.829607+00:00",
-      "status": "sent"
-    },
     "li-4488842369": {
       "title": "Listing Business Development Manager",
       "company": "BTSE",
@@ -9000,6 +8991,15 @@
       "job_url": "https://www.linkedin.com/jobs/view/4455137337",
       "date_posted": "2026-11-21",
       "first_seen": "2026-11-21T18:25:33.835511+00:00",
+      "status": "sent"
+    },
+    "li-4492897732": {
+      "title": "TikTok Shop by Tokopedia - IP Campaign Manager, Campaign & Community (FMCG) - Indonesia",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4492897732",
+      "date_posted": "2026-11-21",
+      "first_seen": "2026-11-22T00:45:36.865503+00:00",
       "status": "sent"
     }
   }
