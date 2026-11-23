@@ -1,34 +1,7 @@
 {
-  "last_updated": "2026-11-23T11:29:11.215608+00:00",
+  "last_updated": "2026-11-23T23:00:17.540601+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4489485000": {
-      "title": "AI Storage Engineer",
-      "company": "Kyndryl",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489485000",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T13:57:42.051910+00:00",
-      "status": "sent"
-    },
-    "li-4471523062": {
-      "title": "Health Pricing Officer",
-      "company": "Manulife",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4471523062",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T13:57:43.286436+00:00",
-      "status": "sent"
-    },
-    "li-4488313605": {
-      "title": "Corporate Planning",
-      "company": "PT SURYA SEMESTA INTERNUSA TBK",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4488313605",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T13:57:44.566721+00:00",
-      "status": "sent"
-    },
     "li-4488302600": {
       "title": "Ecommerce Specialist",
       "company": "PT. Baitube Media SEA",
@@ -9000,6 +8973,33 @@
       "job_url": "https://www.linkedin.com/jobs/view/4493759157",
       "date_posted": "2026-11-23",
       "first_seen": "2026-11-23T11:29:11.215394+00:00",
+      "status": "sent"
+    },
+    "li-4494034834": {
+      "title": "Strategic Programs & AI Transformation Manager - Indonesia - GBS",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4494034834",
+      "date_posted": "2026-11-23",
+      "first_seen": "2026-11-23T23:00:15.032279+00:00",
+      "status": "sent"
+    },
+    "li-4494044181": {
+      "title": "Agency Strategy and Analyst, Indonesia",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4494044181",
+      "date_posted": "2026-11-23",
+      "first_seen": "2026-11-23T23:00:16.298515+00:00",
+      "status": "sent"
+    },
+    "li-4494072525": {
+      "title": "Organization Development and Performance Management Intern",
+      "company": "Luxehouze",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4494072525",
+      "date_posted": "2026-11-23",
+      "first_seen": "2026-11-23T23:00:17.540454+00:00",
       "status": "sent"
     }
   }
