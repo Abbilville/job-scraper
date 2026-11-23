@@ -1,223 +1,7 @@
 {
-  "last_updated": "2026-11-22T18:48:19.862573+00:00",
+  "last_updated": "2026-11-23T01:15:37.083754+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4487950763": {
-      "title": "Field Activation Engineer",
-      "company": "PT Solusi Sinergi Digital Tbk (SURGE)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487950763",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T21:44:50.863050+00:00",
-      "status": "sent"
-    },
-    "li-4489127165": {
-      "title": "Embedded Devices Software Solution Sales Manager (APAC)",
-      "company": "Canonical",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489127165",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T21:44:52.302192+00:00",
-      "status": "sent"
-    },
-    "li-4488848222": {
-      "title": "Field Service Engineer",
-      "company": "Medtronic",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4488848222",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T21:44:53.485422+00:00",
-      "status": "sent"
-    },
-    "li-4487954190": {
-      "title": "e-Commerce Manager",
-      "company": "PT UNZA VITALIS (A business unit of Wipro Consumer Care)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487954190",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T21:44:54.720057+00:00",
-      "status": "sent"
-    },
-    "li-4480975267": {
-      "title": "Assistant Manager - Supply Chain",
-      "company": "Hach",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4480975267",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T21:44:55.891029+00:00",
-      "status": "sent"
-    },
-    "li-4487926586": {
-      "title": "Business Operations Intern",
-      "company": "Jejak Karya Bumi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487926586",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T21:44:57.075884+00:00",
-      "status": "sent"
-    },
-    "li-4487198983": {
-      "title": "Spesialis CX / CRM",
-      "company": "NovaSphere by Apergu",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487198983",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T21:44:58.403081+00:00",
-      "status": "sent"
-    },
-    "li-4487957111": {
-      "title": "Program Manager, HIV Prevention",
-      "company": "Clinton Health Access Initiative, Inc.",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487957111",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T21:44:59.577003+00:00",
-      "status": "sent"
-    },
-    "li-4489129775": {
-      "title": "QA Tester Banking",
-      "company": "CODE.ID",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489129775",
-      "date_posted": "2026-11-09",
-      "first_seen": "2026-11-09T21:45:00.842155+00:00",
-      "status": "sent"
-    },
-    "in-50e9ff3ac5bc0c23": {
-      "title": "SaaS Product Owner",
-      "company": "Mindpec Solutions",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=50e9ff3ac5bc0c23",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T05:00:39.379537+00:00",
-      "status": "rejected"
-    },
-    "in-89448f2ae0c0fd6e": {
-      "title": "Merchandising Manager",
-      "company": "Kawan Lama Group",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=89448f2ae0c0fd6e",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T05:00:39.379557+00:00",
-      "status": "rejected"
-    },
-    "in-4e5d5f44be3edec0": {
-      "title": "Sales Manager",
-      "company": "Kawan Lama Group",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=4e5d5f44be3edec0",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T05:00:39.379562+00:00",
-      "status": "rejected"
-    },
-    "li-4487984436": {
-      "title": "Java Software Engineer",
-      "company": "MSBU Konsultan",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487984436",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T05:00:40.429050+00:00",
-      "status": "sent"
-    },
-    "li-4487984453": {
-      "title": "Application Developer (.NET)",
-      "company": "PT Adicipta Inovasi Teknologi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487984453",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T05:00:41.639472+00:00",
-      "status": "sent"
-    },
-    "li-4488300143": {
-      "title": "DevOps Engineer",
-      "company": "Ruang Partners",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4488300143",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T05:00:42.859003+00:00",
-      "status": "sent"
-    },
-    "li-4487982598": {
-      "title": "Junior Mobile Developer (Android & iOS)",
-      "company": "PT Digital Daya Teknologi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487982598",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T05:00:44.103022+00:00",
-      "status": "sent"
-    },
-    "li-4487988337": {
-      "title": "RPA Developer - Junior",
-      "company": "PT IDstar Cipta Teknologi (IDstar)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487988337",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T05:00:45.238345+00:00",
-      "status": "sent"
-    },
-    "li-4487986615": {
-      "title": "Software Engineer (Java)",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487986615",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T05:00:46.414609+00:00",
-      "status": "sent"
-    },
-    "li-4487985955": {
-      "title": "AI Business Platform (Core & Front End)",
-      "company": "PT XLSMART Telecom Sejahtera Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487985955",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T05:00:48.001335+00:00",
-      "status": "sent"
-    },
-    "li-4487991254": {
-      "title": "System Analyst (.NET)",
-      "company": "PT Adicipta Inovasi Teknologi",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487991254",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T05:00:49.458131+00:00",
-      "status": "sent"
-    },
-    "li-4488300026": {
-      "title": "Operation Engineer",
-      "company": "Asiatek Solusi Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4488300026",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T05:00:50.670696+00:00",
-      "status": "sent"
-    },
-    "li-4487988576": {
-      "title": "ETL Developer",
-      "company": "PT IDstar Cipta Teknologi (IDstar)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4487988576",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T05:00:51.839582+00:00",
-      "status": "sent"
-    },
-    "in-429cf39ea69f133d": {
-      "title": "Logistic Officer",
-      "company": "Kawan Lama Group",
-      "site": "indeed",
-      "job_url": "https://id.indeed.com/viewjob?jk=429cf39ea69f133d",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T05:00:53.299735+00:00",
-      "status": "sent"
-    },
-    "li-4422249666": {
-      "title": "Business Intelligence",
-      "company": "Monee",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4422249666",
-      "date_posted": "2026-11-10",
-      "first_seen": "2026-11-10T05:00:54.482254+00:00",
-      "status": "sent"
-    },
     "li-4488300327": {
       "title": "Business Intelligence Analyst",
       "company": "Modinity",
@@ -9000,6 +8784,222 @@
       "job_url": "https://www.linkedin.com/jobs/view/4492811445",
       "date_posted": "2026-11-22",
       "first_seen": "2026-11-22T18:48:19.862421+00:00",
+      "status": "sent"
+    },
+    "li-4493395127": {
+      "title": "AIF - SERA - Backend Developer Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493395127",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:04.636854+00:00",
+      "status": "sent"
+    },
+    "li-4493379986": {
+      "title": "AIF - SERA - SAP Abaper Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493379986",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:05.937472+00:00",
+      "status": "sent"
+    },
+    "li-4493380955": {
+      "title": "AIF - AIHO - Technology & Digital Security Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493380955",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:07.222066+00:00",
+      "status": "sent"
+    },
+    "li-4493394184": {
+      "title": "AIF - SERA - Product Development Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493394184",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:08.512969+00:00",
+      "status": "sent"
+    },
+    "li-4493394189": {
+      "title": "AIF - SERA - Business Intelligence Engineer Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493394189",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:09.976449+00:00",
+      "status": "sent"
+    },
+    "li-4492208343": {
+      "title": "Customer Engineer - Astragraphia",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4492208343",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:11.258530+00:00",
+      "status": "sent"
+    },
+    "li-4493392268": {
+      "title": "AIF - SERA - Network Engineer Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493392268",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:12.711038+00:00",
+      "status": "sent"
+    },
+    "li-4493394192": {
+      "title": "AIF - AIHO - Learning Facilitation & Data Analytics Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493394192",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:14.083192+00:00",
+      "status": "sent"
+    },
+    "li-4493389422": {
+      "title": "AIF - SERA - Data and Product Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493389422",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:16.328728+00:00",
+      "status": "sent"
+    },
+    "li-4493389432": {
+      "title": "AIF - AIHO - Sustainability Strategic Management Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493389432",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:17.725231+00:00",
+      "status": "sent"
+    },
+    "li-4493397095": {
+      "title": "AIF - FIFGROUP - Data Analyst Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493397095",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:19.109448+00:00",
+      "status": "sent"
+    },
+    "li-4493391342": {
+      "title": "AIF - SERA - Data Analyst Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493391342",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:20.374209+00:00",
+      "status": "sent"
+    },
+    "li-4493380965": {
+      "title": "AIF - AIHO - Strategic Business Intelligent Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493380965",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:21.630108+00:00",
+      "status": "sent"
+    },
+    "li-4493391351": {
+      "title": "AIF - SERA - Fleet Operations Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493391351",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:22.884326+00:00",
+      "status": "sent"
+    },
+    "li-4493394190": {
+      "title": "AIF - SERA - Business Planning Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493394190",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:24.202680+00:00",
+      "status": "sent"
+    },
+    "li-4493389420": {
+      "title": "AIF - SERA - Freight Forward Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493389420",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:26.007368+00:00",
+      "status": "sent"
+    },
+    "li-4493389421": {
+      "title": "AIF - ISO - Customer Experience Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493389421",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:27.748626+00:00",
+      "status": "sent"
+    },
+    "li-4493386800": {
+      "title": "AIF - UT - Business Operations Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493386800",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:29.015927+00:00",
+      "status": "sent"
+    },
+    "li-4493389423": {
+      "title": "AIF - AIHO - Operational Excellence & People Development Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493389423",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:30.316732+00:00",
+      "status": "sent"
+    },
+    "li-4493396139": {
+      "title": "AIF - ASTRA CREDIT COMPANIES - STARSHIP BATCH 25",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493396139",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:31.651111+00:00",
+      "status": "sent"
+    },
+    "li-4493600055": {
+      "title": "AIF - AIHO - Strategic Group Business Intern",
+      "company": "PT Astra International Tbk",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493600055",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:32.951868+00:00",
+      "status": "sent"
+    },
+    "li-4493544601": {
+      "title": "DevLead (Java Quarkus)",
+      "company": "Insura Media Solusi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493544601",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:34.284498+00:00",
+      "status": "sent"
+    },
+    "li-4493509868": {
+      "title": "Retail Operations Assistant",
+      "company": "Serial",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493509868",
+      "date_posted": "2026-11-22",
+      "first_seen": "2026-11-23T01:15:35.494859+00:00",
+      "status": "sent"
+    },
+    "li-4493564014": {
+      "title": "Network Operation Center",
+      "company": "PT Kalos Anthrope Solusi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4493564014",
+      "date_posted": "2026-11-23",
+      "first_seen": "2026-11-23T01:15:37.083633+00:00",
       "status": "sent"
     }
   }
