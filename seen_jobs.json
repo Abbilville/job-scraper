@@ -1,70 +1,7 @@
 {
-  "last_updated": "2026-11-25T16:25:01.786486+00:00",
+  "last_updated": "2026-11-26T01:15:57.579329+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4488657834": {
-      "title": "APU PPT & PPPSPM Transaction Monitoring Department Head",
-      "company": "PT Bank Sinarmas Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4488657834",
-      "date_posted": "2026-11-12",
-      "first_seen": "2026-11-12T04:45:17.007563+00:00",
-      "status": "rejected"
-    },
-    "li-4489068538": {
-      "title": ".Net Developer",
-      "company": "Lancesoft Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489068538",
-      "date_posted": "2026-11-12",
-      "first_seen": "2026-11-12T04:45:17.213285+00:00",
-      "status": "sent"
-    },
-    "li-4489065561": {
-      "title": "Fullstack Developer (Golang / React Native)",
-      "company": "AVOWS CONSULTING LIMITED",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489065561",
-      "date_posted": "2026-11-12",
-      "first_seen": "2026-11-12T04:45:18.507024+00:00",
-      "status": "sent"
-    },
-    "li-4488695111": {
-      "title": "Fullstack Developer (Backend & Mobile)",
-      "company": "AVOWS CONSULTING LIMITED",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4488695111",
-      "date_posted": "2026-11-12",
-      "first_seen": "2026-11-12T04:45:19.747077+00:00",
-      "status": "sent"
-    },
-    "li-4489060621": {
-      "title": "DevOps Engineer",
-      "company": "Ruang Partners",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489060621",
-      "date_posted": "2026-11-12",
-      "first_seen": "2026-11-12T04:45:20.952391+00:00",
-      "status": "sent"
-    },
-    "li-4489055983": {
-      "title": "Odoo Developer",
-      "company": "HTC Global Services",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489055983",
-      "date_posted": "2026-11-12",
-      "first_seen": "2026-11-12T04:45:22.519786+00:00",
-      "status": "sent"
-    },
-    "li-4489069437": {
-      "title": "Production Support Engineer",
-      "company": "Asiatek Solusi Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489069437",
-      "date_posted": "2026-11-12",
-      "first_seen": "2026-11-12T04:45:23.673691+00:00",
-      "status": "sent"
-    },
     "li-4489077117": {
       "title": "Junior DevOps Engineer",
       "company": "Indocyber Global Teknologi, PT",
@@ -9000,6 +8937,69 @@
       "job_url": "https://www.linkedin.com/jobs/view/4484666860",
       "date_posted": "2026-11-25",
       "first_seen": "2026-11-25T16:25:01.786309+00:00",
+      "status": "sent"
+    },
+    "li-4494966899": {
+      "title": "FE React Dev (Leadd)",
+      "company": "Insura Media Solusi",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4494966899",
+      "date_posted": "2026-11-26",
+      "first_seen": "2026-11-26T01:15:50.210783+00:00",
+      "status": "sent"
+    },
+    "li-4495205235": {
+      "title": "Performance Tester",
+      "company": "PT. Adi Data Informatika",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4495205235",
+      "date_posted": "2026-11-25",
+      "first_seen": "2026-11-26T01:15:51.380247+00:00",
+      "status": "sent"
+    },
+    "li-4495236015": {
+      "title": "Junior Analyst",
+      "company": "Aon",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4495236015",
+      "date_posted": "2026-11-26",
+      "first_seen": "2026-11-26T01:15:52.555968+00:00",
+      "status": "sent"
+    },
+    "li-4494974567": {
+      "title": "Executive",
+      "company": "Staff Danışmalık",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4494974567",
+      "date_posted": "2026-11-26",
+      "first_seen": "2026-11-26T01:15:53.749028+00:00",
+      "status": "sent"
+    },
+    "li-4463820600": {
+      "title": "Customer Success Manager",
+      "company": "Adjust",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4463820600",
+      "date_posted": "2026-11-25",
+      "first_seen": "2026-11-26T01:15:55.049325+00:00",
+      "status": "sent"
+    },
+    "in-203e6f8571c10505": {
+      "title": "Credit Card Disputes Manager - Jakarta (Night Shift)",
+      "company": "Finix",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=203e6f8571c10505",
+      "date_posted": "2026-11-25",
+      "first_seen": "2026-11-26T01:15:56.254679+00:00",
+      "status": "sent"
+    },
+    "in-6fd120af4f7adad1": {
+      "title": "Junior Growth Manager (Growth School)",
+      "company": "Ruby Labs",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=6fd120af4f7adad1",
+      "date_posted": "2026-11-25",
+      "first_seen": "2026-11-26T01:15:57.579168+00:00",
       "status": "sent"
     }
   }
