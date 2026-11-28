@@ -1,88 +1,7 @@
 {
-  "last_updated": "2026-11-27T15:46:58.530685+00:00",
+  "last_updated": "2026-11-28T00:48:13.832457+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4490591649": {
-      "title": "(2026 - SA) Solution Architect",
-      "company": "PT IKONSULTAN INOVATAMA",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4490591649",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:13.262922+00:00",
-      "status": "rejected"
-    },
-    "li-4463572164": {
-      "title": "AI Data Quality Enforcement Expert - Graduate (TikTok AI Data Service and Operations) - 2027 Start",
-      "company": "TikTok",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4463572164",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:13.262926+00:00",
-      "status": "rejected"
-    },
-    "li-4482704106": {
-      "title": "Sr Officer-Financial Analyst",
-      "company": "PT. Indosat Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4482704106",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:13.262929+00:00",
-      "status": "rejected"
-    },
-    "li-4489551749": {
-      "title": "IT Strategy & Project Management Dept Head",
-      "company": "PT Bank Multiarta Sentosa Tbk (Bank MAS)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489551749",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:13.262931+00:00",
-      "status": "rejected"
-    },
-    "li-4489541856": {
-      "title": "Sr SAP FICO Consultant",
-      "company": "Nityo Infotech Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489541856",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:13.262933+00:00",
-      "status": "rejected"
-    },
-    "li-4472532709": {
-      "title": "Machine Learning Engineer Intern",
-      "company": "tiket.com",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4472532709",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:13.481290+00:00",
-      "status": "sent"
-    },
-    "li-4481615670": {
-      "title": "SAP Signavio",
-      "company": "Accenture Southeast Asia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481615670",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:14.683837+00:00",
-      "status": "sent"
-    },
-    "li-4452987679": {
-      "title": "Category Strategy Fashion Project Intern (TikTok Shop by Tokopedia) - 2026 Start (BS/MS)",
-      "company": "TikTok",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4452987679",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:16.416972+00:00",
-      "status": "sent"
-    },
-    "li-4436866342": {
-      "title": "GoTo Financial - Process Improvement Manager",
-      "company": "GoTo Group",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4436866342",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:18.219334+00:00",
-      "status": "sent"
-    },
     "li-4481626150": {
       "title": "SAP JVA (Joint Venture Accounting) Consultant",
       "company": "Accenture Southeast Asia",
@@ -9000,6 +8919,87 @@
       "job_url": "https://www.linkedin.com/jobs/view/4443116921",
       "date_posted": "2026-11-27",
       "first_seen": "2026-11-27T15:46:58.530521+00:00",
+      "status": "sent"
+    },
+    "li-4495881598": {
+      "title": "IT Presales & Solution Architect",
+      "company": "PT. Kairos Utama Indonesia",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4495881598",
+      "date_posted": "2026-11-27",
+      "first_seen": "2026-11-28T00:48:06.319818+00:00",
+      "status": "rejected"
+    },
+    "li-4495339486": {
+      "title": "Mechanical Engineering Expert - Remote",
+      "company": "YO AI Labs",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4495339486",
+      "date_posted": "2026-11-27",
+      "first_seen": "2026-11-28T00:48:06.319831+00:00",
+      "status": "rejected"
+    },
+    "li-4495340203": {
+      "title": "TikTok Shop by Tokopedia - Price Operations Strategy, Shopping Center (Indonesia)",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4495340203",
+      "date_posted": "2026-11-27",
+      "first_seen": "2026-11-28T00:48:06.551724+00:00",
+      "status": "sent"
+    },
+    "li-4495327751": {
+      "title": "TikTok Shop by Tokopedia - Product Strategy Specialist, SMB Scalable Solutions (Mandarin Speaker) - Indonesia",
+      "company": "TikTok",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4495327751",
+      "date_posted": "2026-11-27",
+      "first_seen": "2026-11-28T00:48:07.802254+00:00",
+      "status": "sent"
+    },
+    "li-4495345172": {
+      "title": "Marketing Intelligence Staff",
+      "company": "BINUS Group",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4495345172",
+      "date_posted": "2026-11-27",
+      "first_seen": "2026-11-28T00:48:09.013647+00:00",
+      "status": "sent"
+    },
+    "li-4495885441": {
+      "title": "Functional Consultant Financial Module",
+      "company": "PT. Metrodata Electronics Tbk.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4495885441",
+      "date_posted": "2026-11-27",
+      "first_seen": "2026-11-28T00:48:10.231722+00:00",
+      "status": "sent"
+    },
+    "li-4495884474": {
+      "title": "Internship PMO Support",
+      "company": "PT. Astra Graphia Information Technology (AGIT)",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4495884474",
+      "date_posted": "2026-11-27",
+      "first_seen": "2026-11-28T00:48:11.418387+00:00",
+      "status": "sent"
+    },
+    "in-0fcd99e33ae15958": {
+      "title": "Production Line Leader",
+      "company": "GSK",
+      "site": "indeed",
+      "job_url": "https://id.indeed.com/viewjob?jk=0fcd99e33ae15958",
+      "date_posted": "2026-11-27",
+      "first_seen": "2026-11-28T00:48:12.628490+00:00",
+      "status": "sent"
+    },
+    "li-4495326828": {
+      "title": "Technical Program Manager",
+      "company": "Vidio",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4495326828",
+      "date_posted": "2026-11-27",
+      "first_seen": "2026-11-28T00:48:13.832294+00:00",
       "status": "sent"
     }
   }
