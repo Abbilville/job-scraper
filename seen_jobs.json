@@ -1,133 +1,7 @@
 {
-  "last_updated": "2026-11-28T00:48:13.832457+00:00",
+  "last_updated": "2026-11-28T11:02:37.784867+00:00",
   "total_seen": 1000,
   "jobs": {
-    "li-4481626150": {
-      "title": "SAP JVA (Joint Venture Accounting) Consultant",
-      "company": "Accenture Southeast Asia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481626150",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:19.480062+00:00",
-      "status": "sent"
-    },
-    "li-4488928174": {
-      "title": "Business Project",
-      "company": "SeaBank Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4488928174",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:20.673085+00:00",
-      "status": "sent"
-    },
-    "li-4436809582": {
-      "title": "Business Development Project Intern (TikTok Shop by Tokopedia) - 2026 Start (BS/MS)",
-      "company": "TikTok",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4436809582",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:21.985334+00:00",
-      "status": "sent"
-    },
-    "li-4481630046": {
-      "title": "SAP FSCM Consultant",
-      "company": "Accenture Southeast Asia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4481630046",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:23.149272+00:00",
-      "status": "sent"
-    },
-    "li-4489564066": {
-      "title": "Java Software Engineer ( Java Springboot Programmer )",
-      "company": "MSBU Konsultan",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489564066",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:24.376840+00:00",
-      "status": "sent"
-    },
-    "li-4489557816": {
-      "title": "Junior Back End Developer (.NET)",
-      "company": "PT IDstar Cipta Teknologi (IDstar)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489557816",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:25.763928+00:00",
-      "status": "sent"
-    },
-    "li-4489558726": {
-      "title": "Software Engineer Intern",
-      "company": "Komander.ai",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489558726",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:26.985107+00:00",
-      "status": "sent"
-    },
-    "li-4489565139": {
-      "title": "Grafana Developer / Specialist",
-      "company": "Beyondsoft Singapore",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489565139",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:28.878219+00:00",
-      "status": "sent"
-    },
-    "li-4489549483": {
-      "title": "Data Engineer - Middle Level",
-      "company": "Nityo Infotech Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489549483",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:30.742288+00:00",
-      "status": "sent"
-    },
-    "li-4465640010": {
-      "title": "AVP-Data Integration",
-      "company": "PT. Indosat Tbk",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4465640010",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:32.030450+00:00",
-      "status": "sent"
-    },
-    "li-4489554167": {
-      "title": "Frontend Developer (Angular)",
-      "company": "Indocyber Global Teknologi, PT",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489554167",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:33.381164+00:00",
-      "status": "sent"
-    },
-    "li-4489551565": {
-      "title": "iOS Developer (Junior)",
-      "company": "PT IDstar Cipta Teknologi (IDstar)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489551565",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:34.616166+00:00",
-      "status": "sent"
-    },
-    "li-4464522180": {
-      "title": "Freelance Oracle Technical Consultant - EBS",
-      "company": "ABeam Consulting Indonesia",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4464522180",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:35.804046+00:00",
-      "status": "sent"
-    },
-    "li-4489552497": {
-      "title": "Field Activation Engineer",
-      "company": "PT Solusi Sinergi Digital Tbk (SURGE)",
-      "site": "linkedin",
-      "job_url": "https://www.linkedin.com/jobs/view/4489552497",
-      "date_posted": "2026-11-13",
-      "first_seen": "2026-11-13T13:37:38.703544+00:00",
-      "status": "sent"
-    },
     "li-4490586717": {
       "title": "技术销售工程师",
       "company": "BLUETTI",
@@ -9000,6 +8874,132 @@
       "job_url": "https://www.linkedin.com/jobs/view/4495326828",
       "date_posted": "2026-11-27",
       "first_seen": "2026-11-28T00:48:13.832294+00:00",
+      "status": "sent"
+    },
+    "li-4486298460": {
+      "title": "Solution Architect - Application",
+      "company": "NTT DATA, Inc.",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4486298460",
+      "date_posted": "2026-11-28",
+      "first_seen": "2026-11-28T11:02:21.148916+00:00",
+      "status": "rejected"
+    },
+    "li-4488177589": {
+      "title": "Software Backend Engineer- Central Tech",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488177589",
+      "date_posted": "2026-11-28",
+      "first_seen": "2026-11-28T11:02:21.338210+00:00",
+      "status": "sent"
+    },
+    "li-4488176639": {
+      "title": "Software Engineer (Flight TDM)",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488176639",
+      "date_posted": "2026-11-28",
+      "first_seen": "2026-11-28T11:02:22.580016+00:00",
+      "status": "sent"
+    },
+    "li-4488187075": {
+      "title": "Software Engineer (Customer Care)",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488187075",
+      "date_posted": "2026-11-28",
+      "first_seen": "2026-11-28T11:02:23.942998+00:00",
+      "status": "sent"
+    },
+    "li-4488178622": {
+      "title": "Mobile Engineer (1-year Contract)",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488178622",
+      "date_posted": "2026-11-28",
+      "first_seen": "2026-11-28T11:02:25.191076+00:00",
+      "status": "sent"
+    },
+    "li-4488182323": {
+      "title": "DevSecOps Engineer",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488182323",
+      "date_posted": "2026-11-28",
+      "first_seen": "2026-11-28T11:02:26.514192+00:00",
+      "status": "sent"
+    },
+    "li-4488188047": {
+      "title": "Manager, Backend Engineering",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488188047",
+      "date_posted": "2026-11-28",
+      "first_seen": "2026-11-28T11:02:27.787416+00:00",
+      "status": "sent"
+    },
+    "li-4488184319": {
+      "title": "Mobile Engineering Manager",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488184319",
+      "date_posted": "2026-11-28",
+      "first_seen": "2026-11-28T11:02:29.083400+00:00",
+      "status": "sent"
+    },
+    "li-4488186176": {
+      "title": "Performance Marketing Analyst",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488186176",
+      "date_posted": "2026-11-28",
+      "first_seen": "2026-11-28T11:02:30.282942+00:00",
+      "status": "sent"
+    },
+    "li-4488167960": {
+      "title": "Collection Strategy Manager",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488167960",
+      "date_posted": "2026-11-28",
+      "first_seen": "2026-11-28T11:02:31.643366+00:00",
+      "status": "sent"
+    },
+    "li-4488181331": {
+      "title": "Customer Care Operations Manager (Flight)",
+      "company": "Traveloka",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4488181331",
+      "date_posted": "2026-11-28",
+      "first_seen": "2026-11-28T11:02:32.924889+00:00",
+      "status": "sent"
+    },
+    "li-4495373334": {
+      "title": "Data Engineer",
+      "company": "Insignia.co.id",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4495373334",
+      "date_posted": "2026-11-28",
+      "first_seen": "2026-11-28T11:02:35.147541+00:00",
+      "status": "sent"
+    },
+    "li-4495359533": {
+      "title": "IT INFRASTRUCTURE & OPERATIONS STAFF",
+      "company": "NDN",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4495359533",
+      "date_posted": "2026-11-28",
+      "first_seen": "2026-11-28T11:02:36.593130+00:00",
+      "status": "sent"
+    },
+    "li-4461969072": {
+      "title": "Product Implementation Assistant Manager",
+      "company": "Manulife",
+      "site": "linkedin",
+      "job_url": "https://www.linkedin.com/jobs/view/4461969072",
+      "date_posted": "2026-11-28",
+      "first_seen": "2026-11-28T11:02:37.784728+00:00",
       "status": "sent"
     }
   }
